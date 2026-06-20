@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import wineries from '../data/wineries.json';
+
+const featured = wineries.filter(w => w.featured);
+--- 
+
+<Layout title="Discover Temecula Wineries">
+  <Navbar />
+  
+  <main>
+    <!-- Hero -->
+    <section class="relative h-[92vh] flex items-center justify-center bg-[url('/hero.jpg')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+      
+      <div class="relative z-10 text-center px-6 max-w-5xl">
+        <div class="inline-block px-4 py-1 rounded-full bg-white/10 text-white text-sm tracking-[3px] mb-6">
+          TEMECULA VALLEY • SINCE 1969
+        </div>
+        
+        <h1 class="text-7xl md:text-8xl font-serif text-white tracking-[-3.5px] leading-none mb-6">
+          Wine Country,<br> Elevated.
+        </h1>
+        
+        <p class="max-w-md mx-auto text-xl text-white/80 mb-10">
+          Thoughtfully curated experiences across 41 of Temecula’s finest wineries.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#explore" class="px-9 py-4 bg-white text-stone-900 rounded-full font-medium text-lg hover:bg-white/90 transition">
+            Explore the Wineries
+          </a>
+          <a href="#map" class="px-9 py-4 border border-white/70 text-white rounded-full font-medium text-lg hover:bg-white/10 transition">
+            View Interactive Map
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="border-b border-stone-200 bg-white">
+      <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm text-stone-600">
+        <div>41 Wineries</div>
+        <div>4.6 Average Rating</div>
+        <div>Family & Pet Friendly Options</div>
+        <div>Live Music Weekly</div>
+      </div>
+    </div>
+
+    <!-- Featured Estates -->
+    <section id="explore" class="max-w-6xl mx-auto px-6 py-20">
+      <div class="flex justify-between items-baseline mb-10">
+        <div>
+          <h2 class="text-5xl font-serif tracking-tight">Featured Estates</h2>
+          <p class="text-xl text-stone-600 mt-2">Our current recommendations</p>
+        </div>
+        <a href="/wineries" class="text-[var(--accent)] hover:underline text-lg">See all wineries →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {featured.map(winery => (
+          <a href={`/wineries/${winery.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+            <div class="h-64 bg-stone-200"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">{winery.name}</h3>
+                  <p class="text-stone-600">{winery.location} • {winery.price_range}</p>
+                </div>
+                <div class="text-right">
+                  <div class="font-medium text-lg">{winery.rating}</div>
+                </div>
+              </div>
+              
+              {winery.events && winery.events.length > 0 && (
+                <div class="mt-4 text-xs text-emerald-600 font-medium">
+                  🎵 Live music this weekend
+                </div>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

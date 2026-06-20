@@ -1,0 +1,92 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+export function getStaticPaths() {
+  return wineries.map(winery => ({
+    params: { slug: winery.slug },
+    props: { winery }
+  }));
+}
+
+const { winery } = Astro.props;
+---
+
+<Layout title={winery.name}>
+  <Navbar />
+  
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <a href="/wineries" class="text-[var(--accent)] hover:underline">← Back to all wineries</a>
+    
+    <div class="mt-8">
+      <h1 class="text-6xl font-serif tracking-tight">{winery.name}</h1>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xl text-stone-600">
+        <span>{winery.location}</span>
+        <span>•</span>
+        <span>{winery.price_range}</span>
+        <span>•</span>
+        <span class="font-medium">{winery.rating} / 5</span>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-8">
+      <!-- Main Info -->
+      <div class="md:col-span-2">
+        <p class="text-2xl leading-tight text-stone-700">{winery.description}</p>
+
+        <div class="mt-10">
+          <h3 class="font-serif text-2xl mb-4">Varietals</h3>
+          <div class="flex flex-wrap gap-3">
+            {winery.varietals.map(v => (
+              <span class="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm">{v}</span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Kid Friendly -->
+        {winery.kid_friendly && (
+          <div class="mt-10">
+            <h3 class="font-serif text-2xl mb-3">Families & Children</h3>
+            <div class="bg-white border border-stone-200 rounded-2xl p-6">
+              <div class="font-medium text-lg">
+                {winery.kid_friendly.allowed ? "✓ Children welcome" : "✕ Children not permitted"}
+              </div>
+              <p class="text-stone-600 mt-2">{winery.kid_friendly.notes}</p>
+            </div>
+          </div>
+        )}
+
+        <!-- Live Music -->
+        {winery.events && winery.events.length > 0 && (
+          <div class="mt-10">
+            <h3 class="font-serif text-2xl mb-4">Upcoming Events</h3>
+            {winery.events.map(event => (
+              <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
+                <div class="font-medium text-emerald-600">🎵 {event.type}</div>
+                <div class="text-2xl mt-1">{event.band}</div>
+                <div class="text-stone-600 mt-1">{event.date} • {event.time}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <!-- Sidebar Info -->
+      <div class="space-y-6">
+        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+          <div class="text-sm text-stone-500">Address</div>
+          <div class="mt-1 leading-tight">{winery.address}</div>
+        </div>
+
+        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+          <div class="text-sm text-stone-500">Contact</div>
+          <div class="mt-2 space-y-1">
+            <a href={winery.website} target="_blank" class="block text-[var(--accent)] hover:underline">Visit Website →</a>
+            <div>{winery.phone}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

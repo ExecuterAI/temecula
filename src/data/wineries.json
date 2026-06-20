@@ -1,0 +1,133 @@
+[
+  {
+    "id": "ponte",
+    "name": "Ponte Winery",
+    "slug": "ponte-winery",
+    "location": "Temecula",
+    "address": "35053 Rancho California Rd, Temecula, CA 92591",
+    "description": "Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere.",
+    "varietals": ["Cabernet Sauvignon", "Chardonnay", "Syrah", "Zinfandel"],
+    "rating": 4.7,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome until 6pm. No minors after 6pm or during live music events."
+    },
+    "website": "https://www.pontewinery.com",
+    "phone": "(951) 694-0177",
+    "coordinates": { "lat": 33.529, "lng": -117.029 },
+    "featured": true,
+    "events": [
+      {
+        "type": "Live Music",
+        "band": "The Wine Notes",
+        "date": "2026-06-28",
+        "time": "5:00 PM - 8:00 PM"
+      }
+    ]
+  },
+  {
+    "id": "thornton",
+    "name": "Thornton Winery",
+    "slug": "thornton-winery",
+    "location": "Temecula",
+    "address": "32575 Rancho California Rd, Temecula, CA 92591",
+    "description": "Historic property offering elegant sparkling wine tastings in a castle-like setting.",
+    "varietals": ["Sparkling Wine", "Chardonnay", "Merlot", "Pinot Noir"],
+    "rating": 4.5,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": false,
+      "notes": "16+ only. No children permitted on the property."
+    },
+    "website": "https://www.thorntonwinery.com",
+    "phone": "(951) 699-0099",
+    "coordinates": { "lat": 33.521, "lng": -117.025 },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "callaway",
+    "name": "Callaway Vineyard & Winery",
+    "slug": "callaway-winery",
+    "location": "Temecula",
+    "address": "32720 Rancho California Rd, Temecula, CA 92591",
+    "description": "One of Temecula’s original wineries with sweeping views and a wide range of wines.",
+    "varietals": ["Chardonnay", "Cabernet Sauvignon", "Viognier", "Syrah"],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome on the patio. Must be supervised at all times."
+    },
+    "website": "https://www.callawaywinery.com",
+    "phone": "(951) 676-4001",
+    "coordinates": { "lat": 33.518, "lng": -117.018 },
+    "featured": false,
+    "events": [
+      {
+        "type": "Live Music",
+        "band": "Desert Rose Band",
+        "date": "2026-06-29",
+        "time": "4:00 PM - 7:00 PM"
+      }
+    ]
+  },
+  {
+    "id": "south-coast",
+    "name": "South Coast Winery",
+    "slug": "south-coast-winery",
+    "location": "Temecula",
+    "address": "34843 Rancho California Rd, Temecula, CA 92591",
+    "description": "Resort-style winery with a restaurant, spa, and beautiful event spaces.",
+    "varietals": ["Cabernet Sauvignon", "Merlot", "Chardonnay", "Moscato"],
+    "rating": 4.6,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children permitted in the restaurant and tasting room until 8pm."
+    },
+    "website": "https://www.southcoastwinery.com",
+    "phone": "(951) 676-9463",
+    "coordinates": { "lat": 33.532, "lng": -117.032 },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "wilson-creek",
+    "name": "Wilson Creek Winery",
+    "slug": "wilson-creek-winery",
+    "location": "Temecula",
+    "address": "35955 Rancho California Rd, Temecula, CA 92591",
+    "description": "Popular destination known for its Almond Champagne and beautiful grounds.",
+    "varietals": ["Sparkling", "Cabernet Sauvignon", "Chardonnay", "Pinot Grigio"],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly. Stroller accessible paths available."
+    },
+    "website": "https://www.wilsoncreekwinery.com",
+    "phone": "(951) 699-9463",
+    "coordinates": { "lat": 33.535, "lng": -117.035 },
+    "featured": true,
+    "events": [
+      {
+        "type": "Live Music",
+        "band": "The Grapes of Wrath",
+        "date": "2026-07-05",
+        "time": "6:00 PM - 9:00 PM"
+      }
+    ]
+  }
+]
