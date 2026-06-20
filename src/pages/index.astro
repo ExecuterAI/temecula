@@ -4,15 +4,27 @@ import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
 
 const featured = wineries.filter(w => w.featured);
---- 
+
+// Wine Word of the Day (rotates daily based on date)
+const wineWords = [
+  { term: "Terroir", definition: "The unique combination of soil, climate, and topography that gives wine its distinctive character." },
+  { term: "Malolactic Fermentation", definition: "A secondary fermentation that converts sharp malic acid into softer, creamier lactic acid." },
+  { term: "Cuvée", definition: "A blend of wines, often used for sparkling wines and Champagne." },
+  { term: "Appellation", definition: "A legally defined geographic region known for producing wines with specific characteristics." },
+  { term: "Brix", definition: "A measurement of sugar content in grapes, used to predict potential alcohol levels." },
+];
+
+const today = new Date().getDate();
+const wordOfTheDay = wineWords[today % wineWords.length];
+---
 
 <Layout title="Discover Temecula Wineries">
   <Navbar />
-  
+
   <main>
     <!-- Hero -->
     <section class="relative h-[92vh] flex items-center justify-center bg-[url('/hero.jpg')] bg-cover bg-center">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
       
       <div class="relative z-10 text-center px-6 max-w-5xl">
         <div class="inline-block px-4 py-1 rounded-full bg-white/10 text-white text-sm tracking-[3px] mb-6">
@@ -48,8 +60,21 @@ const featured = wineries.filter(w => w.featured);
       </div>
     </div>
 
+    <!-- Wine Word of the Day -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+      <div class="bg-white border border-stone-200 rounded-3xl p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="text-2xl">🍷</div>
+          <div class="uppercase tracking-[2px] text-xs font-medium text-[var(--accent)]">Wine Word of the Day</div>
+        </div>
+        <h3 class="font-serif text-4xl tracking-tight mb-3">{wordOfTheDay.term}</h3>
+        <p class="text-xl text-stone-700 leading-relaxed">{wordOfTheDay.definition}</p>
+        <p class="text-xs text-stone-500 mt-6">New word every day • Come back tomorrow</p>
+      </div>
+    </section>
+
     <!-- Featured Estates -->
-    <section id="explore" class="max-w-6xl mx-auto px-6 py-20">
+    <section id="explore" class="max-w-6xl mx-auto px-6 py-12">
       <div class="flex justify-between items-baseline mb-10">
         <div>
           <h2 class="text-5xl font-serif tracking-tight">Featured Estates</h2>
@@ -58,26 +83,49 @@ const featured = wineries.filter(w => w.featured);
         <a href="/wineries" class="text-[var(--accent)] hover:underline text-lg">See all wineries →</a>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Search Bar -->
+      <div class="mb-8 max-w-md">
+        <input 
+          type="text" 
+          id="search-input"
+          placeholder="Search wineries by name, varietal, or vibe..."
+          class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg"
+          onkeyup="filterWineries()"
+        />
+      </div>
+
+      <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featured.map(winery => (
           <a href={`/wineries/${winery.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
-            <div class="h-64 bg-stone-200"></div>
-            <div class="p-6">
-              <div class="flex justify-between items-start">
-                <div>
-                  <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">{winery.name}</h3>
-                  <p class="text-stone-600">{winery.location} • {winery.price_range}</p>
-                </div>
-                <div class="text-right">
-                  <div class="font-medium text-lg">{winery.rating}</div>
-                </div>
-              </div>
-              
+            <div class="h-56 bg-gradient-to-br from-stone-200 to-stone-300 relative flex items-center justify-center">
+              <div class="text-6xl opacity-40">🍇</div>
               {winery.events && winery.events.length > 0 && (
-                <div class="mt-4 text-xs text-emerald-600 font-medium">
-                  🎵 Live music this weekend
+                <div class="absolute top-4 right-4 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-medium">
+                  Live Music
                 </div>
               )}
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition leading-tight">{winery.name}</h3>
+                  <p class="text-stone-600 mt-0.5">{winery.location} • {winery.price_range}</p>
+                </div>
+                <div class="text-right">
+                  <div class="font-semibold text-xl">{winery.rating}</div>
+                  <div class="text-[10px] text-stone-500 -mt-1">rating</div>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2 mt-4">
+                {winery.pet_friendly && (
+                  <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">Pet Friendly</span>
+                )}
+                {winery.kid_friendly?.allowed && (
+                  <span class="text-xs px-3 py-1 bg-amber-100 text-amber-700 rounded-full">Kid Friendly</span>
+                )}
+                <span class="text-xs px-3 py-1 bg-stone-100 text-stone-600 rounded-full">{winery.varietals[0]}</span>
+              </div>
             </div>
           </a>
         ))}
@@ -85,3 +133,15 @@ const featured = wineries.filter(w => w.featured);
     </section>
   </main>
 </Layout>
+
+<script>
+  function filterWineries() {
+    const input = document.getElementById('search-input').value.toLowerCase();
+    const cards = document.querySelectorAll('#winery-grid > a');
+    
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(input) ? '' : 'none';
+    });
+  }
+</script>
