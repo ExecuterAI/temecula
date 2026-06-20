@@ -97,13 +97,12 @@ const wordOfTheDay = wineWords[today % wineWords.length];
       <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featured.map(winery => (
           <a href={`/wineries/${winery.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
-            <div class="h-56 bg-gradient-to-br from-stone-200 to-stone-300 relative flex items-center justify-center">
-              <div class="text-6xl opacity-40">🍇</div>
-              {winery.events && winery.events.length > 0 && (
-                <div class="absolute top-4 right-4 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-medium">
-                  Live Music
-                </div>
-              )}
+            <div class="h-56 overflow-hidden">
+              <img 
+                src={winery.image} 
+                alt={winery.name}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-3">
