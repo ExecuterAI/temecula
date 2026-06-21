@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
 ---
 
-<Layout title="Winery Map">
+<Layout title="Temecula Wine Map">
   <Navbar />
 
   <main class="max-w-6xl mx-auto px-6 py-12">
@@ -13,33 +13,47 @@ import wineries from '../data/wineries.json';
       <p class="text-xl text-stone-600 mt-2">Explore all {wineries.length} wineries across the valley</p>
     </div>
 
-    <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden">
-      <div id="map" class="w-full h-[620px]"></div>
+    <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm">
+      <div id="map" class="w-full h-[650px]"></div>
     </div>
 
-    <div class="mt-6 text-sm text-stone-500">
-      Click on any marker to see winery details
+    <div class="mt-4 text-sm text-stone-500 flex items-center gap-2">
+      <div class="w-3 h-3 bg-[var(--accent)] rounded-full"></div>
+      Click any marker to view winery details
     </div>
   </main>
 
-  <script>
-    import L from 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+  <script define:vars={{ wineries }}>
+    // Load Leaflet
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
 
-    const wineries = [
-      // Data will be injected by Astro
-    ];
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    script.onload = () => {
+      const map = L.map('map').setView([33.525, -117.02], 11);
 
-    // Initialize map centered on Temecula
-    const map = L.map('map').setView([33.525, -117.02], 12);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+      }).addTo(map);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Add markers
-    const markers = [];
-    
-    // This will be replaced with actual data
-    console.log('Map initialized - adding markers...');
+      // Add all winery markers
+      wineries.forEach(winery => {
+        if (winery.coordinates) {
+          const marker = L.marker([winery.coordinates.lat, winery.coordinates.lng])
+            .addTo(map)
+            .bindPopup(`
+              <div class="min-w-[220px]">
+                <strong class="text-lg">${winery.name}</strong><br>
+                <span class="text-sm text-stone-600">${winery.address}</span><br><br>
+                <a href="/wineries/${winery.slug}" class="text-[var(--accent)] hover:underline">View Details →</a>
+              </div>
+            `);
+        }
+      });
+    };
+    document.head.appendChild(script);
   </script>
 </Layout>
