@@ -16,25 +16,37 @@ const { winery } = Astro.props;
 <Layout title={winery.name}>
   <Navbar />
   
-  <main class="max-w-5xl mx-auto px-6 py-12">
-    <a href="/wineries" class="text-[var(--accent)] hover:underline">← Back to all wineries</a>
+  <!-- Hero Image -->
+  <div class="relative h-[420px] w-full">
+    <img 
+      src={winery.image} 
+      alt={winery.name}
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
     
-    <div class="mt-8">
-      <h1 class="text-6xl font-serif tracking-tight">{winery.name}</h1>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xl text-stone-600">
-        <span>{winery.location}</span>
-        <span>•</span>
-        <span>{winery.price_range}</span>
-        <span>•</span>
-        <span class="font-medium">{winery.rating} / 5</span>
+    <div class="absolute bottom-0 left-0 right-0">
+      <div class="max-w-5xl mx-auto px-6 pb-10">
+        <a href="/wineries" class="inline-block text-white/80 hover:text-white mb-4 text-sm">← Back to all wineries</a>
+        <h1 class="text-6xl md:text-7xl font-serif text-white tracking-[-2px]">{winery.name}</h1>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-lg text-white/90">
+          <span>{winery.location}</span>
+          <span>•</span>
+          <span>{winery.price_range}</span>
+          <span>•</span>
+          <span class="font-medium">{winery.rating} / 5</span>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="mt-8 grid md:grid-cols-3 gap-8">
-      <!-- Main Info -->
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Main Content -->
       <div class="md:col-span-2">
         <p class="text-2xl leading-tight text-stone-700">{winery.description}</p>
 
+        <!-- Varietals -->
         <div class="mt-10">
           <h3 class="font-serif text-2xl mb-4">Varietals</h3>
           <div class="flex flex-wrap gap-3">
@@ -57,7 +69,7 @@ const { winery } = Astro.props;
           </div>
         )}
 
-        <!-- Live Music -->
+        <!-- Live Music Events -->
         {winery.events && winery.events.length > 0 && (
           <div class="mt-10">
             <h3 class="font-serif text-2xl mb-4">Upcoming Events</h3>
@@ -72,7 +84,7 @@ const { winery } = Astro.props;
         )}
       </div>
 
-      <!-- Sidebar Info -->
+      <!-- Sidebar -->
       <div class="space-y-6">
         <div class="bg-white border border-stone-200 rounded-2xl p-6">
           <div class="text-sm text-stone-500">Address</div>
@@ -81,9 +93,16 @@ const { winery } = Astro.props;
 
         <div class="bg-white border border-stone-200 rounded-2xl p-6">
           <div class="text-sm text-stone-500">Contact</div>
-          <div class="mt-2 space-y-1">
-            <a href={winery.website} target="_blank" class="block text-[var(--accent)] hover:underline">Visit Website →</a>
-            <div>{winery.phone}</div>
+          <div class="mt-2 space-y-2">
+            <a href={winery.website} target="_blank" class="block text-[var(--accent)] hover:underline font-medium">Visit Website →</a>
+            <div class="text-stone-700">{winery.phone}</div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-stone-200 rounded-2xl p-6 text-sm">
+          <div class="text-stone-500 mb-1">Pet Policy</div>
+          <div class="font-medium">
+            {winery.pet_friendly ? "✓ Pet friendly" : "✕ No pets allowed"}
           </div>
         </div>
       </div>
