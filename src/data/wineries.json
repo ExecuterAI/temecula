@@ -1,42 +1,1280 @@
 [
-  {"id":"ponte","name":"Ponte Winery","slug":"ponte-winery","location":"Temecula","address":"35053 Rancho California Rd, Temecula, CA 92591","description":"Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.7,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Children welcome until 6pm."},"website":"https://www.pontewinery.com","phone":"(951) 694-0177","coordinates":{"lat":33.529,"lng":-117.029},"featured":true,"events":[{"type":"Live Music","band":"The Wine Notes","date":"2026-06-28","time":"5:00 PM - 8:00 PM"}]},
-  {"id":"thornton","name":"Thornton Winery","slug":"thornton-winery","location":"Temecula","address":"32575 Rancho California Rd, Temecula, CA 92591","description":"Historic property offering elegant sparkling wine tastings in a castle-like setting.","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80","varietals":["Sparkling Wine","Chardonnay","Merlot","Pinot Noir"],"rating":4.5,"price_range":"$$$","tasting_room":true,"pet_friendly":false,"kid_friendly":{"allowed":false,"notes":"16+ only."},"website":"https://www.thorntonwinery.com","phone":"(951) 699-0099","coordinates":{"lat":33.521,"lng":-117.025},"featured":true,"events":[]},
-  {"id":"callaway","name":"Callaway Vineyard & Winery","slug":"callaway-winery","location":"Temecula","address":"32720 Rancho California Rd, Temecula, CA 92591","description":"One of Temecula’s original wineries with sweeping views and a wide range of wines.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Chardonnay","Cabernet Sauvignon","Viognier","Syrah"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome on the patio."},"website":"https://www.callawaywinery.com","phone":"(951) 676-4001","coordinates":{"lat":33.518,"lng":-117.018},"featured":false,"events":[]},
-  {"id":"south-coast","name":"South Coast Winery","slug":"south-coast-winery","location":"Temecula","address":"34843 Rancho California Rd, Temecula, CA 92591","description":"Resort-style winery with a restaurant, spa, and beautiful event spaces.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Merlot","Chardonnay","Moscato"],"rating":4.6,"price_range":"$$$","tasting_room":true,"pet_friendly":false,"kid_friendly":{"allowed":true,"notes":"Children permitted until 8pm."},"website":"https://www.southcoastwinery.com","phone":"(951) 676-9463","coordinates":{"lat":33.532,"lng":-117.032},"featured":true,"events":[]},
-  {"id":"wilson-creek","name":"Wilson Creek Winery","slug":"wilson-creek-winery","location":"Temecula","address":"35955 Rancho California Rd, Temecula, CA 92591","description":"Popular destination known for its Almond Champagne and beautiful grounds.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Sparkling","Cabernet Sauvignon","Chardonnay","Pinot Grigio"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.wilsoncreekwinery.com","phone":"(951) 699-9463","coordinates":{"lat":33.535,"lng":-117.035},"featured":true,"events":[]},
-  {"id":"falkner","name":"Falkner Winery","slug":"falkner-winery","location":"Temecula","address":"40620 Calle Contento, Temecula, CA 92591","description":"Charming hillside winery with panoramic views and award-winning Rhône-style wines.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Syrah","Grenache","Viognier","Mourvèdre"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome on the patio."},"website":"https://www.falknerwinery.com","phone":"(951) 676-8231","coordinates":{"lat":33.512,"lng":-117.015},"featured":true,"events":[]},
-  {"id":"europa-village","name":"Europa Village","slug":"europa-village","location":"Temecula","address":"41111 Via Europa, Temecula, CA 92591","description":"European-inspired village featuring three wineries, a spa, and a luxury inn.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Sangiovese","Tempranillo"],"rating":4.6,"price_range":"$$$","tasting_room":true,"pet_friendly":false,"kid_friendly":{"allowed":true,"notes":"Children welcome at restaurants."},"website":"https://www.europavillage.com","phone":"(951) 695-7667","coordinates":{"lat":33.508,"lng":-117.012},"featured":true,"events":[]},
-  {"id":"lorimar","name":"Lorimar Winery","slug":"lorimar-winery","location":"Temecula","address":"41705 Avenida Biona, Temecula, CA 92591","description":"Boutique winery known for bold reds and a relaxed, welcoming atmosphere.","image":"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80","varietals":["Cabernet Sauvignon","Merlot","Petite Sirah","Zinfandel"],"rating":4.2,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly patio."},"website":"https://www.lorimarwinery.com","phone":"(951) 302-6363","coordinates":{"lat":33.515,"lng":-117.008},"featured":false,"events":[]},
-  {"id":"baily","name":"Baily Vineyard & Winery","slug":"baily-winery","location":"Temecula","address":"33833 De Portola Rd, Temecula, CA 92592","description":"Small family-owned winery producing limited-production, handcrafted wines.","image":"https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Grenache"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome with supervision."},"website":"https://www.bailywinery.com","phone":"(951) 676-9463","coordinates":{"lat":33.541,"lng":-117.041},"featured":false,"events":[]},
-  {"id":"hart","name":"Hart Winery","slug":"hart-winery","location":"Temecula","address":"41300 Avenida Biona, Temecula, CA 92591","description":"One of Temecula’s oldest wineries, known for elegant and balanced wines.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Chardonnay","Cabernet Sauvignon","Merlot","Sauvignon Blanc"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Children welcome in tasting room."},"website":"https://www.hartfamilywinery.com","phone":"(951) 676-6300","coordinates":{"lat":33.514,"lng":-117.007},"featured":true,"events":[]},
-  {"id":"mount-palomar","name":"Mount Palomar Winery","slug":"mount-palomar","location":"Temecula","address":"33820 Rancho California Rd, Temecula, CA 92591","description":"Historic winery famous for its Mediterranean-style tasting room and live music.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Moscato"],"rating":4.1,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly outdoor area."},"website":"https://www.mountpalomar.com","phone":"(951) 676-5043","coordinates":{"lat":33.526,"lng":-117.025},"featured":false,"events":[]},
-  {"id":"danza-del-sol","name":"Danza del Sol Winery","slug":"danza-del-sol","location":"Temecula","address":"42000 De Portola Rd, Temecula, CA 92592","description":"Beautiful hillside winery with stunning views and excellent Spanish-style wines.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Tempranillo","Albariño","Grenache","Syrah"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome on the patio."},"website":"https://www.danzadelsolwinery.com","phone":"(951) 303-2496","coordinates":{"lat":33.543,"lng":-117.045},"featured":true,"events":[]},
-  {"id":"frangipani","name":"Frangipani Estate Winery","slug":"frangipani","location":"Temecula","address":"39750 De Portola Rd, Temecula, CA 92592","description":"Intimate, family-run winery known for its warm hospitality and quality wines.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Children welcome with supervision."},"website":"https://www.frangipaniwinery.com","phone":"(951) 676-4950","coordinates":{"lat":33.538,"lng":-117.038},"featured":false,"events":[]},
-  {"id":"rio-vista","name":"Rio Vista Winery","slug":"rio-vista","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Scenic winery with beautiful grounds and a relaxed tasting experience.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Cabernet Sauvignon","Merlot","Chardonnay","Petite Sirah"],"rating":4.2,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.riovistawinery.com","phone":"(951) 676-5250","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"bel-vino","name":"Bel Vino Winery","slug":"bel-vino","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Modern winery with a large tasting room and frequent live music events.","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Moscato"],"rating":4.0,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome until 8pm."},"website":"https://www.belvinowinery.com","phone":"(951) 676-3400","coordinates":{"lat":33.512,"lng":-117.013},"featured":false,"events":[]},
-  {"id":"miramonte","name":"Miramonte Winery","slug":"miramonte","location":"Temecula","address":"33410 Rancho California Rd, Temecula, CA 92591","description":"Boutique winery known for its intimate tastings and excellent Rhône varietals.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Syrah","Grenache","Viognier","Mourvèdre"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Children welcome on the patio."},"website":"https://www.miramontewinery.com","phone":"(951) 676-2828","coordinates":{"lat":33.524,"lng":-117.022},"featured":true,"events":[]},
-  {"id":"longshadow","name":"Longshadow Ranch Winery","slug":"longshadow","location":"Temecula","address":"37500 De Portola Rd, Temecula, CA 92592","description":"Family-owned winery with a relaxed atmosphere and beautiful outdoor seating.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Zinfandel"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly outdoor areas."},"website":"https://www.longshadowranchwinery.com","phone":"(951) 676-9999","coordinates":{"lat":33.546,"lng":-117.048},"featured":false,"events":[]},
-  {"id":"temecula-creek","name":"Temecula Creek Inn Winery","slug":"temecula-creek","location":"Temecula","address":"44501 Rainbow Canyon Rd, Temecula, CA 92592","description":"Resort winery with golf course views and elegant tasting experiences.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Pinot Noir"],"rating":4.4,"price_range":"$$$","tasting_room":true,"pet_friendly":false,"kid_friendly":{"allowed":true,"notes":"Children welcome in designated areas."},"website":"https://www.temeculacreekinn.com","phone":"(951) 676-5631","coordinates":{"lat":33.552,"lng":-117.055},"featured":false,"events":[]},
-  {"id":"vinemark","name":"Vinemark Cellars","slug":"vinemark","location":"Temecula","address":"42325 Rancho California Rd, Temecula, CA 92591","description":"Modern winery focusing on small-lot, handcrafted wines.","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80","varietals":["Cabernet Sauvignon","Syrah","Grenache","Viognier"],"rating":4.6,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome with supervision."},"website":"https://www.vinemarkcellars.com","phone":"(951) 676-4400","coordinates":{"lat":33.521,"lng":-117.019},"featured":true,"events":[]},
-  {"id":"oak-mountain","name":"Oak Mountain Winery","slug":"oak-mountain","location":"Temecula","address":"40920 Calle Contento, Temecula, CA 92591","description":"Scenic hillside winery with sweeping valley views and great hospitality.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Zinfandel"],"rating":4.2,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly outdoor seating."},"website":"https://www.oakmountainwinery.com","phone":"(951) 676-0070","coordinates":{"lat":33.509,"lng":-117.013},"featured":false,"events":[]},
-  {"id":"casa-de-luz","name":"Casa de Luz Winery","slug":"casa-de-luz","location":"Temecula","address":"39800 De Portola Rd, Temecula, CA 92592","description":"Charming boutique winery with a warm, welcoming atmosphere.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Tempranillo","Syrah","Grenache","Albariño"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Children welcome on the patio."},"website":"https://www.casadeluzwinery.com","phone":"(951) 302-5100","coordinates":{"lat":33.537,"lng":-117.036},"featured":true,"events":[]},
-  {"id":"canyon-oaks","name":"Canyon Oaks Winery","slug":"canyon-oaks","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Family-owned winery known for its friendly staff and quality wines.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Syrah"],"rating":4.1,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome with supervision."},"website":"https://www.canyonoakswinery.com","phone":"(951) 676-3300","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"stonehouse","name":"Stonehouse Cellars","slug":"stonehouse","location":"Temecula","address":"40655 Calle Contento, Temecula, CA 92591","description":"Intimate winery with a focus on small-production, high-quality wines.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Cabernet Sauvignon","Syrah","Grenache","Viognier"],"rating":4.7,"price_range":"$$$","tasting_room":true,"pet_friendly":false,"kid_friendly":{"allowed":false,"notes":"21+ only."},"website":"https://www.stonehousecellars.com","phone":"(951) 676-2700","coordinates":{"lat":33.510,"lng":-117.012},"featured":true,"events":[]},
-  {"id":"villa-de-amor","name":"Villa de Amor Winery","slug":"villa-de-amor","location":"Temecula","address":"41705 Avenida Biona, Temecula, CA 92591","description":"Romantic winery setting with beautiful grounds and excellent wines.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Pinot Grigio"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly environment."},"website":"https://www.villadeamorwinery.com","phone":"(951) 676-5500","coordinates":{"lat":33.516,"lng":-117.009},"featured":false,"events":[]},
-  {"id":"rancho-california","name":"Rancho California Vineyards","slug":"rancho-california","location":"Temecula","address":"33850 Rancho California Rd, Temecula, CA 92591","description":"Historic vineyard with a focus on traditional winemaking methods.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.0,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome on the property."},"website":"https://www.ranchocaliforniavineyards.com","phone":"(951) 676-4000","coordinates":{"lat":33.527,"lng":-117.026},"featured":false,"events":[]},
-  {"id":"palumbo","name":"Palumbo Family Vineyards","slug":"palumbo","location":"Temecula","address":"40120 Calle Contento, Temecula, CA 92591","description":"Small-lot winery focused on Rhône and Italian varietals.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Syrah","Grenache","Sangiovese","Viognier"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.palumbofamilyvineyards.com","phone":"(951) 676-0020","coordinates":{"lat":33.507,"lng":-117.01},"featured":false,"events":[]},
-  {"id":"footbridge","name":"Footbridge Winery","slug":"footbridge","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Boutique winery with a focus on sustainable farming and elegant wines.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Grenache"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.footbridgewinery.com","phone":"(951) 676-4500","coordinates":{"lat":33.511,"lng":-117.014},"featured":true,"events":[]},
-  {"id":"cielo","name":"Cielo at the Vineyard","slug":"cielo","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Stunning views and a modern tasting room experience.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Syrah"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.cielowinery.com","phone":"(951) 676-5252","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"keyways","name":"Keyways Vineyard & Winery","slug":"keyways","location":"Temecula","address":"37310 De Portola Rd, Temecula, CA 92592","description":"Historic property with a focus on small-batch wines.","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.2,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.keywayswinery.com","phone":"(951) 676-1450","coordinates":{"lat":33.545,"lng":-117.047},"featured":false,"events":[]},
-  {"id":"daniel","name":"Daniel Gehrs Wines","slug":"daniel-gehrs","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Award-winning winemaker producing elegant, balanced wines.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Grenache"],"rating":4.6,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.danielgehrswines.com","phone":"(951) 676-4500","coordinates":{"lat":33.511,"lng":-117.014},"featured":true,"events":[]},
-  {"id":"churon","name":"Churon Inn & Winery","slug":"churon","location":"Temecula","address":"33233 Rancho California Rd, Temecula, CA 92591","description":"Charming inn and winery with beautiful grounds.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Syrah"],"rating":4.1,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.churoninn.com","phone":"(951) 676-5000","coordinates":{"lat":33.523,"lng":-117.021},"featured":false,"events":[]},
-  {"id":"la-reina","name":"La Reina Vineyards","slug":"la-reina","location":"Temecula","address":"40620 Calle Contento, Temecula, CA 92591","description":"Small production winery with a focus on quality over quantity.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Syrah","Grenache","Viognier","Tempranillo"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.lareinavineyards.com","phone":"(951) 676-8231","coordinates":{"lat":33.512,"lng":-117.015},"featured":false,"events":[]},
-  {"id":"sugarloaf","name":"Sugarloaf Mountain Vineyard","slug":"sugarloaf","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"High elevation vineyard producing concentrated, flavorful wines.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Syrah","Grenache","Viognier"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.sugarloafmountain.com","phone":"(951) 676-4500","coordinates":{"lat":33.511,"lng":-117.014},"featured":true,"events":[]},
-  {"id":"vail","name":"Vail Lake Winery","slug":"vail-lake","location":"Temecula","address":"37700 De Portola Rd, Temecula, CA 92592","description":"Lakeside winery with beautiful views and relaxed atmosphere.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Syrah"],"rating":4.0,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.vaillakewinery.com","phone":"(951) 676-9999","coordinates":{"lat":33.547,"lng":-117.049},"featured":false,"events":[]},
-  {"id":"casa-de-luna","name":"Casa de Luna Winery","slug":"casa-de-luna","location":"Temecula","address":"39800 De Portola Rd, Temecula, CA 92592","description":"Romantic winery with beautiful grounds and excellent hospitality.","image":"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80","varietals":["Tempranillo","Syrah","Grenache","Albariño"],"rating":4.3,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.casadelunawinery.com","phone":"(951) 302-5100","coordinates":{"lat":33.537,"lng":-117.036},"featured":false,"events":[]},
-  {"id":"rancho-pueblo","name":"Rancho Pueblo Vineyards","slug":"rancho-pueblo","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Historic vineyard with a focus on traditional methods.","image":"https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.1,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.ranchopueblovineyards.com","phone":"(951) 676-4000","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"bella-vista","name":"Bella Vista Winery","slug":"bella-vista","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Beautiful views and a welcoming tasting room experience.","image":"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Merlot","Syrah"],"rating":4.2,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.bellavistawinery.com","phone":"(951) 676-5252","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"casa-de-paz","name":"Casa de Paz Winery","slug":"casa-de-paz","location":"Temecula","address":"39800 De Portola Rd, Temecula, CA 92592","description":"Peaceful winery with excellent wines and warm hospitality.","image":"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80","varietals":["Tempranillo","Syrah","Grenache","Viognier"],"rating":4.4,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.casdepazwinery.com","phone":"(951) 302-5100","coordinates":{"lat":33.537,"lng":-117.036},"featured":true,"events":[]},
-  {"id":"temecula-valley","name":"Temecula Valley Winery","slug":"temecula-valley","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Classic Temecula winery with a focus on quality and hospitality.","image":"https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80","varietals":["Cabernet Sauvignon","Chardonnay","Syrah","Zinfandel"],"rating":4.0,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Family friendly."},"website":"https://www.temeculavalleywinery.com","phone":"(951) 676-3400","coordinates":{"lat":33.511,"lng":-117.014},"featured":false,"events":[]},
-  {"id":"hidden-mountain","name":"Hidden Mountain Vineyard","slug":"hidden-mountain","location":"Temecula","address":"41220 Calle Contento, Temecula, CA 92591","description":"Secluded vineyard producing small-lot, high-quality wines.","image":"https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80","varietals":["Cabernet Sauvignon","Syrah","Grenache","Viognier"],"rating":4.5,"price_range":"$$","tasting_room":true,"pet_friendly":true,"kid_friendly":{"allowed":true,"notes":"Kids welcome."},"website":"https://www.hiddenmountainvineyard.com","phone":"(951) 676-4500","coordinates":{"lat":33.511,"lng":-117.014},"featured":true,"events":[]}
+  {
+    "id": "ponte",
+    "name": "Ponte Winery",
+    "slug": "ponte-winery",
+    "location": "Temecula",
+    "address": "35053 Rancho California Rd, Temecula, CA 92591",
+    "description": "Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.7,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome until 6pm."
+    },
+    "website": "https://www.pontewinery.com",
+    "phone": "(951) 694-0177",
+    "coordinates": {
+      "lat": 33.529,
+      "lng": -117.029
+    },
+    "featured": true,
+    "events": [
+      {
+        "type": "Live Music",
+        "band": "The Wine Notes",
+        "date": "2026-06-28",
+        "time": "5:00 PM - 8:00 PM"
+      }
+    ]
+  },
+  {
+    "id": "thornton",
+    "name": "Thornton Winery",
+    "slug": "thornton-winery",
+    "location": "Temecula",
+    "address": "32575 Rancho California Rd, Temecula, CA 92591",
+    "description": "Historic property offering elegant sparkling wine tastings in a castle-like setting.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+    "varietals": [
+      "Sparkling Wine",
+      "Chardonnay",
+      "Merlot",
+      "Pinot Noir"
+    ],
+    "rating": 4.5,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": false,
+      "notes": "16+ only."
+    },
+    "website": "https://www.thorntonwinery.com",
+    "phone": "(951) 699-0099",
+    "coordinates": {
+      "lat": 33.521,
+      "lng": -117.025
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "callaway",
+    "name": "Callaway Vineyard & Winery",
+    "slug": "callaway-winery",
+    "location": "Temecula",
+    "address": "32720 Rancho California Rd, Temecula, CA 92591",
+    "description": "One of Temecula\u2019s original wineries with sweeping views and a wide range of wines.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Chardonnay",
+      "Cabernet Sauvignon",
+      "Viognier",
+      "Syrah"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome on the patio."
+    },
+    "website": "https://www.callawaywinery.com",
+    "phone": "(951) 676-4001",
+    "coordinates": {
+      "lat": 33.518,
+      "lng": -117.018
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "south-coast",
+    "name": "South Coast Winery",
+    "slug": "south-coast-winery",
+    "location": "Temecula",
+    "address": "34843 Rancho California Rd, Temecula, CA 92591",
+    "description": "Resort-style winery with a restaurant, spa, and beautiful event spaces.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Chardonnay",
+      "Moscato"
+    ],
+    "rating": 4.6,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children permitted until 8pm."
+    },
+    "website": "https://www.southcoastwinery.com",
+    "phone": "(951) 676-9463",
+    "coordinates": {
+      "lat": 33.532,
+      "lng": -117.032
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "wilson-creek",
+    "name": "Wilson Creek Winery",
+    "slug": "wilson-creek-winery",
+    "location": "Temecula",
+    "address": "35955 Rancho California Rd, Temecula, CA 92591",
+    "description": "Popular destination known for its Almond Champagne and beautiful grounds.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Sparkling",
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Pinot Grigio"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.wilsoncreekwinery.com",
+    "phone": "(951) 699-9463",
+    "coordinates": {
+      "lat": 33.535,
+      "lng": -117.035
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "falkner",
+    "name": "Falkner Winery",
+    "slug": "falkner-winery",
+    "location": "Temecula",
+    "address": "40620 Calle Contento, Temecula, CA 92591",
+    "description": "Charming hillside winery with panoramic views and award-winning Rh\u00f4ne-style wines.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Syrah",
+      "Grenache",
+      "Viognier",
+      "Mourv\u00e8dre"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome on the patio."
+    },
+    "website": "https://www.falknerwinery.com",
+    "phone": "(951) 676-8231",
+    "coordinates": {
+      "lat": 33.512,
+      "lng": -117.015
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "europa-village",
+    "name": "Europa Village",
+    "slug": "europa-village",
+    "location": "Temecula",
+    "address": "41111 Via Europa, Temecula, CA 92591",
+    "description": "European-inspired village featuring three wineries, a spa, and a luxury inn.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Sangiovese",
+      "Tempranillo"
+    ],
+    "rating": 4.6,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome at restaurants."
+    },
+    "website": "https://www.europavillage.com",
+    "phone": "(951) 695-7667",
+    "coordinates": {
+      "lat": 33.508,
+      "lng": -117.012
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "lorimar",
+    "name": "Lorimar Winery",
+    "slug": "lorimar-winery",
+    "location": "Temecula",
+    "address": "41705 Avenida Biona, Temecula, CA 92591",
+    "description": "Boutique winery known for bold reds and a relaxed, welcoming atmosphere.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Petite Sirah",
+      "Zinfandel"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly patio."
+    },
+    "website": "https://www.lorimarwinery.com",
+    "phone": "(951) 302-6363",
+    "coordinates": {
+      "lat": 33.515,
+      "lng": -117.008
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "baily",
+    "name": "Baily Vineyard & Winery",
+    "slug": "baily-winery",
+    "location": "Temecula",
+    "address": "33833 De Portola Rd, Temecula, CA 92592",
+    "description": "Small family-owned winery producing limited-production, handcrafted wines.",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Grenache"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome with supervision."
+    },
+    "website": "https://www.bailywinery.com",
+    "phone": "(951) 676-9463",
+    "coordinates": {
+      "lat": 33.541,
+      "lng": -117.041
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "hart",
+    "name": "Hart Winery",
+    "slug": "hart-winery",
+    "location": "Temecula",
+    "address": "41300 Avenida Biona, Temecula, CA 92591",
+    "description": "One of Temecula\u2019s oldest wineries, known for elegant and balanced wines.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Chardonnay",
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Sauvignon Blanc"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome in tasting room."
+    },
+    "website": "https://www.hartfamilywinery.com",
+    "phone": "(951) 676-6300",
+    "coordinates": {
+      "lat": 33.514,
+      "lng": -117.007
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "mount-palomar",
+    "name": "Mount Palomar Winery",
+    "slug": "mount-palomar",
+    "location": "Temecula",
+    "address": "33820 Rancho California Rd, Temecula, CA 92591",
+    "description": "Historic winery famous for its Mediterranean-style tasting room and live music.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Moscato"
+    ],
+    "rating": 4.1,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly outdoor area."
+    },
+    "website": "https://www.mountpalomar.com",
+    "phone": "(951) 676-5043",
+    "coordinates": {
+      "lat": 33.526,
+      "lng": -117.025
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "danza-del-sol",
+    "name": "Danza del Sol Winery",
+    "slug": "danza-del-sol",
+    "location": "Temecula",
+    "address": "42000 De Portola Rd, Temecula, CA 92592",
+    "description": "Beautiful hillside winery with stunning views and excellent Spanish-style wines.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Tempranillo",
+      "Albari\u00f1o",
+      "Grenache",
+      "Syrah"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome on the patio."
+    },
+    "website": "https://www.danzadelsolwinery.com",
+    "phone": "(951) 303-2496",
+    "coordinates": {
+      "lat": 33.543,
+      "lng": -117.045
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "frangipani",
+    "name": "Frangipani Estate Winery",
+    "slug": "frangipani",
+    "location": "Temecula",
+    "address": "39750 De Portola Rd, Temecula, CA 92592",
+    "description": "Intimate, family-run winery known for its warm hospitality and quality wines.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome with supervision."
+    },
+    "website": "https://www.frangipaniwinery.com",
+    "phone": "(951) 676-4950",
+    "coordinates": {
+      "lat": 33.538,
+      "lng": -117.038
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "rio-vista",
+    "name": "Rio Vista Winery",
+    "slug": "rio-vista",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Scenic winery with beautiful grounds and a relaxed tasting experience.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Chardonnay",
+      "Petite Sirah"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.riovistawinery.com",
+    "phone": "(951) 676-5250",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "bel-vino",
+    "name": "Bel Vino Winery",
+    "slug": "bel-vino",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Modern winery with a large tasting room and frequent live music events.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Moscato"
+    ],
+    "rating": 4.0,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome until 8pm."
+    },
+    "website": "https://www.belvinowinery.com",
+    "phone": "(951) 676-3400",
+    "coordinates": {
+      "lat": 33.512,
+      "lng": -117.013
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "miramonte",
+    "name": "Miramonte Winery",
+    "slug": "miramonte",
+    "location": "Temecula",
+    "address": "33410 Rancho California Rd, Temecula, CA 92591",
+    "description": "Boutique winery known for its intimate tastings and excellent Rh\u00f4ne varietals.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Syrah",
+      "Grenache",
+      "Viognier",
+      "Mourv\u00e8dre"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome on the patio."
+    },
+    "website": "https://www.miramontewinery.com",
+    "phone": "(951) 676-2828",
+    "coordinates": {
+      "lat": 33.524,
+      "lng": -117.022
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "longshadow",
+    "name": "Longshadow Ranch Winery",
+    "slug": "longshadow",
+    "location": "Temecula",
+    "address": "37500 De Portola Rd, Temecula, CA 92592",
+    "description": "Family-owned winery with a relaxed atmosphere and beautiful outdoor seating.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Zinfandel"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly outdoor areas."
+    },
+    "website": "https://www.longshadowranchwinery.com",
+    "phone": "(951) 676-9999",
+    "coordinates": {
+      "lat": 33.546,
+      "lng": -117.048
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "temecula-creek",
+    "name": "Temecula Creek Inn Winery",
+    "slug": "temecula-creek",
+    "location": "Temecula",
+    "address": "44501 Rainbow Canyon Rd, Temecula, CA 92592",
+    "description": "Resort winery with golf course views and elegant tasting experiences.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Pinot Noir"
+    ],
+    "rating": 4.4,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome in designated areas."
+    },
+    "website": "https://www.temeculacreekinn.com",
+    "phone": "(951) 676-5631",
+    "coordinates": {
+      "lat": 33.552,
+      "lng": -117.055
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "vinemark",
+    "name": "Vinemark Cellars",
+    "slug": "vinemark",
+    "location": "Temecula",
+    "address": "42325 Rancho California Rd, Temecula, CA 92591",
+    "description": "Modern winery focusing on small-lot, handcrafted wines.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Syrah",
+      "Grenache",
+      "Viognier"
+    ],
+    "rating": 4.6,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome with supervision."
+    },
+    "website": "https://www.vinemarkcellars.com",
+    "phone": "(951) 676-4400",
+    "coordinates": {
+      "lat": 33.521,
+      "lng": -117.019
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "oak-mountain",
+    "name": "Oak Mountain Winery",
+    "slug": "oak-mountain",
+    "location": "Temecula",
+    "address": "40920 Calle Contento, Temecula, CA 92591",
+    "description": "Scenic hillside winery with sweeping valley views and great hospitality.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Zinfandel"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly outdoor seating."
+    },
+    "website": "https://www.oakmountainwinery.com",
+    "phone": "(951) 676-0070",
+    "coordinates": {
+      "lat": 33.509,
+      "lng": -117.013
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "casa-de-luz",
+    "name": "Casa de Luz Winery",
+    "slug": "casa-de-luz",
+    "location": "Temecula",
+    "address": "39800 De Portola Rd, Temecula, CA 92592",
+    "description": "Charming boutique winery with a warm, welcoming atmosphere.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Tempranillo",
+      "Syrah",
+      "Grenache",
+      "Albari\u00f1o"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Children welcome on the patio."
+    },
+    "website": "https://www.casadeluzwinery.com",
+    "phone": "(951) 302-5100",
+    "coordinates": {
+      "lat": 33.537,
+      "lng": -117.036
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "canyon-oaks",
+    "name": "Canyon Oaks Winery",
+    "slug": "canyon-oaks",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Family-owned winery known for its friendly staff and quality wines.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Syrah"
+    ],
+    "rating": 4.1,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome with supervision."
+    },
+    "website": "https://www.canyonoakswinery.com",
+    "phone": "(951) 676-3300",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "stonehouse",
+    "name": "Stonehouse Cellars",
+    "slug": "stonehouse",
+    "location": "Temecula",
+    "address": "40655 Calle Contento, Temecula, CA 92591",
+    "description": "Intimate winery with a focus on small-production, high-quality wines.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Syrah",
+      "Grenache",
+      "Viognier"
+    ],
+    "rating": 4.7,
+    "price_range": "$$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": false,
+      "notes": "21+ only."
+    },
+    "website": "https://www.stonehousecellars.com",
+    "phone": "(951) 676-2700",
+    "coordinates": {
+      "lat": 33.51,
+      "lng": -117.012
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "villa-de-amor",
+    "name": "Villa de Amor Winery",
+    "slug": "villa-de-amor",
+    "location": "Temecula",
+    "address": "41705 Avenida Biona, Temecula, CA 92591",
+    "description": "Romantic winery setting with beautiful grounds and excellent wines.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Pinot Grigio"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly environment."
+    },
+    "website": "https://www.villadeamorwinery.com",
+    "phone": "(951) 676-5500",
+    "coordinates": {
+      "lat": 33.516,
+      "lng": -117.009
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "rancho-california",
+    "name": "Rancho California Vineyards",
+    "slug": "rancho-california",
+    "location": "Temecula",
+    "address": "33850 Rancho California Rd, Temecula, CA 92591",
+    "description": "Historic vineyard with a focus on traditional winemaking methods.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.0,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome on the property."
+    },
+    "website": "https://www.ranchocaliforniavineyards.com",
+    "phone": "(951) 676-4000",
+    "coordinates": {
+      "lat": 33.527,
+      "lng": -117.026
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "palumbo",
+    "name": "Palumbo Family Vineyards",
+    "slug": "palumbo",
+    "location": "Temecula",
+    "address": "40120 Calle Contento, Temecula, CA 92591",
+    "description": "Small-lot winery focused on Rh\u00f4ne and Italian varietals.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Syrah",
+      "Grenache",
+      "Sangiovese",
+      "Viognier"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.palumbofamilyvineyards.com",
+    "phone": "(951) 676-0020",
+    "coordinates": {
+      "lat": 33.507,
+      "lng": -117.01
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "footbridge",
+    "name": "Footbridge Winery",
+    "slug": "footbridge",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Boutique winery with a focus on sustainable farming and elegant wines.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Grenache"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.footbridgewinery.com",
+    "phone": "(951) 676-4500",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "cielo",
+    "name": "Cielo at the Vineyard",
+    "slug": "cielo",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Stunning views and a modern tasting room experience.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Syrah"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.cielowinery.com",
+    "phone": "(951) 676-5252",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "keyways",
+    "name": "Keyways Vineyard & Winery",
+    "slug": "keyways",
+    "location": "Temecula",
+    "address": "37310 De Portola Rd, Temecula, CA 92592",
+    "description": "Historic property with a focus on small-batch wines.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.keywayswinery.com",
+    "phone": "(951) 676-1450",
+    "coordinates": {
+      "lat": 33.545,
+      "lng": -117.047
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel Gehrs Wines",
+    "slug": "daniel-gehrs",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Award-winning winemaker producing elegant, balanced wines.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Grenache"
+    ],
+    "rating": 4.6,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.danielgehrswines.com",
+    "phone": "(951) 676-4500",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "churon",
+    "name": "Churon Inn & Winery",
+    "slug": "churon",
+    "location": "Temecula",
+    "address": "33233 Rancho California Rd, Temecula, CA 92591",
+    "description": "Charming inn and winery with beautiful grounds.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Syrah"
+    ],
+    "rating": 4.1,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.churoninn.com",
+    "phone": "(951) 676-5000",
+    "coordinates": {
+      "lat": 33.523,
+      "lng": -117.021
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "la-reina",
+    "name": "La Reina Vineyards",
+    "slug": "la-reina",
+    "location": "Temecula",
+    "address": "40620 Calle Contento, Temecula, CA 92591",
+    "description": "Small production winery with a focus on quality over quantity.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Syrah",
+      "Grenache",
+      "Viognier",
+      "Tempranillo"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.lareinavineyards.com",
+    "phone": "(951) 676-8231",
+    "coordinates": {
+      "lat": 33.512,
+      "lng": -117.015
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "sugarloaf",
+    "name": "Sugarloaf Mountain Vineyard",
+    "slug": "sugarloaf",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "High elevation vineyard producing concentrated, flavorful wines.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Syrah",
+      "Grenache",
+      "Viognier"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.sugarloafmountain.com",
+    "phone": "(951) 676-4500",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "vail",
+    "name": "Vail Lake Winery",
+    "slug": "vail-lake",
+    "location": "Temecula",
+    "address": "37700 De Portola Rd, Temecula, CA 92592",
+    "description": "Lakeside winery with beautiful views and relaxed atmosphere.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Syrah"
+    ],
+    "rating": 4.0,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.vaillakewinery.com",
+    "phone": "(951) 676-9999",
+    "coordinates": {
+      "lat": 33.547,
+      "lng": -117.049
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "casa-de-luna",
+    "name": "Casa de Luna Winery",
+    "slug": "casa-de-luna",
+    "location": "Temecula",
+    "address": "39800 De Portola Rd, Temecula, CA 92592",
+    "description": "Romantic winery with beautiful grounds and excellent hospitality.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+    "varietals": [
+      "Tempranillo",
+      "Syrah",
+      "Grenache",
+      "Albari\u00f1o"
+    ],
+    "rating": 4.3,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.casadelunawinery.com",
+    "phone": "(951) 302-5100",
+    "coordinates": {
+      "lat": 33.537,
+      "lng": -117.036
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "rancho-pueblo",
+    "name": "Rancho Pueblo Vineyards",
+    "slug": "rancho-pueblo",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Historic vineyard with a focus on traditional methods.",
+    "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.1,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.ranchopueblovineyards.com",
+    "phone": "(951) 676-4000",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "bella-vista",
+    "name": "Bella Vista Winery",
+    "slug": "bella-vista",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Beautiful views and a welcoming tasting room experience.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Syrah"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.bellavistawinery.com",
+    "phone": "(951) 676-5252",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "casa-de-paz",
+    "name": "Casa de Paz Winery",
+    "slug": "casa-de-paz",
+    "location": "Temecula",
+    "address": "39800 De Portola Rd, Temecula, CA 92592",
+    "description": "Peaceful winery with excellent wines and warm hospitality.",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    "varietals": [
+      "Tempranillo",
+      "Syrah",
+      "Grenache",
+      "Viognier"
+    ],
+    "rating": 4.4,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.casdepazwinery.com",
+    "phone": "(951) 302-5100",
+    "coordinates": {
+      "lat": 33.537,
+      "lng": -117.036
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "temecula-valley",
+    "name": "Temecula Valley Winery",
+    "slug": "temecula-valley",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Classic Temecula winery with a focus on quality and hospitality.",
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "rating": 4.0,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family friendly."
+    },
+    "website": "https://www.temeculavalleywinery.com",
+    "phone": "(951) 676-3400",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  },
+  {
+    "id": "hidden-mountain",
+    "name": "Hidden Mountain Vineyard",
+    "slug": "hidden-mountain",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Secluded vineyard producing small-lot, high-quality wines.",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Syrah",
+      "Grenache",
+      "Viognier"
+    ],
+    "rating": 4.5,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.hiddenmountainvineyard.com",
+    "phone": "(951) 676-4500",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": true,
+    "events": []
+  },
+  {
+    "id": "chapin",
+    "name": "Chapin Family Vineyards",
+    "slug": "chapin",
+    "location": "Temecula",
+    "address": "41220 Calle Contento, Temecula, CA 92591",
+    "description": "Family-owned vineyard producing small-lot wines with a focus on quality.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Syrah",
+      "Merlot"
+    ],
+    "rating": 4.3,
+    "price_range": "14957",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.chapinwinery.com",
+    "phone": "(951) 676-4500",
+    "coordinates": {
+      "lat": 33.511,
+      "lng": -117.014
+    },
+    "featured": false,
+    "events": []
+  }
 ]
