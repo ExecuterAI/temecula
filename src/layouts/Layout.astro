@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+
 interface Props {
   title: string;
   description?: string;
@@ -19,6 +21,7 @@ const { title, description = "Discover the best wineries in Temecula Valley" } =
   </head>
   <body class="bg-stone-50 text-stone-900">
     <slot />
+    <Footer />
   </body>
 </html>
 
