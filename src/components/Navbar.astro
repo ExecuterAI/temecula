@@ -1,21 +1,39 @@
 ---
 ---
-<nav class="bg-white border-b border-stone-200">
+<nav class="bg-white border-b border-stone-200 sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a href="/" class="font-serif text-2xl tracking-tight">Temecula</a>
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-3 group">
+      <div class="w-9 h-9 bg-[var(--primary)] rounded-2xl flex items-center justify-center">
+        <span class="text-white text-xl">🍷</span>
+      </div>
+      <div>
+        <div class="font-serif text-2xl tracking-tight text-stone-900 group-hover:text-[var(--accent)] transition">Temecula</div>
+        <div class="text-[10px] text-stone-500 -mt-1">Wine Country</div>
+      </div>
+    </a>
     
-    <div class="flex items-center gap-8 text-sm">
-      <a href="/wineries" class="hover:text-[var(--accent)] transition">Wineries</a>
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="/wineries" class="hover:text-[var(--accent)] transition">All Wineries</a>
       <a href="/map" class="hover:text-[var(--accent)] transition">Map</a>
       <a href="/events" class="hover:text-[var(--accent)] transition">Events</a>
       <a href="/about" class="hover:text-[var(--accent)] transition">About</a>
     </div>
 
-    <div>
+    <!-- CTA Button -->
+    <div class="hidden md:block">
       <a href="/wineries" 
-         class="px-5 py-2.5 bg-[var(--primary)] text-white text-sm rounded-full hover:bg-black transition">
-        Explore
+         class="px-6 py-2.5 bg-[var(--primary)] hover:bg-black text-white text-sm rounded-full transition font-medium">
+        Explore Wineries
       </a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-stone-600" aria-label="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
 </nav>
