@@ -43,7 +43,7 @@ const wordOfTheDay = wineWords[today % wineWords.length];
           <a href="#explore" class="px-8 py-3.5 bg-white text-stone-900 rounded-full font-medium hover:bg-white/90 transition">
             Explore the Wineries
           </a>
-          <a href="/map" class="px-8 py-3.5 border border-white/70 text-white rounded-full font-medium hover:bg-white/10 transition">
+           <a href="/map" class="px-8 py-3.5 border border-white/70 text-white rounded-full font-medium hover:bg-white/10 transition"> View Map </a> <a href="#balloons" class="px-8 py-3.5 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition flex items-center gap-2"> <i class="fa-solid fa-hot-air-balloon"></i> Hot Air Balloon Rides </a>
             View Map
           </a>
         </div>
@@ -128,6 +128,49 @@ const wordOfTheDay = wineWords[today % wineWords.length];
             </div>
           </a>
         ))}
+      </div>
+    </section>
+
+    <!-- Hot Air Balloon Rides -->
+    <section id="balloons" class="max-w-6xl mx-auto px-6 py-16 border-t border-stone-200">
+      <div class="flex justify-between items-baseline mb-10">
+        <div>
+          <h2 class="text-5xl font-serif tracking-tight">Hot Air Balloon Rides</h2>
+          <p class="text-xl text-stone-600 mt-2">Float above the vineyards at sunrise</p>
+        </div>
+        <a href="/balloons" class="text-[var(--accent)] hover:underline text-lg">See all operators →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="/balloons/grape-escape" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Grape Escape Balloon Adventures">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Grape Escape Balloon Adventures</h3>
+            <p class="text-stone-600 mt-1">Est. 1991 • 60–75 min flights</p>
+          </div>
+        </a>
+
+        <a href="/balloons/magical-adventure" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Magical Adventure">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Magical Adventure Balloon Rides</h3>
+            <p class="text-stone-600 mt-1">Award-winning • Carbon Negative</p>
+          </div>
+        </a>
+
+        <a href="/balloons/cielo-balloons" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Cielo Balloons">
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Cielo Balloons</h3>
+            <p class="text-stone-600 mt-1">Shared from $170 • Private from $995</p>
+          </div>
+        </a>
       </div>
     </section>
   </main>
