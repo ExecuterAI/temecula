@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellie Acres Wine • Temecula Wineries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        .directory-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .directory-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-screen-xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-amber-600 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-wine-glass text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-semibold text-2xl tracking-tight">Bellie Acres</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-amber-400 transition-colors">Discover</a>
+                <a href="#" class="hover:text-amber-400 transition-colors">Wineries</a>
+                <a href="#" class="hover:text-amber-400 transition-colors">Balloon Rides</a>
+                <a href="#" class="hover:text-amber-400 transition-colors">Journal</a>
+            </div>
+            
+            <div class="flex items-center gap-x-3">
+                <button onclick="showSearch()"
+                        class="px-4 py-2 text-sm font-medium border border-white/30 hover:bg-white/10 rounded-full transition-all flex items-center gap-x-2">
+                    <i class="fa-solid fa-search"></i>
+                    <span class="hidden md:inline">Search</span>
+                </button>
+                <button class="px-5 py-2 bg-white text-black text-sm font-semibold rounded-full hover:bg-amber-100 transition-colors">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center relative">
+        <div class="max-w-4xl px-6 text-center z-10">
+            <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full mb-6 border border-white/20">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium tracking-widest">TEMECULA VALLEY • 41 WINERIES</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter heading-serif leading-none mb-4">
+                Discover<br>Temecula's<br>Finest Wines
+            </h1>
+            
+            <p class="max-w-md mx-auto text-xl text-white/90 mb-10">
+                Your curated guide to the best wineries in Temecula Wine Country
+            </p>
+            
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('wineries').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-8 py-4 bg-white text-black font-semibold rounded-2xl text-lg hover:bg-amber-50 transition-all flex items-center justify-center gap-x-3 group">
+                    <span>Browse All Wineries</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                
+                <!-- View Map Button -->
+                <button onclick="showMap()" 
+                        class="px-8 py-4 border border-white/70 hover:bg-white/10 font-medium rounded-2xl text-lg transition-all flex items-center justify-center gap-x-3">
+                    <i class="fa-solid fa-map-marked"></i>
+                    <span>View Map</span>
+                </button>
+                
+                <!-- NEW: Hot Air Balloon Rides Button -->
+                <button onclick="document.getElementById('balloons').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-8 py-4 bg-amber-600 hover:bg-amber-700 font-semibold rounded-2xl text-lg transition-all flex items-center justify-center gap-x-3">
+                    <i class="fa-solid fa-hot-air-balloon"></i>
+                    <span>Hot Air Balloon Rides</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <span class="text-xs tracking-[3px] text-white/60 mb-2">SCROLL TO EXPLORE</span>
+            <i class="fa-solid fa-chevron-down text-white/60 animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- Featured Wineries Preview -->
+    <section id="wineries" class="max-w-screen-xl mx-auto px-6 pt-20 pb-16">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <span class="text-amber-500 text-sm font-semibold tracking-widest">CURATED COLLECTION</span>
+                <h2 class="text-5xl font-semibold tracking-tight heading-serif">Featured Wineries</h2>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-x-2 text-sm font-medium hover:text-amber-400 transition-colors">
+                VIEW ALL <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Placeholder Winery Cards -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-64 bg-zinc-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-xs px-3 py-1 bg-white/90 text-black rounded-full font-medium">Open Today</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="font-semibold text-2xl tracking-tight">Callaway Vineyard</h3>
+                            <p class="text-white/60">Temecula • 4.8 ★</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-white/70 line-clamp-2">Iconic estate with sweeping vineyard views and award-winning Cabernet Sauvignon.</p>
+                </div>
+            </div>
+            
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-64 bg-zinc-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Ponte Winery</h3>
+                    <p class="text-white/60 mb-3">Temecula • 4.7 ★</p>
+                    <p class="text-sm text-white/70">Historic property with beautiful gardens and exceptional Rhône-style wines.</p>
+                </div>
+            </div>
+            
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-64 bg-zinc-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Europa Village</h3>
+                    <p class="text-white/60 mb-3">Temecula • 4.9 ★</p>
+                    <p class="text-sm text-white/70">Stunning Tuscan-inspired estate with world-class hospitality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOT AIR BALLOON RIDES SECTION -->
+    <section id="balloons" class="max-w-screen-xl mx-auto px-6 pb-20">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <span class="text-amber-500 text-sm font-semibold tracking-widest">EXPERIENCE THE SKY</span>
+                <h2 class="text-5xl font-semibold tracking-tight heading-serif">Hot Air Balloon Rides</h2>
+                <p class="text-white/70 mt-2 max-w-md">Float above the vineyards at sunrise with Temecula’s best balloon operators.</p>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-x-2 text-sm font-medium hover:text-amber-400 transition-colors">
+                VIEW ALL OPERATORS <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Grape Escape Balloon Adventures -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                    <div class="absolute top-4 right-4">
+                        <span class="text-xs px-3 py-1 bg-amber-600 text-white rounded-full font-medium">Est. 1991</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Grape Escape Balloon Adventures</h3>
+                    <p class="text-white/60 text-sm mt-1">60–75 min flights • Private & Shared</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">One of Temecula’s most established operators with 34+ years of experience and a fleet of 15 balloons.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/grape-escape.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Magical Adventure Balloon Rides -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                    <div class="absolute top-4 right-4">
+                        <span class="text-xs px-3 py-1 bg-emerald-600 text-white rounded-full font-medium">Carbon Negative</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Magical Adventure Balloon Rides</h3>
+                    <p class="text-white/60 text-sm mt-1">45–60 min flights • Award-winning</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">2024/2025 Travelers’ Choice winner. Includes breakfast, photos, and winery discounts.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/magical-adventure.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cielo Balloons -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Cielo Balloons</h3>
+                    <p class="text-white/60 text-sm mt-1">Shared from $170 • Private from $995</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">Elegant sunrise flights with excellent reviews. Perfect for proposals and special occasions.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/cielo-balloons.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temecula Air Tours -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Temecula Air Tours</h3>
+                    <p class="text-white/60 text-sm mt-1">Shared from $129 • Private $1,000</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">Great value with competitive pricing and beautiful views over vineyards and Lake Skinner.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/temecula-air-tours.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compass Balloons -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6c0320d5?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">Compass Balloons</h3>
+                    <p class="text-white/60 text-sm mt-1">Sunrise & Sunset flights</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">Operates in both Temecula and San Diego. Excellent for private and group experiences.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/compass-balloons.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SkyRider Tours -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 transition-all directory-card">
+                <div class="h-56 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800')">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-2xl tracking-tight">SkyRider Tours</h3>
+                    <p class="text-white/60 text-sm mt-1">Daily sunrise flights</p>
+                    <p class="text-sm text-white/70 mt-3 line-clamp-2">Professional team offering private, semi-private, and group balloon experiences.</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <a href="balloons/skyrider-tours.html" target="_blank" class="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-x-1">
+                            Visit Website <i class="fa-solid fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled', 'shadow-lg');
+            } else {
+                navbar.classList.remove('nav-scrolled', 'shadow-lg');
+            }
+        });
+
+        function showSearch() {
+            const searchTerm = prompt("Search Temecula wineries or balloon rides:");
+            if (searchTerm) {
+                alert(`Searching for "${searchTerm}"... (Search functionality coming soon)`);
+            }
+        }
+
+        function showMap() {
+            alert("Interactive map coming soon! This will show all 41 wineries + balloon launch sites.");
+        }
+
+        // Keyboard shortcut
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "/" && document.activeElement.tagName === "BODY") {
+                e.preventDefault();
+                showSearch();
+            }
+        });
+    </script>
+</body>
+</html>
