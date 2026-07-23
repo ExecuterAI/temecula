@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "grape-escape",
+    "name": "Grape Escape Balloon Adventures",
+    "tagline": "Temecula's most established balloon company",
+    "est": "1991",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200",
+    "website": "https://hotairtours.com/",
+    "summary": "Family-owned operator with decades of Temecula sunrise flights, a large balloon fleet, and post-flight celebration options tied into the wine country experience.",
+    "highlights": [
+      "60–75 minutes in the air",
+      "Sunrise flights only",
+      "Post-flight champagne toast options",
+      "Shared, couple, and group flights"
+    ],
+    "body": "Grape Escape is one of the longest-running balloon operators serving Temecula Valley. Guests typically meet before sunrise, float over vineyards and rolling hills, then land for a ground celebration. Always confirm weather holds, passenger limits, and pickup logistics on the operator’s site before booking."
+  },
+  {
+    "slug": "magical-adventure",
+    "name": "Magical Adventure Balloon Rides",
+    "tagline": "Award-winning Temecula valley flights",
+    "est": "",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200",
+    "website": "https://www.magicaladventureballoonrides.com/",
+    "summary": "Popular Temecula balloon operator known for scenic sunrise routes and guest-focused flight packages.",
+    "highlights": [
+      "Sunrise vineyard views",
+      "Shared and private package options",
+      "Photo-friendly golden-hour light",
+      "Wine-country landing experiences"
+    ],
+    "body": "Magical Adventure focuses on classic Temecula sunrise ballooning. Flights are weather-dependent and usually require an early check-in. Compare package inclusions (toast, transport, private basket) before you book, and leave buffer time if you plan winery visits the same day."
+  },
+  {
+    "slug": "cielo-balloons",
+    "name": "Cielo Balloons",
+    "tagline": "Shared and private Temecula flights",
+    "est": "",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200",
+    "website": "https://cieloballoons.com/",
+    "summary": "Temecula balloon rides with shared baskets for value and private options for celebrations.",
+    "highlights": [
+      "Shared flights from entry-level pricing",
+      "Private baskets for couples and groups",
+      "Vineyard and valley overlook routes",
+      "Sunrise departures"
+    ],
+    "body": "Cielo Balloons is a practical option when you want either a shared basket or a private flight over Temecula wine country. Pricing and availability change by season and wind conditions — treat published rates as starting points and confirm the live quote at booking."
+  },
+  {
+    "slug": "compass-balloons",
+    "name": "Compass Balloons",
+    "tagline": "Temecula valley aerial tours",
+    "est": "",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+    "website": "https://www.compassballoons.com/",
+    "summary": "Balloon tours oriented around Temecula’s vineyard landscape and visitor-friendly flight packages.",
+    "highlights": [
+      "Scenic vineyard corridors",
+      "Guest packages for travelers",
+      "Weather-first safety culture",
+      "Pairable with winery hopping later in the day"
+    ],
+    "body": "Compass Balloons serves travelers who want an aerial look at Temecula before or after tasting-room stops. Because ballooning is highly weather-sensitive, flexible travel dates improve your odds of flying as scheduled."
+  },
+  {
+    "slug": "skyrider-tours",
+    "name": "SkyRider Tours",
+    "tagline": "Hot air experiences over wine country",
+    "est": "",
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200",
+    "website": "https://www.skyridertours.com/",
+    "summary": "Flight experiences marketed to Temecula visitors looking for a bucket-list sunrise ride.",
+    "highlights": [
+      "Sunrise launch windows",
+      "Visitor-oriented booking",
+      "Views across valley terrain",
+      "Celebration-friendly options"
+    ],
+    "body": "SkyRider-style tours are popular with first-time balloon passengers. Read the operator’s weight limits, age rules, and cancellation policy carefully — especially in windy seasons."
+  },
+  {
+    "slug": "temecula-air-tours",
+    "name": "Temecula Air Tours",
+    "tagline": "Local aerial sightseeing",
+    "est": "",
+    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200",
+    "website": "https://www.temeculaairtours.com/",
+    "summary": "Local aerial sightseeing options for guests who want a broader view of Temecula Valley.",
+    "highlights": [
+      "Local launch knowledge",
+      "Sightseeing-focused routes",
+      "Wine-country photo ops",
+      "Seasonal schedule changes"
+    ],
+    "body": "Temecula Air Tours style offerings complement a wine-country weekend by putting the valley’s layout in context — ridges, vine rows, and town centers. Confirm whether your booking is balloon-only or includes other aircraft types."
+  }
+]

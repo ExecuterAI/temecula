@@ -5,7 +5,7 @@
     "slug": "ponte-winery",
     "location": "Temecula",
     "address": "35053 Rancho California Rd, Temecula, CA 92591",
-    "description": "Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere.",
+    "description": "Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere. Ponte Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.7/5 and a typical price feel of $$. The estate is listed at 35053 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 694-0177. Families: children are welcome. Children welcome until 6pm. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Ponte Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -35,7 +35,8 @@
         "date": "2026-06-28",
         "time": "5:00 PM - 8:00 PM"
       }
-    ]
+    ],
+    "about_extended": "Visitors exploring Temecula wine country often include Ponte Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "thornton",
@@ -43,7 +44,7 @@
     "slug": "thornton-winery",
     "location": "Temecula",
     "address": "32575 Rancho California Rd, Temecula, CA 92591",
-    "description": "Historic property offering elegant sparkling wine tastings in a castle-like setting.",
+    "description": "Historic property offering elegant sparkling wine tastings in a castle-like setting. Thornton Winery is a Temecula Valley stop known for Sparkling Wine, Chardonnay, Merlot, Pinot Noir, with a visitor rating around 4.5/5 and a typical price feel of $$$. The estate is listed at 32575 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 699-0099. Families: this tasting experience is oriented to adults. 16+ only. This estate is not pet-friendly; leave pets at home or boarded. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Thornton Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
     "varietals": [
       "Sparkling Wine",
@@ -66,7 +67,8 @@
       "lng": -117.025
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Thornton Winery when building a half-day or full-day route. Focus on the house strengths (Sparkling Wine, Chardonnay, Merlot, Pinot Noir) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "callaway",
@@ -74,7 +76,7 @@
     "slug": "callaway-winery",
     "location": "Temecula",
     "address": "32720 Rancho California Rd, Temecula, CA 92591",
-    "description": "One of Temecula\u2019s original wineries with sweeping views and a wide range of wines.",
+    "description": "One of Temecula\u2019s original wineries with sweeping views and a wide range of wines. Callaway Vineyard & Winery is a Temecula Valley stop known for Chardonnay, Cabernet Sauvignon, Viognier, Syrah, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 32720 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-4001. Families: children are welcome. Kids welcome on the patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Callaway Vineyard & Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Chardonnay",
@@ -97,7 +99,8 @@
       "lng": -117.018
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Callaway Vineyard & Winery when building a half-day or full-day route. Focus on the house strengths (Chardonnay, Cabernet Sauvignon, Viognier, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "south-coast",
@@ -105,7 +108,7 @@
     "slug": "south-coast-winery",
     "location": "Temecula",
     "address": "34843 Rancho California Rd, Temecula, CA 92591",
-    "description": "Resort-style winery with a restaurant, spa, and beautiful event spaces.",
+    "description": "Resort-style winery with a restaurant, spa, and beautiful event spaces. South Coast Winery is a Temecula Valley stop known for Cabernet Sauvignon, Merlot, Chardonnay, Moscato, with a visitor rating around 4.6/5 and a typical price feel of $$$. The estate is listed at 34843 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-9463. Families: children are welcome. Children permitted until 8pm. This estate is not pet-friendly; leave pets at home or boarded. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with South Coast Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -128,7 +131,8 @@
       "lng": -117.032
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include South Coast Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Merlot, Chardonnay, Moscato) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "wilson-creek",
@@ -136,7 +140,7 @@
     "slug": "wilson-creek-winery",
     "location": "Temecula",
     "address": "35955 Rancho California Rd, Temecula, CA 92591",
-    "description": "Popular destination known for its Almond Champagne and beautiful grounds.",
+    "description": "Popular destination known for its Almond Champagne and beautiful grounds. Wilson Creek Winery is a Temecula Valley stop known for Sparkling, Cabernet Sauvignon, Chardonnay, Pinot Grigio, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 35955 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 699-9463. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Wilson Creek Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Sparkling",
@@ -159,7 +163,8 @@
       "lng": -117.035
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Wilson Creek Winery when building a half-day or full-day route. Focus on the house strengths (Sparkling, Cabernet Sauvignon, Chardonnay, Pinot Grigio) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "falkner",
@@ -167,7 +172,7 @@
     "slug": "falkner-winery",
     "location": "Temecula",
     "address": "40620 Calle Contento, Temecula, CA 92591",
-    "description": "Charming hillside winery with panoramic views and award-winning Rh\u00f4ne-style wines.",
+    "description": "Charming hillside winery with panoramic views and award-winning Rh\u00f4ne-style wines. Falkner Winery is a Temecula Valley stop known for Syrah, Grenache, Viognier, Mourv\u00e8dre, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 40620 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-8231. Families: children are welcome. Kids welcome on the patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Falkner Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Syrah",
@@ -190,7 +195,8 @@
       "lng": -117.015
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Falkner Winery when building a half-day or full-day route. Focus on the house strengths (Syrah, Grenache, Viognier, Mourv\u00e8dre) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "europa-village",
@@ -198,7 +204,7 @@
     "slug": "europa-village",
     "location": "Temecula",
     "address": "41111 Via Europa, Temecula, CA 92591",
-    "description": "European-inspired village featuring three wineries, a spa, and a luxury inn.",
+    "description": "European-inspired village featuring three wineries, a spa, and a luxury inn. Europa Village is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Sangiovese, Tempranillo, with a visitor rating around 4.6/5 and a typical price feel of $$$. The estate is listed at 41111 Via Europa, Temecula, CA 92591 and can be reached at (951) 695-7667. Families: children are welcome. Children welcome at restaurants. This estate is not pet-friendly; leave pets at home or boarded. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Europa Village before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -221,7 +227,8 @@
       "lng": -117.012
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Europa Village when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Sangiovese, Tempranillo) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "lorimar",
@@ -229,7 +236,7 @@
     "slug": "lorimar-winery",
     "location": "Temecula",
     "address": "41705 Avenida Biona, Temecula, CA 92591",
-    "description": "Boutique winery known for bold reds and a relaxed, welcoming atmosphere.",
+    "description": "Boutique winery known for bold reds and a relaxed, welcoming atmosphere. Lorimar Winery is a Temecula Valley stop known for Cabernet Sauvignon, Merlot, Petite Sirah, Zinfandel, with a visitor rating around 4.2/5 and a typical price feel of $$. The estate is listed at 41705 Avenida Biona, Temecula, CA 92591 and can be reached at (951) 302-6363. Families: children are welcome. Family friendly patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Lorimar Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -252,7 +259,8 @@
       "lng": -117.008
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Lorimar Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Merlot, Petite Sirah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "baily",
@@ -260,7 +268,7 @@
     "slug": "baily-winery",
     "location": "Temecula",
     "address": "33833 De Portola Rd, Temecula, CA 92592",
-    "description": "Small family-owned winery producing limited-production, handcrafted wines.",
+    "description": "Small family-owned winery producing limited-production, handcrafted wines. Baily Vineyard & Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Grenache, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 33833 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-9463. Families: children are welcome. Kids welcome with supervision. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Baily Vineyard & Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -283,7 +291,8 @@
       "lng": -117.041
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Baily Vineyard & Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Grenache) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "hart",
@@ -291,7 +300,7 @@
     "slug": "hart-winery",
     "location": "Temecula",
     "address": "41300 Avenida Biona, Temecula, CA 92591",
-    "description": "One of Temecula\u2019s oldest wineries, known for elegant and balanced wines.",
+    "description": "One of Temecula\u2019s oldest wineries, known for elegant and balanced wines. Hart Winery is a Temecula Valley stop known for Chardonnay, Cabernet Sauvignon, Merlot, Sauvignon Blanc, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 41300 Avenida Biona, Temecula, CA 92591 and can be reached at (951) 676-6300. Families: children are welcome. Children welcome in tasting room. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Hart Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Chardonnay",
@@ -314,7 +323,8 @@
       "lng": -117.007
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Hart Winery when building a half-day or full-day route. Focus on the house strengths (Chardonnay, Cabernet Sauvignon, Merlot, Sauvignon Blanc) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "mount-palomar",
@@ -322,7 +332,7 @@
     "slug": "mount-palomar",
     "location": "Temecula",
     "address": "33820 Rancho California Rd, Temecula, CA 92591",
-    "description": "Historic winery famous for its Mediterranean-style tasting room and live music.",
+    "description": "Historic winery famous for its Mediterranean-style tasting room and live music. Mount Palomar Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Moscato, with a visitor rating around 4.1/5 and a typical price feel of $$. The estate is listed at 33820 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-5043. Families: children are welcome. Family friendly outdoor area. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Mount Palomar Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -345,7 +355,8 @@
       "lng": -117.025
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Mount Palomar Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Moscato) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "danza-del-sol",
@@ -353,7 +364,7 @@
     "slug": "danza-del-sol",
     "location": "Temecula",
     "address": "42000 De Portola Rd, Temecula, CA 92592",
-    "description": "Beautiful hillside winery with stunning views and excellent Spanish-style wines.",
+    "description": "Beautiful hillside winery with stunning views and excellent Spanish-style wines. Danza del Sol Winery is a Temecula Valley stop known for Tempranillo, Albari\u00f1o, Grenache, Syrah, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 42000 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 303-2496. Families: children are welcome. Kids welcome on the patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Danza del Sol Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Tempranillo",
@@ -376,7 +387,8 @@
       "lng": -117.045
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Danza del Sol Winery when building a half-day or full-day route. Focus on the house strengths (Tempranillo, Albari\u00f1o, Grenache, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "frangipani",
@@ -384,7 +396,7 @@
     "slug": "frangipani",
     "location": "Temecula",
     "address": "39750 De Portola Rd, Temecula, CA 92592",
-    "description": "Intimate, family-run winery known for its warm hospitality and quality wines.",
+    "description": "Intimate, family-run winery known for its warm hospitality and quality wines. Frangipani Estate Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 39750 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-4950. Families: children are welcome. Children welcome with supervision. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Frangipani Estate Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -407,7 +419,8 @@
       "lng": -117.038
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Frangipani Estate Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "rio-vista",
@@ -415,7 +428,7 @@
     "slug": "rio-vista",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Scenic winery with beautiful grounds and a relaxed tasting experience.",
+    "description": "Scenic winery with beautiful grounds and a relaxed tasting experience. Rio Vista Winery is a Temecula Valley stop known for Cabernet Sauvignon, Merlot, Chardonnay, Petite Sirah, with a visitor rating around 4.2/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-5250. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Rio Vista Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -438,7 +451,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Rio Vista Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Merlot, Chardonnay, Petite Sirah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "bel-vino",
@@ -446,7 +460,7 @@
     "slug": "bel-vino",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Modern winery with a large tasting room and frequent live music events.",
+    "description": "Modern winery with a large tasting room and frequent live music events. Bel Vino Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Moscato, with a visitor rating around 4.0/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-3400. Families: children are welcome. Kids welcome until 8pm. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Bel Vino Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -469,7 +483,8 @@
       "lng": -117.013
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Bel Vino Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Moscato) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "miramonte",
@@ -477,7 +492,7 @@
     "slug": "miramonte",
     "location": "Temecula",
     "address": "33410 Rancho California Rd, Temecula, CA 92591",
-    "description": "Boutique winery known for its intimate tastings and excellent Rh\u00f4ne varietals.",
+    "description": "Boutique winery known for its intimate tastings and excellent Rh\u00f4ne varietals. Miramonte Winery is a Temecula Valley stop known for Syrah, Grenache, Viognier, Mourv\u00e8dre, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 33410 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-2828. Families: children are welcome. Children welcome on the patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Miramonte Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Syrah",
@@ -500,7 +515,8 @@
       "lng": -117.022
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Miramonte Winery when building a half-day or full-day route. Focus on the house strengths (Syrah, Grenache, Viognier, Mourv\u00e8dre) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "longshadow",
@@ -508,7 +524,7 @@
     "slug": "longshadow",
     "location": "Temecula",
     "address": "37500 De Portola Rd, Temecula, CA 92592",
-    "description": "Family-owned winery with a relaxed atmosphere and beautiful outdoor seating.",
+    "description": "Family-owned winery with a relaxed atmosphere and beautiful outdoor seating. Longshadow Ranch Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Zinfandel, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 37500 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-9999. Families: children are welcome. Family friendly outdoor areas. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Longshadow Ranch Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -531,7 +547,8 @@
       "lng": -117.048
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Longshadow Ranch Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "temecula-creek",
@@ -539,7 +556,7 @@
     "slug": "temecula-creek",
     "location": "Temecula",
     "address": "44501 Rainbow Canyon Rd, Temecula, CA 92592",
-    "description": "Resort winery with golf course views and elegant tasting experiences.",
+    "description": "Resort winery with golf course views and elegant tasting experiences. Temecula Creek Inn Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Pinot Noir, with a visitor rating around 4.4/5 and a typical price feel of $$$. The estate is listed at 44501 Rainbow Canyon Rd, Temecula, CA 92592 and can be reached at (951) 676-5631. Families: children are welcome. Children welcome in designated areas. This estate is not pet-friendly; leave pets at home or boarded. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Temecula Creek Inn Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -562,7 +579,8 @@
       "lng": -117.055
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Temecula Creek Inn Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Pinot Noir) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "vinemark",
@@ -570,7 +588,7 @@
     "slug": "vinemark",
     "location": "Temecula",
     "address": "42325 Rancho California Rd, Temecula, CA 92591",
-    "description": "Modern winery focusing on small-lot, handcrafted wines.",
+    "description": "Modern winery focusing on small-lot, handcrafted wines. Vinemark Cellars is a Temecula Valley stop known for Cabernet Sauvignon, Syrah, Grenache, Viognier, with a visitor rating around 4.6/5 and a typical price feel of $$. The estate is listed at 42325 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-4400. Families: children are welcome. Kids welcome with supervision. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Vinemark Cellars before you drive out.",
     "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -593,7 +611,8 @@
       "lng": -117.019
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Vinemark Cellars when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Syrah, Grenache, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "oak-mountain",
@@ -601,7 +620,7 @@
     "slug": "oak-mountain",
     "location": "Temecula",
     "address": "40920 Calle Contento, Temecula, CA 92591",
-    "description": "Scenic hillside winery with sweeping valley views and great hospitality.",
+    "description": "Scenic hillside winery with sweeping valley views and great hospitality. Oak Mountain Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Zinfandel, with a visitor rating around 4.2/5 and a typical price feel of $$. The estate is listed at 40920 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-0070. Families: children are welcome. Family friendly outdoor seating. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Oak Mountain Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -624,7 +643,8 @@
       "lng": -117.013
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Oak Mountain Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "casa-de-luz",
@@ -632,7 +652,7 @@
     "slug": "casa-de-luz",
     "location": "Temecula",
     "address": "39800 De Portola Rd, Temecula, CA 92592",
-    "description": "Charming boutique winery with a warm, welcoming atmosphere.",
+    "description": "Charming boutique winery with a warm, welcoming atmosphere. Casa de Luz Winery is a Temecula Valley stop known for Tempranillo, Syrah, Grenache, Albari\u00f1o, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 39800 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 302-5100. Families: children are welcome. Children welcome on the patio. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Casa de Luz Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Tempranillo",
@@ -655,7 +675,8 @@
       "lng": -117.036
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Casa de Luz Winery when building a half-day or full-day route. Focus on the house strengths (Tempranillo, Syrah, Grenache, Albari\u00f1o) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "canyon-oaks",
@@ -663,7 +684,7 @@
     "slug": "canyon-oaks",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Family-owned winery known for its friendly staff and quality wines.",
+    "description": "Family-owned winery known for its friendly staff and quality wines. Canyon Oaks Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.1/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-3300. Families: children are welcome. Kids welcome with supervision. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Canyon Oaks Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -686,7 +707,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Canyon Oaks Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "stonehouse",
@@ -694,7 +716,7 @@
     "slug": "stonehouse",
     "location": "Temecula",
     "address": "40655 Calle Contento, Temecula, CA 92591",
-    "description": "Intimate winery with a focus on small-production, high-quality wines.",
+    "description": "Intimate winery with a focus on small-production, high-quality wines. Stonehouse Cellars is a Temecula Valley stop known for Cabernet Sauvignon, Syrah, Grenache, Viognier, with a visitor rating around 4.7/5 and a typical price feel of $$$. The estate is listed at 40655 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-2700. Families: this tasting experience is oriented to adults. 21+ only. This estate is not pet-friendly; leave pets at home or boarded. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Stonehouse Cellars before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -717,7 +739,8 @@
       "lng": -117.012
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Stonehouse Cellars when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Syrah, Grenache, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "villa-de-amor",
@@ -725,7 +748,7 @@
     "slug": "villa-de-amor",
     "location": "Temecula",
     "address": "41705 Avenida Biona, Temecula, CA 92591",
-    "description": "Romantic winery setting with beautiful grounds and excellent wines.",
+    "description": "Romantic winery setting with beautiful grounds and excellent wines. Villa de Amor Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Pinot Grigio, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 41705 Avenida Biona, Temecula, CA 92591 and can be reached at (951) 676-5500. Families: children are welcome. Family friendly environment. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Villa de Amor Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -748,7 +771,8 @@
       "lng": -117.009
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Villa de Amor Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Pinot Grigio) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "rancho-california",
@@ -756,7 +780,7 @@
     "slug": "rancho-california",
     "location": "Temecula",
     "address": "33850 Rancho California Rd, Temecula, CA 92591",
-    "description": "Historic vineyard with a focus on traditional winemaking methods.",
+    "description": "Historic vineyard with a focus on traditional winemaking methods. Rancho California Vineyards is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.0/5 and a typical price feel of $$. The estate is listed at 33850 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-4000. Families: children are welcome. Kids welcome on the property. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Rancho California Vineyards before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -779,7 +803,8 @@
       "lng": -117.026
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Rancho California Vineyards when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "palumbo",
@@ -787,7 +812,7 @@
     "slug": "palumbo",
     "location": "Temecula",
     "address": "40120 Calle Contento, Temecula, CA 92591",
-    "description": "Small-lot winery focused on Rh\u00f4ne and Italian varietals.",
+    "description": "Small-lot winery focused on Rh\u00f4ne and Italian varietals. Palumbo Family Vineyards is a Temecula Valley stop known for Syrah, Grenache, Sangiovese, Viognier, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 40120 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-0020. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Palumbo Family Vineyards before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Syrah",
@@ -810,7 +835,8 @@
       "lng": -117.01
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Palumbo Family Vineyards when building a half-day or full-day route. Focus on the house strengths (Syrah, Grenache, Sangiovese, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "footbridge",
@@ -818,7 +844,7 @@
     "slug": "footbridge",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Boutique winery with a focus on sustainable farming and elegant wines.",
+    "description": "Boutique winery with a focus on sustainable farming and elegant wines. Footbridge Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Grenache, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4500. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Footbridge Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -841,7 +867,8 @@
       "lng": -117.014
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Footbridge Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Grenache) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "cielo",
@@ -849,7 +876,7 @@
     "slug": "cielo",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Stunning views and a modern tasting room experience.",
+    "description": "Stunning views and a modern tasting room experience. Cielo at the Vineyard is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-5252. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Cielo at the Vineyard before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -872,7 +899,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Cielo at the Vineyard when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "keyways",
@@ -880,7 +908,7 @@
     "slug": "keyways",
     "location": "Temecula",
     "address": "37310 De Portola Rd, Temecula, CA 92592",
-    "description": "Historic property with a focus on small-batch wines.",
+    "description": "Historic property with a focus on small-batch wines. Keyways Vineyard & Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.2/5 and a typical price feel of $$. The estate is listed at 37310 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-1450. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Keyways Vineyard & Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -903,7 +931,8 @@
       "lng": -117.047
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Keyways Vineyard & Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "daniel",
@@ -911,7 +940,7 @@
     "slug": "daniel-gehrs",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Award-winning winemaker producing elegant, balanced wines.",
+    "description": "Award-winning winemaker producing elegant, balanced wines. Daniel Gehrs Wines is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Grenache, with a visitor rating around 4.6/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4500. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Daniel Gehrs Wines before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -934,7 +963,8 @@
       "lng": -117.014
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Daniel Gehrs Wines when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Grenache) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "churon",
@@ -942,7 +972,7 @@
     "slug": "churon",
     "location": "Temecula",
     "address": "33233 Rancho California Rd, Temecula, CA 92591",
-    "description": "Charming inn and winery with beautiful grounds.",
+    "description": "Charming inn and winery with beautiful grounds. Churon Inn & Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.1/5 and a typical price feel of $$. The estate is listed at 33233 Rancho California Rd, Temecula, CA 92591 and can be reached at (951) 676-5000. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Churon Inn & Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -965,7 +995,8 @@
       "lng": -117.021
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Churon Inn & Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "la-reina",
@@ -973,7 +1004,7 @@
     "slug": "la-reina",
     "location": "Temecula",
     "address": "40620 Calle Contento, Temecula, CA 92591",
-    "description": "Small production winery with a focus on quality over quantity.",
+    "description": "Small production winery with a focus on quality over quantity. La Reina Vineyards is a Temecula Valley stop known for Syrah, Grenache, Viognier, Tempranillo, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 40620 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-8231. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with La Reina Vineyards before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Syrah",
@@ -996,7 +1027,8 @@
       "lng": -117.015
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include La Reina Vineyards when building a half-day or full-day route. Focus on the house strengths (Syrah, Grenache, Viognier, Tempranillo) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "sugarloaf",
@@ -1004,7 +1036,7 @@
     "slug": "sugarloaf",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "High elevation vineyard producing concentrated, flavorful wines.",
+    "description": "High elevation vineyard producing concentrated, flavorful wines. Sugarloaf Mountain Vineyard is a Temecula Valley stop known for Cabernet Sauvignon, Syrah, Grenache, Viognier, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4500. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Sugarloaf Mountain Vineyard before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1027,7 +1059,8 @@
       "lng": -117.014
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Sugarloaf Mountain Vineyard when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Syrah, Grenache, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "vail",
@@ -1035,7 +1068,7 @@
     "slug": "vail-lake",
     "location": "Temecula",
     "address": "37700 De Portola Rd, Temecula, CA 92592",
-    "description": "Lakeside winery with beautiful views and relaxed atmosphere.",
+    "description": "Lakeside winery with beautiful views and relaxed atmosphere. Vail Lake Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.0/5 and a typical price feel of $$. The estate is listed at 37700 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-9999. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Vail Lake Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1058,7 +1091,8 @@
       "lng": -117.049
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Vail Lake Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "casa-de-luna",
@@ -1066,7 +1100,7 @@
     "slug": "casa-de-luna",
     "location": "Temecula",
     "address": "39800 De Portola Rd, Temecula, CA 92592",
-    "description": "Romantic winery with beautiful grounds and excellent hospitality.",
+    "description": "Romantic winery with beautiful grounds and excellent hospitality. Casa de Luna Winery is a Temecula Valley stop known for Tempranillo, Syrah, Grenache, Albari\u00f1o, with a visitor rating around 4.3/5 and a typical price feel of $$. The estate is listed at 39800 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 302-5100. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Casa de Luna Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
     "varietals": [
       "Tempranillo",
@@ -1089,7 +1123,8 @@
       "lng": -117.036
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Casa de Luna Winery when building a half-day or full-day route. Focus on the house strengths (Tempranillo, Syrah, Grenache, Albari\u00f1o) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "rancho-pueblo",
@@ -1097,7 +1132,7 @@
     "slug": "rancho-pueblo",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Historic vineyard with a focus on traditional methods.",
+    "description": "Historic vineyard with a focus on traditional methods. Rancho Pueblo Vineyards is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.1/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4000. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Rancho Pueblo Vineyards before you drive out.",
     "image": "https://images.unsplash.com/photo-1547595628-c61a29f495f0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1120,7 +1155,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Rancho Pueblo Vineyards when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "bella-vista",
@@ -1128,7 +1164,7 @@
     "slug": "bella-vista",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Beautiful views and a welcoming tasting room experience.",
+    "description": "Beautiful views and a welcoming tasting room experience. Bella Vista Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.2/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-5252. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Weekday mornings are typically quieter if you prefer a slower conversation with the tasting staff. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Bella Vista Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1151,7 +1187,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Bella Vista Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Merlot, Syrah) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "casa-de-paz",
@@ -1159,7 +1196,7 @@
     "slug": "casa-de-paz",
     "location": "Temecula",
     "address": "39800 De Portola Rd, Temecula, CA 92592",
-    "description": "Peaceful winery with excellent wines and warm hospitality.",
+    "description": "Peaceful winery with excellent wines and warm hospitality. Casa de Paz Winery is a Temecula Valley stop known for Tempranillo, Syrah, Grenache, Viognier, with a visitor rating around 4.4/5 and a typical price feel of $$. The estate is listed at 39800 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 302-5100. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Pair your stop with nearby estates on the same ridge road to cut drive time between pours. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Casa de Paz Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     "varietals": [
       "Tempranillo",
@@ -1182,7 +1219,8 @@
       "lng": -117.036
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Casa de Paz Winery when building a half-day or full-day route. Focus on the house strengths (Tempranillo, Syrah, Grenache, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "temecula-valley",
@@ -1190,7 +1228,7 @@
     "slug": "temecula-valley",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Classic Temecula winery with a focus on quality and hospitality.",
+    "description": "Classic Temecula winery with a focus on quality and hospitality. Temecula Valley Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel, with a visitor rating around 4.0/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-3400. Families: children are welcome. Family friendly. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Temecula Valley Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1213,7 +1251,8 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Temecula Valley Winery when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "hidden-mountain",
@@ -1221,7 +1260,7 @@
     "slug": "hidden-mountain",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Secluded vineyard producing small-lot, high-quality wines.",
+    "description": "Secluded vineyard producing small-lot, high-quality wines. Hidden Mountain Vineyard is a Temecula Valley stop known for Cabernet Sauvignon, Syrah, Grenache, Viognier, with a visitor rating around 4.5/5 and a typical price feel of $$. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4500. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Sunset light on the vines is a local favorite for photos; arrive earlier if you want a table with a view. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Hidden Mountain Vineyard before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1244,7 +1283,8 @@
       "lng": -117.014
     },
     "featured": true,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Hidden Mountain Vineyard when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Syrah, Grenache, Viognier) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   },
   {
     "id": "chapin",
@@ -1252,7 +1292,7 @@
     "slug": "chapin",
     "location": "Temecula",
     "address": "41220 Calle Contento, Temecula, CA 92591",
-    "description": "Family-owned vineyard producing small-lot wines with a focus on quality.",
+    "description": "Family-owned vineyard producing small-lot wines with a focus on quality. Chapin Family Vineyards is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Syrah, Merlot, with a visitor rating around 4.3/5 and a typical price feel of 14957. The estate is listed at 41220 Calle Contento, Temecula, CA 92591 and can be reached at (951) 676-4500. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. Plan for a relaxed tasting pace \u2014 most visits run sixty to ninety minutes if you also walk the grounds. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Chapin Family Vineyards before you drive out.",
     "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     "varietals": [
       "Cabernet Sauvignon",
@@ -1275,6 +1315,7 @@
       "lng": -117.014
     },
     "featured": false,
-    "events": []
+    "events": [],
+    "about_extended": "Visitors exploring Temecula wine country often include Chapin Family Vineyards when building a half-day or full-day route. Focus on the house strengths (Cabernet Sauvignon, Chardonnay, Syrah, Merlot) and decide in advance whether you want a seated tasting, a quick flight, or time on the patio. Responsible hospitality matters here: designate a driver, use rideshare, or book a wine-country shuttle if you plan multiple stops. Content on Bellie Acres Wine (bellieacreswine.com) is for general travel information and is not a substitute for the winery\u2019s official policies."
   }
 ]

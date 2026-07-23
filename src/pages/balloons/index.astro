@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import balloons from '../../data/balloons.json';
+---
+
+<Layout
+  title="Temecula Hot Air Balloon Rides"
+  description="Compare Temecula Valley hot air balloon operators for sunrise vineyard flights — packages, what to expect, and trip-planning tips."
+>
+  <Navbar />
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-4">Hot Air Balloon Rides</h1>
+    <p class="text-xl text-stone-600 max-w-3xl mb-12">
+      Sunrise flights over Temecula vineyards are one of the valley’s signature experiences. Operators below are listed
+      for trip planning — confirm weather holds, pricing, and pickup details on each company’s official site before you book.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {balloons.map((b) => (
+        <a href={`/balloons/${b.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+          <div class="h-52 overflow-hidden">
+            <img src={b.image} alt={b.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h2 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">{b.name}</h2>
+            <p class="text-stone-600 mt-2">{b.tagline}</p>
+            <p class="text-sm text-stone-500 mt-3 line-clamp-3">{b.summary}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-16 bg-white border border-stone-200 rounded-3xl p-8 text-stone-700 leading-relaxed">
+      <h2 class="font-serif text-2xl mb-3">Planning tips</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Flights are weather-dependent; keep a flexible morning if your trip is short.</li>
+        <li>Expect very early check-in for sunrise launches.</li>
+        <li>If you taste wine the same day, fly first — then designate a driver for afternoon tastings.</li>
+        <li>We are an independent directory, not a ticket reseller.</li>
+      </ul>
+    </div>
+  </main>
+</Layout>

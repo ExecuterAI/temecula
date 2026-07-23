@@ -6,7 +6,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Discover the best wineries in Temecula Valley" } = Astro.props;
+const { title, description = "Discover the best wineries in Temecula Valley — independent guide at bellieacreswine.com" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, "https://bellieacreswine.com").toString();
 ---
 
 <!doctype html>
@@ -15,9 +16,11 @@ const { title, description = "Discover the best wineries in Temecula Valley" } =
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | Temecula Wineries</title>
+    <meta name="robots" content="index,follow" />
+    <title>{title} | Bellie Acres Wine</title>
     <!-- Google AdSense (Auto ads) -->
     <script
       is:inline
@@ -27,6 +30,13 @@ const { title, description = "Discover the best wineries in Temecula Valley" } =
     ></script>
   </head>
   <body class="bg-stone-50 text-stone-900">
+    <!-- Alcohol content notice (travel directory; 21+ tasting) -->
+    <div class="bg-stone-900 text-stone-200 text-xs sm:text-sm text-center px-4 py-2">
+      Wine tourism directory for adults 21+. Please drink responsibly and never drink and drive.
+      <a href="/privacy" class="underline ml-2 hover:text-white">Privacy</a>
+      <span class="mx-1">·</span>
+      <a href="/contact" class="underline hover:text-white">Contact</a>
+    </div>
     <slot />
     <Footer />
   </body>

@@ -3,22 +3,56 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 ---
 
-<Layout title="About Temecula Wine Country">
+<Layout
+  title="About Temecula Wine Country"
+  description="About Bellie Acres Wine — independent Temecula Valley winery directory helping visitors plan tastings, maps, events, and balloon rides."
+>
   <Navbar />
 
   <main class="max-w-4xl mx-auto px-6 py-16">
-    <h1 class="text-6xl font-serif tracking-tight mb-8">About Temecula Wine Country</h1>
-    
-    <div class="prose prose-stone max-w-none text-lg">
-      <p>Temecula Valley is one of Southern California’s premier wine destinations, home to over 40 wineries nestled in the rolling hills of Riverside County.</p>
-      
-      <p>With its unique microclimate and diverse soil types, the region produces an impressive range of wines — from elegant Chardonnays and bold Cabernet Sauvignons to crisp sparkling wines and Rhône-style blends.</p>
+    <h1 class="text-6xl font-serif tracking-tight mb-8">About Bellie Acres Wine</h1>
 
-      <h2 class="font-serif text-3xl mt-12 mb-4">Our Mission</h2>
-      <p>This directory exists to help visitors discover the best wineries in Temecula Valley, whether you're planning your first visit or looking for new favorites.</p>
+    <div class="space-y-6 text-lg text-stone-700 leading-relaxed">
+      <p>
+        <strong>Bellie Acres Wine</strong> (bellieacreswine.com) is an independent online directory for Temecula Valley
+        wine country. We help visitors discover tasting rooms, compare practical details (pets, kids, price feel, varietals),
+        browse a map, check event listings, and explore sunrise balloon operators that pair well with a wine-country trip.
+      </p>
 
-      <h2 class="font-serif text-3xl mt-12 mb-4">Visit Responsibly</h2>
-      <p>Always designate a driver or use rideshare services. Many wineries offer non-alcoholic options and beautiful grounds perfect for picnics and events.</p>
+      <p>
+        Temecula Valley is one of Southern California’s most accessible wine destinations — more than forty wineries
+        set in the rolling hills of Riverside County, roughly an hour from many coastal and inland cities depending on traffic.
+        A unique mix of elevation, marine influence, and diverse soils supports everything from crisp whites and sparkling
+        programs to bold reds and Mediterranean-inspired blends.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-6">Our mission</h2>
+      <p>
+        Planning a first visit should not require twenty browser tabs. We organize estate-level snapshots so you can build
+        a realistic half-day or full-day route: who is pet-friendly, where families fit, which houses lean sparkling versus
+        Cabernet, and how to move between stops without guesswork.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-6">What we are / are not</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>We <strong>are</strong> an independent guide and directory.</li>
+        <li>We are <strong>not</strong> the official site of any single winery unless clearly labeled.</li>
+        <li>We do <strong>not</strong> process alcohol sales on this website.</li>
+        <li>Hours, fees, and policies change — always confirm with the business before you go.</li>
+      </ul>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-6">Visit responsibly</h2>
+      <p>
+        Alcohol service is for adults 21+. Designate a driver, use rideshare, or book a wine-country shuttle if you plan
+        multiple tastings. Many estates offer beautiful grounds, food programs, and non-alcoholic options — ask on site.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-6">Corrections & contact</h2>
+      <p>
+        Own a listing or spot outdated info? Email <a class="text-[var(--accent)] underline" href="mailto:lauradfarley@gmail.com">lauradfarley@gmail.com</a>
+        or use our <a class="text-[var(--accent)] underline" href="/contact">contact page</a>. Privacy details live on our
+        <a class="text-[var(--accent)] underline" href="/privacy">Privacy Policy</a>.
+      </p>
     </div>
   </main>
 </Layout>

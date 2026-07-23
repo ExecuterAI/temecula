@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import balloons from '../../data/balloons.json';
+
+export function getStaticPaths() {
+  return balloons.map((b) => ({
+    params: { slug: b.slug },
+    props: { balloon: b },
+  }));
+}
+
+const { balloon } = Astro.props;
+---
+
+<Layout title={balloon.name} description={`${balloon.name} — ${balloon.tagline}. Temecula hot air balloon trip planning on bellieacreswine.com.`}>
+  <Navbar />
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <a href="/balloons" class="text-sm text-stone-500 hover:text-[var(--accent)]">← All balloon operators</a>
+    <div class="grid lg:grid-cols-2 gap-10 mt-6">
+      <div class="rounded-3xl overflow-hidden border border-stone-200 h-72 lg:h-auto min-h-[280px]">
+        <img src={balloon.image} alt={balloon.name} class="w-full h-full object-cover" />
+      </div>
+      <div>
+        {balloon.est && (
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-sm mb-4">Est. {balloon.est}</div>
+        )}
+        <h1 class="text-5xl font-serif tracking-tight">{balloon.name}</h1>
+        <p class="text-xl text-stone-600 mt-2">{balloon.tagline}</p>
+        <p class="mt-6 text-lg text-stone-700 leading-relaxed">{balloon.summary}</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">{balloon.body}</p>
+        <ul class="mt-6 space-y-2">
+          {balloon.highlights.map((h) => (
+            <li class="flex gap-2 text-stone-700"><span class="text-[var(--accent)]">✓</span> {h}</li>
+          ))}
+        </ul>
+        <a
+          href={balloon.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block mt-8 px-8 py-3.5 bg-[var(--primary)] text-white rounded-full font-medium hover:bg-black transition"
+        >
+          Visit official site →
+        </a>
+        <p class="text-xs text-stone-500 mt-4">Independent listing. We do not process bookings on this page.</p>
+      </div>
+    </div>
+  </main>
+</Layout>
