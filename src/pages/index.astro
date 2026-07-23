@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
+import balloons from '../data/balloons.json';
 
 const featured = wineries.filter(w => w.featured);
+const featuredBalloons = balloons.slice(0, 3);
 
 const searchBlob = (w: (typeof wineries)[number]) => {
   const bits = [
@@ -188,35 +190,22 @@ const wordOfTheDay = wineWords[today % wineWords.length];
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="/balloons/grape-escape" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
-          <div class="h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Grape Escape Balloon Adventures">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Grape Escape Balloon Adventures</h3>
-            <p class="text-stone-600 mt-1">Est. 1991 • 60–75 min flights</p>
-          </div>
-        </a>
-
-        <a href="/balloons/magical-adventure" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
-          <div class="h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Magical Adventure">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Magical Adventure Balloon Rides</h3>
-            <p class="text-stone-600 mt-1">Award-winning • Carbon Negative</p>
-          </div>
-        </a>
-
-        <a href="/balloons/cielo-balloons" class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
-          <div class="h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Cielo Balloons">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">Cielo Balloons</h3>
-            <p class="text-stone-600 mt-1">Shared from $170 • Private from $995</p>
-          </div>
-        </a>
+        {featuredBalloons.map((b) => (
+          <a href={`/balloons/${b.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+            <div class="h-56 overflow-hidden">
+              <img
+                src={b.image}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                alt={`Hot air balloon — ${b.name}`}
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition">{b.name}</h3>
+              <p class="text-stone-600 mt-1">{b.tagline}</p>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   </main>
