@@ -109,7 +109,7 @@ const searchBlob = (w: (typeof wineries)[number]) => {
           status.textContent =
             visible === 0
               ? `No wineries match “${input.value.trim()}”.`
-              : `${visible} winery${visible === 1 ? '' : 'ies'} match “${input.value.trim()}”.`;
+              : `${visible} ${visible === 1 ? 'winery matches' : 'wineries match'} “${input.value.trim()}”.`;
         }
       }
     }
