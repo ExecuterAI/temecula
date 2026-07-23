@@ -1,43 +1,121 @@
 ---
+const links = [
+  { href: '/wineries', label: 'All Wineries' },
+  { href: '/pairings', label: 'Pairings' },
+  { href: '/map', label: 'Map' },
+  { href: '/guides', label: 'Guides' },
+  { href: '/events', label: 'Events' },
+  { href: '/balloons', label: 'Balloons' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
 ---
-<nav class="bg-white border-b border-stone-200 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<nav class="bg-white border-b border-stone-200 sticky top-0 z-50" id="site-nav">
+  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-3 group">
-      <div class="w-9 h-9 bg-[var(--primary)] rounded-2xl flex items-center justify-center">
+    <a href="/" class="flex items-center gap-3 group min-w-0">
+      <div class="w-9 h-9 shrink-0 bg-[var(--primary)] rounded-2xl flex items-center justify-center">
         <span class="text-white text-xl">🍷</span>
       </div>
-      <div>
-        <div class="font-serif text-2xl tracking-tight text-stone-900 group-hover:text-[var(--accent)] transition">Bellie Acres Wine</div>
+      <div class="min-w-0">
+        <div class="font-serif text-xl sm:text-2xl tracking-tight text-stone-900 group-hover:text-[var(--accent)] transition truncate">Bellie Acres Wine</div>
         <div class="text-[10px] text-stone-500 -mt-1">Temecula Wine Directory</div>
       </div>
     </a>
-    
+
     <!-- Desktop Navigation -->
     <div class="hidden md:flex items-center gap-4 lg:gap-5 text-sm font-medium">
-      <a href="/wineries" class="hover:text-[var(--accent)] transition">All Wineries</a>
-      <a href="/pairings" class="hover:text-[var(--accent)] transition">Pairings</a>
-      <a href="/map" class="hover:text-[var(--accent)] transition">Map</a>
-      <a href="/guides" class="hover:text-[var(--accent)] transition">Guides</a>
-      <a href="/events" class="hover:text-[var(--accent)] transition">Events</a>
-      <a href="/balloons" class="hover:text-[var(--accent)] transition">Balloons</a>
-      <a href="/about" class="hover:text-[var(--accent)] transition">About</a>
-      <a href="/contact" class="hover:text-[var(--accent)] transition">Contact</a>
+      {links.map((l) => (
+        <a href={l.href} class="hover:text-[var(--accent)] transition whitespace-nowrap">{l.label}</a>
+      ))}
     </div>
 
     <!-- CTA Button -->
     <div class="hidden md:block">
-      <a href="/wineries" 
-         class="px-6 py-2.5 bg-[var(--primary)] hover:bg-black text-white text-sm rounded-full transition font-medium">
+      <a
+        href="/wineries"
+        class="px-6 py-2.5 bg-[var(--primary)] hover:bg-black text-white text-sm rounded-full transition font-medium whitespace-nowrap"
+      >
         Explore Wineries
       </a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="md:hidden text-stone-600" aria-label="Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <button
+      type="button"
+      id="mobile-menu-btn"
+      class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-xl text-stone-700 hover:bg-stone-100 transition"
+      aria-label="Open menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <!-- hamburger -->
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- close -->
+      <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
   </div>
+
+  <!-- Mobile Menu Panel -->
+  <div
+    id="mobile-menu"
+    class="md:hidden hidden border-t border-stone-200 bg-white shadow-lg"
+  >
+    <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class="mobile-nav-link block px-3 py-3 rounded-xl text-base font-medium text-stone-800 hover:bg-stone-50 hover:text-[var(--accent)] transition"
+        >
+          {l.label}
+        </a>
+      ))}
+      <a
+        href="/wineries"
+        class="mobile-nav-link mt-2 mb-1 block text-center px-4 py-3 rounded-full bg-[var(--primary)] text-white font-medium hover:bg-black transition"
+      >
+        Explore Wineries
+      </a>
+    </div>
+  </div>
 </nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  function setOpen(open: boolean) {
+    if (!btn || !menu || !iconOpen || !iconClose) return;
+    menu.classList.toggle('hidden', !open);
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+
+  btn?.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    setOpen(open);
+  });
+
+  // Close after choosing a link
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setOpen(false));
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setOpen(false);
+  });
+
+  // If resized to desktop, force closed
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) setOpen(false);
+  });
+</script>
