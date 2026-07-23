@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const guides = [
+  {
+    href: '/guides/first-timer-tasting-route',
+    title: 'First-Timer Temecula Tasting Route',
+    blurb: 'A realistic three-stop day on the Rancho California spine — timing, food, transport, and mistakes to skip.',
+    tag: 'Planning',
+  },
+  {
+    href: '/guides/pet-friendly-wineries',
+    title: 'Pet-Friendly Wineries in Temecula',
+    blurb: 'Which estates welcome dogs, what “pet friendly” really means outdoors, packing list, and no-pet resorts.',
+    tag: 'Pets',
+  },
+];
+---
+
+<Layout
+  title="Temecula Wine Guides"
+  description="Practical Temecula Valley wine-country guides from Bellie Acres — first-timer tasting routes, pet-friendly wineries, and more."
+>
+  <Navbar />
+  <main class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-4">Guides</h1>
+    <p class="text-xl text-stone-600 max-w-2xl mb-12">
+      Original planning articles for Temecula wine country — written to answer real trip questions, not to fluff a homepage.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {guides.map((g) => (
+        <a href={g.href} class="group block rounded-3xl border border-stone-200 bg-white p-8 hover:shadow-xl transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">{g.tag}</div>
+          <h2 class="font-serif text-3xl group-hover:text-[var(--accent)] transition">{g.title}</h2>
+          <p class="text-stone-600 mt-4 leading-relaxed">{g.blurb}</p>
+          <div class="mt-6 text-[var(--accent)] font-medium">Read guide →</div>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const petFriendly = [...wineries]
+  .filter((w) => w.pet_friendly)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0) || a.name.localeCompare(b.name));
+
+const notPet = wineries.filter((w) => !w.pet_friendly).sort((a, b) => a.name.localeCompare(b.name));
+
+const highlights = petFriendly.slice(0, 12);
+---
+
+<Layout
+  title="Pet-Friendly Wineries in Temecula"
+  description="Temecula pet-friendly wineries guide: which estates welcome dogs, patio tips, what to pack, and a clear list of places that are typically not pet-friendly."
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">Guide · Updated July 2026</p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">Pet-Friendly Wineries in Temecula</h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-8">
+      Many Temecula estates welcome well-behaved dogs on outdoor patios and lawns. A few popular resorts and formal
+      tasting rooms do not. This guide helps you plan a dog-inclusive day without awkward turn-aways at the door.
+    </p>
+
+    <div class="bg-emerald-50 border border-emerald-200 rounded-3xl p-6 mb-12 text-stone-800">
+      <p class="font-medium mb-2">Before you load the crate</p>
+      <ul class="list-disc pl-5 space-y-1 text-stone-700">
+        <li>Policies change — call or check the winery site the morning you go.</li>
+        <li>“Pet friendly” almost always means <strong>outdoor areas</strong>, not indoor tasting rooms or restaurants.</li>
+        <li>Leash required; aggressive or continuous barking = you will be asked to leave.</li>
+        <li>Hot pavement and no-shade parking lots are real risks in summer.</li>
+      </ul>
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>How pet policies usually work</h2>
+      <p>
+        In Temecula, pet-friendly usually means: leashed dogs on the patio, lawn, or designated outdoor tasting
+        zones. It rarely means dogs at the indoor bar, on restaurant banquettes, or in production areas. Service
+        animals are a separate legal category from pets — if you need service-animal access, contact the estate
+        directly and do not rely on a “no pets” marketing line alone.
+      </p>
+      <p>
+        Staff are balancing hospitality with food service rules, other guests’ allergies, and wine-glass chaos.
+        Your job is to make the yes easy: short leash, settle mat, water bowl, and a dog that can hold a down-stay
+        while you take notes on a Cabernet.
+      </p>
+
+      <h2>Best-bet pet-friendly picks (high rated in our directory)</h2>
+      <p>
+        These estates are marked pet-friendly in our data and tend to work well for a first dog-inclusive visit.
+        Start here, then confirm outdoor seating when you reserve.
+      </p>
+    </article>
+
+    <div class="not-prose grid gap-4 my-8">
+      {highlights.map((w) => (
+        <a href={`/wineries/${w.slug}`} class="block bg-white border border-stone-200 rounded-2xl p-5 hover:shadow-md transition">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <div class="font-serif text-2xl text-stone-900">{w.name}</div>
+              <div class="text-stone-600 mt-1">{w.address}</div>
+              <div class="text-sm text-stone-500 mt-2">
+                {(w.varietals || []).slice(0, 3).join(' · ')}
+                {w.kid_friendly?.allowed ? ' · Family-friendly outdoor space often available' : ''}
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-xl font-semibold">{w.rating}</div>
+              <div class="text-xs text-stone-500">rating</div>
+              <div class="text-xs mt-2 px-2 py-1 rounded-full bg-emerald-100 text-emerald-800">Pet friendly</div>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <p class="text-base text-stone-600">
+        Full pet-friendly count in our directory right now: <strong>{petFriendly.length}</strong> of {wineries.length} estates.
+        Browse every listing on the <a href="/wineries">wineries page</a> (look for the green Pet Friendly tag).
+      </p>
+
+      <h2>Build a simple dog-friendly half day</h2>
+      <ol>
+        <li>
+          <strong>Late morning patio</strong> — e.g. <a href="/wineries/ponte-winery">Ponte</a> or
+          <a href="/wineries/wilson-creek-winery">Wilson Creek</a> when outdoor space is open. One flight, lots of water for humans and dog.
+        </li>
+        <li>
+          <strong>Shaded second stop</strong> — pick a nearby pet-friendly estate on the same corridor (
+          <a href="/wineries/falkner-winery">Falkner</a>, <a href="/wineries/miramonte">Miramonte</a>, or a De Portola
+          option like <a href="/wineries/danza-del-sol">Danza del Sol</a>) so the car ride stays short.
+        </li>
+        <li>
+          <strong>Park / break</strong> — give the dog a real sniff walk away from glassware before any third stop.
+          Many groups should stop at two tastings when a dog is along.
+        </li>
+      </ol>
+      <p>
+        For a human-paced template without a pet, see our
+        <a href="/guides/first-timer-tasting-route">first-timer tasting route</a> and trim it to two stops.
+      </p>
+
+      <h2>What to pack</h2>
+      <ul>
+        <li>Collapsible water bowl + extra water (dogs dehydrate on warm patios)</li>
+        <li>Short leash (retractable leashes tangle chairs and servers)</li>
+        <li>Mat or towel so the dog is not forced onto hot pavers</li>
+        <li>Waste bags; clean up immediately</li>
+        <li>Light shade (umbrella) if the estate’s patio is fully exposed</li>
+        <li>High-value chews only if your dog can be quiet and non-resource-guarding in public</li>
+      </ul>
+
+      <h2>Summer heat and “can I leave them in the car?”</h2>
+      <p>
+        <strong>No.</strong> Do not leave dogs in the car while you taste — not “just for one flight,” not with
+        windows cracked. Temecula summers cook interiors fast. If your dog cannot join the patio comfortably, choose
+        a dog-free day or a single outdoor reservation where the dog is welcome beside you.
+      </p>
+
+      <h2>Estates that are typically NOT pet-friendly</h2>
+      <p>
+        These listings are marked not pet-friendly in our directory. They can still be excellent visits — just plan
+        a dog sitter or a separate day.
+      </p>
+      <ul>
+        {notPet.map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a>
+            {w.price_range ? ` (${w.price_range})` : ''}
+          </li>
+        ))}
+      </ul>
+      <p>
+        Resort-style properties and some formal dining programs are the usual no-pet cases. When in doubt, phone the
+        tasting room and ask specifically about <em>outdoor</em> patio dogs that day.
+      </p>
+
+      <h2>Etiquette that keeps dogs welcome</h2>
+      <ul>
+        <li>Do not let dogs approach other guests, servers, or other dogs uninvited.</li>
+        <li>Keep dogs out of walkways where staff carry flights.</li>
+        <li>If your dog is reactive, choose off-peak weekday hours or skip wine country this trip.</li>
+        <li>Tip well when staff go out of their way to find a shady corner table.</li>
+      </ul>
+
+      <h2>Kids + dogs + wine</h2>
+      <p>
+        Possible, but harder. A patio with live music, strollers, and a nervous rescue is a lot of variables. Prefer
+        quieter weekday late mornings, shorter visits, and estates that explicitly welcome both families and pets.
+        Always confirm both policies — they are independent flags in our directory.
+      </p>
+    </article>
+
+    <div class="not-prose mt-12 bg-stone-100 rounded-3xl p-6">
+      <h2 class="font-serif text-2xl mb-3">All pet-friendly listings</h2>
+      <p class="text-stone-600 mb-4 text-sm">Alphabetical dump for quick scanning. Tap through for addresses and details.</p>
+      <div class="columns-1 sm:columns-2 gap-6 text-sm">
+        {petFriendly.map((w) => (
+          <a href={`/wineries/${w.slug}`} class="block py-1 text-stone-800 hover:text-[var(--accent)]">
+            {w.name} <span class="text-stone-400">· {w.rating}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 not-prose">
+      <a href="/guides/first-timer-tasting-route" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Related guide</div>
+        <div class="font-serif text-2xl">First-timer tasting route →</div>
+      </a>
+      <a href="/map" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Map</div>
+        <div class="font-serif text-2xl">Plan short drives →</div>
+      </a>
+    </div>
+
+    <p class="text-sm text-stone-500 mt-10">
+      Independent guide on bellieacreswine.com. Pet policies are provided for trip planning and can change without notice. 21+ for alcohol tastings.
+    </p>
+  </main>
+</Layout>
