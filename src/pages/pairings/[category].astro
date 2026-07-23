@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import data from '../../data/pairings.json';
+import wineries from '../../data/wineries.json';
+
+export function getStaticPaths() {
+  return data.categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const items = data.pairings.filter((p) => p.category === category.slug);
+const wineryBySlug = Object.fromEntries(wineries.map((w) => [w.slug, w]));
+---
+
+<Layout
+  title={`${category.title} | Temecula Wine Pairings`}
+  description={`${category.description} Wine pairing ideas from Bellie Acres Wine.`}
+>
+  <Navbar />
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <a href="/pairings" class="text-sm text-stone-500 hover:text-[var(--accent)]">← All wine pairings</a>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mt-4 mb-4">{category.title}</h1>
+    <p class="text-xl text-stone-600 max-w-3xl leading-relaxed mb-12">{category.description}</p>
+
+    <div class="flex flex-wrap gap-3 mb-12">
+      {data.categories.map((c) => (
+        <a
+          href={`/pairings/${c.slug}`}
+          class:list={[
+            'px-4 py-2 rounded-full text-sm border transition',
+            c.slug === category.slug
+              ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
+              : 'bg-white border-stone-200 text-stone-700 hover:border-[var(--accent)]',
+          ]}
+        >
+          {c.navLabel}
+        </a>
+      ))}
+    </div>
+
+    <div class="space-y-8">
+      {items.map((p) => {
+        const examples = (p.winerySlugs || [])
+          .map((s) => wineryBySlug[s])
+          .filter(Boolean)
+          .slice(0, 3);
+        return (
+          <article class="rounded-3xl border border-stone-200 bg-white p-8 md:p-10">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <div>
+                <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-2">{p.wineStyle}</div>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight">
+                  <a href={`/pairings/guide/${p.slug}`} class="hover:text-[var(--accent)] transition">{p.title}</a>
+                </h2>
+                <p class="text-lg text-stone-600 mt-4 leading-relaxed max-w-3xl">{p.summary}</p>
+              </div>
+              <a href={`/pairings/guide/${p.slug}`} class="shrink-0 text-[var(--accent)] font-medium hover:underline">
+                Full guide →
+              </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+              <div>
+                <h3 class="font-medium text-stone-900 mb-3">Try it with</h3>
+                <ul class="space-y-2 text-stone-700">
+                  {p.foods.map((f) => (
+                    <li class="flex gap-2"><span class="text-[var(--accent)]">•</span><span>{f}</span></li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-medium text-stone-900 mb-3">Why it works</h3>
+                <p class="text-stone-700 leading-relaxed">{p.why}</p>
+                {examples.length > 0 && (
+                  <div class="mt-5">
+                    <h3 class="font-medium text-stone-900 mb-2">Temecula examples</h3>
+                    <div class="flex flex-wrap gap-2">
+                      {examples.map((w) => (
+                        <a
+                          href={`/wineries/${w.slug}`}
+                          class="text-sm px-3 py-1.5 rounded-full bg-stone-100 text-stone-700 hover:bg-amber-50 hover:text-[var(--accent)] transition"
+                        >
+                          {w.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,305 @@
+{
+  "categories": [
+    {
+      "slug": "by-wine",
+      "title": "By Wine Type",
+      "navLabel": "Wine Type",
+      "description": "Start with the glass in your hand. These Temecula-friendly pairing ideas match classic valley styles to everyday food."
+    },
+    {
+      "slug": "by-protein",
+      "title": "By Protein & Main Ingredient",
+      "navLabel": "Protein & Ingredient",
+      "description": "Cooking steak, seafood, pasta, or a big cheese board? Pick the plate first, then find a Temecula wine that loves it."
+    },
+    {
+      "slug": "by-occasion",
+      "title": "By Occasion",
+      "navLabel": "Occasion",
+      "description": "Weeknight dinner, date night, holidays, picnics, or live music on the patio — pairings for how you actually visit wine country."
+    },
+    {
+      "slug": "seasonal",
+      "title": "Seasonal Pairings",
+      "navLabel": "Seasonal",
+      "description": "Temecula’s warm days and cool nights show up in the glass. These seasonal ideas keep pairings feeling fresh year-round."
+    }
+  ],
+  "pairings": [
+    {
+      "slug": "cabernet-sauvignon-pairings",
+      "title": "Cabernet Sauvignon Pairings",
+      "category": "by-wine",
+      "wineStyle": "Cabernet Sauvignon",
+      "summary": "Temecula Cabernet is often ripe, structured, and patio-friendly — built for grilled meat and savory richness.",
+      "foods": ["Grilled ribeye or New York strip", "Lamb chops with rosemary", "Aged cheddar or gouda", "Mushroom risotto"],
+      "why": "Cabernet’s tannins and dark fruit love protein, fat, and umami. A little char from the grill or salt from cheese softens the edges and makes the wine taste smoother.",
+      "winerySlugs": ["ponte-winery", "wilson-creek-winery", "south-coast-winery"],
+      "seoBlurb": "What to eat with Temecula Cabernet Sauvignon — steak, lamb, cheese, and more."
+    },
+    {
+      "slug": "chardonnay-pairings",
+      "title": "Chardonnay Pairings",
+      "category": "by-wine",
+      "wineStyle": "Chardonnay",
+      "summary": "From crisp and citrusy to richer oak-kissed styles, Temecula Chardonnay is one of the valley’s most flexible food wines.",
+      "foods": ["Roast chicken with herbs", "Buttery lobster or scallops", "Creamy pasta Alfredo", "Soft cheeses like brie"],
+      "why": "Chardonnay’s body and gentle acidity mirror creamy sauces and roasted poultry. Richer styles hug butter and oak; lighter styles stay bright with seafood.",
+      "winerySlugs": ["callaway-winery", "hart-winery", "thornton-winery"],
+      "seoBlurb": "Temecula Chardonnay food pairings for chicken, seafood, pasta, and cheese."
+    },
+    {
+      "slug": "syrah-pairings",
+      "title": "Syrah Pairings",
+      "category": "by-wine",
+      "wineStyle": "Syrah",
+      "summary": "Syrah thrives in Temecula’s warm climate — think black pepper, dark berries, and savory depth.",
+      "foods": ["Barbecue ribs or brisket", "Pepper-crusted steak", "Spiced lamb or merguez", "Smoked gouda"],
+      "why": "Syrah’s spice and dark fruit stand up to smoke, pepper, and char. It’s a natural with backyard barbecue and bolder seasonings.",
+      "winerySlugs": ["falkner-winery", "miramonte", "baily-winery"],
+      "seoBlurb": "Best foods with Temecula Syrah — BBQ, pepper steak, and savory spices."
+    },
+    {
+      "slug": "tempranillo-pairings",
+      "title": "Tempranillo Pairings",
+      "category": "by-wine",
+      "wineStyle": "Tempranillo",
+      "summary": "A Temecula standout with Spanish roots — medium body, red fruit, and gentle earth that loves rustic plates.",
+      "foods": ["Tapas boards and cured meats", "Roasted pork loin", "Tomato-based stews", "Manchego cheese"],
+      "why": "Tempranillo bridges fruit and savory notes, so it flatters olive oil, tomato, herbs, and pork without overwhelming the plate.",
+      "winerySlugs": ["danza-del-sol", "europa-village", "casa-de-luz"],
+      "seoBlurb": "Temecula Tempranillo pairings for tapas, pork, tomato dishes, and Manchego."
+    },
+    {
+      "slug": "sparkling-wine-pairings",
+      "title": "Sparkling Wine Pairings",
+      "category": "by-wine",
+      "wineStyle": "Sparkling Wine",
+      "summary": "Bubbles are Temecula’s celebration wine — and secretly one of the best all-day food partners.",
+      "foods": ["Salty snacks and potato chips", "Fried chicken or calamari", "Oysters and sushi", "Strawberries or light desserts"],
+      "why": "Carbonation and bright acidity scrub rich or salty bites clean. Sparkling keeps the palate fresh between tastes — perfect before a multi-stop tasting day.",
+      "winerySlugs": ["thornton-winery", "wilson-creek-winery"],
+      "seoBlurb": "What to pair with Temecula sparkling wine — snacks, fried foods, seafood, and brunch."
+    },
+    {
+      "slug": "rose-pairings",
+      "title": "Rosé Pairings",
+      "category": "by-wine",
+      "wineStyle": "Rosé",
+      "summary": "Dry rosés from warm-climate grapes (often Grenache-based) are patio perfection in Temecula.",
+      "foods": ["Charcuterie and olives", "Grilled shrimp or salmon", "Mediterranean salads", "Picnic sandwiches"],
+      "why": "Rosé sits between red and white: enough fruit for savory snacks, enough freshness for herbs, citrus, and outdoor meals.",
+      "winerySlugs": ["falkner-winery", "danza-del-sol", "miramonte"],
+      "seoBlurb": "Temecula rosé food pairings for picnics, seafood, salads, and charcuterie."
+    },
+    {
+      "slug": "grenache-pairings",
+      "title": "Grenache Pairings",
+      "category": "by-wine",
+      "wineStyle": "Grenache",
+      "summary": "Juicy, sun-warmed Grenache is a Temecula Rhône-style favorite — friendly, aromatic, and food-easy.",
+      "foods": ["Herb-roasted chicken", "Pork carnitas or tacos", "Grilled vegetables", "Mild cheeses"],
+      "why": "Grenache’s red-fruit openness and softer tannins welcome herbs, spice, and casual plates without needing a heavy steak.",
+      "winerySlugs": ["falkner-winery", "miramonte", "palumbo"],
+      "seoBlurb": "Grenache wine pairings for Temecula tasting days — chicken, tacos, and veggies."
+    },
+    {
+      "slug": "viognier-pairings",
+      "title": "Viognier Pairings",
+      "category": "by-wine",
+      "wineStyle": "Viognier",
+      "summary": "Floral, stone-fruit Viognier is one of Temecula’s signature whites for warm afternoons.",
+      "foods": ["Thai or lightly spiced dishes", "Peach or apricot salads", "Crab cakes", "Goat cheese"],
+      "why": "Aromatic whites shine with fragrant spices and stone fruit. Viognier’s texture also loves crab and creamy goat cheese.",
+      "winerySlugs": ["callaway-winery", "falkner-winery", "vinemark"],
+      "seoBlurb": "Temecula Viognier pairings for spice, seafood, stone fruit, and goat cheese."
+    },
+    {
+      "slug": "zinfandel-pairings",
+      "title": "Zinfandel Pairings",
+      "category": "by-wine",
+      "wineStyle": "Zinfandel",
+      "summary": "Ripe, generous Zinfandel fits Temecula’s sunny personality — great with bold American comfort food.",
+      "foods": ["Barbecue chicken or ribs", "Burgers with cheddar", "Pizza with sausage", "Dark chocolate desserts"],
+      "why": "Zin’s jammy fruit and warm spice echo sweet-savory sauces and grilled favorites. Keep heat moderate so the wine doesn’t taste hot.",
+      "winerySlugs": ["ponte-winery", "lorimar-winery", "frangipani"],
+      "seoBlurb": "What food goes with Temecula Zinfandel — BBQ, burgers, pizza, and chocolate."
+    },
+    {
+      "slug": "merlot-pairings",
+      "title": "Merlot Pairings",
+      "category": "by-wine",
+      "wineStyle": "Merlot",
+      "summary": "Soft, plush Merlot is an easy red for mixed groups and midweek dinners.",
+      "foods": ["Roast beef sandwiches", "Meatloaf or shepherd’s pie", "Mushroom dishes", "Semi-soft cheeses"],
+      "why": "Merlot’s rounder tannins make it forgiving with everyday comfort food and earthy mushrooms.",
+      "winerySlugs": ["thornton-winery", "south-coast-winery", "lorimar-winery"],
+      "seoBlurb": "Temecula Merlot food pairings for comfort food, mushrooms, and casual dinners."
+    },
+    {
+      "slug": "steak-wine-pairings",
+      "title": "Best Wines with Steak",
+      "category": "by-protein",
+      "wineStyle": "Cabernet Sauvignon, Syrah, or bold red blends",
+      "summary": "Steak night calls for structure. Temecula’s Cabernet and Syrah are built for the grill.",
+      "foods": ["Ribeye with sea salt", "Filet with herb butter", "Skirt steak tacos", "Steak frites"],
+      "why": "Fat and protein calm tannin. Match intensity: richer cuts with Cabernet; peppery crusts with Syrah.",
+      "winerySlugs": ["ponte-winery", "falkner-winery", "south-coast-winery"],
+      "seoBlurb": "Best Temecula wines for steak — Cabernet, Syrah, and grill-night pairings."
+    },
+    {
+      "slug": "chicken-wine-pairings",
+      "title": "Best Wines with Chicken",
+      "category": "by-protein",
+      "wineStyle": "Chardonnay, Grenache, or lighter Syrah",
+      "summary": "Chicken is a blank canvas — sauce and cooking method pick the wine more than the bird itself.",
+      "foods": ["Herb roast chicken", "Lemon-garlic grilled chicken", "Chicken tacos", "Creamy chicken pasta"],
+      "why": "Roast and cream sauces love Chardonnay; tomato, spice, and grill marks lean Grenache or soft reds.",
+      "winerySlugs": ["callaway-winery", "hart-winery", "danza-del-sol"],
+      "seoBlurb": "Wine with chicken: Temecula Chardonnay, Grenache, and easy red options."
+    },
+    {
+      "slug": "seafood-wine-pairings",
+      "title": "Best Wines with Seafood",
+      "category": "by-protein",
+      "wineStyle": "Chardonnay, Sparkling, Albariño, or dry Rosé",
+      "summary": "Keep it bright. Temecula whites and bubbles are the safest (and most delicious) seafood partners.",
+      "foods": ["Grilled salmon", "Shrimp scampi", "Fish tacos", "Oysters or ceviche"],
+      "why": "Acidity and freshness cut oil and brine. Avoid big tannic reds unless the dish is heavily sauced or smoked.",
+      "winerySlugs": ["thornton-winery", "hart-winery", "danza-del-sol"],
+      "seoBlurb": "Temecula wine and seafood pairings — salmon, shrimp, tacos, and oysters."
+    },
+    {
+      "slug": "pasta-wine-pairings",
+      "title": "Best Wines with Pasta",
+      "category": "by-protein",
+      "wineStyle": "Sangiovese, Tempranillo, Chardonnay, or Grenache",
+      "summary": "Match the sauce, not just the noodles — tomato, cream, and pesto each point to a different glass.",
+      "foods": ["Tomato basil pasta or lasagna", "Creamy fettuccine", "Pesto pasta", "Bolognese"],
+      "why": "Tomato acidity likes medium reds; cream loves Chardonnay; herb pesto likes aromatic whites or light reds.",
+      "winerySlugs": ["europa-village", "palumbo", "callaway-winery"],
+      "seoBlurb": "Pasta and wine pairings with Temecula reds and whites for every sauce."
+    },
+    {
+      "slug": "cheese-wine-pairings",
+      "title": "Best Wines with Cheese",
+      "category": "by-protein",
+      "wineStyle": "Sparkling, Chardonnay, Cabernet, or Tempranillo",
+      "summary": "A tasting-room classic: cheese boards are easier when you pair by texture and salt, not strict rules.",
+      "foods": ["Brie or camembert", "Aged cheddar", "Manchego or pecorino", "Blue cheese (small bites)"],
+      "why": "Soft cheeses like bubbles and Chardonnay; aged hard cheeses like Cabernet or Tempranillo; blue needs sweetness or bold fruit.",
+      "winerySlugs": ["wilson-creek-winery", "ponte-winery", "danza-del-sol"],
+      "seoBlurb": "Cheese and Temecula wine pairings for boards, tasting rooms, and picnics."
+    },
+    {
+      "slug": "vegetarian-wine-pairings",
+      "title": "Vegetarian Wine Pairings",
+      "category": "by-protein",
+      "wineStyle": "Rosé, Grenache, Viognier, or lighter reds",
+      "summary": "Vegetables, grains, and cheese-forward plates still deserve a great Temecula pour.",
+      "foods": ["Grilled vegetable platters", "Mushroom tacos or risotto", "Caprese or tomato salads", "Hummus and mezze spreads"],
+      "why": "Herbs, char, and umami from mushrooms guide the wine more than “no meat.” Rosé and Grenache are weeknight heroes.",
+      "winerySlugs": ["miramonte", "falkner-winery", "callaway-winery"],
+      "seoBlurb": "Vegetarian Temecula wine pairings for veggies, mushrooms, salads, and mezze."
+    },
+    {
+      "slug": "casual-weeknight-pairings",
+      "title": "Casual Weeknight Pairings",
+      "category": "by-occasion",
+      "wineStyle": "Merlot, Grenache, Chardonnay, or dry Rosé",
+      "summary": "Easy food, easy wine. No special occasion required — just something that makes Tuesday nicer.",
+      "foods": ["Rotisserie chicken", "Burgers or turkey burgers", "Takeout pizza", "Sheet-pan veggies and sausage"],
+      "why": "Softer wines forgive imperfect plating and mixed leftovers. Save the big Cabernet for when you’re grilling on purpose.",
+      "winerySlugs": ["lorimar-winery", "hart-winery", "danza-del-sol"],
+      "seoBlurb": "Easy weeknight wine pairings with Temecula bottles you’ll actually open."
+    },
+    {
+      "slug": "date-night-pairings",
+      "title": "Date Night Wine Pairings",
+      "category": "by-occasion",
+      "wineStyle": "Sparkling to start, then Pinot Noir, Syrah, or elegant Cabernet",
+      "summary": "Keep it special without making dinner complicated — bubbles first, then one thoughtful red or white with the main.",
+      "foods": ["Shared appetizer board", "Salmon or duck breast", "Steak for two", "Chocolate dessert to share"],
+      "why": "Sparkling sets a festive tone; one well-chosen main-course wine keeps the evening simple and conversation-friendly.",
+      "winerySlugs": ["thornton-winery", "falkner-winery", "stonehouse"],
+      "seoBlurb": "Date night Temecula wine pairings — sparkling starters and romantic mains."
+    },
+    {
+      "slug": "holiday-wine-pairings",
+      "title": "Holiday Table Pairings",
+      "category": "by-occasion",
+      "wineStyle": "Sparkling, Chardonnay, Pinot Noir, Cabernet, or Zinfandel",
+      "summary": "Holiday spreads are crowded — offer one white, one red, and something bubbly so every guest has a path.",
+      "foods": ["Turkey or ham", "Herb stuffing and gravy", "Roasted root vegetables", "Pie and cookies"],
+      "why": "Variety beats perfection. Sparkling and Chardonnay cover poultry and sides; Cabernet or Zin handle richer roasts and leftovers.",
+      "winerySlugs": ["wilson-creek-winery", "south-coast-winery", "ponte-winery"],
+      "seoBlurb": "Holiday wine pairings with Temecula sparkling, Chardonnay, and crowd-pleasing reds."
+    },
+    {
+      "slug": "outdoor-picnic-pairings",
+      "title": "Outdoor Picnic Pairings",
+      "category": "by-occasion",
+      "wineStyle": "Rosé, Sparkling, Sauvignon Blanc, or chilled light reds",
+      "summary": "Picnic wines should taste great a little cooler than room temp and pair with finger food.",
+      "foods": ["Sandwiches and wraps", "Fruit and nuts", "Cheese and crackers", "Fried chicken cold or warm"],
+      "why": "Freshness matters outdoors. Chillable bottles travel better and stay refreshing in Temecula sun.",
+      "winerySlugs": ["wilson-creek-winery", "hart-winery", "danza-del-sol"],
+      "seoBlurb": "Picnic wine ideas for Temecula — rosé, sparkling, and chillable bottles."
+    },
+    {
+      "slug": "live-music-winery-pairings",
+      "title": "Live Music at the Winery Pairings",
+      "category": "by-occasion",
+      "wineStyle": "House flight favorites — often Cabernet, Chardonnay, Rosé, or sparkling",
+      "summary": "When the band is playing, you want wines that are fun, not fussy — and snacks that don’t need a knife set.",
+      "foods": ["Shareable appetizers", "Flatbreads or tacos", "Cheese boards", "Dessert bites between sets"],
+      "why": "Live-music nights are social. Choose versatile pours and grazeable food so you’re not stuck mid-song with a complicated plate.",
+      "winerySlugs": ["wilson-creek-winery", "lorimar-winery", "europa-village"],
+      "seoBlurb": "What to drink and eat during Temecula winery live music nights."
+    },
+    {
+      "slug": "summer-wine-pairings",
+      "title": "Summer Wine Pairings",
+      "category": "seasonal",
+      "wineStyle": "Rosé, Sparkling, Viognier, Albariño, chilled Grenache",
+      "summary": "Long Temecula days call for bright, chillable wines and grill-friendly food.",
+      "foods": ["Grilled fish and shrimp", "Caprese salad", "Tacos al pastor", "Watermelon and feta"],
+      "why": "Heat dulls heavy reds. Lighter wines and juicy summer produce keep everything tasting clean and lively.",
+      "winerySlugs": ["callaway-winery", "danza-del-sol", "thornton-winery"],
+      "seoBlurb": "Summer Temecula wine pairings for grilling, tacos, salads, and patio nights."
+    },
+    {
+      "slug": "fall-wine-pairings",
+      "title": "Fall Wine Pairings",
+      "category": "seasonal",
+      "wineStyle": "Syrah, Grenache, Merlot, richer Chardonnay",
+      "summary": "Harvest season energy meets cozy flavors — roasted squash, spices, and medium reds.",
+      "foods": ["Roasted squash and sage", "Pork chops with apple", "Mushroom pasta", "Spiced nuts and cheese"],
+      "why": "Autumn dishes bring earth and spice. Rhône-style reds and fuller whites feel right without jumping straight to heavy winter wines.",
+      "winerySlugs": ["falkner-winery", "miramonte", "baily-winery"],
+      "seoBlurb": "Fall Temecula wine pairings for harvest season dinners and cozy weekends."
+    },
+    {
+      "slug": "winter-wine-pairings",
+      "title": "Winter Wine Pairings",
+      "category": "seasonal",
+      "wineStyle": "Cabernet Sauvignon, Syrah, Zinfandel, Petite Sirah",
+      "summary": "Cooler nights invite bigger reds, slow cooking, and fireside comfort.",
+      "foods": ["Beef stew or short ribs", "Lamb shanks", "Chili or hearty tacos", "Dark chocolate desserts"],
+      "why": "Slow-cooked richness and warm spices meet structure and dark fruit. Winter is Cabernet and Syrah season.",
+      "winerySlugs": ["ponte-winery", "south-coast-winery", "lorimar-winery"],
+      "seoBlurb": "Winter Temecula wine pairings for stews, braises, chili, and chocolate."
+    },
+    {
+      "slug": "spring-wine-pairings",
+      "title": "Spring Wine Pairings",
+      "category": "seasonal",
+      "wineStyle": "Sauvignon Blanc, Sparkling, dry Rosé, lighter Chardonnay",
+      "summary": "Wildflowers, patio reopenings, and fresher plates — spring wines should taste like a deep breath outdoors.",
+      "foods": ["Asparagus and spring peas", "Herb salads with goat cheese", "Lemon chicken", "Strawberries and light pastries"],
+      "why": "Green herbs and citrus want bright acidity. Save the heaviest reds for later in the year.",
+      "winerySlugs": ["hart-winery", "wilson-creek-winery", "callaway-winery"],
+      "seoBlurb": "Spring Temecula wine pairings for herbs, salads, lemon chicken, and patio season."
+    }
+  ]
+}

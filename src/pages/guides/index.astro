@@ -4,6 +4,12 @@ import Navbar from '../../components/Navbar.astro';
 
 const guides = [
   {
+    href: '/pairings',
+    title: 'Wine Pairing Suggestions',
+    blurb: 'Food matches by wine type, protein, occasion, and season — with Temecula winery examples from the directory.',
+    tag: 'Pairings',
+  },
+  {
     href: '/guides/first-timer-tasting-route',
     title: 'First-Timer Temecula Tasting Route',
     blurb: 'A realistic three-stop day on the Rancho California spine — timing, food, transport, and mistakes to skip.',
@@ -29,7 +35,7 @@ const guides = [
       Original planning articles for Temecula wine country — written to answer real trip questions, not to dress up a homepage.
     </p>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {guides.map((g) => (
         <a href={g.href} class="group block rounded-3xl border border-stone-200 bg-white p-8 hover:shadow-xl transition">
           <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">{g.tag}</div>
