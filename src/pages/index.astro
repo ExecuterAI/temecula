@@ -5,6 +5,19 @@ import wineries from '../data/wineries.json';
 
 const featured = wineries.filter(w => w.featured);
 
+const searchBlob = (w: (typeof wineries)[number]) => {
+  const bits = [
+    w.name,
+    w.location,
+    w.price_range,
+    ...(w.varietals || []),
+    w.pet_friendly ? 'pet friendly dogs' : '',
+    w.kid_friendly?.allowed ? 'kid friendly family children' : '',
+    w.slug,
+  ];
+  return bits.filter(Boolean).join(' ').toLowerCase();
+};
+
 // Wine Word of the Day (rotates daily based on date)
 const wineWords = [
   { term: "Terroir", definition: "The unique combination of soil, climate, and topography that gives wine its distinctive character." },
@@ -88,18 +101,23 @@ const wordOfTheDay = wineWords[today % wineWords.length];
 
       <!-- Search Bar -->
       <div class="mb-8 max-w-md">
-        <input 
-          type="text" 
+        <label for="search-input" class="sr-only">Search featured wineries</label>
+        <input
+          type="search"
           id="search-input"
           placeholder="Search wineries by name, varietal, or vibe..."
-          class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg"
-          onkeyup="filterWineries()"
+          autocomplete="off"
+          class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
         />
       </div>
 
       <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featured.map(winery => (
-          <a href={`/wineries/${winery.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+          <a
+            href={`/wineries/${winery.slug}`}
+            class="winery-card group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition"
+            data-search={searchBlob(winery)}
+          >
             <div class="h-56 overflow-hidden">
               <img 
                 src={winery.image} 
@@ -202,16 +220,21 @@ const wordOfTheDay = wineWords[today % wineWords.length];
       </div>
     </section>
   </main>
-</Layout>
 
-<script>
-  function filterWineries() {
-    const input = document.getElementById('search-input').value.toLowerCase();
-    const cards = document.querySelectorAll('#winery-grid > a');
-    
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      card.style.display = text.includes(input) ? '' : 'none';
-    });
-  }
-</script>
+  <script>
+    const input = document.getElementById('search-input') as HTMLInputElement | null;
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('#winery-grid .winery-card'));
+
+    function filterWineries() {
+      if (!input) return;
+      const q = input.value.trim().toLowerCase();
+      for (const card of cards) {
+        const hay = card.dataset.search || card.textContent?.toLowerCase() || '';
+        card.classList.toggle('hidden', !!(q && !hay.includes(q)));
+      }
+    }
+
+    input?.addEventListener('input', filterWineries);
+    input?.addEventListener('search', filterWineries);
+  </script>
+</Layout>

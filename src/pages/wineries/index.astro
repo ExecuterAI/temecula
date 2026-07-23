@@ -2,6 +2,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import wineries from '../../data/wineries.json';
+
+const searchBlob = (w: (typeof wineries)[number]) => {
+  const bits = [
+    w.name,
+    w.location,
+    w.price_range,
+    ...(w.varietals || []),
+    w.pet_friendly ? 'pet friendly dogs' : '',
+    w.kid_friendly?.allowed ? 'kid friendly family children' : '',
+    w.slug,
+  ];
+  return bits.filter(Boolean).join(' ').toLowerCase();
+};
 ---
 
 <Layout title="All Wineries">
@@ -18,23 +31,30 @@ import wineries from '../../data/wineries.json';
 
     <!-- Search -->
     <div class="mb-8 max-w-md">
-      <input 
-        type="text" 
+      <label for="search-input" class="sr-only">Search wineries</label>
+      <input
+        type="search"
         id="search-input"
-        placeholder="Search by name, varietal, or features..."
-        class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg"
-        onkeyup="filterWineries()"
+        placeholder="Search by name, varietals, or features…"
+        autocomplete="off"
+        class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
       />
+      <p id="search-status" class="text-sm text-stone-500 mt-3 hidden" aria-live="polite"></p>
     </div>
 
     <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {wineries.map(winery => (
-        <a href={`/wineries/${winery.slug}`} class="group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition">
+        <a
+          href={`/wineries/${winery.slug}`}
+          class="winery-card group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition"
+          data-search={searchBlob(winery)}
+        >
           <div class="h-56 overflow-hidden">
-            <img 
-              src={winery.image} 
+            <img
+              src={winery.image}
               alt={winery.name}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
             />
           </div>
           <div class="p-6">
@@ -64,14 +84,37 @@ import wineries from '../../data/wineries.json';
   </main>
 
   <script>
+    const input = document.getElementById('search-input') as HTMLInputElement | null;
+    const status = document.getElementById('search-status');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('#winery-grid .winery-card'));
+
     function filterWineries() {
-      const input = document.getElementById('search-input').value.toLowerCase();
-      const cards = document.querySelectorAll('#winery-grid > a');
-      
-      cards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        card.style.display = text.includes(input) ? '' : 'none';
-      });
+      if (!input) return;
+      const q = input.value.trim().toLowerCase();
+      let visible = 0;
+
+      for (const card of cards) {
+        const hay = card.dataset.search || card.textContent?.toLowerCase() || '';
+        const show = !q || hay.includes(q);
+        card.classList.toggle('hidden', !show);
+        if (show) visible += 1;
+      }
+
+      if (status) {
+        if (!q) {
+          status.classList.add('hidden');
+          status.textContent = '';
+        } else {
+          status.classList.remove('hidden');
+          status.textContent =
+            visible === 0
+              ? `No wineries match “${input.value.trim()}”.`
+              : `${visible} winery${visible === 1 ? '' : 'ies'} match “${input.value.trim()}”.`;
+        }
+      }
     }
+
+    input?.addEventListener('input', filterWineries);
+    input?.addEventListener('search', filterWineries);
   </script>
 </Layout>
