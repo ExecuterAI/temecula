@@ -18,8 +18,8 @@ import Navbar from '../components/Navbar.astro';
     <div class="bg-white border border-stone-200 rounded-3xl p-8 mb-10 space-y-4">
       <div>
         <div class="text-sm text-stone-500">Email</div>
-        <a class="text-lg text-[var(--accent)] hover:underline font-medium" href="mailto:lauradfarley@gmail.com?subject=Bellie%20Acres%20Wine%20site">
-          lauradfarley@gmail.com
+        <a class="text-lg text-[var(--accent)] hover:underline font-medium" href="mailto:executerceo@gmail.com?subject=Bellie%20Acres%20Wine%20site">
+          executerceo@gmail.com
         </a>
       </div>
       <div>
@@ -46,7 +46,7 @@ import Navbar from '../components/Navbar.astro';
       <form
         class="space-y-4"
         method="get"
-        action="mailto:lauradfarley@gmail.com"
+        action="mailto:executerceo@gmail.com"
         enctype="text/plain"
         onsubmit="
           event.preventDefault();
@@ -55,7 +55,7 @@ import Navbar from '../components/Navbar.astro';
           const m = document.getElementById('message').value.trim();
           const body = encodeURIComponent('Name: ' + n + '\\nEmail: ' + e + '\\n\\n' + m);
           const sub = encodeURIComponent('Bellie Acres Wine contact from ' + (n || 'site visitor'));
-          window.location.href = 'mailto:lauradfarley@gmail.com?subject=' + sub + '&body=' + body;
+          window.location.href = 'mailto:executerceo@gmail.com?subject=' + sub + '&body=' + body;
         "
       >
         <div>
