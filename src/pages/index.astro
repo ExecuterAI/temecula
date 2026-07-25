@@ -214,6 +214,23 @@ const wordOfTheDay = wineWords[today % wineWords.length];
         ))}
       </div>
     </section>
+
+    <!-- Winery advertising -->
+    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-stone-200">
+      <div class="rounded-3xl bg-[var(--primary)] text-white p-8 sm:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <div class="text-sm uppercase tracking-[2px] text-white/70 mb-2">For wineries</div>
+          <h2 class="font-serif text-3xl sm:text-4xl tracking-tight">Featured Listing — $49 / 30 days</h2>
+          <p class="text-white/80 mt-3 max-w-xl">Highlighted placement on this independent Temecula wine directory. Secure checkout via Stripe.</p>
+        </div>
+        <a
+          href="/advertise"
+          class="inline-flex items-center justify-center px-8 py-4 bg-white text-[var(--primary)] hover:bg-stone-100 rounded-full font-medium transition whitespace-nowrap"
+        >
+          Advertise with us →
+        </a>
+      </div>
+    </section>
   </main>
 
   <script>

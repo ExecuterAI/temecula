@@ -1,0 +1,10 @@
+{
+  "product_id": "prod_Ux60V7c3SbilLP",
+  "price_id": "price_1TxBoX6dLedwu6cNHQ85eG6v",
+  "payment_link_id": "plink_1TxBoY6dLedwu6cNImoAWO8t",
+  "payment_link_url": "https://buy.stripe.com/28E8wIbwAa1J506b2PaIM01",
+  "amount_cents": 4900,
+  "currency": "usd",
+  "duration_days": 30,
+  "name": "Featured Winery Listing"
+}
