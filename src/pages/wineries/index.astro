@@ -3,6 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import wineries from '../../data/wineries.json';
 
+// Paid Featured listings first, then name
+const sorted = [...wineries].sort((a, b) => {
+  if (!!b.featured !== !!a.featured) return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
+  return a.name.localeCompare(b.name);
+});
+
 const searchBlob = (w: (typeof wineries)[number]) => {
   const bits = [
     w.name,
@@ -11,6 +17,7 @@ const searchBlob = (w: (typeof wineries)[number]) => {
     ...(w.varietals || []),
     w.pet_friendly ? 'pet friendly dogs' : '',
     w.kid_friendly?.allowed ? 'kid friendly family children' : '',
+    w.featured ? 'featured' : '',
     w.slug,
   ];
   return bits.filter(Boolean).join(' ').toLowerCase();
@@ -43,19 +50,27 @@ const searchBlob = (w: (typeof wineries)[number]) => {
     </div>
 
     <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {wineries.map(winery => (
+      {sorted.map(winery => (
         <a
           href={`/wineries/${winery.slug}`}
-          class="winery-card group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition"
+          class:list={[
+            'winery-card group block rounded-3xl overflow-hidden border bg-white hover:shadow-xl transition',
+            winery.featured ? 'border-[var(--gold)] ring-1 ring-[var(--gold)]/40' : 'border-stone-200',
+          ]}
           data-search={searchBlob(winery)}
         >
-          <div class="h-56 overflow-hidden">
+          <div class="h-56 overflow-hidden relative">
             <img
               src={winery.image}
               alt={winery.name}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
+            {winery.featured && (
+              <span class="absolute top-3 left-3 text-xs font-medium px-3 py-1 rounded-full bg-[var(--gold)] text-[var(--primary)] shadow">
+                Featured
+              </span>
+            )}
           </div>
           <div class="p-6">
             <div class="flex justify-between items-start mb-3">
@@ -69,6 +84,9 @@ const searchBlob = (w: (typeof wineries)[number]) => {
             </div>
 
             <div class="flex flex-wrap gap-2 mt-4">
+              {winery.featured && (
+                <span class="text-xs px-3 py-1 bg-[var(--gold)]/20 text-[var(--primary)] rounded-full font-medium">Featured</span>
+              )}
               {winery.pet_friendly && (
                 <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">Pet Friendly</span>
               )}

@@ -120,12 +120,15 @@ const wordOfTheDay = wineWords[today % wineWords.length];
             class="winery-card group block rounded-3xl overflow-hidden border border-stone-200 bg-white hover:shadow-xl transition"
             data-search={searchBlob(winery)}
           >
-            <div class="h-56 overflow-hidden">
+            <div class="h-56 overflow-hidden relative">
               <img 
                 src={winery.image} 
                 alt={winery.name}
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
+              <span class="absolute top-3 left-3 text-xs font-medium px-3 py-1 rounded-full bg-[var(--gold)] text-[var(--primary)] shadow">
+                Featured
+              </span>
             </div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-3">
@@ -140,6 +143,7 @@ const wordOfTheDay = wineWords[today % wineWords.length];
               </div>
 
               <div class="flex flex-wrap gap-2 mt-4">
+                <span class="text-xs px-3 py-1 bg-[var(--gold)]/20 text-[var(--primary)] rounded-full font-medium">Featured</span>
                 {winery.pet_friendly && (
                   <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">Pet Friendly</span>
                 )}
