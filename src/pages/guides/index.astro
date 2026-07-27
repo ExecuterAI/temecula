@@ -4,6 +4,18 @@ import Navbar from '../../components/Navbar.astro';
 
 const guides = [
   {
+    href: '/wineries',
+    title: 'Temecula Wineries Directory & List',
+    blurb: 'Full searchable list of Temecula Valley tasting rooms — the core directory for trip planning.',
+    tag: 'Directory',
+  },
+  {
+    href: '/guides/best-temecula-wineries',
+    title: 'Best Temecula Wineries (2026)',
+    blurb: 'Top-rated estates and how to choose the best Temecula winery for a first visit, pets, or families.',
+    tag: 'Best of',
+  },
+  {
     href: '/pairings',
     title: 'Wine Pairing Suggestions',
     blurb: 'Food matches by wine type, protein, occasion, and season — with Temecula winery examples from the directory.',
@@ -26,13 +38,13 @@ const guides = [
 
 <Layout
   title="Temecula Wine Guides"
-  description="Practical Temecula Valley wine-country guides from Bellie Acres — first-timer tasting routes, pet-friendly wineries, and more."
+  description="Temecula wine guides from Bellie Acres Wine — best Temecula wineries, full wineries list & directory tips, first-timer routes, pet-friendly estates, and pairing ideas."
 >
   <Navbar />
   <main class="max-w-5xl mx-auto px-6 py-16">
-    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-4">Guides</h1>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-4">Temecula Wine Guides</h1>
     <p class="text-xl text-stone-600 max-w-2xl mb-12">
-      Original planning articles for Temecula wine country — written to answer real trip questions, not to dress up a homepage.
+      Practical articles for Temecula wine country — from the full wineries directory to best-of picks, routes, pets, and pairings.
     </p>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -26,9 +26,38 @@ const relatedPairings = pairingData.pairings
 // Also match if winery is explicitly listed on a pairing
 const explicit = pairingData.pairings.filter((p) => (p.winerySlugs || []).includes(winery.slug));
 const pairingLinks = [...new Map([...explicit, ...relatedPairings].map((p) => [p.slug, p])).values()].slice(0, 4);
+
+const wineryJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Winery',
+  name: winery.name,
+  description: winery.description,
+  url: `https://bellieacreswine.com/wineries/${winery.slug}/`,
+  image: winery.image,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: winery.address || undefined,
+    addressLocality: 'Temecula',
+    addressRegion: 'CA',
+    addressCountry: 'US',
+  },
+  aggregateRating: winery.rating
+    ? {
+        '@type': 'AggregateRating',
+        ratingValue: winery.rating,
+        bestRating: 5,
+        worstRating: 1,
+      }
+    : undefined,
+};
 ---
 
-<Layout title={winery.name} description={`${winery.name} in Temecula Valley — tasting info, varietals, and pairing ideas on Bellie Acres Wine.`}>
+<Layout
+  title={`${winery.name} | Temecula Winery`}
+  description={`${winery.name} Temecula winery guide — tasting notes, varietals, pet/family info, and trip planning on the Bellie Acres Wine Temecula wine directory.`}
+  ogImage={winery.image}
+  jsonLd={wineryJsonLd}
+>
   <Navbar />
   
   <!-- Hero Image -->

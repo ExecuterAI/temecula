@@ -1,0 +1,164 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const topRated = [...wineries].sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 10);
+const petFriendlyTop = [...wineries]
+  .filter((w) => w.pet_friendly)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 6);
+const familyTop = [...wineries]
+  .filter((w) => w.kid_friendly?.allowed)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 6);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Best Temecula Wineries (2026 Guide)',
+  description:
+    'Independent guide to the best Temecula wineries — top-rated estates, first-visit picks, pet-friendly options, and how to choose from the full Temecula wineries list.',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/best-temecula-wineries/',
+  dateModified: '2026-07-27',
+};
+---
+
+<Layout
+  title="Best Temecula Wineries (2026 Guide)"
+  description="Best Temecula wineries guide — top-rated Temecula Valley estates, first-visit picks, pet-friendly options, and how to choose from our full Temecula wineries directory and list."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+
+  <main class="max-w-3xl mx-auto px-6 py-14">
+    <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">
+      <a href="/guides" class="hover:underline">Guides</a> · Updated July 2026
+    </p>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight leading-tight">
+      Best Temecula Wineries
+    </h1>
+    <p class="text-xl text-stone-600 mt-5 leading-relaxed">
+      There isn’t one universal “best Temecula winery” — the right stop depends on sparkling vs. bold reds, patio energy, kids, dogs, and how many pours you want in a day.
+      This guide uses ratings and practical filters from our independent
+      <a class="text-[var(--accent)] underline" href="/wineries">Temecula wineries directory</a>
+      so you can shortlist faster.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/wineries" class="px-5 py-2.5 rounded-full bg-[var(--primary)] text-white text-sm font-medium hover:opacity-90">Full wineries list</a>
+      <a href="/guides/first-timer-tasting-route" class="px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--accent)]">First-timer route</a>
+      <a href="/map" class="px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--accent)]">Wine map</a>
+    </div>
+
+    <section class="mt-14 prose-none">
+      <h2 class="font-serif text-3xl tracking-tight mb-4">How we define “best”</h2>
+      <p class="text-lg text-stone-700 leading-relaxed">
+        For this Temecula wine guide, “best” means a strong visitor fit: solid community ratings in our directory data,
+        clear tasting identity, and trip logistics you can plan around. Featured listings are paid placements on the site —
+        they help discovery, but this best-of ranking is sorted by rating so you can compare fairly.
+      </p>
+      <ul class="mt-5 space-y-2 text-stone-700 list-disc pl-6">
+        <li>Start with top-rated estates if you want crowd favorites.</li>
+        <li>Filter for pets or families when that changes the day.</li>
+        <li>Confirm hours, fees, and reservations on the winery’s official site before you drive.</li>
+      </ul>
+    </section>
+
+    <section class="mt-14">
+      <h2 class="font-serif text-3xl tracking-tight mb-3">Top-rated Temecula wineries right now</h2>
+      <p class="text-stone-600 mb-8">
+        Highest ratings from our current Temecula wineries list ({wineries.length} estates). Ratings are directory snapshots — always re-check recent visitor notes and the estate website.
+      </p>
+      <ol class="space-y-4">
+        {topRated.map((w, i) => (
+          <li class="rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 flex gap-4 items-start">
+            <div class="w-10 h-10 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-semibold shrink-0">
+              {i + 1}
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <a href={`/wineries/${w.slug}`} class="font-serif text-2xl text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-sm font-semibold text-stone-800">{w.rating} / 5</span>
+              </div>
+              <p class="text-stone-600 mt-1 text-sm">
+                {w.location} · {w.price_range}
+                {w.varietals?.[0] ? ` · Known for ${w.varietals[0]}` : ''}
+              </p>
+              <p class="text-stone-700 mt-3 leading-relaxed line-clamp-3">{w.description}</p>
+              <a href={`/wineries/${w.slug}`} class="inline-block mt-3 text-[var(--accent)] font-medium hover:underline">
+                View directory listing →
+              </a>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="mt-14 grid sm:grid-cols-2 gap-8">
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight mb-4">Strong pet-friendly picks</h2>
+        <ul class="space-y-3">
+          {petFriendlyTop.map((w) => (
+            <li>
+              <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              <span class="text-stone-500 text-sm"> · {w.rating}</span>
+            </li>
+          ))}
+        </ul>
+        <a href="/guides/pet-friendly-wineries" class="inline-block mt-4 text-[var(--accent)] font-medium hover:underline">
+          Full pet-friendly guide →
+        </a>
+      </div>
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight mb-4">Family-friendlier options</h2>
+        <ul class="space-y-3">
+          {familyTop.map((w) => (
+            <li>
+              <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              <span class="text-stone-500 text-sm"> · {w.rating}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-sm text-stone-500 mt-4">Policies vary by time of day — confirm on site.</p>
+      </div>
+    </section>
+
+    <section class="mt-14">
+      <h2 class="font-serif text-3xl tracking-tight mb-4">Build a day around the best stops</h2>
+      <p class="text-lg text-stone-700 leading-relaxed">
+        Once you’ve circled two or three favorites from this best Temecula wineries shortlist, open the
+        <a class="text-[var(--accent)] underline" href="/map">Temecula wine map</a> and our
+        <a class="text-[var(--accent)] underline" href="/guides/first-timer-tasting-route">first-timer tasting route</a>
+        so drive time doesn’t eat the afternoon. For food after pours, browse
+        <a class="text-[var(--accent)] underline" href="/pairings">Temecula wine pairing ideas</a>.
+      </p>
+    </section>
+
+    <section class="mt-14 rounded-3xl bg-stone-100 border border-stone-200 p-8">
+      <h2 class="font-serif text-2xl mb-3">Want the complete directory?</h2>
+      <p class="text-stone-700 leading-relaxed">
+        This guide highlights standouts. The full <strong>Temecula wine directory</strong> and searchable
+        <strong> Temecula wineries list</strong> live on one page — including smaller estates that may be the best Temecula winery <em>for your</em> taste.
+      </p>
+      <a
+        href="/wineries"
+        class="inline-flex mt-6 px-6 py-3 rounded-full bg-[var(--primary)] text-white font-medium hover:opacity-90"
+      >
+        Open full wineries list →
+      </a>
+    </section>
+
+    <p class="text-sm text-stone-500 mt-12 leading-relaxed">
+      Independent editorial guide for adults 21+. Bellie Acres Wine does not sell alcohol. Hours, fees, pet rules, and availability change — verify directly with each Temecula winery.
+    </p>
+  </main>
+</Layout>

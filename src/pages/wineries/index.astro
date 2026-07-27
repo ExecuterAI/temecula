@@ -22,27 +22,100 @@ const searchBlob = (w: (typeof wineries)[number]) => {
   ];
   return bits.filter(Boolean).join(' ').toLowerCase();
 };
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Temecula Wineries Directory & List',
+  description: `Complete list of ${wineries.length} Temecula Valley wineries for tasting-room trip planning.`,
+  numberOfItems: wineries.length,
+  itemListElement: sorted.slice(0, 40).map((w, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: w.name,
+    url: `https://bellieacreswine.com/wineries/${w.slug}/`,
+  })),
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How many Temecula wineries are in this directory?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `This Temecula wine directory currently lists ${wineries.length} estates with practical trip details such as location, varietals, pet and family notes, and links to official sites.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the best Temecula winery for a first visit?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'There is no single best Temecula winery for everyone. First-timers often prefer estates with clear tasting options, pleasant outdoor space, and flexible pacing. Start with our best Temecula wineries guide and first-timer tasting route, then confirm hours and reservations on the winery website.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is this the official Temecula Valley winery association site?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Bellie Acres Wine is an independent Temecula wineries list and trip-planning directory. Always verify fees, hours, and policies with each winery before you go.',
+      },
+    },
+  ],
+};
 ---
 
-<Layout title="All Wineries">
+<Layout
+  title="Temecula Wineries Directory & List"
+  description={`Complete Temecula wineries list and directory — ${wineries.length} Temecula Valley tasting rooms with ratings, varietals, pet/family notes, and links. Plan Temecula wine stops in one place.`}
+  jsonLd={[itemListJsonLd, faqJsonLd]}
+>
   <Navbar />
 
   <main class="max-w-6xl mx-auto px-6 py-12">
-    <div class="flex justify-between items-end mb-10">
-      <div>
-        <h1 class="text-6xl font-serif tracking-tight">All Wineries</h1>
-        <p class="text-xl text-stone-600 mt-2">Explore {wineries.length} wineries in Temecula Valley</p>
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-8">
+      <div class="max-w-3xl">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Temecula Valley · Independent guide</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight">
+          Temecula Wineries Directory &amp; List
+        </h1>
+        <p class="text-xl text-stone-600 mt-4 leading-relaxed">
+          Browse the full <strong>Temecula wineries list</strong> — {wineries.length} estates in this
+          <strong> Temecula wine directory</strong>. Search by name, varietal, or features, then open any listing for tasting context and planning notes.
+        </p>
       </div>
-      <a href="/" class="text-[var(--accent)] hover:underline">← Back to home</a>
+      <a href="/" class="text-[var(--accent)] hover:underline shrink-0">← Back to home</a>
+    </div>
+
+    <div class="mb-10 grid md:grid-cols-3 gap-4">
+      <a href="/guides/best-temecula-wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Curated</div>
+        <div class="font-serif text-xl mt-1">Best Temecula wineries</div>
+        <p class="text-sm text-stone-600 mt-2">Top-rated and first-visit friendly picks from the directory.</p>
+      </a>
+      <a href="/map" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Route</div>
+        <div class="font-serif text-xl mt-1">Temecula wine map</div>
+        <p class="text-sm text-stone-600 mt-2">See how estates sit along the valley for easier day planning.</p>
+      </a>
+      <a href="/guides/pet-friendly-wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Filter vibe</div>
+        <div class="font-serif text-xl mt-1">Pet-friendly list</div>
+        <p class="text-sm text-stone-600 mt-2">Dog-welcome estates and patio rules for wine country with pets.</p>
+      </a>
     </div>
 
     <!-- Search -->
     <div class="mb-8 max-w-md">
-      <label for="search-input" class="sr-only">Search wineries</label>
+      <label for="search-input" class="sr-only">Search Temecula wineries</label>
       <input
         type="search"
         id="search-input"
-        placeholder="Search by name, varietals, or features…"
+        placeholder="Search Temecula wineries by name, varietals, or features…"
         autocomplete="off"
         class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
       />
@@ -62,7 +135,7 @@ const searchBlob = (w: (typeof wineries)[number]) => {
           <div class="h-56 overflow-hidden relative">
             <img
               src={winery.image}
-              alt={winery.name}
+              alt={`${winery.name} — Temecula winery`}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
@@ -75,7 +148,7 @@ const searchBlob = (w: (typeof wineries)[number]) => {
           <div class="p-6">
             <div class="flex justify-between items-start mb-3">
               <div>
-                <h3 class="font-serif text-2xl group-hover:text-[var(--accent)] transition leading-tight">{winery.name}</h3>
+                <h2 class="font-serif text-2xl group-hover:text-[var(--accent)] transition leading-tight">{winery.name}</h2>
                 <p class="text-stone-600 mt-0.5">{winery.location} • {winery.price_range}</p>
               </div>
               <div class="text-right">
@@ -99,6 +172,33 @@ const searchBlob = (w: (typeof wineries)[number]) => {
         </a>
       ))}
     </div>
+
+    <!-- FAQ / keyword support (human-readable) -->
+    <section class="mt-20 max-w-3xl border-t border-stone-200 pt-12">
+      <h2 class="font-serif text-3xl tracking-tight mb-6">Temecula wine directory FAQs</h2>
+      <div class="space-y-6 text-stone-700 leading-relaxed">
+        <div>
+          <h3 class="font-semibold text-stone-900 text-lg">Is this a full Temecula wineries list?</h3>
+          <p class="mt-2">
+            Yes — this page is our living <strong>Temecula wineries list</strong> and directory index. Listings focus on visitor planning details and link out to each estate’s official site for reservations, fees, and live hours.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-stone-900 text-lg">How do I find the best Temecula winery for me?</h3>
+          <p class="mt-2">
+            “Best” depends on whether you want sparkling, bold reds, a quiet patio, kids, or dogs. Use search above, then compare our
+            <a class="text-[var(--accent)] underline" href="/guides/best-temecula-wineries">best Temecula wineries</a> guide and
+            <a class="text-[var(--accent)] underline" href="/guides/first-timer-tasting-route">first-timer route</a>.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-stone-900 text-lg">Do you sell Temecula wine online?</h3>
+          <p class="mt-2">
+            No. Bellie Acres Wine is an independent guide only. We help you discover Temecula wine country; purchases and tastings happen directly with each winery.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script>
@@ -130,6 +230,14 @@ const searchBlob = (w: (typeof wineries)[number]) => {
               : `${visible} ${visible === 1 ? 'winery matches' : 'wineries match'} “${input.value.trim()}”.`;
         }
       }
+    }
+
+    // Support ?q= from WebSite SearchAction
+    const params = new URLSearchParams(window.location.search);
+    const qParam = params.get('q');
+    if (qParam && input) {
+      input.value = qParam;
+      filterWineries();
     }
 
     input?.addEventListener('input', filterWineries);

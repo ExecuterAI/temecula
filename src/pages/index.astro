@@ -31,9 +31,43 @@ const wineWords = [
 
 const today = new Date().getDate();
 const wordOfTheDay = wineWords[today % wineWords.length];
+const wineryCount = wineries.length;
+
+const homeJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Bellie Acres Wine',
+    alternateName: ['Temecula Wine Directory', 'Temecula Wineries List'],
+    url: 'https://bellieacreswine.com/',
+    description:
+      'Independent Temecula wine directory and wineries list for Temecula Valley tasting rooms, maps, pairings, and trip planning.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://bellieacreswine.com/wineries/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Bellie Acres Wine',
+    url: 'https://bellieacreswine.com/',
+    email: 'executerceo@gmail.com',
+    description: 'Independent Temecula Valley wine-country directory — not a winery or alcohol retailer.',
+    areaServed: {
+      '@type': 'Place',
+      name: 'Temecula Valley, California',
+    },
+  },
+];
 ---
 
-<Layout title="Discover Temecula Wineries">
+<Layout
+  title="Temecula Wine Directory | Wineries List & Best Stops"
+  description={`Independent Temecula wine directory with a full Temecula wineries list (${wineryCount}+ estates). Compare tasting rooms, find the best Temecula winery stops, maps, pairings, and trip guides.`}
+  jsonLd={homeJsonLd}
+>
   <Navbar />
 
   <main>
@@ -43,26 +77,29 @@ const wordOfTheDay = wineWords[today % wineWords.length];
       
       <div class="relative z-10 text-center px-6 max-w-5xl">
         <div class="inline-block px-4 py-1 rounded-full bg-white/10 text-white text-sm tracking-[3px] mb-6">
-          TEMECULA VALLEY • SINCE 1969
+          TEMECULA VALLEY WINE COUNTRY
         </div>
         
-        <h1 class="text-6xl md:text-7xl font-serif text-white tracking-[-3px] leading-none mb-6">
-          Wine Country,<br> Elevated.
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-serif text-white tracking-[-2px] leading-[1.05] mb-6">
+          Temecula Wine Directory
         </h1>
         
-        <p class="max-w-md mx-auto text-lg text-white/80 mb-8">
-          Thoughtfully curated experiences across 41 of Temecula’s finest wineries.
+        <p class="max-w-2xl mx-auto text-lg md:text-xl text-white/85 mb-3">
+          Wine country, elevated — an independent guide to Temecula wine.
+        </p>
+        <p class="max-w-xl mx-auto text-base text-white/75 mb-8">
+          Browse the full Temecula wineries list, shortlist the best Temecula winery stops for your day, and plan with maps, pairings, and practical guides.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#explore" class="px-8 py-3.5 bg-white text-stone-900 rounded-full font-medium hover:bg-white/90 transition">
-            Explore the Wineries
+          <a href="/wineries" class="px-8 py-3.5 bg-white text-stone-900 rounded-full font-medium hover:bg-white/90 transition">
+            Wineries list
           </a>
           <a href="/map" class="px-8 py-3.5 border border-white/70 text-white rounded-full font-medium hover:bg-white/10 transition">
-            View Map
+            View map
           </a>
-          <a href="#balloons" class="px-8 py-3.5 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition">
-            Hot Air Balloon Rides
+          <a href="/guides/best-temecula-wineries" class="px-8 py-3.5 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition">
+            Best Temecula wineries
           </a>
         </div>
       </div>
@@ -71,12 +108,50 @@ const wordOfTheDay = wineWords[today % wineWords.length];
     <!-- Trust Bar -->
     <div class="border-b border-stone-200 bg-white">
       <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm text-stone-600">
-        <div>41 Wineries</div>
-        <div>4.6 Average Rating</div>
+        <div>{wineryCount} Wineries listed</div>
+        <div>Directory · List · Map</div>
         <div>Family & Pet Friendly Options</div>
-        <div>Live Music Weekly</div>
+        <div>Independent guide</div>
       </div>
     </div>
+
+    <!-- SEO intro + intent hubs -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid lg:grid-cols-5 gap-10 items-start">
+        <div class="lg:col-span-3">
+          <h2 class="text-3xl sm:text-4xl font-serif tracking-tight text-stone-900 mb-4">
+            Plan Temecula wine country without twenty browser tabs
+          </h2>
+          <p class="text-lg text-stone-700 leading-relaxed">
+            Bellie Acres Wine is an independent <strong>Temecula wine directory</strong> built for trip planning.
+            Use our <strong>Temecula wineries list</strong> to compare estates by vibe, varietals, pet and family policies, and price feel —
+            then open the map, pairings, and guides when you’re ready to build a route.
+          </p>
+          <p class="text-lg text-stone-700 leading-relaxed mt-4">
+            Looking for the <strong>best Temecula winery</strong> for a first visit, a celebration, or a relaxed patio afternoon?
+            Start with featured estates below, or read our curated best-of guide. We don’t sell alcohol here — we help you choose where to taste.
+          </p>
+        </div>
+        <div class="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-3">
+          <a href="/wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Directory</div>
+            <div class="font-serif text-xl mt-1">Full wineries list</div>
+          </a>
+          <a href="/guides/best-temecula-wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Best of</div>
+            <div class="font-serif text-xl mt-1">Best Temecula wineries</div>
+          </a>
+          <a href="/guides/first-timer-tasting-route" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Itinerary</div>
+            <div class="font-serif text-xl mt-1">First-timer route</div>
+          </a>
+          <a href="/pairings" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Food</div>
+            <div class="font-serif text-xl mt-1">Wine pairing ideas</div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Wine Word of the Day -->
     <section class="max-w-4xl mx-auto px-6 py-10">
@@ -178,6 +253,12 @@ const wordOfTheDay = wineWords[today % wineWords.length];
           <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Planning</div>
           <h3 class="font-serif text-3xl group-hover:text-[var(--accent)] transition">First-Timer Tasting Route</h3>
           <p class="text-stone-600 mt-4 leading-relaxed">A realistic three-stop day on the Rancho California spine — timing, food, transport, and mistakes to skip.</p>
+          <div class="mt-6 text-[var(--accent)] font-medium">Read guide →</div>
+        </a>
+        <a href="/guides/best-temecula-wineries" class="group block rounded-3xl border border-stone-200 bg-white p-8 hover:shadow-xl transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Best of</div>
+          <h3 class="font-serif text-3xl group-hover:text-[var(--accent)] transition">Best Temecula Wineries</h3>
+          <p class="text-stone-600 mt-4 leading-relaxed">Top-rated picks and how to choose the best Temecula winery stop for your day — from our full directory list.</p>
           <div class="mt-6 text-[var(--accent)] font-medium">Read guide →</div>
         </a>
         <a href="/guides/pet-friendly-wineries" class="group block rounded-3xl border border-stone-200 bg-white p-8 hover:shadow-xl transition">

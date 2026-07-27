@@ -4,24 +4,66 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  /** Absolute or site-root image path for social cards */
+  ogImage?: string;
+  /** Optional JSON-LD object or array — stringified into application/ld+json */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /** When true, use `title` as the full <title> (no brand suffix) */
+  fullTitle?: boolean;
 }
 
-const { title, description = "Discover the best wineries in Temecula Valley — independent guide at bellieacreswine.com" } = Astro.props;
-const canonical = new URL(Astro.url.pathname, "https://bellieacreswine.com").toString();
+const {
+  title,
+  description = 'Temecula wine directory and wineries list — independent guide to Temecula Valley tasting rooms, maps, pairings, and trip planning at bellieacreswine.com.',
+  ogImage = 'https://bellieacreswine.com/hero-bg.jpg',
+  jsonLd,
+  fullTitle = false,
+} = Astro.props;
+
+const siteOrigin = 'https://bellieacreswine.com';
+const canonical = new URL(Astro.url.pathname, siteOrigin).toString();
+const pageTitle = fullTitle ? title : `${title} | Bellie Acres Wine`;
+const ogImageAbs = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteOrigin).toString();
+const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Bellie Acres Wine" />
+    <meta
+      name="keywords"
+      content="Temecula wine directory, Temecula wineries, Temecula wineries list, Temecula wine, best Temecula winery, Temecula Valley wine country, winery map"
+    />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="index,follow" />
     <meta name="google-site-verification" content="sYv-Z1JQJe3bWMDvU0VYl3KdTiMsyUoxydpbk0mceGo" />
-    <title>{title} | Bellie Acres Wine</title>
+    <title>{pageTitle}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bellie Acres Wine" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageAbs} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbs} />
+
+    {jsonLdBlocks.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
+
     <!-- Google AdSense (Auto ads) -->
     <script
       is:inline

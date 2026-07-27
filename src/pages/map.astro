@@ -4,13 +4,21 @@ import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
 ---
 
-<Layout title="Temecula Wine Map">
+<Layout
+  title="Temecula Wine Map"
+  description={`Temecula wine map of ${wineries.length} valley wineries — plan routes from our Temecula wine directory and full wineries list.`}
+>
   <Navbar />
 
   <main class="max-w-6xl mx-auto px-6 py-12">
     <div class="mb-8">
       <h1 class="text-6xl font-serif tracking-tight">Temecula Wine Map</h1>
-      <p class="text-xl text-stone-600 mt-2">Explore all {wineries.length} wineries across the valley</p>
+      <p class="text-xl text-stone-600 mt-2">
+        Explore {wineries.length} Temecula wineries across the valley — pair this map with our
+        <a href="/wineries" class="text-[var(--accent)] underline">directory list</a>
+        and
+        <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> guide.
+      </p>
     </div>
 
     <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm">
