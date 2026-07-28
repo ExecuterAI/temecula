@@ -2,6 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
+
+const mapWineries = wineries.map((w) => ({
+  name: w.name,
+  slug: w.slug,
+  address: w.address,
+  lat: w.coordinates?.lat,
+  lng: w.coordinates?.lng,
+  rating: w.rating,
+  featured: !!w.featured,
+}));
+
+const withCoords = mapWineries.filter((w) => typeof w.lat === 'number' && typeof w.lng === 'number');
+const avgLat = withCoords.reduce((s, w) => s + w.lat, 0) / (withCoords.length || 1);
+const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length || 1);
 ---
 
 <Layout
@@ -14,7 +28,8 @@ import wineries from '../data/wineries.json';
     <div class="mb-8">
       <h1 class="text-6xl font-serif tracking-tight">Temecula Wine Map</h1>
       <p class="text-xl text-stone-600 mt-2">
-        Explore {wineries.length} Temecula wineries across the valley — pair this map with our
+        Explore {wineries.length} Temecula wineries across the valley — pins use street-level coordinates from each listing address.
+        Pair this map with our
         <a href="/wineries" class="text-[var(--accent)] underline">directory list</a>
         and
         <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> guide.
@@ -25,14 +40,16 @@ import wineries from '../data/wineries.json';
       <div id="map" class="w-full h-[650px]"></div>
     </div>
 
-    <div class="mt-4 text-sm text-stone-500 flex items-center gap-2">
-      <div class="w-3 h-3 bg-[var(--accent)] rounded-full"></div>
-      Click any marker to view winery details
+    <div class="mt-4 text-sm text-stone-500 flex flex-wrap items-center gap-x-4 gap-y-2">
+      <span class="inline-flex items-center gap-2">
+        <span class="w-3 h-3 bg-[var(--accent)] rounded-full"></span>
+        Click any marker for address + details
+      </span>
+      <span>{withCoords.length} mapped estates</span>
     </div>
   </main>
 
-  <script define:vars={{ wineries }}>
-    // Load Leaflet
+  <script define:vars={{ mapWineries, avgLat, avgLng }}>
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
@@ -41,26 +58,42 @@ import wineries from '../data/wineries.json';
     const script = document.createElement('script');
     script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
     script.onload = () => {
-      const map = L.map('map').setView([33.525, -117.02], 11);
+      const map = L.map('map', { scrollWheelZoom: true }).setView([avgLat || 33.53, avgLng || -117.07], 12);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap'
+        attribution: '© OpenStreetMap',
+        maxZoom: 19,
       }).addTo(map);
 
-      // Add all winery markers
-      wineries.forEach(winery => {
-        if (winery.coordinates) {
-          const marker = L.marker([winery.coordinates.lat, winery.coordinates.lng])
-            .addTo(map)
-            .bindPopup(`
-              <div class="min-w-[220px]">
-                <strong class="text-lg">${winery.name}</strong><br>
-                <span class="text-sm text-stone-600">${winery.address}</span><br><br>
-                <a href="/wineries/${winery.slug}" class="text-[var(--accent)] hover:underline">View Details →</a>
-              </div>
-            `);
-        }
+      const bounds = [];
+      const markers = [];
+
+      mapWineries.forEach((winery) => {
+        if (typeof winery.lat !== 'number' || typeof winery.lng !== 'number') return;
+        // Guard against swapped / invalid coords
+        if (winery.lat < 33.3 || winery.lat > 33.8 || winery.lng > -116.8 || winery.lng < -117.4) return;
+
+        const marker = L.marker([winery.lat, winery.lng]).addTo(map).bindPopup(`
+          <div style="min-width:220px;font-family:system-ui,sans-serif">
+            <strong style="font-size:16px">${winery.name}</strong><br/>
+            <span style="font-size:13px;color:#57534e">${winery.address || ''}</span><br/>
+            ${winery.rating ? `<span style="font-size:13px">★ ${winery.rating}</span><br/>` : ''}
+            <a href="/wineries/${winery.slug}" style="color:#8B5E3C;font-weight:600">View details →</a>
+          </div>
+        `);
+        markers.push(marker);
+        bounds.push([winery.lat, winery.lng]);
       });
+
+      if (bounds.length >= 2) {
+        map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13 });
+      } else if (bounds.length === 1) {
+        map.setView(bounds[0], 13);
+      }
+
+      // Leaflet often needs a resize after CSS layout
+      setTimeout(() => map.invalidateSize(), 100);
+      window.addEventListener('resize', () => map.invalidateSize());
     };
     document.head.appendChild(script);
   </script>
