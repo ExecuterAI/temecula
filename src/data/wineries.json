@@ -1067,7 +1067,7 @@
     "name": "Vail Lake Winery",
     "slug": "vail-lake",
     "location": "Temecula",
-    "address": "37750 De Portola Rd, Temecula, CA 92592",
+    "address": "38000 De Portola Rd, Temecula, CA 92592",
     "description": "Lakeside winery with beautiful views and relaxed atmosphere. Vail Lake Winery is a Temecula Valley stop known for Cabernet Sauvignon, Chardonnay, Merlot, Syrah, with a visitor rating around 4.0/5 and a typical price feel of $$. The estate is listed at 37700 De Portola Rd, Temecula, CA 92592 and can be reached at (951) 676-9999. Families: children are welcome. Kids welcome. Dogs are welcome in outdoor areas when leashed. Tasting-room guidance: A public tasting room is available; confirm hours on the winery website.. If you are traveling with a group, call ahead for large-party tasting options and outdoor seating. This page is an independent directory overview for trip planning \u2014 always confirm reservations, fees, and live music schedules directly with Vail Lake Winery before you drive out.",
     "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80",
     "varietals": [
@@ -1087,8 +1087,8 @@
     "website": "https://www.vaillakewinery.com",
     "phone": "(951) 676-9999",
     "coordinates": {
-      "lat": 33.515,
-      "lng": -117.0205
+      "lat": 33.51782,
+      "lng": -117.0197
     },
     "featured": false,
     "events": [],
