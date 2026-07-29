@@ -128,7 +128,7 @@ const faqJsonLd = {
           href={`/wineries/${winery.slug}`}
           class:list={[
             'winery-card group block rounded-3xl overflow-hidden border bg-white hover:shadow-xl transition',
-            winery.featured ? 'border-[var(--gold)] ring-1 ring-[var(--gold)]/40' : 'border-stone-200',
+            winery.featured ? 'border-[#9AAB97] ring-1 ring-[#9AAB97]/50' : 'border-stone-200',
           ]}
           data-search={searchBlob(winery)}
         >
@@ -140,7 +140,7 @@ const faqJsonLd = {
               loading="lazy"
             />
             {winery.featured && (
-              <span class="absolute top-3 left-3 text-xs font-medium px-3 py-1 rounded-full bg-[var(--gold)] text-[var(--primary)] shadow">
+              <span class="absolute top-3 left-3 text-xs font-medium px-3 py-1 rounded-full bg-[#9AAB97] text-[#2B322C] shadow">
                 Featured
               </span>
             )}
@@ -158,13 +158,13 @@ const faqJsonLd = {
 
             <div class="flex flex-wrap gap-2 mt-4">
               {winery.featured && (
-                <span class="text-xs px-3 py-1 bg-[var(--gold)]/20 text-[var(--primary)] rounded-full font-medium">Featured</span>
+                <span class="text-xs px-3 py-1 bg-[#9AAB97]/25 text-[#4A5E4E] rounded-full font-medium">Featured</span>
               )}
               {winery.pet_friendly && (
-                <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">Pet Friendly</span>
+                <span class="text-xs px-3 py-1 bg-[#dce4d9] text-[#4A5E4E] rounded-full">Pet Friendly</span>
               )}
               {winery.kid_friendly?.allowed && (
-                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-700 rounded-full">Kid Friendly</span>
+                <span class="text-xs px-3 py-1 bg-[#eef0e9] text-[#4A5E4E] rounded-full">Kid Friendly</span>
               )}
               <span class="text-xs px-3 py-1 bg-stone-100 text-stone-600 rounded-full">{winery.varietals[0]}</span>
             </div>

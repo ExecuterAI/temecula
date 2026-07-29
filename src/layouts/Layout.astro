@@ -42,6 +42,7 @@ const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#4A5E4E" />
     <meta name="google-site-verification" content="sYv-Z1JQJe3bWMDvU0VYl3KdTiMsyUoxydpbk0mceGo" />
     <title>{pageTitle}</title>
 
@@ -72,9 +73,9 @@ const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-stone-50 text-stone-900">
+  <body class="bg-base text-ink antialiased">
     <!-- Alcohol content notice (travel directory; 21+ tasting) -->
-    <div class="bg-stone-900 text-stone-200 text-xs sm:text-sm text-center px-4 py-2">
+    <div class="bg-dark-sage text-white/90 text-xs sm:text-sm text-center px-4 py-2">
       Wine tourism directory for adults 21+. Please drink responsibly and never drink and drive.
       <a href="/privacy" class="underline ml-2 hover:text-white">Privacy</a>
       <span class="mx-1">·</span>
@@ -89,8 +90,64 @@ const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   @import "tailwindcss";
 
   :root {
-    --primary: #3F2A1D;
-    --accent: #8B5E3C;
-    --gold: #C5A26F;
+    /* Exact mockup palette (shared with lauradfarley.com) */
+    --color-base-bg: #f6f7f2; /* Chantilly Lace */
+    --color-primary-sage: #9aab97; /* Light Sage Accent */
+    --color-dark-sage: #4a5e4e; /* Deep Sage / Buttons / Footer */
+    --color-card-bg: #ffffff; /* Pure White */
+    --color-text-main: #2b322c; /* Deep Charcoal */
+
+    /* Legacy semantic tokens used across pages */
+    --primary: var(--color-dark-sage);
+    --accent: var(--color-primary-sage);
+    --gold: var(--color-primary-sage);
+  }
+
+  /* Remap stone + amber utilities so existing pages pick up the palette */
+  @theme {
+    --color-base: #f6f7f2;
+    --color-ink: #2b322c;
+    --color-dark-sage: #4a5e4e;
+    --color-sage: #9aab97;
+    --color-card: #ffffff;
+
+    --color-stone-50: #f6f7f2;
+    --color-stone-100: #eef0e9;
+    --color-stone-200: #dfe4db;
+    --color-stone-300: #c9d2c6;
+    --color-stone-400: #a3b0a1;
+    --color-stone-500: #7a8779;
+    --color-stone-600: #5c665e;
+    --color-stone-700: #4a5e4e;
+    --color-stone-800: #3a4a3d;
+    --color-stone-900: #2b322c;
+    --color-stone-950: #1c221e;
+
+    --color-amber-50: #eef3ec;
+    --color-amber-100: #dce4d9;
+    --color-amber-200: #c5d1c2;
+    --color-amber-300: #9aab97;
+    --color-amber-400: #7f947c;
+    --color-amber-500: #4a5e4e;
+    --color-amber-600: #4a5e4e;
+    --color-amber-700: #3a4a3d;
+    --color-amber-800: #2b322c;
+    --color-amber-900: #1c221e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-base-bg);
+    color: var(--color-text-main);
+  }
+
+  /* Deep Sage primary buttons — keep hover:bg-black from looking pure black */
+  a.bg-\[var\(--primary\)\]:hover,
+  button.bg-\[var\(--primary\)\]:hover,
+  .hover\:bg-black:hover {
+    background-color: #3a4a3d !important;
   }
 </style>

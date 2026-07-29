@@ -76,9 +76,9 @@ const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length ||
         const marker = L.marker([winery.lat, winery.lng]).addTo(map).bindPopup(`
           <div style="min-width:220px;font-family:system-ui,sans-serif">
             <strong style="font-size:16px">${winery.name}</strong><br/>
-            <span style="font-size:13px;color:#57534e">${winery.address || ''}</span><br/>
+            <span style="font-size:13px;color:#5c665e">${winery.address || ''}</span><br/>
             ${winery.rating ? `<span style="font-size:13px">★ ${winery.rating}</span><br/>` : ''}
-            <a href="/wineries/${winery.slug}" style="color:#8B5E3C;font-weight:600">View details →</a>
+            <a href="/wineries/${winery.slug}" style="color:#4A5E4E;font-weight:600">View details →</a>
           </div>
         `);
         markers.push(marker);
