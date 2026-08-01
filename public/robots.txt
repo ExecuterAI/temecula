@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://bellieacreswine.com/sitemap-temecula.xml
+Sitemap: https://bellieacreswine.com/sitemap_index.xml
 Sitemap: https://bellieacreswine.com/sitemap.xml
