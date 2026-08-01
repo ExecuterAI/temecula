@@ -15,6 +15,15 @@ const searchBlob = (w: (typeof wineries)[number]) => {
     ...(w.varietals || []),
     w.pet_friendly ? 'pet friendly dogs' : '',
     w.kid_friendly?.allowed ? 'kid friendly family children' : '',
+    w.has_views
+      ? [
+          'view views scenic overlook panoramic vista',
+          'sip with a view',
+          'tasting with a view',
+          'drink in the views',
+          ...(w.view_tags || []),
+        ].join(' ')
+      : '',
     w.slug,
   ];
   return bits.filter(Boolean).join(' ').toLowerCase();
@@ -182,7 +191,7 @@ const homeJsonLd = [
         <input
           type="search"
           id="search-input"
-          placeholder="Search wineries by name, varietal, or vibe..."
+          placeholder="Search wineries by name, varietal, pet, or views..."
           autocomplete="off"
           class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
         />
@@ -219,6 +228,9 @@ const homeJsonLd = [
 
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="text-xs px-3 py-1 bg-[#9AAB97]/25 text-[#4A5E4E] rounded-full font-medium">Featured</span>
+                {winery.has_views && (
+                  <span class="text-xs px-3 py-1 bg-[#dce4d9] text-[#4A5E4E] rounded-full font-medium">Sip with a View</span>
+                )}
                 {winery.pet_friendly && (
                   <span class="text-xs px-3 py-1 bg-[#dce4d9] text-[#4A5E4E] rounded-full">Pet Friendly</span>
                 )}
@@ -265,6 +277,12 @@ const homeJsonLd = [
           <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Pets</div>
           <h3 class="font-serif text-3xl group-hover:text-[var(--accent)] transition">Pet-Friendly Wineries</h3>
           <p class="text-stone-600 mt-4 leading-relaxed">Which estates welcome dogs, outdoor patio rules, packing list, and resorts that are typically no-pet.</p>
+          <div class="mt-6 text-[var(--accent)] font-medium">Read guide →</div>
+        </a>
+        <a href="/guides/sip-with-a-view" class="group block rounded-3xl border border-stone-200 bg-white p-8 hover:shadow-xl transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Scenic</div>
+          <h3 class="font-serif text-3xl group-hover:text-[var(--accent)] transition">Sip with a View</h3>
+          <p class="text-stone-600 mt-4 leading-relaxed">Temecula wineries with valley, hilltop, vineyard, and lake views — plus how to search them in the directory.</p>
           <div class="mt-6 text-[var(--accent)] font-medium">Read guide →</div>
         </a>
       </div>

@@ -177,6 +177,21 @@ const wineryJsonLd = {
           </div>
         </div>
 
+        {winery.has_views && (
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 text-sm">
+            <div class="text-stone-500 mb-1">Sip with a View</div>
+            <div class="font-medium text-[#4A5E4E]">
+              {winery.view_level === 'standout' ? '✓ Standout views' : '✓ Notable views'}
+            </div>
+            {winery.view_notes && (
+              <p class="text-stone-600 mt-2 leading-relaxed">{winery.view_notes}</p>
+            )}
+            <a href="/guides/sip-with-a-view" class="inline-block mt-3 font-medium text-[var(--accent)] hover:underline">
+              Views guide →
+            </a>
+          </div>
+        )}
+
         <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-sm">
           <div class="font-medium text-amber-900 mb-2">Planning dinner?</div>
           <p class="text-amber-900/80 leading-relaxed">Browse Temecula-friendly food and wine matches by style, protein, occasion, or season.</p>

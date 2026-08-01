@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const withViews = [...wineries].filter((w) => w.has_views);
+const standout = withViews
+  .filter((w) => w.view_level === 'standout')
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0) || a.name.localeCompare(b.name));
+const good = withViews
+  .filter((w) => w.view_level === 'good')
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0) || a.name.localeCompare(b.name));
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Temecula Wineries with a View — Sip with a View Guide',
+  description:
+    'Independent guide to Temecula wineries with valley, vineyard, hilltop, and lake views — plus how to search Sip with a View estates in our directory.',
+  dateModified: '2026-08-01',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/sip-with-a-view/',
+};
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Temecula wineries with a view',
+  numberOfItems: standout.length,
+  itemListElement: standout.slice(0, 12).map((w, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: w.name,
+    url: `https://bellieacreswine.com/wineries/${w.slug}/`,
+  })),
+};
+---
+
+<Layout
+  title="Temecula Wineries with a View | Sip with a View"
+  description="Sip with a View: Temecula wineries with valley, vineyard, hilltop, and lake overlooks. Standout scenic tasting rooms, patio tips, and a searchable views list."
+  jsonLd={[articleJsonLd, itemListJsonLd]}
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">Guide · Updated August 2026</p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">Temecula Wineries with a View</h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-4">
+      Looking for a <strong>Sip with a View</strong> afternoon — valley overlooks, vineyard terraces, hilltop decks, or a lakeside pour?
+      This long-tail guide highlights Temecula estates where scenery is part of the tasting, not just window dressing.
+    </p>
+    <p class="text-lg text-stone-600 leading-relaxed mb-8">
+      Also search our full directory for: <em>view</em>, <em>views</em>, <em>sip with a view</em>, <em>tasting with a view</em>,
+      <em>panoramic</em>, or <em>overlook</em>.
+    </p>
+
+    <div class="flex flex-wrap gap-3 mb-12">
+      <a href="/wineries/?q=view" class="px-5 py-2.5 rounded-full bg-[var(--primary)] text-white text-sm font-medium hover:opacity-90">
+        Search directory: views
+      </a>
+      <a href="/map" class="px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--primary)]">
+        Wine map
+      </a>
+      <a href="/guides/best-temecula-wineries" class="px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--primary)]">
+        Best Temecula wineries
+      </a>
+    </div>
+
+    <div class="bg-[#eef0e9] border border-stone-200 rounded-3xl p-6 mb-12 text-stone-800">
+      <p class="font-medium mb-2">Quick planning notes</p>
+      <ul class="list-disc pl-5 space-y-1 text-stone-700">
+        <li>Views change with haze, wildfire smoke, and table placement — ask for an outdoor edge seat when you check in.</li>
+        <li>Sunset light is popular; arrive earlier on weekends if the overlook tables matter to you.</li>
+        <li>“Has views” here means a <strong>notable scenic outdoor tasting experience</strong>, not every estate with any vines in sight.</li>
+        <li>Always confirm patio openings, reservations, and weather plans on the winery site.</li>
+      </ul>
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>What “Sip with a View” means in Temecula</h2>
+      <p>
+        Temecula Valley is full of pretty vineyards, but not every tasting room delivers a true overlook. The best
+        <strong>wineries with a view</strong> usually sit on a ridge (Calle Contento), a hillside corridor (De Portola),
+        or an elevated stretch of Rancho California Road — or they offer a special setting like a lake or tiered terrace.
+      </p>
+      <p>
+        We tagged directory listings using public travel writeups, estate positioning, and on-site descriptions. This is
+        independent trip-planning guidance, not a paid ranking. Featured badges elsewhere on the site are advertising;
+        this views list is editorial.
+      </p>
+
+      <h2>Standout Sip with a View picks</h2>
+      <p>
+        Start here if scenery is the main reason for the stop. These are our current <strong>standout</strong> view estates
+        ({standout.length} in the directory).
+      </p>
+    </article>
+
+    <div class="not-prose grid gap-4 my-8">
+      {standout.map((w) => (
+        <a href={`/wineries/${w.slug}`} class="block bg-white border border-stone-200 rounded-2xl p-5 hover:shadow-md transition">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <div class="font-serif text-2xl text-stone-900">{w.name}</div>
+              <div class="text-stone-600 mt-1">{w.address}</div>
+              <p class="text-sm text-stone-600 mt-3 leading-relaxed">{w.view_notes}</p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="text-xs px-2.5 py-1 rounded-full bg-[#9AAB97]/30 text-[#4A5E4E] font-medium">Sip with a View</span>
+                {(w.view_tags || []).slice(0, 3).map((t) => (
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-stone-100 text-stone-600">{t}</span>
+                ))}
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-xl font-semibold">{w.rating}</div>
+              <div class="text-xs text-stone-500">rating</div>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>Also strong for scenery</h2>
+      <p>
+        These estates are tagged <strong>good views</strong> — excellent for a scenic flight even if they are not pure
+        cliff-edge overlooks ({good.length} listings).
+      </p>
+    </article>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-3 my-8">
+      {good.map((w) => (
+        <a href={`/wineries/${w.slug}`} class="block rounded-2xl border border-stone-200 bg-white p-4 hover:shadow-md transition">
+          <div class="font-serif text-xl text-stone-900">{w.name}</div>
+          <div class="text-sm text-stone-500 mt-1">{w.view_tags?.slice(0, 3).join(' · ')}</div>
+          <p class="text-sm text-stone-600 mt-2 line-clamp-3">{w.view_notes}</p>
+        </a>
+      ))}
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>How to search for views on this site</h2>
+      <ol>
+        <li>Open the <a href="/wineries">Temecula wineries directory</a>.</li>
+        <li>Type <strong>view</strong>, <strong>sip with a view</strong>, <strong>panoramic</strong>, or <strong>overlook</strong>.</li>
+        <li>Look for the sage <strong>Sip with a View</strong> badge on cards.</li>
+        <li>Open a listing for view notes, then confirm patio details on the winery website.</li>
+      </ol>
+
+      <h2>Build a simple views-first half day</h2>
+      <ol>
+        <li>
+          <strong>Late morning overlook</strong> — hilltop or elevated patio such as
+          <a href="/wineries/falkner-winery">Falkner</a> or <a href="/wineries/callaway-winery">Callaway</a>.
+        </li>
+        <li>
+          <strong>Lunch terrace</strong> — a scenic food-friendly stop like
+          <a href="/wineries/miramonte">Miramonte</a> when the outdoor levels are open.
+        </li>
+        <li>
+          <strong>Golden-hour finish</strong> — De Portola hillside pour at
+          <a href="/wineries/danza-del-sol">Danza del Sol</a> or a lakeside change of scenery at
+          <a href="/wineries/vail-lake">Vail Lake</a>.
+        </li>
+      </ol>
+      <p>
+        Keep drives short with the <a href="/map">wine map</a>, and read our
+        <a href="/guides/first-timer-tasting-route">first-timer tasting route</a> if you need pacing help.
+      </p>
+
+      <h2>FAQ</h2>
+      <h3>Which Temecula winery has the best view?</h3>
+      <p>
+        There is no single winner. Falkner, Miramonte, Callaway, Mount Palomar, and several De Portola hillside estates
+        are repeatedly praised for scenery. Pick based on whether you want a ridge overlook, vineyard terrace, or lake setting.
+      </p>
+      <h3>Can I search “tasting with a view” on this directory?</h3>
+      <p>
+        Yes. Use the wineries search box with phrases like view, views, sip with a view, tasting with a view, panoramic,
+        or overlook. Tagged estates also show a Sip with a View badge.
+      </p>
+    </article>
+
+    <div class="mt-12 grid sm:grid-cols-2 gap-4">
+      <a href="/guides/pet-friendly-wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Related guide</div>
+        <div class="font-serif text-2xl">Pet-friendly wineries</div>
+      </a>
+      <a href="/wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Directory</div>
+        <div class="font-serif text-2xl">Full wineries list</div>
+      </a>
+    </div>
+
+    <p class="text-sm text-stone-500 mt-10">
+      Directory currently tags <strong>{withViews.length}</strong> of {wineries.length} estates for notable views.
+      Independent guide only — always verify outdoor seating and reservations with each winery.
+    </p>
+  </main>
+</Layout>
