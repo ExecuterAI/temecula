@@ -16,28 +16,94 @@ const mapWineries = wineries.map((w) => ({
 const withCoords = mapWineries.filter((w) => typeof w.lat === 'number' && typeof w.lng === 'number');
 const avgLat = withCoords.reduce((s, w) => s + w.lat, 0) / (withCoords.length || 1);
 const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length || 1);
+const year = new Date().getFullYear();
+
+const mapItemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Map of Temecula Wineries',
+  description: `Interactive Temecula wineries map with ${withCoords.length} mapped tasting rooms in Temecula Valley wine country.`,
+  numberOfItems: withCoords.length,
+  itemListElement: withCoords.map((w, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: w.name,
+    url: `https://bellieacreswine.com/wineries/${w.slug}/`,
+  })),
+};
+
+const mapFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Where can I find a map of Temecula wineries?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `This page is an interactive map of Temecula wineries with ${withCoords.length} pinned tasting rooms. Use it with our full Temecula wineries list to plan a route across Temecula Valley.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I use the Temecula wineries map?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Zoom and pan the map, then click any marker for the estate name, address, rating when available, and a link to full directory details. Confirm hours and reservations on each winery’s official site before you go.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is this the same as a Temecula wine country driving map?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes in purpose: it shows where Temecula Valley wineries sit relative to each other so you can group nearby stops. It is an independent directory map, not an official CVB or association product.',
+      },
+    },
+  ],
+};
+
+const mapPlace = {
+  '@context': 'https://schema.org',
+  '@type': 'Map',
+  name: 'Temecula Wineries Map',
+  description: `Map of Temecula wineries — interactive pins for Temecula Valley tasting rooms.`,
+  url: 'https://bellieacreswine.com/map/',
+};
 ---
 
 <Layout
-  title="Temecula Wine Map"
-  description={`Temecula wine map of ${wineries.length} valley wineries — plan routes from our Temecula wine directory and full wineries list.`}
+  title={`Temecula Wineries Map (${year}) · Map of Temecula Wineries`}
+  description={`Temecula wineries map and map of Temecula wineries — interactive pins for ${withCoords.length} Temecula Valley tasting rooms. Plan routes with our Temecula wine map, directory list, and trip guides.`}
+  jsonLd={[mapPlace, mapItemList, mapFaq]}
 >
   <Navbar />
 
   <main class="max-w-6xl mx-auto px-6 py-12">
-    <div class="mb-8">
-      <h1 class="text-6xl font-serif tracking-tight">Temecula Wine Map</h1>
-      <p class="text-xl text-stone-600 mt-2">
-        Explore {wineries.length} Temecula wineries across the valley — pins use street-level coordinates from each listing address.
-        Pair this map with our
-        <a href="/wineries" class="text-[var(--accent)] underline">directory list</a>
+    <div class="mb-8 max-w-3xl">
+      <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">
+        Temecula Valley · Interactive route tool
+      </p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight">
+        Temecula Wineries Map
+      </h1>
+      <p class="text-xl text-stone-600 mt-4 leading-relaxed">
+        An interactive <strong>map of Temecula wineries</strong> with street-level pins for
+        {withCoords.length} estates in this directory. Use this <strong>Temecula wineries map</strong> to
+        see how tasting rooms sit across the valley, then open any pin for address and details.
+      </p>
+      <p class="text-base text-stone-600 mt-3 leading-relaxed">
+        Pair the map with our
+        <a href="/wineries" class="text-[var(--accent)] underline">Temecula wineries list</a>,
+        <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> guide,
         and
-        <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> guide.
+        <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer tasting route</a>
+        when you build a day plan.
       </p>
     </div>
 
     <div class="bg-white border border-stone-200 rounded-3xl overflow-hidden shadow-sm">
-      <div id="map" class="w-full h-[650px]"></div>
+      <div id="map" class="w-full h-[650px]" role="region" aria-label="Interactive map of Temecula wineries"></div>
     </div>
 
     <div class="mt-4 text-sm text-stone-500 flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -45,8 +111,79 @@ const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length ||
         <span class="w-3 h-3 bg-[var(--accent)] rounded-full"></span>
         Click any marker for address + details
       </span>
-      <span>{withCoords.length} mapped estates</span>
+      <span>{withCoords.length} mapped estates on this Temecula wine map</span>
     </div>
+
+    <!-- Crawlable list: map UI is JS-only; this HTML list carries the same places for search engines -->
+    <section class="mt-14" aria-labelledby="mapped-list-heading">
+      <h2 id="mapped-list-heading" class="font-serif text-3xl sm:text-4xl tracking-tight mb-3">
+        Wineries on this Temecula map
+      </h2>
+      <p class="text-stone-600 max-w-3xl mb-8 leading-relaxed">
+        Every pin on the <strong>Temecula wineries map</strong> links to a directory page with tasting context,
+        contact notes, and planning details. Coordinates are derived from listing addresses for route planning —
+        always confirm the latest location and hours with the winery.
+      </p>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {withCoords
+          .slice()
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((w) => (
+            <li class="rounded-2xl border border-stone-200 bg-white px-4 py-3 hover:border-[var(--accent)]/40 transition">
+              <a href={`/wineries/${w.slug}`} class="font-medium text-[var(--ink)] hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              {w.address && <div class="text-xs text-stone-500 mt-1 line-clamp-2">{w.address}</div>}
+            </li>
+          ))}
+      </ul>
+    </section>
+
+    <section class="mt-14 max-w-3xl" aria-labelledby="map-faq-heading">
+      <h2 id="map-faq-heading" class="font-serif text-3xl tracking-tight mb-6">Temecula wineries map FAQ</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold text-lg">Where can I find a map of Temecula wineries?</h3>
+          <p class="text-stone-600 mt-2 leading-relaxed">
+            You’re on it — this page is a free interactive <strong>map of Temecula wineries</strong> built from our
+            independent directory. It is not a paid map app and does not replace official winery directions.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">How should I use a Temecula wine map for a day trip?</h3>
+          <p class="text-stone-600 mt-2 leading-relaxed">
+            Cluster nearby stops instead of crisscrossing the valley. Start with two or three estates close together,
+            leave buffer time for tastings and traffic on Rancho California Road, and book ahead on busy weekends.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Is this Temecula wineries map complete?</h3>
+          <p class="text-stone-600 mt-2 leading-relaxed">
+            It covers the {withCoords.length} estates currently mapped in our directory. The valley has more tasting
+            rooms over time — check the full
+            <a href="/wineries" class="text-[var(--accent)] underline">Temecula wineries list</a> for the latest entries.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 grid sm:grid-cols-3 gap-4">
+      <a href="/wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Directory</div>
+        <div class="font-serif text-xl mt-1">Full wineries list</div>
+        <p class="text-sm text-stone-600 mt-2">Search names, varietals, pets, and views.</p>
+      </a>
+      <a href="/guides/sip-with-a-view" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Scenic</div>
+        <div class="font-serif text-xl mt-1">Sip with a View</div>
+        <p class="text-sm text-stone-600 mt-2">Overlook estates to plot on your map route.</p>
+      </a>
+      <a href="/guides/first-timer-tasting-route" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Plan</div>
+        <div class="font-serif text-xl mt-1">First-timer route</div>
+        <p class="text-sm text-stone-600 mt-2">A simple tasting-day order for new visitors.</p>
+      </a>
+    </section>
   </main>
 
   <script define:vars={{ mapWineries, avgLat, avgLng }}>
@@ -66,14 +203,13 @@ const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length ||
       }).addTo(map);
 
       const bounds = [];
-      const markers = [];
 
       mapWineries.forEach((winery) => {
         if (typeof winery.lat !== 'number' || typeof winery.lng !== 'number') return;
         // Guard against swapped / invalid coords
         if (winery.lat < 33.3 || winery.lat > 33.8 || winery.lng > -116.8 || winery.lng < -117.4) return;
 
-        const marker = L.marker([winery.lat, winery.lng]).addTo(map).bindPopup(`
+        L.marker([winery.lat, winery.lng]).addTo(map).bindPopup(`
           <div style="min-width:220px;font-family:system-ui,sans-serif">
             <strong style="font-size:16px">${winery.name}</strong><br/>
             <span style="font-size:13px;color:#5c665e">${winery.address || ''}</span><br/>
@@ -81,7 +217,6 @@ const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length ||
             <a href="/wineries/${winery.slug}" style="color:#4A5E4E;font-weight:600">View details →</a>
           </div>
         `);
-        markers.push(marker);
         bounds.push([winery.lat, winery.lng]);
       });
 
@@ -91,7 +226,6 @@ const avgLng = withCoords.reduce((s, w) => s + w.lng, 0) / (withCoords.length ||
         map.setView(bounds[0], 13);
       }
 
-      // Leaflet often needs a resize after CSS layout
       setTimeout(() => map.invalidateSize(), 100);
       window.addEventListener('resize', () => map.invalidateSize());
     };
