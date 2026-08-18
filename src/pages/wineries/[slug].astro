@@ -23,9 +23,13 @@ const relatedPairings = pairingData.pairings
   })
   .slice(0, 4);
 
-// Also match if winery is explicitly listed on a pairing
 const explicit = pairingData.pairings.filter((p) => (p.winerySlugs || []).includes(winery.slug));
 const pairingLinks = [...new Map([...explicit, ...relatedPairings].map((p) => [p.slug, p])).values()].slice(0, 4);
+
+const neighbors = wineries
+  .filter((w) => w.slug !== winery.slug && (w as any).corridor && (w as any).corridor === (winery as any).corridor)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 4);
 
 const wineryJsonLd = {
   '@context': 'https://schema.org',
@@ -53,8 +57,8 @@ const wineryJsonLd = {
 ---
 
 <Layout
-  title={`${winery.name} | Temecula Winery`}
-  description={`${winery.name} Temecula winery guide — tasting notes, varietals, pet/family info, and trip planning on the Bellie Acres Wine Temecula wine directory.`}
+  title={`${winery.name} | Temecula Winery Guide`}
+  description={`${winery.name} Temecula winery guide — tasting context, atmosphere, varietals, pet/family notes, and trip-planning tips on the Bellie Acres Wine directory.`}
   ogImage={winery.image}
   jsonLd={wineryJsonLd}
 >
@@ -64,7 +68,7 @@ const wineryJsonLd = {
   <div class="relative h-[420px] w-full">
     <img 
       src={winery.image} 
-      alt={winery.name}
+      alt={`${winery.name} — Temecula Valley winery`}
       class="absolute inset-0 w-full h-full object-cover"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
@@ -79,13 +83,19 @@ const wineryJsonLd = {
             </span>
           </div>
         )}
-        <h1 class="text-6xl md:text-7xl font-serif text-white tracking-[-2px]">{winery.name}</h1>
+        <h1 class="text-5xl md:text-7xl font-serif text-white tracking-[-2px]">{winery.name}</h1>
         <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-lg text-white/90">
           <span>{winery.location}</span>
           <span>•</span>
           <span>{winery.price_range}</span>
           <span>•</span>
           <span class="font-medium">{winery.rating} / 5</span>
+          {(winery as any).corridor && (
+            <>
+              <span>•</span>
+              <span class="text-white/80 text-base">{(winery as any).corridor}</span>
+            </>
+          )}
         </div>
       </div>
     </div>
@@ -96,13 +106,55 @@ const wineryJsonLd = {
       <!-- Main Content -->
       <div class="md:col-span-2">
         <p class="text-xl leading-relaxed text-stone-700">{winery.description}</p>
+
         {winery.about_extended && (
-          <p class="mt-6 text-lg leading-relaxed text-stone-600">{winery.about_extended}</p>
+          <section class="mt-8">
+            <h2 class="font-serif text-3xl mb-4 tracking-tight">About this Temecula tasting stop</h2>
+            <p class="text-lg leading-relaxed text-stone-600">{winery.about_extended}</p>
+          </section>
         )}
+
+        {(winery as any).visit_guide && (
+          <section class="mt-10">
+            <h2 class="font-serif text-3xl mb-4 tracking-tight">Planning a visit to {winery.name}</h2>
+            <p class="text-lg leading-relaxed text-stone-600">{(winery as any).visit_guide}</p>
+          </section>
+        )}
+
+        <section class="mt-10 rounded-3xl border border-stone-200 bg-[#f7f6f2] p-6 md:p-8">
+          <h2 class="font-serif text-2xl mb-3 tracking-tight">How this page fits your Temecula day</h2>
+          <p class="text-stone-700 leading-relaxed">
+            Bellie Acres Wine is an independent Temecula wine directory — not the winery’s booking desk.
+            Use this profile to decide whether {winery.name} matches your pace, then confirm live details
+            on the official site. For a full valley plan, combine this stop with our
+            <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer tasting route</a>,
+            <a href="/map" class="text-[var(--accent)] underline">Temecula wineries map</a>, and
+            <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> guide.
+            Red-focused drinkers can also skim
+            <a href="/guides/temecula-red-varietals" class="text-[var(--accent)] underline">Temecula’s best red varietals</a>;
+            multi-day visitors should read
+            <a href="/guides/weekend-in-temecula-wine-country" class="text-[var(--accent)] underline">how to spend a weekend in Temecula wine country</a>.
+          </p>
+          {winery.pet_friendly && (
+            <p class="text-stone-700 leading-relaxed mt-4">
+              Traveling with a dog? Cross-check outdoor rules in our
+              <a href="/guides/pet-friendly-wineries" class="text-[var(--accent)] underline">pet-friendly Temecula wineries</a> guide before you load the car.
+            </p>
+          )}
+          {winery.has_views && (
+            <p class="text-stone-700 leading-relaxed mt-4">
+              Chasing scenery? See how this estate compares in
+              <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Temecula wineries with a view</a>.
+            </p>
+          )}
+        </section>
 
         <!-- Varietals -->
         <div class="mt-10">
-          <h3 class="font-serif text-2xl mb-4">Varietals</h3>
+          <h2 class="font-serif text-2xl mb-4">Varietals often associated with {winery.name}</h2>
+          <p class="text-stone-600 mb-4 leading-relaxed">
+            Labels rotate. Treat the list below as a planning cue for what the house tends to emphasize, then ask what’s pouring the day you visit.
+          </p>
           <div class="flex flex-wrap gap-3">
             {winery.varietals.map(v => (
               <span class="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm">{v}</span>
@@ -113,12 +165,15 @@ const wineryJsonLd = {
         <!-- Kid Friendly -->
         {winery.kid_friendly && (
           <div class="mt-10">
-            <h3 class="font-serif text-2xl mb-3">Families & Children</h3>
+            <h2 class="font-serif text-2xl mb-3">Families &amp; children</h2>
             <div class="bg-white border border-stone-200 rounded-2xl p-6">
               <div class="font-medium text-lg">
                 {winery.kid_friendly.allowed ? "✓ Children welcome" : "✕ Children not permitted"}
               </div>
               <p class="text-stone-600 mt-2">{winery.kid_friendly.notes}</p>
+              <p class="text-stone-600 mt-3 text-sm leading-relaxed">
+                Even when children are welcome, tasting rooms remain adult hospitality spaces. Bring shade, snacks, and a backup outdoor plan for restless stretches between pours.
+              </p>
             </div>
           </div>
         )}
@@ -126,7 +181,8 @@ const wineryJsonLd = {
         <!-- Live Music Events -->
         {winery.events && winery.events.length > 0 && (
           <div class="mt-10">
-            <h3 class="font-serif text-2xl mb-4">Upcoming Events</h3>
+            <h2 class="font-serif text-2xl mb-4">Upcoming events (directory snapshot)</h2>
+            <p class="text-stone-600 mb-4 text-sm">Event listings can change — verify on the winery’s official calendar.</p>
             {winery.events.map(event => (
               <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
                 <div class="font-medium text-emerald-600">🎵 {event.type}</div>
@@ -137,9 +193,27 @@ const wineryJsonLd = {
           </div>
         )}
 
+        {neighbors.length > 0 && (
+          <div class="mt-10">
+            <h2 class="font-serif text-2xl mb-3">Nearby on {(winery as any).corridor || 'this corridor'}</h2>
+            <p class="text-stone-600 mb-5 leading-relaxed">
+              Keep drives short. These directory neighbors share the same corridor cue and can anchor a compact half day with {winery.name}.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              {neighbors.map((n) => (
+                <a href={`/wineries/${n.slug}`} class="block rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-lg transition">
+                  <div class="font-serif text-xl">{n.name}</div>
+                  <div class="text-sm text-stone-500 mt-1">{n.rating}/5 · {n.price_range}</div>
+                  <div class="text-sm text-stone-600 mt-2 line-clamp-1">{(n.varietals || []).slice(0, 3).join(' · ')}</div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {pairingLinks.length > 0 && (
           <div class="mt-10">
-            <h3 class="font-serif text-2xl mb-3">Wine pairing ideas</h3>
+            <h2 class="font-serif text-2xl mb-3">Wine pairing ideas</h2>
             <p class="text-stone-600 mb-5">Food matches that fit styles often poured here — explore full guides on our pairings pages.</p>
             <div class="grid sm:grid-cols-2 gap-4">
               {pairingLinks.map((p) => (
@@ -160,12 +234,15 @@ const wineryJsonLd = {
         <div class="bg-white border border-stone-200 rounded-2xl p-6">
           <div class="text-sm text-stone-500">Address</div>
           <div class="mt-1 leading-tight">{winery.address}</div>
+          {(winery as any).corridor && (
+            <div class="text-sm text-stone-500 mt-3">Corridor cue: {(winery as any).corridor}</div>
+          )}
         </div>
 
         <div class="bg-white border border-stone-200 rounded-2xl p-6">
           <div class="text-sm text-stone-500">Contact</div>
           <div class="mt-2 space-y-2">
-            <a href={winery.website} target="_blank" class="block text-[var(--accent)] hover:underline font-medium">Visit Website →</a>
+            <a href={winery.website} target="_blank" rel="noopener noreferrer" class="block text-[var(--accent)] hover:underline font-medium">Visit Website →</a>
             <div class="text-stone-700">{winery.phone}</div>
           </div>
         </div>
@@ -173,8 +250,11 @@ const wineryJsonLd = {
         <div class="bg-white border border-stone-200 rounded-2xl p-6 text-sm">
           <div class="text-stone-500 mb-1">Pet Policy</div>
           <div class="font-medium">
-            {winery.pet_friendly ? "✓ Pet friendly" : "✕ No pets allowed"}
+            {winery.pet_friendly ? "✓ Pet friendly (typically outdoor)" : "✕ No pets allowed"}
           </div>
+          {winery.pet_friendly && (
+            <a href="/guides/pet-friendly-wineries" class="inline-block mt-3 font-medium text-[var(--accent)] hover:underline">Pet guide →</a>
+          )}
         </div>
 
         {winery.has_views && (
@@ -193,9 +273,15 @@ const wineryJsonLd = {
         )}
 
         <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-sm">
-          <div class="font-medium text-amber-900 mb-2">Planning dinner?</div>
-          <p class="text-amber-900/80 leading-relaxed">Browse Temecula-friendly food and wine matches by style, protein, occasion, or season.</p>
-          <a href="/pairings" class="inline-block mt-3 font-medium text-[var(--accent)] hover:underline">Wine pairings →</a>
+          <div class="font-medium text-amber-900 mb-2">Trip-planning links</div>
+          <ul class="space-y-2 text-amber-900/90">
+            <li><a class="underline" href="/wineries">Full Temecula wineries list</a></li>
+            <li><a class="underline" href="/map">Interactive wineries map</a></li>
+            <li><a class="underline" href="/guides/weekend-in-temecula-wine-country">Weekend wine-country plan</a></li>
+            <li><a class="underline" href="/guides/temecula-red-varietals">Red varietals guide</a></li>
+            <li><a class="underline" href="/guides/weekday-vs-weekend-tasting">Weekday vs weekend tips</a></li>
+            <li><a class="underline" href="/pairings">Wine pairings</a></li>
+          </ul>
         </div>
       </div>
     </div>

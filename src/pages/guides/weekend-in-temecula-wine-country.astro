@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const top = [...wineries].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+const pick = (slug: string) => wineries.find((w) => w.slug === slug);
+const ponte = pick('ponte-winery');
+const thornton = pick('thornton-winery');
+const miramonte = pick('miramonte');
+const danza = pick('danza-del-sol');
+const falkner = pick('falkner-winery');
+const southCoast = pick('south-coast-winery');
+const wilson = pick('wilson-creek-winery');
+const europa = pick('europa-village');
+---
+
+<Layout
+  title="How to Spend a Weekend in Temecula Wine Country"
+  description="A practical weekend in Temecula wine country: Friday arrival, Saturday tasting clusters, Sunday scenic stops, lodging tips, and linked winery directory picks."
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">Guide · Updated August 2026</p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">How to Spend a Weekend in Temecula Wine Country</h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-10">
+      Temecula rewards a two-night pace. One rushed Saturday can feel like parking lots and FOMO; a weekend lets you
+      mix a lively main-road day with a quieter east-valley morning, a view stop, and one proper meal that is not gas-station
+      cheese. This is a practical template — swap estates using our
+      <a class="text-[var(--accent)] underline" href="/wineries">full Temecula wineries list</a> and
+      <a class="text-[var(--accent)] underline" href="/map">interactive map</a>.
+    </p>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>The weekend philosophy</h2>
+      <p>
+        Cap each day at <strong>two or three tastings</strong>. Build clusters, not checklists. Keep at least one adult
+        as a dedicated driver or budget for rideshare/shuttle between pours. Book Saturday seated experiences before you
+        book Friday dinner. Read estate policies the morning you go — fees, time limits, and pet rules change.
+      </p>
+      <p>
+        Temecula’s warm-climate valley means ripe reds, friendly whites, and patio culture. Summer afternoons can be hot
+        enough to melt the romance out of an exposed deck; spring, fall, and winter sunny days are the comfort zone.
+        For crowd timing specifics, pair this article with
+        <a href="/guides/weekday-vs-weekend-tasting">weekday vs weekend tasting</a>.
+      </p>
+
+      <h2>Friday: arrive, decompress, one smart stop</h2>
+      <p>
+        Check in early if you can. Unpack, hydrate, and eat a real meal before any alcohol. If you still want wine on
+        arrival night, choose <em>one</em> nearby estate with a flexible evening window or a resort property where you
+        can linger without driving far.
+      </p>
+      <ul>
+        {southCoast && (
+          <li>
+            <a href={`/wineries/${southCoast.slug}`}>{southCoast.name}</a> — resort-scale base with food and longer dwell time.
+          </li>
+        )}
+        {europa && (
+          <li>
+            <a href={`/wineries/${europa.slug}`}>{europa.name}</a> — polished multi-mood campus when you want a special-occasion Friday.
+          </li>
+        )}
+        {wilson && (
+          <li>
+            <a href={`/wineries/${wilson.slug}`}>{wilson.name}</a> — social patio energy if your group wants a lively welcome pour.
+          </li>
+        )}
+      </ul>
+      <p>
+        Skip the heroics. Friday is for lowering cortisol, not collecting stamps. Sleep matters more than a fourth glass.
+      </p>
+
+      <h2>Saturday: main-corridor cluster + one wild card</h2>
+      <p>
+        Saturday is peak. Reserve late morning and mid-afternoon seats on or near Rancho California Road so you are not
+        improvising in a full lot. A classic shape:
+      </p>
+      <ol>
+        <li>
+          <strong>Late morning grounds + flight</strong> —
+          {ponte ? <a href={`/wineries/${ponte.slug}`}> {ponte.name}</a> : ' a spacious patio estate'} for an easy on-ramp.
+        </li>
+        <li>
+          <strong>Lunch with intention</strong> — sit-down food beats grazing crackers for three hours. Hydrate hard.
+        </li>
+        <li>
+          <strong>Afternoon contrast</strong> —
+          {thornton ? <a href={`/wineries/${thornton.slug}`}> {thornton.name}</a> : ' a sparkling-focused stop'} for celebration bottles,
+          or {miramonte ? <a href={`/wineries/${miramonte.slug}`}> {miramonte.name}</a> : ' a view deck'} if scenery is the brief.
+        </li>
+      </ol>
+      <p>
+        If your group wants Rhône-leaning reds instead of resort polish, pivot the afternoon toward
+        {falkner ? <a href={`/wineries/${falkner.slug}`}> {falkner.name}</a> : ' a hillside Rhône specialist'}
+        and keep the drive short. Cross-check styles in
+        <a href="/guides/temecula-red-varietals">Temecula’s best red varietals</a>.
+      </p>
+      <p>
+        Saturday night: dinner in Old Town Temecula or a wine-country restaurant, then stop. The visitors who feel wrecked
+        on Sunday are almost always the ones who treated Saturday like a pub crawl.
+      </p>
+
+      <h2>Sunday: quieter corridors and a scenic close</h2>
+      <p>
+        Sunday morning is underrated. East-valley and side-road estates often feel more human before checkout traffic.
+        Build a De Portola or Calle Contento pair, then leave a buffer to drive home clear-headed.
+      </p>
+      <ul>
+        {danza && (
+          <li>
+            <a href={`/wineries/${danza.slug}`}>{danza.name}</a> — Spanish-leaning bottles and patio-forward De Portola pacing.
+          </li>
+        )}
+        {falkner && (
+          <li>
+            <a href={`/wineries/${falkner.slug}`}>{falkner.name}</a> — hilltop posture when you want a final view without Saturday chaos.
+          </li>
+        )}
+      </ul>
+      <p>
+        Photographers and view-chasers should skim
+        <a href="/guides/sip-with-a-view">Sip with a View</a> before locking the last pin. Families can filter the
+        <a href="/wineries">directory</a> for kid-friendly tags; dog people should read
+        <a href="/guides/pet-friendly-wineries">pet-friendly wineries</a> and keep Sunday to two outdoor stops max.
+      </p>
+
+      <h2>Sample timing (adjust to reservations)</h2>
+      <ul>
+        <li><strong>Fri 4:30 p.m.</strong> — arrive, food, optional single tasting</li>
+        <li><strong>Sat 11:00 a.m.</strong> — tasting one</li>
+        <li><strong>Sat 1:00 p.m.</strong> — proper lunch</li>
+        <li><strong>Sat 3:00 p.m.</strong> — tasting two (optional light third only if drives stay tiny)</li>
+        <li><strong>Sun 10:30 a.m.</strong> — east-valley or hillside stop</li>
+        <li><strong>Sun 12:30 p.m.</strong> — optional short second stop or scenic overlook, then exit</li>
+      </ul>
+
+      <h2>Where this guide meets the directory</h2>
+      <p>
+        Every estate named above links to a Bellie Acres Wine profile with original visit prose, corridor cues, and
+        official-site contacts. For a ranked shortlist rather than a full itinerary, use
+        <a href="/guides/best-temecula-wineries">Best Temecula Wineries</a>. For a single-day starter plan, use the
+        <a href="/guides/first-timer-tasting-route">first-timer tasting route</a>.
+      </p>
+      <p>
+        Independent travel guide only — we do not sell wine or take reservations. Confirm hours, fees, and policies on
+        each winery’s official website. Please drink responsibly; 21+ for alcohol tastings.
+      </p>
+    </article>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 not-prose">
+      <a href="/map" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Map</div>
+        <div class="font-serif text-2xl">Plot your weekend clusters →</div>
+      </a>
+      <a href="/wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Directory</div>
+        <div class="font-serif text-2xl">Browse all {wineries.length} estates →</div>
+      </a>
+    </div>
+
+    <p class="text-sm text-stone-500 mt-10">
+      High-rated directory snapshots for inspiration (not a paid ranking): {top.slice(0, 5).map((w) => w.name).join(' · ')}.
+    </p>
+  </main>
+</Layout>

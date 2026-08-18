@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const quietish = [...wineries]
+  .filter((w) => (w as any).corridor === 'De Portola Road' || (w as any).corridor === 'Calle Contento')
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 8);
+
+const mainRoad = [...wineries]
+  .filter((w) => (w as any).corridor === 'Rancho California Road')
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 8);
+---
+
+<Layout
+  title="Weekday vs Weekend Temecula Wine Tasting"
+  description="Weekday vs weekend Temecula wine tasting: crowds, reservations, live music, heat, and which corridors feel calmer — with directory links."
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">Guide · Updated August 2026</p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">Weekday vs Weekend Temecula Wine Tasting</h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-10">
+      Same valley, different physics. A Tuesday 11 a.m. flight and a Saturday 2 p.m. patio are not the same product.
+      This guide explains crowd patterns, reservation strategy, and corridor choice so your Temecula day matches your
+      tolerance for energy — then links into our
+      <a class="text-[var(--accent)] underline" href="/wineries">wineries directory</a>.
+    </p>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>The short answer</h2>
+      <p>
+        <strong>Choose weekdays</strong> if you want conversation-level tasting, easier parking, and flexible pacing.
+        <strong>Choose weekends</strong> if you want social buzz, live music, and don’t mind booking ahead. Either way,
+        two thoughtful stops beat five rushed ones. Plot clusters on the
+        <a href="/map">Temecula wineries map</a> before you fall in love with three estates on opposite ridges.
+      </p>
+
+      <h2>Weekend realities</h2>
+      <p>
+        Fridays after lunch through Sunday mid-afternoon are peak hospitality load. Popular Rancho California Road
+        estates fill seated times, parking overflows, and walk-in hope becomes a strategy tax. Live music can elevate a
+        birthday and destroy a quiet tasting — check calendars.
+      </p>
+      <ul>
+        <li>Book Saturday tastings first; build lunch around those holds.</li>
+        <li>Arrive at the opening edge of your window; late = compressed flights.</li>
+        <li>Budget shuttle/rideshare if everyone wants a full pour.</li>
+        <li>Accept that “just one more stop” is how weekends go sideways.</li>
+      </ul>
+      <p>
+        Main-corridor energy examples (great when you want amenities; busier on weekends):
+      </p>
+      <ul>
+        {mainRoad.map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a> — {w.price_range} · {w.rating}/5
+          </li>
+        ))}
+      </ul>
+
+      <h2>Weekday advantages</h2>
+      <p>
+        Tuesday–Thursday late mornings are the sweet spot for many independent travelers: staff have time to talk oak
+        regimes and vineyard lots, patios have shade seats left, and you can add a scenic overlook without white-knuckle
+        timing. Some kitchens or full menus run reduced weekday hours — verify food if you are counting on a full lunch
+        on-site.
+      </p>
+      <p>
+        Quieter corridor hunting often pulls toward De Portola and Calle Contento pockets:
+      </p>
+      <ul>
+        {quietish.map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a> — {(w as any).corridor}
+          </li>
+        ))}
+      </ul>
+
+      <h2>Heat, season, and clock time</h2>
+      <p>
+        Temecula’s warm afternoons hit exposed decks hard in summer. Weekday or weekend, a 3 p.m. August tasting feels
+        different from an 11 a.m. March flight. Shoulder seasons (spring and fall) forgive more scheduling sins.
+        View-forward stops are magical at golden hour and brutal at high noon without shade — see
+        <a href="/guides/sip-with-a-view">Sip with a View</a>.
+      </p>
+
+      <h2>Pets, kids, and noise</h2>
+      <p>
+        Dogs and strollers are easier on calmer weekdays. “Pet friendly” still usually means outdoor only — read
+        <a href="/guides/pet-friendly-wineries">pet-friendly Temecula wineries</a> and call the morning of. Kids plus
+        weekend live music is a high-variance experiment; prefer shorter visits and estates that explicitly welcome families.
+      </p>
+
+      <h2>Reservation rules of thumb</h2>
+      <ol>
+        <li>Weekends: reserve both stops; leave 90+ minutes between start times.</li>
+        <li>Weekdays: still reserve popular seated experiences; walk-ins are a bonus, not a plan.</li>
+        <li>Large groups: call — online widgets often cap party size.</li>
+        <li>Food add-ons: order when you sit so the kitchen and tasting pace align.</li>
+      </ol>
+
+      <h2>Build the rest of the trip</h2>
+      <p>
+        Single-day newcomers can follow the
+        <a href="/guides/first-timer-tasting-route">first-timer tasting route</a>. Multi-day visitors should use
+        <a href="/guides/weekend-in-temecula-wine-country">How to spend a weekend in Temecula wine country</a>.
+        Red-focused groups can target styles via
+        <a href="/guides/temecula-red-varietals">Temecula red varietals</a>, then confirm pour lists on official sites.
+      </p>
+      <p>
+        Independent guide only. Crowd patterns are general travel guidance, not a guarantee for a specific date.
+        Always confirm hours and policies with each winery. 21+ for alcohol tastings.
+      </p>
+    </article>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 not-prose">
+      <a href="/guides/best-temecula-wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Shortlist</div>
+        <div class="font-serif text-2xl">Best Temecula wineries →</div>
+      </a>
+      <a href="/wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Directory</div>
+        <div class="font-serif text-2xl">All {wineries.length} estates →</div>
+      </a>
+    </div>
+  </main>
+</Layout>

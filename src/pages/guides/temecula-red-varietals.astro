@@ -1,0 +1,169 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const has = (frag: string) =>
+  wineries.filter((w) => (w.varietals || []).some((v) => v.toLowerCase().includes(frag.toLowerCase())));
+
+const cab = has('cabernet').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 8);
+const syrah = has('syrah').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 8);
+const grenache = has('grenache').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 6);
+const temp = has('tempranillo').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 6);
+const merlot = has('merlot').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 6);
+const zin = has('zinfandel').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 4);
+const petite = has('petite').sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 4);
+
+function listBlock(items: typeof wineries) {
+  return items;
+}
+---
+
+<Layout
+  title="Temecula Red Varietals Guide | Best Reds to Taste"
+  description="A guide to Temecula’s best red varietals — Cabernet, Syrah, Grenache, Tempranillo, Merlot, and more — with directory winery examples and tasting tips."
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">Guide · Updated August 2026</p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">A Guide to Temecula’s Best Red Varietals</h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-10">
+      Temecula is a warm-climate Southern California wine country where ripe, fruit-forward reds and Mediterranean-leaning
+      varieties thrive. This guide translates label names into a tasting plan — then points you to real estates in our
+      <a class="text-[var(--accent)] underline" href="/wineries">Temecula wineries directory</a>.
+    </p>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <h2>What “Temecula red” usually means</h2>
+      <p>
+        Expect sunshine in the glass: darker fruit, softer edges than cool-climate reds, and styles built for patios and
+        grilled food. That does not mean every bottle is simple. Many estates pour serious Syrah, structured Cabernet,
+        and Spanish or Rhône blends that reward slow tasting. Your job is to match variety to mood — steak-night
+        Cabernet is a different errand than a Grenache-friendly afternoon.
+      </p>
+      <p>
+        Use this page with the
+        <a href="/map">wineries map</a> so you are not driving across the valley between every Rhône pour. For a full
+        itinerary wrapper, see
+        <a href="/guides/weekend-in-temecula-wine-country">how to spend a weekend in Temecula wine country</a>.
+      </p>
+
+      <h2>Cabernet Sauvignon</h2>
+      <p>
+        Cabernet is the comfort keyword for many first-timers. In Temecula it often shows ripe blackcurrant and plum with
+        oak depending on the program. Ask whether you are tasting a straightforward estate Cab or a reserve/library pour
+        with longer elevage. Pair with steak, short ribs, or aged cheddar — more ideas on our
+        <a href="/pairings">pairings hub</a>.
+      </p>
+      <p><strong>Directory examples highlighting Cabernet:</strong></p>
+      <ul>
+        {listBlock(cab).map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a> — {(w.varietals || []).slice(0, 3).join(', ')}
+          </li>
+        ))}
+      </ul>
+
+      <h2>Syrah</h2>
+      <p>
+        Syrah is a Temecula strength when you want pepper, dark fruit, and more savory depth than grocery-aisle sweetness.
+        It sits at the center of many Rhône-inspired flights. If you like Northern Rhône vibes or dense California Syrah,
+        build a day around hillside and specialist lists rather than only resort tasting menus.
+      </p>
+      <ul>
+        {listBlock(syrah).map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a>
+          </li>
+        ))}
+      </ul>
+
+      <h2>Grenache</h2>
+      <p>
+        Grenache brings red fruit, spice, and often a more open-knit texture — excellent for afternoon tasting when heavy
+        Cabernet would fatigue your palate. It also anchors GSM-style blends. Ask staff whether the pour is a bright
+        patio Grenache or a darker, oak-kissed take.
+      </p>
+      <ul>
+        {listBlock(grenache).map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a>
+          </li>
+        ))}
+      </ul>
+
+      <h2>Tempranillo</h2>
+      <p>
+        Tempranillo is a tell that an estate is playing in Spanish-leaning territory — a useful pivot if your group is
+        bored of Cab-only flights. Expect cherry, leather-spice spectrum notes depending on oak and ripeness. De Portola
+        and boutique lists are good hunting grounds; start with profiles that name Tempranillo up front.
+      </p>
+      <ul>
+        {listBlock(temp).map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a>
+          </li>
+        ))}
+      </ul>
+
+      <h2>Merlot</h2>
+      <p>
+        Merlot still matters for plush texture and food flexibility. It is a bridge wine for mixed groups: softer tannin
+        than young Cabernet, friendly with mushroom dishes and roast chicken. Do not sleep on it just because trend cycles
+        moved on.
+      </p>
+      <ul>
+        {listBlock(merlot).map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a>
+          </li>
+        ))}
+      </ul>
+
+      <h2>Zinfandel &amp; Petite Sirah</h2>
+      <p>
+        Where listed, Zinfandel can run jammy to peppery; Petite Sirah often brings inkier color and grip. Both can be
+        high-alcohol patio wreckers if you stack them after two earlier flights — taste earlier in the day or share pours.
+      </p>
+      <ul>
+        {[...zin, ...petite].map((w) => (
+          <li>
+            <a href={`/wineries/${w.slug}`}>{w.name}</a> — {(w.varietals || []).filter((v) => /zinfandel|petite/i.test(v)).join(', ') || (w.varietals || [])[0]}
+          </li>
+        ))}
+      </ul>
+
+      <h2>How to structure a red-focused day</h2>
+      <ol>
+        <li>Start lighter (Grenache or Tempranillo) before dense Cabernet or Petite Sirah.</li>
+        <li>Limit to two estates if both pour full red flights; add a third only for a quick view stop.</li>
+        <li>Eat protein-forward food midday — sugar-only snacks make reds taste harsher.</li>
+        <li>Spit or dump when driving later; buy the bottle instead of “winning” the flight.</li>
+        <li>Use <a href="/guides/best-temecula-wineries">best Temecula wineries</a> for overall shortlisting, then filter by varietal tags on each profile.</li>
+      </ol>
+
+      <h2>Beyond reds</h2>
+      <p>
+        Sparkling specialists and Chardonnay programs still belong in a balanced weekend. If your group splits between
+        bubbles and bold reds, put sparkling earlier and reds after lunch. Thornton-style sparkling stops and Rhône
+        hillside rooms can share a Saturday if you keep the drive honest — plot it on the
+        <a href="/map">map</a> first.
+      </p>
+      <p>
+        Independent guide on bellieacreswine.com. Varietal lists are planning cues from our directory data, not a promise
+        of what pours every day. Confirm current tasting menus on official winery sites. 21+ for alcohol tastings.
+      </p>
+    </article>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 not-prose">
+      <a href="/pairings" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Food</div>
+        <div class="font-serif text-2xl">Wine pairing ideas →</div>
+      </a>
+      <a href="/guides/first-timer-tasting-route" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Route</div>
+        <div class="font-serif text-2xl">First-timer tasting route →</div>
+      </a>
+    </div>
+  </main>
+</Layout>
