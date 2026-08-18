@@ -1,3 +1,18 @@
+# Bellie Acres Wine — https://bellieacreswine.com
+# Explicit allows for Google ad/search crawlers (belt-and-suspenders; * already allows all)
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 User-agent: *
 Allow: /
 
