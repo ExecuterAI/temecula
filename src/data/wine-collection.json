@@ -1,314 +1,4596 @@
 {
+  "version": 2,
   "title": "The Wine Collection",
-  "subtitle": "Movies, Television & Documentaries That Inspire the Wine Life",
+  "subtitle": "Movies, Television and Documentaries That Inspire the Wine Life",
   "brand": "Bellie Acres Wine",
-  "purpose": "A curated entertainment library devoted to movies, television, documentaries, and independent productions that evoke wine country, vineyards, estates, elegant entertaining, food and wine, travel, romance, craftsmanship, family, heritage, hospitality, and the pleasure of slowing down.",
-  "notMerely": "This is not merely a list of movies “about wine.”",
-  "qualify": [
-    "Features vineyards, wineries, or wine regions prominently",
-    "Showcases an aspirational wine-country lifestyle",
-    "Features beautiful estates, villas, châteaux, or countryside",
-    "Celebrates food, wine, entertaining, or hospitality",
-    "Inspires travel to wine regions",
-    "Explores winemaking, sommeliers, wine collecting, or wine culture",
-    "Features a sophisticated wine-and-food atmosphere",
-    "Is a lesser-known or independent title worth discovering",
-    "Provides strong visual inspiration for wine-country living"
+  "homepageIntro": {
+    "eyebrow": "THE WINE COLLECTION",
+    "lines": [
+      "Pour yourself a glass. Press play. Go somewhere.",
+      "Some movies make you want to fall in love.",
+      "Some make you want to travel.",
+      "Some make you want to cook a beautiful dinner.",
+      "And then there are the ones that make you want to pour a glass of wine, sit outside beneath the evening sky and imagine yourself somewhere else.",
+      "Welcome to The Wine Collection.",
+      "From California wine country to Tuscany, Provence, Burgundy, Bordeaux, Champagne, Australia, Argentina and beyond, we’ve gathered movies, series and documentaries that celebrate the places, people, food, landscapes and pleasures surrounding wine.",
+      "Some are about winemaking. Some are about travel. Some are about family, friendship or romance. And some simply make you think: “I want to live there.”",
+      "Pour something wonderful and press play."
+    ]
+  },
+  "exclusions": [
+    "Sideways (2004)"
   ],
-  "editorialStandard": "We favor titles that celebrate beauty, character, craftsmanship, meaningful relationships, hospitality, family, tradition, travel, discovery, and appreciation of life’s pleasures.",
-  "exclusions": ["Sideways (2004)"],
   "formats": {
-    "film": { "emoji": "🎬", "label": "Feature Film" },
-    "tv": { "emoji": "📺", "label": "Television / Series" },
-    "doc": { "emoji": "🎥", "label": "Documentary" },
-    "indie": { "emoji": "🎞️", "label": "Independent / Lesser-Known" }
+    "film": {
+      "emoji": "🎬",
+      "label": "Feature Film"
+    },
+    "tv": {
+      "emoji": "📺",
+      "label": "Television / Series"
+    },
+    "doc": {
+      "emoji": "🎥",
+      "label": "Documentary"
+    },
+    "indie": {
+      "emoji": "🎞️",
+      "label": "Independent / Lesser-Known"
+    }
   },
   "tags": {
-    "wine": { "emoji": "🍇", "label": "Wine / Vineyard" },
-    "lifestyle": { "emoji": "🥂", "label": "Wine Lifestyle" },
-    "estate": { "emoji": "🏡", "label": "Estate / Property" },
-    "food": { "emoji": "🍽️", "label": "Food & Wine" },
-    "travel": { "emoji": "🌎", "label": "Travel" },
-    "romance": { "emoji": "❤️", "label": "Romance" },
-    "scenery": { "emoji": "🌅", "label": "Scenery / Atmosphere" },
-    "family": { "emoji": "👨‍👩‍👧", "label": "Family / Legacy" },
-    "craft": { "emoji": "👩‍🌾", "label": "Winemaking / Agriculture" },
-    "education": { "emoji": "🏆", "label": "Wine Education" },
-    "luxury": { "emoji": "💎", "label": "Luxury / Sophistication" }
+    "wine": {
+      "emoji": "🍇",
+      "label": "Wine / Vineyard"
+    },
+    "lifestyle": {
+      "emoji": "🥂",
+      "label": "Wine Lifestyle"
+    },
+    "estate": {
+      "emoji": "🏡",
+      "label": "Estate / Property"
+    },
+    "food": {
+      "emoji": "🍽️",
+      "label": "Food and Wine"
+    },
+    "travel": {
+      "emoji": "🌎",
+      "label": "Travel"
+    },
+    "romance": {
+      "emoji": "❤️",
+      "label": "Romance"
+    },
+    "scenery": {
+      "emoji": "🌅",
+      "label": "Scenery / Atmosphere"
+    },
+    "family": {
+      "emoji": "👨‍👩‍👧",
+      "label": "Family / Legacy"
+    },
+    "craft": {
+      "emoji": "👩‍🌾",
+      "label": "Winemaking / Agriculture"
+    },
+    "education": {
+      "emoji": "🏆",
+      "label": "Wine Education"
+    },
+    "luxury": {
+      "emoji": "💎",
+      "label": "Luxury / Sophistication"
+    }
   },
-  "sections": [
+  "platforms": {
+    "netflix": {
+      "label": "Netflix",
+      "originalLabel": "Netflix Original"
+    },
+    "hulu": {
+      "label": "Hulu"
+    },
+    "hulu_fx": {
+      "label": "Hulu / FX"
+    }
+  },
+  "scoreWeights": {
+    "wine": 0.2,
+    "lifestyle": 0.2,
+    "scenery": 0.15,
+    "food": 0.1,
+    "travel": 0.1,
+    "luxury": 0.1,
+    "story": 0.05,
+    "family": 0.05,
+    "education": 0.05
+  },
+  "shelves": [
     {
       "id": "essentials",
       "name": "The Bellie Acres Essentials",
-      "blurb": "Highest visual prominence — foundational titles that define the Collection’s spirit.",
-      "prominence": "hero",
-      "titles": [
-        {
-          "id": "a-good-year",
-          "title": "A Good Year",
-          "year": 2006,
-          "yearLabel": "2006",
-          "format": "film",
-          "imdb": 6.9,
-          "rating": "PG-13",
-          "region": "Provence, France",
-          "tags": ["wine", "lifestyle", "estate", "food", "travel", "romance", "scenery"]
-        },
-        {
-          "id": "a-walk-in-the-clouds",
-          "title": "A Walk in the Clouds",
-          "year": 1995,
-          "yearLabel": "1995",
-          "format": "film",
-          "imdb": 6.7,
-          "rating": "PG-13",
-          "region": "Napa Valley, CA",
-          "tags": ["wine", "romance", "estate", "scenery"]
-        },
-        {
-          "id": "bottle-shock",
-          "title": "Bottle Shock",
-          "year": 2008,
-          "yearLabel": "2008",
-          "format": "film",
-          "imdb": 6.8,
-          "rating": "PG-13",
-          "region": "Napa Valley, CA",
-          "tags": ["wine", "craft", "education", "scenery"]
-        },
-        {
-          "id": "the-secret-of-santa-vittoria",
-          "title": "The Secret of Santa Vittoria",
-          "year": 1969,
-          "yearLabel": "1969",
-          "format": "film",
-          "imdb": 7.2,
-          "rating": "PG-13",
-          "region": "Italy",
-          "tags": ["wine", "family", "food", "travel"]
-        },
-        {
-          "id": "back-to-burgundy",
-          "title": "Back to Burgundy",
-          "year": 2017,
-          "yearLabel": "2017",
-          "format": "film",
-          "imdb": 6.8,
-          "rating": null,
-          "region": "Burgundy, France",
-          "tags": ["wine", "family", "craft", "scenery"]
-        },
-        {
-          "id": "you-will-be-my-son",
-          "title": "You Will Be My Son",
-          "year": 2011,
-          "yearLabel": "2011",
-          "format": "film",
-          "imdb": 6.9,
-          "rating": null,
-          "region": "Bordeaux, France",
-          "tags": ["wine", "family", "estate", "craft"]
-        },
-        {
-          "id": "under-the-tuscan-sun",
-          "title": "Under the Tuscan Sun",
-          "year": 2003,
-          "yearLabel": "2003",
-          "format": "film",
-          "imdb": 6.7,
-          "rating": "PG-13",
-          "region": "Tuscany, Italy",
-          "tags": ["lifestyle", "estate", "food", "travel", "romance", "scenery"]
-        },
-        {
-          "id": "letters-to-juliet",
-          "title": "Letters to Juliet",
-          "year": 2010,
-          "yearLabel": "2010",
-          "format": "film",
-          "imdb": 6.5,
-          "rating": "PG",
-          "region": "Tuscany / Verona, Italy",
-          "tags": ["lifestyle", "travel", "romance", "scenery"]
-        },
-        {
-          "id": "widow-clicquot",
-          "title": "Widow Clicquot",
-          "year": 2024,
-          "yearLabel": "2024",
-          "format": "film",
-          "imdb": null,
-          "rating": "PG-13",
-          "region": "Champagne, France",
-          "tags": ["wine", "lifestyle", "luxury", "craft"]
-        },
-        {
-          "id": "the-wine-show",
-          "title": "The Wine Show",
-          "year": 2016,
-          "yearLabel": "2016–",
-          "format": "tv",
-          "imdb": 8.8,
-          "rating": "TV",
-          "region": "Global",
-          "tags": ["wine", "lifestyle", "travel", "education"]
-        },
-        {
-          "id": "drops-of-god",
-          "title": "Drops of God",
-          "year": 2023,
-          "yearLabel": "2023–",
-          "format": "tv",
-          "imdb": 8.0,
-          "rating": "TV-MA",
-          "region": "France / Italy / Japan",
-          "tags": ["wine", "lifestyle", "luxury", "travel", "education"]
-        },
-        {
-          "id": "somm",
-          "title": "Somm",
-          "year": 2012,
-          "yearLabel": "2012",
-          "format": "doc",
-          "imdb": 7.0,
-          "rating": "NR",
-          "region": "Global / USA",
-          "tags": ["lifestyle", "education", "food"]
-        },
-        {
-          "id": "somm-into-the-bottle",
-          "title": "Somm: Into the Bottle",
-          "year": 2015,
-          "yearLabel": "2015",
-          "format": "doc",
-          "imdb": 7.3,
-          "rating": "NR",
-          "region": "Global",
-          "tags": ["wine", "education", "travel"]
-        },
-        {
-          "id": "somm-3",
-          "title": "Somm 3",
-          "year": 2018,
-          "yearLabel": "2018",
-          "format": "doc",
-          "imdb": 7.3,
-          "rating": "NR",
-          "region": "France / USA",
-          "tags": ["wine", "education"]
-        },
-        {
-          "id": "a-year-in-burgundy",
-          "title": "A Year in Burgundy",
-          "year": 2013,
-          "yearLabel": "2013",
-          "format": "doc",
-          "imdb": null,
-          "rating": "TV-14",
-          "region": "Burgundy",
-          "tags": ["wine", "craft", "scenery"]
-        },
-        {
-          "id": "a-year-in-champagne",
-          "title": "A Year in Champagne",
-          "year": 2014,
-          "yearLabel": "2014",
-          "format": "doc",
-          "imdb": null,
-          "rating": "TV-PG",
-          "region": "Champagne",
-          "tags": ["wine", "lifestyle", "scenery"]
-        },
-        {
-          "id": "red-obsession",
-          "title": "Red Obsession",
-          "year": 2013,
-          "yearLabel": "2013",
-          "format": "doc",
-          "imdb": 7.0,
-          "rating": "NR",
-          "region": "Bordeaux / China",
-          "tags": ["wine", "luxury", "travel"]
-        },
-        {
-          "id": "mondovino",
-          "title": "Mondovino",
-          "year": 2004,
-          "yearLabel": "2004",
-          "format": "doc",
-          "imdb": 7.0,
-          "rating": "PG-13",
-          "region": "Global",
-          "tags": ["wine", "education", "travel"]
-        },
-        {
-          "id": "from-the-vine",
-          "title": "From the Vine",
-          "year": 2019,
-          "yearLabel": "2019",
-          "format": "indie",
-          "imdb": null,
-          "rating": "TV-MA",
-          "region": "Italy",
-          "tags": ["wine", "family", "estate", "food", "scenery"]
-        },
-        {
-          "id": "uncorked",
-          "title": "Uncorked",
-          "year": 2020,
-          "yearLabel": "2020",
-          "format": "film",
-          "imdb": null,
-          "rating": "TV-MA",
-          "region": "USA",
-          "tags": ["lifestyle", "education", "food", "family"]
-        },
-        {
-          "id": "a-perfect-pairing",
-          "title": "A Perfect Pairing",
-          "year": 2022,
-          "yearLabel": "2022",
-          "format": "film",
-          "imdb": 6.1,
-          "rating": "TV-14",
-          "region": "Australia",
-          "tags": ["wine", "lifestyle", "travel", "romance"]
-        },
-        {
-          "id": "the-chateau-meroux",
-          "title": "The Chateau Meroux",
-          "year": 2011,
-          "yearLabel": "2011",
-          "format": "indie",
-          "imdb": 5.2,
-          "rating": "PG-13",
-          "region": "California",
-          "tags": ["wine", "estate", "romance", "lifestyle"]
-        },
-        {
-          "id": "the-wine-of-summer",
-          "title": "The Wine of Summer",
-          "year": 2013,
-          "yearLabel": "2013",
-          "format": "indie",
-          "imdb": 5.1,
-          "rating": "PG",
-          "region": "Spain",
-          "tags": ["wine", "travel", "romance", "scenery"]
-        },
-        {
-          "id": "a-heavenly-vintage",
-          "title": "A Heavenly Vintage",
-          "aka": "The Vintner’s Luck",
-          "year": 2009,
-          "yearLabel": "2009",
-          "format": "film",
-          "imdb": 5.6,
-          "rating": "R",
-          "region": "France",
-          "tags": ["wine", "romance", "scenery"]
-        }
-      ]
+      "blurb": "Highest prominence — foundational titles that define the Collection.",
+      "order": 1
+    },
+    {
+      "id": "california-napa",
+      "name": "California Wine Country · Napa / Northern California",
+      "blurb": "Napa light, valley estates, and Northern California wine-country screens.",
+      "order": 2
+    },
+    {
+      "id": "central-coast",
+      "name": "Central Coast / Santa Barbara / Santa Ynez",
+      "blurb": "California coast and entertaining-at-home energy with wine-country adjacency.",
+      "order": 3
+    },
+    {
+      "id": "tuscany",
+      "name": "Tuscany / Central Italy",
+      "blurb": "Villas, countryside, food, and the Italian dream.",
+      "order": 4
+    },
+    {
+      "id": "piedmont",
+      "name": "Piedmont / Barolo / Northern Italy",
+      "blurb": "Nebbiolo country, craft, and northern Italian atmosphere.",
+      "order": 5
+    },
+    {
+      "id": "provence",
+      "name": "France — Provence",
+      "blurb": "Lavender light, estates, and Provençal living.",
+      "order": 6
+    },
+    {
+      "id": "burgundy",
+      "name": "France — Burgundy",
+      "blurb": "Pinot and Chardonnay country — family domaines and terroir.",
+      "order": 7
+    },
+    {
+      "id": "bordeaux",
+      "name": "France — Bordeaux",
+      "blurb": "Châteaux, legacy, and the global Bordeaux story.",
+      "order": 8
+    },
+    {
+      "id": "champagne",
+      "name": "France — Champagne",
+      "blurb": "Bubbles, houses, and legacy in the north of France.",
+      "order": 9
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "blurb": "Spanish tables, travel, and Mediterranean ease.",
+      "order": 10
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal / Douro",
+      "blurb": "Port, Douro valleys, and Portuguese atmosphere.",
+      "order": 11
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "blurb": "Down-under wine country, landscape, and hospitality.",
+      "order": 12
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "blurb": "Malbec country and South American wine roads.",
+      "order": 13
+    },
+    {
+      "id": "chile",
+      "name": "Chile",
+      "blurb": "Andean wine world and global craft connections.",
+      "order": 14
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "blurb": "Cape winelands atmosphere and estate living.",
+      "order": 15
+    },
+    {
+      "id": "wine-education",
+      "name": "Sommelier / Wine Education",
+      "blurb": "Titles that make wine fascinating rather than intimidating.",
+      "order": 16
+    },
+    {
+      "id": "indie-gems",
+      "name": "Lesser-Known / Indie Wine Gems",
+      "blurb": "Discoveries beyond the usual top-10 wine-movie lists.",
+      "order": 17
+    },
+    {
+      "id": "netflix-wine",
+      "name": "Netflix · Directly Wine-Related",
+      "blurb": "Netflix titles with clear wine or winery storylines. Badges mark Original vs catalog.",
+      "order": 18
+    },
+    {
+      "id": "netflix-lifestyle",
+      "name": "Netflix · Wine-Adjacent Lifestyle",
+      "blurb": "Catalog lifestyle titles with villa, travel, food, and escape energy.",
+      "order": 19
+    },
+    {
+      "id": "food-hospitality-streaming",
+      "name": "Hulu / FX · Food and Hospitality",
+      "blurb": "Secondary shelf — food and hospitality, not forced as pure wine titles.",
+      "order": 20
+    },
+    {
+      "id": "want-that-life",
+      "name": "Wine-Adjacent “I Want That Life”",
+      "blurb": "Wine may be supporting — the lifestyle is the attraction.",
+      "order": 21
+    },
+    {
+      "id": "food-wine-entertaining",
+      "name": "Food + Wine + Entertaining",
+      "blurb": "Tables, kitchens, travel food, and hospitality culture.",
+      "order": 22
+    },
+    {
+      "id": "estates-villas",
+      "name": "Estates, Villas, Châteaux and Vineyard Property",
+      "blurb": "Architecture and destination property with wine-country soul.",
+      "order": 23
+    },
+    {
+      "id": "romance",
+      "name": "The Romantic Cellar",
+      "blurb": "Wine + romance — pour something red and press play.",
+      "order": 24
+    },
+    {
+      "id": "women-wine-legacy",
+      "name": "Women, Wine and Legacy",
+      "blurb": "Women building houses, protecting land, and rewriting their lives.",
+      "order": 25
+    },
+    {
+      "id": "family-heritage",
+      "name": "Family, Heritage and Legacy",
+      "blurb": "Lineage, land, and the long game of hospitality.",
+      "order": 26
+    },
+    {
+      "id": "golden-hour",
+      "name": "Wine Country at Golden Hour",
+      "blurb": "Selected primarily for visual atmosphere.",
+      "order": 27
+    },
+    {
+      "id": "global-road-trip",
+      "name": "The Global Wine Road Trip",
+      "blurb": "A passport of regions — California to the Cape.",
+      "order": 28
+    },
+    {
+      "id": "education-ladder",
+      "name": "The Wine Education Ladder",
+      "blurb": "From wine-curious to wine geek — climb at your pace.",
+      "order": 29
+    },
+    {
+      "id": "discover-gems",
+      "name": "Discover Something You’ve Never Heard Of",
+      "blurb": "Hidden gems we actively surface.",
+      "order": 30
+    },
+    {
+      "id": "date-night",
+      "name": "Date Night + Wine",
+      "blurb": "What to watch tonight with a bottle.",
+      "order": 31
+    },
+    {
+      "id": "girls-getaway",
+      "name": "Girls’ Wine Country Getaway",
+      "blurb": "Group-trip energy, villas, and getaway films.",
+      "order": 32
+    },
+    {
+      "id": "men-adventure",
+      "name": "Men + Wine + Adventure",
+      "blurb": "Craft, travel, competition, and estate adventure.",
+      "order": 33
+    },
+    {
+      "id": "wine-real-estate",
+      "name": "Wine and Real Estate",
+      "blurb": "Property, architecture, and destination living.",
+      "order": 34
+    }
+  ],
+  "titles": [
+    {
+      "id": "the-wine-show",
+      "title": "The Wine Show",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Global",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel",
+        "education",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "food-wine-entertaining",
+        "golden-hour",
+        "ladder-2",
+        "education-ladder",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 84,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Global)."
+    },
+    {
+      "id": "a-good-year",
+      "title": "A Good Year",
+      "aka": null,
+      "year": 2006,
+      "yearLabel": "2006",
+      "format": "film",
+      "imdb": 6.9,
+      "rating": "PG-13",
+      "region": "Provence, France",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "estate",
+        "travel",
+        "scenery",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "provence",
+        "want-that-life",
+        "food-wine-entertaining",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-provence",
+        "global-road-trip",
+        "ladder-1",
+        "education-ladder",
+        "date-romantic",
+        "date-night",
+        "date-food",
+        "men-adventure",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.9,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 83,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Provence, France)."
+    },
+    {
+      "id": "under-the-tuscan-sun",
+      "title": "Under the Tuscan Sun",
+      "aka": null,
+      "year": 2003,
+      "yearLabel": "2003",
+      "format": "film",
+      "imdb": 6.7,
+      "rating": "PG-13",
+      "region": "Tuscany, Italy",
+      "tags": [
+        "lifestyle",
+        "estate",
+        "travel",
+        "scenery",
+        "wine",
+        "romance"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Woman rebuilding her life in Italy",
+      "shelves": [
+        "essentials",
+        "tuscany",
+        "netflix-lifestyle",
+        "want-that-life",
+        "food-wine-entertaining",
+        "estates-villas",
+        "romance",
+        "women-wine-legacy",
+        "golden-hour",
+        "road-tuscany",
+        "global-road-trip",
+        "ladder-1",
+        "education-ladder",
+        "date-romantic",
+        "date-night",
+        "girls-getaway",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.7,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 83,
+      "shortDescription": "Woman rebuilding her life in Italy"
+    },
+    {
+      "id": "a-room-with-a-view",
+      "title": "A Room with a View",
+      "aka": null,
+      "year": 1985,
+      "yearLabel": "1985",
+      "format": "film",
+      "imdb": 7.2,
+      "rating": "G",
+      "region": "Italy",
+      "tags": [
+        "estate",
+        "travel",
+        "wine",
+        "romance",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "piedmont",
+        "want-that-life",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-tuscany",
+        "global-road-trip",
+        "date-sophisticated",
+        "date-night",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 7.2,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 79,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Italy)."
+    },
+    {
+      "id": "letters-to-juliet",
+      "title": "Letters to Juliet",
+      "aka": null,
+      "year": 2010,
+      "yearLabel": "2010",
+      "format": "film",
+      "imdb": 6.5,
+      "rating": "PG",
+      "region": "Tuscany / Verona, Italy",
+      "tags": [
+        "lifestyle",
+        "travel",
+        "scenery",
+        "estate",
+        "wine",
+        "romance"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "tuscany",
+        "netflix-lifestyle",
+        "want-that-life",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-tuscany",
+        "global-road-trip",
+        "date-romantic",
+        "date-night",
+        "girls-getaway",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 78,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Tuscany / Verona, Italy)."
+    },
+    {
+      "id": "stealing-beauty",
+      "title": "Stealing Beauty",
+      "aka": null,
+      "year": 1996,
+      "yearLabel": "1996",
+      "format": "film",
+      "imdb": 6.5,
+      "rating": "R",
+      "region": "Tuscany, Italy",
+      "tags": [
+        "estate",
+        "scenery",
+        "travel",
+        "wine",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "piedmont",
+        "want-that-life",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-tuscany",
+        "global-road-trip",
+        "date-sophisticated",
+        "date-night",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 78,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Tuscany, Italy)."
+    },
+    {
+      "id": "drops-of-god",
+      "title": "Drops of God",
+      "aka": null,
+      "year": 2023,
+      "yearLabel": "2023–",
+      "format": "tv",
+      "imdb": 8.0,
+      "rating": "TV-MA",
+      "region": "France / Italy / Japan",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "luxury",
+        "travel",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "ladder-4",
+        "education-ladder",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 8.5,
+        "story": 8.0,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 77,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (France / Italy / Japan)."
+    },
+    {
+      "id": "a-perfect-pairing",
+      "title": "A Perfect Pairing",
+      "aka": null,
+      "year": 2022,
+      "yearLabel": "2022",
+      "format": "film",
+      "imdb": 6.1,
+      "rating": "TV-14",
+      "region": "Australia",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel",
+        "romance",
+        "scenery"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": "LA wine-company executive travels to Australia to land a wine client.",
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "australia",
+        "netflix-wine",
+        "romance",
+        "golden-hour",
+        "road-australia",
+        "global-road-trip",
+        "date-romantic",
+        "date-night",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 76,
+      "shortDescription": "LA wine-company executive travels to Australia to land a wine client."
+    },
+    {
+      "id": "a-year-in-champagne",
+      "title": "A Year in Champagne",
+      "aka": null,
+      "year": 2014,
+      "yearLabel": "2014",
+      "format": "doc",
+      "imdb": null,
+      "rating": "TV-PG",
+      "region": "Champagne, France",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "scenery",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "champagne",
+        "wine-education",
+        "road-champagne",
+        "global-road-trip",
+        "ladder-2",
+        "education-ladder",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Champagne, France)."
+    },
+    {
+      "id": "australia",
+      "title": "Australia",
+      "aka": null,
+      "year": 2008,
+      "yearLabel": "2008",
+      "format": "film",
+      "imdb": 6.6,
+      "rating": "PG-13",
+      "region": "Australia",
+      "tags": [
+        "scenery",
+        "travel",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia",
+        "want-that-life"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.6,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Australia)."
+    },
+    {
+      "id": "barolo-boys",
+      "title": "Barolo Boys",
+      "aka": null,
+      "year": 2014,
+      "yearLabel": "2014",
+      "format": "doc",
+      "imdb": 7.1,
+      "rating": "NR",
+      "region": "Piedmont, Italy",
+      "tags": [
+        "wine",
+        "education",
+        "scenery",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "piedmont",
+        "wine-education",
+        "indie-gems",
+        "road-piedmont",
+        "global-road-trip",
+        "ladder-4",
+        "education-ladder",
+        "discover-gems",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.1,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Piedmont, Italy)."
+    },
+    {
+      "id": "the-talented-mr-ripley",
+      "title": "The Talented Mr. Ripley",
+      "aka": null,
+      "year": 1999,
+      "yearLabel": "1999",
+      "format": "film",
+      "imdb": 7.4,
+      "rating": "R",
+      "region": "Italy",
+      "tags": [
+        "luxury",
+        "travel",
+        "estate",
+        "wine",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "want-that-life",
+        "estates-villas",
+        "golden-hour",
+        "date-sophisticated",
+        "date-night",
+        "men-adventure"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 9.0,
+        "story": 7.4,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Italy)."
+    },
+    {
+      "id": "wine-calling",
+      "title": "Wine Calling",
+      "aka": null,
+      "year": 2018,
+      "yearLabel": "2018",
+      "format": "doc",
+      "imdb": null,
+      "rating": "NR",
+      "region": "France",
+      "tags": [
+        "wine",
+        "scenery",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "wine-education",
+        "indie-gems",
+        "ladder-3",
+        "education-ladder",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (France)."
+    },
+    {
+      "id": "wine-country",
+      "title": "Wine Country",
+      "aka": null,
+      "year": 2019,
+      "yearLabel": "2019",
+      "format": "film",
+      "imdb": 5.4,
+      "rating": "R",
+      "region": "Napa Valley, CA",
+      "tags": [
+        "lifestyle",
+        "travel",
+        "wine",
+        "scenery"
+      ],
+      "platform": "netflix",
+      "platformOriginal": true,
+      "editorial": "Lighter comedy/lifestyle — Napa birthday getaway among friends. Not an aspirational standard-setter.",
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa",
+        "netflix-wine",
+        "golden-hour",
+        "road-california",
+        "global-road-trip",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 5.4,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 75,
+      "shortDescription": "Lighter comedy/lifestyle — Napa birthday getaway among friends. Not an aspirational standard-setter."
+    },
+    {
+      "id": "a-year-in-port",
+      "title": "A Year in Port",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "doc",
+      "imdb": null,
+      "rating": "NR",
+      "region": "Douro, Portugal",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "portugal",
+        "wine-education",
+        "indie-gems",
+        "road-portugal",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 74,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Douro, Portugal)."
+    },
+    {
+      "id": "bottle-shock",
+      "title": "Bottle Shock",
+      "aka": null,
+      "year": 2008,
+      "yearLabel": "2008",
+      "format": "film",
+      "imdb": 6.8,
+      "rating": "PG-13",
+      "region": "Napa Valley, CA",
+      "tags": [
+        "wine",
+        "scenery",
+        "education",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "california-napa",
+        "family-heritage",
+        "road-california",
+        "global-road-trip",
+        "ladder-1",
+        "education-ladder",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.8,
+        "family": 8.5,
+        "education": 9.0
+      },
+      "wineLifeScore": 74,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Napa Valley, CA)."
+    },
+    {
+      "id": "a-california-christmas",
+      "title": "A California Christmas",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020",
+      "format": "film",
+      "imdb": 5.9,
+      "rating": "PG-13",
+      "region": "California",
+      "tags": [
+        "scenery",
+        "romance",
+        "family"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Woman protecting family land",
+      "shelves": [
+        "netflix-wine",
+        "want-that-life",
+        "romance",
+        "women-wine-legacy",
+        "family-heritage",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 9.5,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 5.9,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Woman protecting family land"
+    },
+    {
+      "id": "back-to-burgundy",
+      "title": "Back to Burgundy",
+      "aka": null,
+      "year": 2017,
+      "yearLabel": "2017",
+      "format": "film",
+      "imdb": 6.8,
+      "rating": null,
+      "region": "Burgundy, France",
+      "tags": [
+        "wine",
+        "scenery",
+        "estate",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Family vineyard legacy",
+      "shelves": [
+        "essentials",
+        "burgundy",
+        "estates-villas",
+        "women-wine-legacy",
+        "family-heritage",
+        "golden-hour",
+        "road-burgundy",
+        "global-road-trip",
+        "ladder-2",
+        "education-ladder",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.8,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Family vineyard legacy"
+    },
+    {
+      "id": "chocolat",
+      "title": "Chocolat",
+      "aka": null,
+      "year": 2000,
+      "yearLabel": "2000",
+      "format": "film",
+      "imdb": 7.2,
+      "rating": "PG-13",
+      "region": "France",
+      "tags": [
+        "lifestyle",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "provence",
+        "want-that-life",
+        "food-wine-entertaining",
+        "date-food",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 9,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.2,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (France)."
+    },
+    {
+      "id": "from-the-vine",
+      "title": "From the Vine",
+      "aka": null,
+      "year": 2019,
+      "yearLabel": "2019",
+      "format": "indie",
+      "imdb": null,
+      "rating": "TV-MA",
+      "region": "Italy",
+      "tags": [
+        "wine",
+        "estate",
+        "scenery",
+        "family"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "indie-gems",
+        "netflix-wine",
+        "family-heritage",
+        "ladder-2",
+        "education-ladder",
+        "discover-gems",
+        "men-adventure",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Italy)."
+    },
+    {
+      "id": "red-obsession",
+      "title": "Red Obsession",
+      "aka": null,
+      "year": 2013,
+      "yearLabel": "2013",
+      "format": "doc",
+      "imdb": 7.0,
+      "rating": "NR",
+      "region": "Bordeaux / China",
+      "tags": [
+        "wine",
+        "luxury",
+        "travel",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "bordeaux",
+        "wine-education",
+        "road-bordeaux",
+        "global-road-trip",
+        "ladder-3",
+        "education-ladder",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 8.5,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Bordeaux / China)."
+    },
+    {
+      "id": "you-will-be-my-son",
+      "title": "You Will Be My Son",
+      "aka": null,
+      "year": 2011,
+      "yearLabel": "2011",
+      "format": "film",
+      "imdb": 6.9,
+      "rating": null,
+      "region": "Bordeaux, France",
+      "tags": [
+        "wine",
+        "estate",
+        "scenery",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "bordeaux",
+        "estates-villas",
+        "family-heritage",
+        "road-bordeaux",
+        "global-road-trip",
+        "ladder-4",
+        "education-ladder",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.9,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 73,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Bordeaux, France)."
+    },
+    {
+      "id": "a-california-christmas-city-lights",
+      "title": "A California Christmas: City Lights",
+      "aka": null,
+      "year": 2021,
+      "yearLabel": "2021",
+      "format": "film",
+      "imdb": 5.6,
+      "rating": "PG-13",
+      "region": "California",
+      "tags": [
+        "wine",
+        "estate",
+        "romance",
+        "family"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Family / ranch / winery",
+      "shelves": [
+        "netflix-wine",
+        "want-that-life",
+        "romance",
+        "women-wine-legacy",
+        "family-heritage",
+        "girls-getaway",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 5.6,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 72,
+      "shortDescription": "Family / ranch / winery"
+    },
+    {
+      "id": "la-dolce-villa",
+      "title": "La Dolce Villa",
+      "aka": null,
+      "year": 2025,
+      "yearLabel": "2025",
+      "format": "film",
+      "imdb": null,
+      "rating": "TV-PG",
+      "region": "Tuscany, Italy",
+      "tags": [
+        "estate",
+        "travel",
+        "scenery",
+        "wine",
+        "romance"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": "Crumbling Tuscan villa, beauty, romance, and finding new purpose.",
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "netflix-lifestyle",
+        "want-that-life",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-tuscany",
+        "global-road-trip",
+        "date-romantic",
+        "date-night",
+        "girls-getaway",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 72,
+      "shortDescription": "Crumbling Tuscan villa, beauty, romance, and finding new purpose."
+    },
+    {
+      "id": "the-wine-show-argentina-episodes",
+      "title": "The Wine Show — Argentina episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Argentina",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "argentina"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 72,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Argentina)."
+    },
+    {
+      "id": "the-wine-show-italy-episodes",
+      "title": "The Wine Show — Italy episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Italy",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "piedmont"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 72,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "a-walk-in-the-clouds",
+      "title": "A Walk in the Clouds",
+      "aka": null,
+      "year": 1995,
+      "yearLabel": "1995",
+      "format": "film",
+      "imdb": 6.7,
+      "rating": "PG-13",
+      "region": "Napa Valley, CA",
+      "tags": [
+        "wine",
+        "estate",
+        "scenery",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "california-napa",
+        "central-coast",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "road-california",
+        "global-road-trip",
+        "ladder-1",
+        "education-ladder",
+        "date-romantic",
+        "date-night",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.7,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Napa Valley, CA)."
+    },
+    {
+      "id": "a-year-in-burgundy",
+      "title": "A Year in Burgundy",
+      "aka": null,
+      "year": 2013,
+      "yearLabel": "2013",
+      "format": "doc",
+      "imdb": null,
+      "rating": "TV-14",
+      "region": "Burgundy, France",
+      "tags": [
+        "wine",
+        "scenery",
+        "education"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "burgundy",
+        "wine-education",
+        "netflix-wine",
+        "road-burgundy",
+        "global-road-trip",
+        "ladder-2",
+        "education-ladder",
+        "ladder-4",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Burgundy, France)."
+    },
+    {
+      "id": "burgundy-people-with-a-passion-for-wine",
+      "title": "Burgundy: People with a Passion for Wine",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "doc",
+      "imdb": null,
+      "rating": null,
+      "region": "Burgundy, France",
+      "tags": [
+        "wine",
+        "education",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "burgundy",
+        "indie-gems",
+        "road-burgundy",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Burgundy, France)."
+    },
+    {
+      "id": "decanted",
+      "title": "Decanted",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "doc",
+      "imdb": null,
+      "rating": "NR",
+      "region": "Napa Valley, CA",
+      "tags": [
+        "wine",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa",
+        "wine-education",
+        "indie-gems",
+        "road-california",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Napa Valley, CA)."
+    },
+    {
+      "id": "the-chateau-meroux",
+      "title": "The Chateau Meroux",
+      "aka": null,
+      "year": 2011,
+      "yearLabel": "2011",
+      "format": "indie",
+      "imdb": 5.2,
+      "rating": "PG-13",
+      "region": "California",
+      "tags": [
+        "wine",
+        "estate",
+        "lifestyle",
+        "romance",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Woman inherits and runs a winery",
+      "shelves": [
+        "essentials",
+        "california-napa",
+        "central-coast",
+        "indie-gems",
+        "estates-villas",
+        "romance",
+        "women-wine-legacy",
+        "family-heritage",
+        "road-california",
+        "global-road-trip",
+        "discover-gems",
+        "date-romantic",
+        "date-night",
+        "girls-getaway",
+        "wine-real-estate",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 5.2,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Woman inherits and runs a winery"
+    },
+    {
+      "id": "the-dressmaker",
+      "title": "The Dressmaker",
+      "aka": null,
+      "year": 2015,
+      "yearLabel": "2015",
+      "format": "film",
+      "imdb": 7.0,
+      "rating": "R",
+      "region": "Australia",
+      "tags": [
+        "scenery",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": "Woman returning to rural Australia",
+      "shelves": [
+        "australia",
+        "want-that-life",
+        "women-wine-legacy",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Woman returning to rural Australia"
+    },
+    {
+      "id": "the-trip-to-italy",
+      "title": "The Trip to Italy",
+      "aka": null,
+      "year": 2014,
+      "yearLabel": "2014",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "Italy",
+      "tags": [
+        "lifestyle",
+        "travel"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "netflix-lifestyle",
+        "want-that-life",
+        "food-wine-entertaining",
+        "date-food",
+        "date-night",
+        "men-adventure"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "the-trip-to-spain",
+      "title": "The Trip to Spain",
+      "aka": null,
+      "year": 2017,
+      "yearLabel": "2017",
+      "format": "film",
+      "imdb": 6.8,
+      "rating": "R",
+      "region": "Spain",
+      "tags": [
+        "lifestyle",
+        "travel"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "spain",
+        "netflix-lifestyle",
+        "want-that-life",
+        "food-wine-entertaining",
+        "road-spain",
+        "global-road-trip",
+        "men-adventure"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Spain)."
+    },
+    {
+      "id": "the-truffle-hunters",
+      "title": "The Truffle Hunters",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020",
+      "format": "doc",
+      "imdb": 7.2,
+      "rating": "PG-13",
+      "region": "Piedmont, Italy",
+      "tags": [
+        "travel",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "piedmont",
+        "road-piedmont",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 9.5,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.2,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Piedmont, Italy)."
+    },
+    {
+      "id": "the-wine-show-burgundy-episodes",
+      "title": "The Wine Show — Burgundy episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Burgundy, France",
+      "tags": [
+        "wine",
+        "education",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "burgundy"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Burgundy, France)."
+    },
+    {
+      "id": "the-wine-of-summer",
+      "title": "The Wine of Summer",
+      "aka": null,
+      "year": 2013,
+      "yearLabel": "2013",
+      "format": "indie",
+      "imdb": 5.1,
+      "rating": "PG",
+      "region": "Spain",
+      "tags": [
+        "wine",
+        "travel",
+        "scenery",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "provence",
+        "spain",
+        "indie-gems",
+        "romance",
+        "road-spain",
+        "global-road-trip",
+        "discover-gems",
+        "date-romantic",
+        "date-night",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 5.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 71,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Spain)."
+    },
+    {
+      "id": "a-year-in-provence",
+      "title": "A Year in Provence",
+      "aka": null,
+      "year": 1993,
+      "yearLabel": "1993",
+      "format": "tv",
+      "imdb": null,
+      "rating": "TV",
+      "region": "Provence, France",
+      "tags": [
+        "estate",
+        "travel",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "provence",
+        "road-provence",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Provence, France)."
+    },
+    {
+      "id": "babette-s-feast",
+      "title": "Babette's Feast",
+      "aka": null,
+      "year": 1987,
+      "yearLabel": "1987",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": "Hospitality and culinary artistry",
+      "shelves": [
+        "food-wine-entertaining",
+        "women-wine-legacy",
+        "family-heritage",
+        "date-food",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Hospitality and culinary artistry"
+    },
+    {
+      "id": "big-night",
+      "title": "Big Night",
+      "aka": null,
+      "year": 1996,
+      "yearLabel": "1996",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining",
+        "family-heritage",
+        "date-food",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "eat-pray-love",
+      "title": "Eat Pray Love",
+      "aka": null,
+      "year": 2010,
+      "yearLabel": "2010",
+      "format": "film",
+      "imdb": 5.8,
+      "rating": "PG-13",
+      "region": "Italy / Global",
+      "tags": [
+        "travel",
+        "lifestyle"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "netflix-lifestyle",
+        "want-that-life",
+        "food-wine-entertaining",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 5.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy / Global)."
+    },
+    {
+      "id": "mondovino",
+      "title": "Mondovino",
+      "aka": null,
+      "year": 2004,
+      "yearLabel": "2004",
+      "format": "doc",
+      "imdb": 7.0,
+      "rating": "PG-13",
+      "region": "Global",
+      "tags": [
+        "wine",
+        "education",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "bordeaux",
+        "chile",
+        "wine-education",
+        "road-bordeaux",
+        "global-road-trip",
+        "ladder-4",
+        "education-ladder",
+        "men-adventure"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Global)."
+    },
+    {
+      "id": "somm",
+      "title": "Somm",
+      "aka": null,
+      "year": 2012,
+      "yearLabel": "2012",
+      "format": "doc",
+      "imdb": 7.0,
+      "rating": "NR",
+      "region": "Global / USA",
+      "tags": [
+        "lifestyle",
+        "education",
+        "wine"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "wine-education",
+        "ladder-3",
+        "education-ladder",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Global / USA)."
+    },
+    {
+      "id": "somm-into-the-bottle",
+      "title": "Somm: Into the Bottle",
+      "aka": null,
+      "year": 2015,
+      "yearLabel": "2015",
+      "format": "doc",
+      "imdb": 7.3,
+      "rating": "NR",
+      "region": "Global",
+      "tags": [
+        "wine",
+        "education",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "chile",
+        "wine-education",
+        "road-chile",
+        "global-road-trip",
+        "ladder-3",
+        "education-ladder",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.3,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Global)."
+    },
+    {
+      "id": "the-hundred-foot-journey",
+      "title": "The Hundred-Foot Journey",
+      "aka": null,
+      "year": 2014,
+      "yearLabel": "2014",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining",
+        "family-heritage",
+        "date-food",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "uncorked",
+      "title": "Uncorked",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020",
+      "format": "film",
+      "imdb": null,
+      "rating": "TV-MA",
+      "region": "USA",
+      "tags": [
+        "lifestyle",
+        "education",
+        "wine"
+      ],
+      "platform": "netflix",
+      "platformOriginal": true,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "wine-education",
+        "netflix-wine",
+        "ladder-1",
+        "education-ladder",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (USA)."
+    },
+    {
+      "id": "widow-clicquot",
+      "title": "Widow Clicquot",
+      "aka": null,
+      "year": 2024,
+      "yearLabel": "2024",
+      "format": "film",
+      "imdb": null,
+      "rating": "PG-13",
+      "region": "Champagne, France",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "luxury"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Woman building a Champagne empire",
+      "shelves": [
+        "essentials",
+        "champagne",
+        "women-wine-legacy",
+        "road-champagne",
+        "global-road-trip",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 8.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 70,
+      "shortDescription": "Woman building a Champagne empire"
+    },
+    {
+      "id": "falcon-crest",
+      "title": "Falcon Crest",
+      "aka": null,
+      "year": 1981,
+      "yearLabel": "1981–1990",
+      "format": "tv",
+      "imdb": 6.1,
+      "rating": "TV-PG",
+      "region": "Napa / Northern California",
+      "tags": [
+        "wine",
+        "estate",
+        "luxury"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 9.0,
+        "story": 6.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 69,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Napa / Northern California)."
+    },
+    {
+      "id": "the-bachelor",
+      "title": "The Bachelor",
+      "aka": null,
+      "year": 1999,
+      "yearLabel": "1999",
+      "format": "film",
+      "imdb": 5.1,
+      "rating": "PG-13",
+      "region": "California",
+      "tags": [
+        "estate",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 9.5,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 5.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 69,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (California)."
+    },
+    {
+      "id": "the-secret-of-santa-vittoria",
+      "title": "The Secret of Santa Vittoria",
+      "aka": null,
+      "year": 1969,
+      "yearLabel": "1969",
+      "format": "film",
+      "imdb": 7.2,
+      "rating": "PG-13",
+      "region": "Italy",
+      "tags": [
+        "wine",
+        "travel",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "family-heritage",
+        "men-adventure",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.2,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 69,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "the-wine-show-australia-episodes",
+      "title": "The Wine Show — Australia episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Australia",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.5,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 69,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Australia)."
+    },
+    {
+      "id": "the-wine-show-portugal-episodes",
+      "title": "The Wine Show — Portugal episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Portugal",
+      "tags": [
+        "wine",
+        "lifestyle",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "portugal"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.5,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 69,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Portugal)."
+    },
+    {
+      "id": "a-heavenly-vintage",
+      "title": "A Heavenly Vintage",
+      "aka": "The Vintner's Luck",
+      "year": 2009,
+      "yearLabel": "2009",
+      "format": "indie",
+      "imdb": 5.6,
+      "rating": "R",
+      "region": "France",
+      "tags": [
+        "wine",
+        "scenery",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "provence",
+        "indie-gems",
+        "romance",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 5.6,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (France)."
+    },
+    {
+      "id": "holiday-in-the-vineyards",
+      "title": "Holiday in the Vineyards",
+      "aka": null,
+      "year": 2023,
+      "yearLabel": "2023",
+      "format": "film",
+      "imdb": 6.2,
+      "rating": "PG",
+      "region": "California",
+      "tags": [
+        "wine",
+        "estate",
+        "romance",
+        "family"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": "Woman protecting a local vineyard",
+      "shelves": [
+        "netflix-wine",
+        "romance",
+        "women-wine-legacy",
+        "family-heritage",
+        "homepage-top25"
+      ],
+      "homepageFeatured": true,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.2,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Woman protecting a local vineyard"
+    },
+    {
+      "id": "jean-de-florette",
+      "title": "Jean de Florette",
+      "aka": null,
+      "year": 1986,
+      "yearLabel": "1986",
+      "format": "film",
+      "imdb": 8.0,
+      "rating": "PG",
+      "region": "Provence, France",
+      "tags": [
+        "scenery",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "provence",
+        "road-provence",
+        "global-road-trip"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 8.0,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Provence, France)."
+    },
+    {
+      "id": "much-ado-about-nothing",
+      "title": "Much Ado About Nothing",
+      "aka": null,
+      "year": 1993,
+      "yearLabel": "1993",
+      "format": "film",
+      "imdb": 7.3,
+      "rating": "PG-13",
+      "region": "Italy",
+      "tags": [
+        "estate",
+        "scenery",
+        "wine",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "want-that-life",
+        "estates-villas",
+        "romance",
+        "golden-hour",
+        "date-sophisticated",
+        "date-night",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 7.3,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Italy)."
+    },
+    {
+      "id": "the-australian-wine-revolution",
+      "title": "The Australian Wine Revolution",
+      "aka": null,
+      "year": 2019,
+      "yearLabel": "2019",
+      "format": "doc",
+      "imdb": null,
+      "rating": "NR",
+      "region": "Australia",
+      "tags": [
+        "wine",
+        "scenery",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia",
+        "road-australia",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.5,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Australia)."
+    },
+    {
+      "id": "the-english-patient",
+      "title": "The English Patient",
+      "aka": null,
+      "year": 1996,
+      "yearLabel": "1996",
+      "format": "film",
+      "imdb": 7.4,
+      "rating": "R",
+      "region": "Italy / North Africa",
+      "tags": [
+        "scenery",
+        "estate",
+        "wine"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "want-that-life",
+        "estates-villas",
+        "golden-hour",
+        "date-sophisticated",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 7.4,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Italy / North Africa)."
+    },
+    {
+      "id": "the-parent-trap",
+      "title": "The Parent Trap",
+      "aka": null,
+      "year": 1998,
+      "yearLabel": "1998",
+      "format": "film",
+      "imdb": 6.6,
+      "rating": "PG",
+      "region": "Napa Valley, CA",
+      "tags": [
+        "wine",
+        "estate",
+        "family"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa",
+        "central-coast",
+        "estates-villas",
+        "family-heritage",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.6,
+        "family": 8.5,
+        "education": 3.5
+      },
+      "wineLifeScore": 68,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Napa Valley, CA)."
+    },
+    {
+      "id": "anthony-bourdain-parts-unknown",
+      "title": "Anthony Bourdain: Parts Unknown",
+      "aka": null,
+      "year": 2013,
+      "yearLabel": "2013–2018",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "call-me-by-your-name",
+      "title": "Call Me by Your Name",
+      "aka": null,
+      "year": 2017,
+      "yearLabel": "2017",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "Northern Italy",
+      "tags": [
+        "scenery",
+        "estate",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "want-that-life",
+        "romance",
+        "golden-hour",
+        "date-sophisticated",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Northern Italy)."
+    },
+    {
+      "id": "champagne-charlie",
+      "title": "Champagne Charlie",
+      "aka": null,
+      "year": 1989,
+      "yearLabel": "1989",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "Champagne, France",
+      "tags": [
+        "lifestyle",
+        "wine"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "champagne"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Champagne, France)."
+    },
+    {
+      "id": "chef",
+      "title": "Chef",
+      "aka": null,
+      "year": 2014,
+      "yearLabel": "2014",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "chef-s-table",
+      "title": "Chef's Table",
+      "aka": null,
+      "year": 2015,
+      "yearLabel": "2015–",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "falling-inn-love",
+      "title": "Falling Inn Love",
+      "aka": null,
+      "year": 2019,
+      "yearLabel": "2019",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "New Zealand",
+      "tags": [
+        "estate",
+        "scenery"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "netflix-lifestyle",
+        "want-that-life"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 9.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (New Zealand)."
+    },
+    {
+      "id": "french-kiss",
+      "title": "French Kiss",
+      "aka": null,
+      "year": 1995,
+      "yearLabel": "1995",
+      "format": "film",
+      "imdb": 6.6,
+      "rating": "PG-13",
+      "region": "France",
+      "tags": [
+        "travel",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "provence",
+        "want-that-life",
+        "romance",
+        "date-romantic",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.6,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (France)."
+    },
+    {
+      "id": "julie-julia",
+      "title": "Julie & Julia",
+      "aka": null,
+      "year": 2009,
+      "yearLabel": "2009",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": "Female creativity + food",
+      "shelves": [
+        "food-wine-entertaining",
+        "women-wine-legacy",
+        "date-food",
+        "date-night"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Female creativity + food"
+    },
+    {
+      "id": "napa",
+      "title": "Napa",
+      "aka": null,
+      "year": null,
+      "yearLabel": "various",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "Napa Valley, CA",
+      "tags": [
+        "wine",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Napa Valley, CA)."
+    },
+    {
+      "id": "saint-amour",
+      "title": "Saint Amour",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "film",
+      "imdb": 6.2,
+      "rating": null,
+      "region": "France",
+      "tags": [
+        "wine",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "burgundy",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.2,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (France)."
+    },
+    {
+      "id": "somebody-feed-phil",
+      "title": "Somebody Feed Phil",
+      "aka": null,
+      "year": 2018,
+      "yearLabel": "2018–",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "the-trip-to-greece",
+      "title": "The Trip to Greece",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (wine country)."
+    },
+    {
+      "id": "the-wine-show-bordeaux-episodes",
+      "title": "The Wine Show — Bordeaux episodes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016–",
+      "format": "tv",
+      "imdb": 8.8,
+      "rating": "TV",
+      "region": "Bordeaux, France",
+      "tags": [
+        "wine",
+        "luxury"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "bordeaux"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 8.5,
+        "story": 8.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 67,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Bordeaux, France)."
+    },
+    {
+      "id": "bottle-shock-the-wine-game",
+      "title": "Bottle Shock: The Wine Game",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020s",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "California",
+      "tags": [
+        "wine",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "california-napa"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 66,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (California)."
+    },
+    {
+      "id": "el-camino-del-vino",
+      "title": "El camino del vino",
+      "aka": null,
+      "year": 2010,
+      "yearLabel": "2010",
+      "format": "film",
+      "imdb": 7.1,
+      "rating": null,
+      "region": "Argentina",
+      "tags": [
+        "wine",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "argentina",
+        "road-argentina",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.1,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 66,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Argentina)."
+    },
+    {
+      "id": "somm-3",
+      "title": "Somm 3",
+      "aka": null,
+      "year": 2018,
+      "yearLabel": "2018",
+      "format": "doc",
+      "imdb": 7.3,
+      "rating": "NR",
+      "region": "France / USA",
+      "tags": [
+        "wine",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "essentials",
+        "argentina",
+        "wine-education",
+        "ladder-3",
+        "education-ladder"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.3,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 66,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (France / USA)."
+    },
+    {
+      "id": "sour-grapes",
+      "title": "Sour Grapes",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "doc",
+      "imdb": 7.0,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "wine",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "wine-education"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 66,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (wine country)."
+    },
+    {
+      "id": "the-winemaker-s-secret",
+      "title": "The Winemaker's Secret",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "South Africa",
+      "tags": [
+        "wine",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "south-africa",
+        "indie-gems",
+        "road-south-africa",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 10,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 66,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (South Africa)."
+    },
+    {
+      "id": "love-in-the-villa",
+      "title": "Love in the Villa",
+      "aka": null,
+      "year": 2022,
+      "yearLabel": "2022",
+      "format": "film",
+      "imdb": 5.4,
+      "rating": "TV-PG",
+      "region": "Verona, Italy",
+      "tags": [
+        "travel",
+        "estate",
+        "romance"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany",
+        "netflix-lifestyle",
+        "want-that-life",
+        "romance",
+        "date-romantic",
+        "date-night",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 5.4,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 65,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Verona, Italy)."
+    },
+    {
+      "id": "manon-des-sources",
+      "title": "Manon des Sources",
+      "aka": null,
+      "year": 1986,
+      "yearLabel": "1986",
+      "format": "film",
+      "imdb": 8.0,
+      "rating": "PG",
+      "region": "Provence, France",
+      "tags": [
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "provence",
+        "road-provence",
+        "global-road-trip"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 6.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 8.0,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 65,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Provence, France)."
+    },
+    {
+      "id": "night-train-to-lisbon",
+      "title": "Night Train to Lisbon",
+      "aka": null,
+      "year": 2013,
+      "yearLabel": "2013",
+      "format": "film",
+      "imdb": 6.8,
+      "rating": "PG-13",
+      "region": "Portugal",
+      "tags": [
+        "travel",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "portugal"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.8,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 65,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Portugal)."
+    },
+    {
+      "id": "the-best-exotic-marigold-hotel",
+      "title": "The Best Exotic Marigold Hotel",
+      "aka": null,
+      "year": 2011,
+      "yearLabel": "2011",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "India",
+      "tags": [
+        "travel",
+        "estate"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "want-that-life",
+        "girls-getaway"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 65,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (India)."
+    },
+    {
+      "id": "wine-for-the-confused",
+      "title": "Wine for the Confused",
+      "aka": null,
+      "year": 2004,
+      "yearLabel": "2004",
+      "format": "doc",
+      "imdb": null,
+      "rating": null,
+      "region": null,
+      "tags": [
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Direct",
+      "why": null,
+      "shelves": [
+        "wine-education"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 9.5,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 65,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (wine country)."
+    },
+    {
+      "id": "vicky-cristina-barcelona",
+      "title": "Vicky Cristina Barcelona",
+      "aka": null,
+      "year": 2008,
+      "yearLabel": "2008",
+      "format": "film",
+      "imdb": 6.9,
+      "rating": "PG-13",
+      "region": "Spain",
+      "tags": [
+        "travel",
+        "wine",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "spain",
+        "want-that-life",
+        "romance",
+        "road-spain",
+        "global-road-trip"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.9,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 64,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Spain)."
+    },
+    {
+      "id": "a-few-best-men",
+      "title": "A Few Best Men",
+      "aka": null,
+      "year": 2011,
+      "yearLabel": "2011",
+      "format": "film",
+      "imdb": 5.7,
+      "rating": "R",
+      "region": "Australia",
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 5.7,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Australia)."
+    },
+    {
+      "id": "chateau-chunder-a-wine-revolution",
+      "title": "Chateau Chunder: A Wine Revolution",
+      "aka": null,
+      "year": 2009,
+      "yearLabel": "2009",
+      "format": "doc",
+      "imdb": null,
+      "rating": "NR",
+      "region": "Australia",
+      "tags": [
+        "wine",
+        "education"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia",
+        "road-australia",
+        "global-road-trip",
+        "discover-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.5,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (Australia)."
+    },
+    {
+      "id": "it-s-complicated",
+      "title": "It's Complicated",
+      "aka": null,
+      "year": 2009,
+      "yearLabel": "2009",
+      "format": "film",
+      "imdb": 6.5,
+      "rating": "R",
+      "region": "Santa Barbara / California",
+      "tags": [
+        "lifestyle",
+        "estate",
+        "wine"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "central-coast",
+        "want-that-life",
+        "estates-villas",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Santa Barbara / California)."
+    },
+    {
+      "id": "only-you",
+      "title": "Only You",
+      "aka": null,
+      "year": 1994,
+      "yearLabel": "1994",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "Italy",
+      "tags": [
+        "travel",
+        "romance"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "want-that-life",
+        "romance"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Romance and atmosphere with a wine-country soul (Italy)."
+    },
+    {
+      "id": "porto",
+      "title": "Porto",
+      "aka": null,
+      "year": 2016,
+      "yearLabel": "2016",
+      "format": "film",
+      "imdb": 6.1,
+      "rating": "R",
+      "region": "Portugal",
+      "tags": [
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "portugal",
+        "road-portugal",
+        "global-road-trip"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Portugal)."
+    },
+    {
+      "id": "tea-with-mussolini",
+      "title": "Tea with Mussolini",
+      "aka": null,
+      "year": 1999,
+      "yearLabel": "1999",
+      "format": "film",
+      "imdb": 6.9,
+      "rating": "PG",
+      "region": "Italy",
+      "tags": [
+        "estate",
+        "scenery"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 7.5,
+        "scenery": 9,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.9,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Italy)."
+    },
+    {
+      "id": "the-holiday",
+      "title": "The Holiday",
+      "aka": null,
+      "year": 2006,
+      "yearLabel": "2006",
+      "format": "film",
+      "imdb": 6.9,
+      "rating": "PG-13",
+      "region": "England / California",
+      "tags": [
+        "lifestyle",
+        "estate",
+        "wine"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "central-coast",
+        "want-that-life",
+        "estates-villas",
+        "girls-getaway",
+        "wine-real-estate"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.5,
+        "lifestyle": 9.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.9,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (England / California)."
+    },
+    {
+      "id": "the-sapphires",
+      "title": "The Sapphires",
+      "aka": null,
+      "year": 2012,
+      "yearLabel": "2012",
+      "format": "film",
+      "imdb": 7.0,
+      "rating": "PG-13",
+      "region": "Australia",
+      "tags": [
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "australia"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.0,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Australia)."
+    },
+    {
+      "id": "the-trip-spain-episodes",
+      "title": "The Trip — Spain episodes",
+      "aka": null,
+      "year": null,
+      "yearLabel": "various",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "Spain",
+      "tags": [
+        "lifestyle",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "spain"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Spain)."
+    },
+    {
+      "id": "year-of-the-comet",
+      "title": "Year of the Comet",
+      "aka": null,
+      "year": 1992,
+      "yearLabel": "1992",
+      "format": "film",
+      "imdb": 5.9,
+      "rating": "PG-13",
+      "region": "Europe",
+      "tags": [
+        "wine",
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Strong",
+      "why": null,
+      "shelves": [
+        "indie-gems"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 8.5,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 5.9,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 63,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Europe)."
+    },
+    {
+      "id": "the-bear",
+      "title": "The Bear",
+      "aka": null,
+      "year": 2022,
+      "yearLabel": "2022–",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "USA",
+      "tags": [
+        "lifestyle",
+        "education"
+      ],
+      "platform": "hulu_fx",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Adjacent",
+      "why": null,
+      "shelves": [
+        "food-hospitality-streaming",
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 4.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 9.0
+      },
+      "wineLifeScore": 62,
+      "shortDescription": "Makes wine culture fascinating — craft, tasting, and place (USA)."
+    },
+    {
+      "id": "stanley-tucci-searching-for-italy",
+      "title": "Stanley Tucci: Searching for Italy",
+      "aka": null,
+      "year": 2021,
+      "yearLabel": "2021–",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "Italy",
+      "tags": [
+        "wine",
+        "lifestyle"
+      ],
+      "platform": "hulu",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Adjacent",
+      "why": null,
+      "shelves": [
+        "food-hospitality-streaming",
+        "food-wine-entertaining"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 4.5,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 8.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 60,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "the-big-chill",
+      "title": "The Big Chill",
+      "aka": null,
+      "year": 1983,
+      "yearLabel": "1983",
+      "format": "film",
+      "imdb": 7.1,
+      "rating": "R",
+      "region": "USA",
+      "tags": [
+        "lifestyle"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "central-coast",
+        "want-that-life"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 8.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 7.1,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 60,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (USA)."
+    },
+    {
+      "id": "the-way",
+      "title": "The Way",
+      "aka": null,
+      "year": 2010,
+      "yearLabel": "2010",
+      "format": "film",
+      "imdb": 7.3,
+      "rating": "PG-13",
+      "region": "Spain",
+      "tags": [
+        "travel"
+      ],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "spain"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 7.3,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 59,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Spain)."
+    },
+    {
+      "id": "the-last-letter-from-your-lover",
+      "title": "The Last Letter from Your Lover",
+      "aka": null,
+      "year": 2021,
+      "yearLabel": "2021",
+      "format": "film",
+      "imdb": null,
+      "rating": null,
+      "region": "Italy / UK",
+      "tags": [
+        "estate"
+      ],
+      "platform": "netflix",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "netflix-lifestyle"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 58,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Italy / UK)."
+    },
+    {
+      "id": "the-great",
+      "title": "The Great",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020–2023",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "Europe",
+      "tags": [
+        "estate",
+        "travel"
+      ],
+      "platform": "hulu",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Adjacent",
+      "why": null,
+      "shelves": [
+        "food-hospitality-streaming"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 4.0,
+        "lifestyle": 7.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 6.0,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 57,
+      "shortDescription": "Beautiful property energy — villas, estates, and destination living (Europe)."
+    },
+    {
+      "id": "life-is-beautiful",
+      "title": "Life Is Beautiful",
+      "aka": null,
+      "year": 1997,
+      "yearLabel": "1997",
+      "format": "film",
+      "imdb": 8.6,
+      "rating": "PG-13",
+      "region": "Italy",
+      "tags": [],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 8.6,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 56,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "the-best-of-youth",
+      "title": "The Best of Youth",
+      "aka": null,
+      "year": 2003,
+      "yearLabel": "2003",
+      "format": "film",
+      "imdb": 8.5,
+      "rating": "NR",
+      "region": "Italy",
+      "tags": [],
+      "platform": null,
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Lifestyle",
+      "why": null,
+      "shelves": [
+        "tuscany"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 6.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 5.0,
+        "luxury": 5.5,
+        "story": 8.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 56,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (Italy)."
+    },
+    {
+      "id": "taste-the-nation",
+      "title": "Taste the Nation",
+      "aka": null,
+      "year": 2020,
+      "yearLabel": "2020–",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "USA",
+      "tags": [
+        "travel"
+      ],
+      "platform": "hulu",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Adjacent",
+      "why": null,
+      "shelves": [
+        "food-hospitality-streaming"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 4.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 55,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (USA)."
+    },
+    {
+      "id": "the-next-thing-you-eat",
+      "title": "The Next Thing You Eat",
+      "aka": null,
+      "year": 2021,
+      "yearLabel": "2021",
+      "format": "tv",
+      "imdb": null,
+      "rating": null,
+      "region": "USA",
+      "tags": [
+        "travel"
+      ],
+      "platform": "hulu",
+      "platformOriginal": false,
+      "editorial": null,
+      "wineConnection": "Adjacent",
+      "why": null,
+      "shelves": [
+        "food-hospitality-streaming"
+      ],
+      "homepageFeatured": false,
+      "scores": {
+        "wine": 4.0,
+        "lifestyle": 6.5,
+        "scenery": 5.5,
+        "food": 4.5,
+        "travel": 8.5,
+        "luxury": 5.5,
+        "story": 6.5,
+        "family": 4.0,
+        "education": 3.5
+      },
+      "wineLifeScore": 55,
+      "shortDescription": "Wine-life inspiration: place, pleasure, and atmosphere (USA)."
     }
   ]
 }
