@@ -1,0 +1,296 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import collection from '../../data/wine-collection.json';
+
+const section = collection.sections[0];
+const titles = section.titles;
+const formats = collection.formats as Record<string, { emoji: string; label: string }>;
+const tags = collection.tags as Record<string, { emoji: string; label: string }>;
+
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `${collection.title} — ${section.name}`,
+  description: collection.purpose,
+  numberOfItems: titles.length,
+  itemListElement: titles.map((t, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${t.title} (${t.yearLabel})`,
+  })),
+};
+
+const collectionPage = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: collection.title,
+  description: collection.subtitle,
+  url: 'https://bellieacreswine.com/collection/',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Bellie Acres Wine',
+    url: 'https://bellieacreswine.com',
+  },
+};
+---
+
+<Layout
+  title="The Wine Collection · Cinematic Wine List"
+  description="The Wine Collection at Bellie Acres Wine — a cinematic wine list of movies, TV, and documentaries that inspire wine-country living, estates, food & wine, travel, and hospitality. Curated essentials (Sideways not included)."
+  jsonLd={[collectionPage, itemList]}
+>
+  <Navbar />
+
+  <main>
+    <!-- Hero -->
+    <header class="relative overflow-hidden border-b border-stone-200">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#F6F7F2] via-white to-[#e8ebe3]"></div>
+      <div class="relative max-w-6xl mx-auto px-6 py-16 sm:py-20">
+        <p class="text-xs uppercase tracking-[0.28em] text-[var(--accent)] font-medium mb-4">
+          {collection.brand} · Entertainment library
+        </p>
+        <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl tracking-tight text-[var(--ink)] max-w-4xl leading-[0.98]">
+          {collection.title}
+        </h1>
+        <p class="mt-5 text-xl sm:text-2xl text-stone-600 font-light max-w-2xl leading-relaxed">
+          {collection.subtitle}
+        </p>
+        <p class="mt-6 text-stone-600 max-w-3xl leading-relaxed">
+          {collection.purpose}
+        </p>
+        <p class="mt-4 text-stone-600 max-w-3xl leading-relaxed italic">
+          {collection.notMerely}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#essentials" class="inline-flex items-center px-6 py-3 rounded-full bg-[var(--primary)] text-white text-sm font-medium hover:opacity-90 transition">
+            Browse Essentials →
+          </a>
+          <a href="/wineries" class="inline-flex items-center px-6 py-3 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--accent)] transition">
+            Temecula wineries list
+          </a>
+          <a href="/map" class="inline-flex items-center px-6 py-3 rounded-full border border-stone-300 text-sm font-medium hover:border-[var(--accent)] transition">
+            Wineries map
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-14 space-y-16">
+      <!-- Qualifying criteria -->
+      <section aria-labelledby="qualify-heading">
+        <h2 id="qualify-heading" class="font-serif text-3xl sm:text-4xl tracking-tight mb-4">What belongs here</h2>
+        <p class="text-stone-600 max-w-3xl mb-6 leading-relaxed">
+          {collection.editorialStandard}
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 max-w-4xl">
+          {collection.qualify.map((q) => (
+            <li class="flex gap-3 rounded-2xl border border-stone-200 bg-white px-4 py-3 text-sm text-stone-700">
+              <span class="text-[var(--accent)] shrink-0">✓</span>
+              <span>{q}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-6 text-sm text-stone-500 max-w-3xl">
+          <strong class="text-stone-700">Explicit exclusion:</strong>
+          {collection.exclusions.join('; ')} is not part of The Wine Collection.
+        </p>
+      </section>
+
+      <!-- Legend -->
+      <section aria-labelledby="legend-heading" class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8">
+        <h2 id="legend-heading" class="font-serif text-2xl sm:text-3xl tracking-tight mb-6">Legend</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-[var(--accent)] font-semibold mb-3">Format</h3>
+            <ul class="space-y-2 text-sm text-stone-700">
+              {Object.values(formats).map((f) => (
+                <li>
+                  <span class="mr-2">{f.emoji}</span>
+                  {f.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xs uppercase tracking-[0.2em] text-[var(--accent)] font-semibold mb-3">Bellie Acres tags</h3>
+            <ul class="flex flex-wrap gap-2">
+              {Object.values(tags).map((t) => (
+                <li class="inline-flex items-center gap-1.5 rounded-full bg-[#F6F7F2] border border-stone-200 px-3 py-1 text-xs text-stone-700">
+                  <span>{t.emoji}</span>
+                  {t.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <p class="mt-6 text-xs text-stone-500 leading-relaxed max-w-3xl">
+          IMDb scores shown where established; they change over time. A dash means not listed yet.
+          Streaming availability varies by region — check your platform before planning a night in.
+          This is an editorial inspiration library, not sponsored placement.
+        </p>
+      </section>
+
+      <!-- Filters -->
+      <section id="essentials" aria-labelledby="essentials-heading">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
+          <div class="max-w-2xl">
+            <p class="text-xs uppercase tracking-[0.22em] text-[var(--accent)] font-medium mb-2">Section I · Highest prominence</p>
+            <h2 id="essentials-heading" class="font-serif text-4xl sm:text-5xl tracking-tight">
+              {section.name}
+            </h2>
+            <p class="text-stone-600 mt-3 leading-relaxed">{section.blurb}</p>
+          </div>
+          <div class="text-sm text-stone-500">{titles.length} titles</div>
+        </div>
+
+        <div class="mb-6 flex flex-col sm:flex-row gap-3 max-w-3xl">
+          <label class="sr-only" for="collection-search">Search the Wine Collection</label>
+          <input
+            id="collection-search"
+            type="search"
+            placeholder="Search title, region, tag…"
+            autocomplete="off"
+            class="flex-1 px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] bg-white"
+          />
+          <select
+            id="collection-format"
+            class="px-4 py-3.5 border border-stone-300 rounded-2xl bg-white text-sm focus:outline-none focus:border-[var(--accent)]"
+            aria-label="Filter by format"
+          >
+            <option value="">All formats</option>
+            {Object.entries(formats).map(([key, f]) => (
+              <option value={key}>{f.emoji} {f.label}</option>
+            ))}
+          </select>
+        </div>
+        <p id="collection-status" class="text-sm text-stone-500 mb-6 hidden" aria-live="polite"></p>
+
+        <div id="collection-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {titles.map((t) => {
+            const fmt = formats[t.format] || { emoji: '🎬', label: t.format };
+            const tagMeta = t.tags.map((key) => tags[key]).filter(Boolean);
+            const searchBlob = [
+              t.title,
+              t.aka || '',
+              t.yearLabel,
+              t.region,
+              fmt.label,
+              t.rating || '',
+              ...tagMeta.map((x) => x.label),
+              ...t.tags,
+            ]
+              .join(' ')
+              .toLowerCase();
+            return (
+              <article
+                class="collection-card group rounded-3xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:border-[var(--accent)]/35 transition flex flex-col"
+                data-search={searchBlob}
+                data-format={t.format}
+                data-id={t.id}
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <span class="text-xs uppercase tracking-[0.16em] text-[var(--accent)] font-medium">
+                    {fmt.emoji} {fmt.label}
+                  </span>
+                  <span class="text-xs text-stone-500 tabular-nums">{t.yearLabel}</span>
+                </div>
+                <h3 class="font-serif text-2xl leading-snug text-[var(--ink)] group-hover:text-[var(--primary)] transition">
+                  {t.title}
+                </h3>
+                {t.aka && <p class="text-sm text-stone-500 mt-1">Also known as {t.aka}</p>}
+                <p class="text-sm text-stone-600 mt-3">{t.region}</p>
+                <div class="mt-4 flex flex-wrap gap-2 text-xs text-stone-600">
+                  {typeof t.imdb === 'number' ? (
+                    <span class="rounded-full bg-[#F6F7F2] px-2.5 py-1">IMDb {t.imdb.toFixed(1)}</span>
+                  ) : (
+                    <span class="rounded-full bg-[#F6F7F2] px-2.5 py-1">IMDb —</span>
+                  )}
+                  {t.rating && <span class="rounded-full bg-[#F6F7F2] px-2.5 py-1">{t.rating}</span>}
+                </div>
+                <div class="mt-4 flex flex-wrap gap-1.5 mt-auto pt-4">
+                  {tagMeta.map((tag) => (
+                    <span
+                      class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#F6F7F2] border border-stone-100 text-sm"
+                      title={tag.label}
+                      aria-label={tag.label}
+                    >
+                      {tag.emoji}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      <!-- Coming sections -->
+      <section class="rounded-3xl border border-dashed border-stone-300 bg-[#F6F7F2]/60 p-8 sm:p-10">
+        <h2 class="font-serif text-3xl tracking-tight mb-3">More of the Collection</h2>
+        <p class="text-stone-600 max-w-2xl leading-relaxed">
+          Section I — Essentials — is live. Additional shelves (romance & estates, craft & harvest, travel inspiration,
+          independent discoveries, and more) will grow here as we expand the cinematic wine list.
+        </p>
+        <p class="text-sm text-stone-500 mt-4">
+          Suggest a title that fits the editorial standard? Reach us via
+          <a href="/contact" class="text-[var(--accent)] underline">contact</a>.
+          Please do not suggest Sideways — it remains outside this Collection by design.
+        </p>
+      </section>
+
+      <!-- Cross-links -->
+      <section class="grid sm:grid-cols-3 gap-4">
+        <a href="/wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Directory</div>
+          <div class="font-serif text-xl mt-1">Temecula wineries list</div>
+          <p class="text-sm text-stone-600 mt-2">From screen inspiration to real valley tasting rooms.</p>
+        </a>
+        <a href="/map" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Map</div>
+          <div class="font-serif text-xl mt-1">Temecula wineries map</div>
+          <p class="text-sm text-stone-600 mt-2">Plot a route after the credits roll.</p>
+        </a>
+        <a href="/guides/sip-with-a-view" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+          <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Scenic</div>
+          <div class="font-serif text-xl mt-1">Sip with a View</div>
+          <p class="text-sm text-stone-600 mt-2">Local overlooks with cinematic valley scenery.</p>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const input = document.getElementById('collection-search') as HTMLInputElement | null;
+    const formatSel = document.getElementById('collection-format') as HTMLSelectElement | null;
+    const status = document.getElementById('collection-status');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('.collection-card'));
+
+    function filter() {
+      const q = (input?.value || '').trim().toLowerCase();
+      const fmt = formatSel?.value || '';
+      let shown = 0;
+      cards.forEach((card) => {
+        const blob = card.dataset.search || '';
+        const cardFmt = card.dataset.format || '';
+        const okQ = !q || blob.includes(q);
+        const okF = !fmt || cardFmt === fmt;
+        const show = okQ && okF;
+        card.classList.toggle('hidden', !show);
+        if (show) shown += 1;
+      });
+      if (status) {
+        if (!q && !fmt) {
+          status.classList.add('hidden');
+          status.textContent = '';
+        } else {
+          status.classList.remove('hidden');
+          status.textContent = `Showing ${shown} of ${cards.length} titles`;
+        }
+      }
+    }
+
+    input?.addEventListener('input', filter);
+    formatSel?.addEventListener('change', filter);
+  </script>
+</Layout>

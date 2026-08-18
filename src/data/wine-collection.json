@@ -1,0 +1,314 @@
+{
+  "title": "The Wine Collection",
+  "subtitle": "Movies, Television & Documentaries That Inspire the Wine Life",
+  "brand": "Bellie Acres Wine",
+  "purpose": "A curated entertainment library devoted to movies, television, documentaries, and independent productions that evoke wine country, vineyards, estates, elegant entertaining, food and wine, travel, romance, craftsmanship, family, heritage, hospitality, and the pleasure of slowing down.",
+  "notMerely": "This is not merely a list of movies “about wine.”",
+  "qualify": [
+    "Features vineyards, wineries, or wine regions prominently",
+    "Showcases an aspirational wine-country lifestyle",
+    "Features beautiful estates, villas, châteaux, or countryside",
+    "Celebrates food, wine, entertaining, or hospitality",
+    "Inspires travel to wine regions",
+    "Explores winemaking, sommeliers, wine collecting, or wine culture",
+    "Features a sophisticated wine-and-food atmosphere",
+    "Is a lesser-known or independent title worth discovering",
+    "Provides strong visual inspiration for wine-country living"
+  ],
+  "editorialStandard": "We favor titles that celebrate beauty, character, craftsmanship, meaningful relationships, hospitality, family, tradition, travel, discovery, and appreciation of life’s pleasures.",
+  "exclusions": ["Sideways (2004)"],
+  "formats": {
+    "film": { "emoji": "🎬", "label": "Feature Film" },
+    "tv": { "emoji": "📺", "label": "Television / Series" },
+    "doc": { "emoji": "🎥", "label": "Documentary" },
+    "indie": { "emoji": "🎞️", "label": "Independent / Lesser-Known" }
+  },
+  "tags": {
+    "wine": { "emoji": "🍇", "label": "Wine / Vineyard" },
+    "lifestyle": { "emoji": "🥂", "label": "Wine Lifestyle" },
+    "estate": { "emoji": "🏡", "label": "Estate / Property" },
+    "food": { "emoji": "🍽️", "label": "Food & Wine" },
+    "travel": { "emoji": "🌎", "label": "Travel" },
+    "romance": { "emoji": "❤️", "label": "Romance" },
+    "scenery": { "emoji": "🌅", "label": "Scenery / Atmosphere" },
+    "family": { "emoji": "👨‍👩‍👧", "label": "Family / Legacy" },
+    "craft": { "emoji": "👩‍🌾", "label": "Winemaking / Agriculture" },
+    "education": { "emoji": "🏆", "label": "Wine Education" },
+    "luxury": { "emoji": "💎", "label": "Luxury / Sophistication" }
+  },
+  "sections": [
+    {
+      "id": "essentials",
+      "name": "The Bellie Acres Essentials",
+      "blurb": "Highest visual prominence — foundational titles that define the Collection’s spirit.",
+      "prominence": "hero",
+      "titles": [
+        {
+          "id": "a-good-year",
+          "title": "A Good Year",
+          "year": 2006,
+          "yearLabel": "2006",
+          "format": "film",
+          "imdb": 6.9,
+          "rating": "PG-13",
+          "region": "Provence, France",
+          "tags": ["wine", "lifestyle", "estate", "food", "travel", "romance", "scenery"]
+        },
+        {
+          "id": "a-walk-in-the-clouds",
+          "title": "A Walk in the Clouds",
+          "year": 1995,
+          "yearLabel": "1995",
+          "format": "film",
+          "imdb": 6.7,
+          "rating": "PG-13",
+          "region": "Napa Valley, CA",
+          "tags": ["wine", "romance", "estate", "scenery"]
+        },
+        {
+          "id": "bottle-shock",
+          "title": "Bottle Shock",
+          "year": 2008,
+          "yearLabel": "2008",
+          "format": "film",
+          "imdb": 6.8,
+          "rating": "PG-13",
+          "region": "Napa Valley, CA",
+          "tags": ["wine", "craft", "education", "scenery"]
+        },
+        {
+          "id": "the-secret-of-santa-vittoria",
+          "title": "The Secret of Santa Vittoria",
+          "year": 1969,
+          "yearLabel": "1969",
+          "format": "film",
+          "imdb": 7.2,
+          "rating": "PG-13",
+          "region": "Italy",
+          "tags": ["wine", "family", "food", "travel"]
+        },
+        {
+          "id": "back-to-burgundy",
+          "title": "Back to Burgundy",
+          "year": 2017,
+          "yearLabel": "2017",
+          "format": "film",
+          "imdb": 6.8,
+          "rating": null,
+          "region": "Burgundy, France",
+          "tags": ["wine", "family", "craft", "scenery"]
+        },
+        {
+          "id": "you-will-be-my-son",
+          "title": "You Will Be My Son",
+          "year": 2011,
+          "yearLabel": "2011",
+          "format": "film",
+          "imdb": 6.9,
+          "rating": null,
+          "region": "Bordeaux, France",
+          "tags": ["wine", "family", "estate", "craft"]
+        },
+        {
+          "id": "under-the-tuscan-sun",
+          "title": "Under the Tuscan Sun",
+          "year": 2003,
+          "yearLabel": "2003",
+          "format": "film",
+          "imdb": 6.7,
+          "rating": "PG-13",
+          "region": "Tuscany, Italy",
+          "tags": ["lifestyle", "estate", "food", "travel", "romance", "scenery"]
+        },
+        {
+          "id": "letters-to-juliet",
+          "title": "Letters to Juliet",
+          "year": 2010,
+          "yearLabel": "2010",
+          "format": "film",
+          "imdb": 6.5,
+          "rating": "PG",
+          "region": "Tuscany / Verona, Italy",
+          "tags": ["lifestyle", "travel", "romance", "scenery"]
+        },
+        {
+          "id": "widow-clicquot",
+          "title": "Widow Clicquot",
+          "year": 2024,
+          "yearLabel": "2024",
+          "format": "film",
+          "imdb": null,
+          "rating": "PG-13",
+          "region": "Champagne, France",
+          "tags": ["wine", "lifestyle", "luxury", "craft"]
+        },
+        {
+          "id": "the-wine-show",
+          "title": "The Wine Show",
+          "year": 2016,
+          "yearLabel": "2016–",
+          "format": "tv",
+          "imdb": 8.8,
+          "rating": "TV",
+          "region": "Global",
+          "tags": ["wine", "lifestyle", "travel", "education"]
+        },
+        {
+          "id": "drops-of-god",
+          "title": "Drops of God",
+          "year": 2023,
+          "yearLabel": "2023–",
+          "format": "tv",
+          "imdb": 8.0,
+          "rating": "TV-MA",
+          "region": "France / Italy / Japan",
+          "tags": ["wine", "lifestyle", "luxury", "travel", "education"]
+        },
+        {
+          "id": "somm",
+          "title": "Somm",
+          "year": 2012,
+          "yearLabel": "2012",
+          "format": "doc",
+          "imdb": 7.0,
+          "rating": "NR",
+          "region": "Global / USA",
+          "tags": ["lifestyle", "education", "food"]
+        },
+        {
+          "id": "somm-into-the-bottle",
+          "title": "Somm: Into the Bottle",
+          "year": 2015,
+          "yearLabel": "2015",
+          "format": "doc",
+          "imdb": 7.3,
+          "rating": "NR",
+          "region": "Global",
+          "tags": ["wine", "education", "travel"]
+        },
+        {
+          "id": "somm-3",
+          "title": "Somm 3",
+          "year": 2018,
+          "yearLabel": "2018",
+          "format": "doc",
+          "imdb": 7.3,
+          "rating": "NR",
+          "region": "France / USA",
+          "tags": ["wine", "education"]
+        },
+        {
+          "id": "a-year-in-burgundy",
+          "title": "A Year in Burgundy",
+          "year": 2013,
+          "yearLabel": "2013",
+          "format": "doc",
+          "imdb": null,
+          "rating": "TV-14",
+          "region": "Burgundy",
+          "tags": ["wine", "craft", "scenery"]
+        },
+        {
+          "id": "a-year-in-champagne",
+          "title": "A Year in Champagne",
+          "year": 2014,
+          "yearLabel": "2014",
+          "format": "doc",
+          "imdb": null,
+          "rating": "TV-PG",
+          "region": "Champagne",
+          "tags": ["wine", "lifestyle", "scenery"]
+        },
+        {
+          "id": "red-obsession",
+          "title": "Red Obsession",
+          "year": 2013,
+          "yearLabel": "2013",
+          "format": "doc",
+          "imdb": 7.0,
+          "rating": "NR",
+          "region": "Bordeaux / China",
+          "tags": ["wine", "luxury", "travel"]
+        },
+        {
+          "id": "mondovino",
+          "title": "Mondovino",
+          "year": 2004,
+          "yearLabel": "2004",
+          "format": "doc",
+          "imdb": 7.0,
+          "rating": "PG-13",
+          "region": "Global",
+          "tags": ["wine", "education", "travel"]
+        },
+        {
+          "id": "from-the-vine",
+          "title": "From the Vine",
+          "year": 2019,
+          "yearLabel": "2019",
+          "format": "indie",
+          "imdb": null,
+          "rating": "TV-MA",
+          "region": "Italy",
+          "tags": ["wine", "family", "estate", "food", "scenery"]
+        },
+        {
+          "id": "uncorked",
+          "title": "Uncorked",
+          "year": 2020,
+          "yearLabel": "2020",
+          "format": "film",
+          "imdb": null,
+          "rating": "TV-MA",
+          "region": "USA",
+          "tags": ["lifestyle", "education", "food", "family"]
+        },
+        {
+          "id": "a-perfect-pairing",
+          "title": "A Perfect Pairing",
+          "year": 2022,
+          "yearLabel": "2022",
+          "format": "film",
+          "imdb": 6.1,
+          "rating": "TV-14",
+          "region": "Australia",
+          "tags": ["wine", "lifestyle", "travel", "romance"]
+        },
+        {
+          "id": "the-chateau-meroux",
+          "title": "The Chateau Meroux",
+          "year": 2011,
+          "yearLabel": "2011",
+          "format": "indie",
+          "imdb": 5.2,
+          "rating": "PG-13",
+          "region": "California",
+          "tags": ["wine", "estate", "romance", "lifestyle"]
+        },
+        {
+          "id": "the-wine-of-summer",
+          "title": "The Wine of Summer",
+          "year": 2013,
+          "yearLabel": "2013",
+          "format": "indie",
+          "imdb": 5.1,
+          "rating": "PG",
+          "region": "Spain",
+          "tags": ["wine", "travel", "romance", "scenery"]
+        },
+        {
+          "id": "a-heavenly-vintage",
+          "title": "A Heavenly Vintage",
+          "aka": "The Vintner’s Luck",
+          "year": 2009,
+          "yearLabel": "2009",
+          "format": "film",
+          "imdb": 5.6,
+          "rating": "R",
+          "region": "France",
+          "tags": ["wine", "romance", "scenery"]
+        }
+      ]
+    }
+  ]
+}
