@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import RelocateCta from '../components/RelocateCta.astro';
 import wineries from '../data/wineries.json';
 import balloons from '../data/balloons.json';
 import wineCollection from '../data/wine-collection.json';
@@ -358,6 +359,11 @@ const homeJsonLd = [
           </a>
         ))}
       </div>
+    </section>
+
+    <!-- Moving to Temecula — soft RE referral -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+      <RelocateCta variant="banner" />
     </section>
 
     <!-- Winery advertising -->

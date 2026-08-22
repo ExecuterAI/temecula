@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import RelocateCta from '../components/RelocateCta.astro';
 ---
 
 <Layout
@@ -55,6 +56,10 @@ import Navbar from '../components/Navbar.astro';
         or use our <a class="text-[var(--accent)] underline" href="/contact">contact page</a>. Privacy details live on our
         <a class="text-[var(--accent)] underline" href="/privacy">Privacy Policy</a>.
       </p>
+    </div>
+
+    <div class="mt-14">
+      <RelocateCta variant="card" />
     </div>
   </main>
 </Layout>
