@@ -65,18 +65,20 @@ const livingBg = '/images/temecula-living-v2-tuscan.jpg';
         loading="lazy"
         decoding="async"
       />
-      {/* Soft wash: ivory left for copy, gentle photo reveal on the right */}
+      {/* Soft wash: ivory left for copy, gentle photo reveal on the right + solid bottom band */}
       <div
         class="absolute inset-0"
         style="background:
           linear-gradient(105deg,
+            rgba(247,246,242,0.98) 0%,
+            rgba(247,246,242,0.95) 42%,
+            rgba(247,246,242,0.78) 62%,
+            rgba(74,94,78,0.22) 100%),
+          linear-gradient(to top,
             rgba(247,246,242,0.97) 0%,
-            rgba(247,246,242,0.94) 38%,
-            rgba(247,246,242,0.72) 58%,
-            rgba(74,94,78,0.28) 100%),
-          linear-gradient(to top, rgba(247,246,242,0.55) 0%, transparent 42%);"
+            rgba(247,246,242,0.88) 28%,
+            transparent 55%);"
       ></div>
-      {/* Subtle sage edge glow */}
       <div class="absolute inset-0 ring-1 ring-inset ring-white/40 rounded-3xl pointer-events-none"></div>
     </div>
 
@@ -89,10 +91,10 @@ const livingBg = '/images/temecula-living-v2-tuscan.jpg';
             <span class="inline-block h-1.5 w-1.5 rounded-full bg-[#9AAB97]"></span>
             Temecula living
           </p>
-          <p class="font-serif text-3xl sm:text-[2.15rem] text-stone-900 leading-snug tracking-tight drop-shadow-[0_1px_0_rgba(255,255,255,0.6)]">
+          <p class="font-serif text-3xl sm:text-[2.15rem] text-[#1f2420] leading-snug tracking-tight">
             Thinking about moving to Temecula?
           </p>
-          <p class="text-stone-700 mt-3 text-sm sm:text-base leading-relaxed max-w-lg">
+          <p class="text-[#3d4540] mt-3 text-sm sm:text-base leading-relaxed max-w-lg">
             If Wine Country visits have you picturing a longer stay, Laura D. Farley, MBA provides local guidance for
             buyers and sellers across Temecula Valley.
           </p>
@@ -105,11 +107,10 @@ const livingBg = '/images/temecula-living-v2-tuscan.jpg';
             >
               Meet your local agent →
             </a>
-            <span class="hidden sm:inline text-xs text-stone-500 tracking-wide">Equal support for buyers and sellers</span>
+            <span class="hidden sm:inline text-xs text-[#5c6560] tracking-wide">Equal support for buyers and sellers</span>
           </div>
         </div>
 
-        {/* Decorative photo peek on large screens (extra visual punch) */}
         <div
           class="hidden lg:block shrink-0 w-44 xl:w-52 h-36 xl:h-40 rounded-2xl overflow-hidden border border-white/70 shadow-lg shadow-stone-900/15 ring-1 ring-stone-900/5"
           aria-hidden="true"
@@ -124,17 +125,18 @@ const livingBg = '/images/temecula-living-v2-tuscan.jpg';
         </div>
       </div>
 
+      {/* Solid frosted panel — guarantees dark text contrast over photo */}
       <div
-        class="mt-6 pt-5 border-t border-[#4A5E4E]/15 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 backdrop-blur-[2px]"
+        class="mt-6 rounded-2xl border border-[#4A5E4E]/15 bg-[#f7f6f2] px-4 py-4 sm:px-5 sm:py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shadow-sm"
       >
-        <p class="text-stone-800 text-sm sm:text-base leading-relaxed max-w-2xl">
-          <span class="font-medium text-stone-900">Or, are you an estate owner looking to sell?</span>
+        <p class="text-sm sm:text-base leading-relaxed max-w-2xl text-[#2B322C]">
+          <span class="font-semibold text-[#1f2420]">Or, are you an estate owner looking to sell?</span>
           {' '}
-          Strategic listing support for homes and estate properties in the valley.
+          <span class="text-[#2B322C]">Strategic listing support for homes and estate properties in the valley.</span>
         </p>
         <a
           href={hrefSell}
-          class="shrink-0 inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#4A5E4E]/80 text-[#4A5E4E] bg-white/90 backdrop-blur-sm text-sm font-medium hover:bg-[#4A5E4E] hover:text-white hover:border-[#4A5E4E] transition whitespace-nowrap shadow-sm"
+          class="shrink-0 inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#4A5E4E] text-[#4A5E4E] bg-white text-sm font-medium hover:bg-[#4A5E4E] hover:text-white transition whitespace-nowrap shadow-sm"
           rel="noopener noreferrer"
           target="_blank"
         >
