@@ -38,10 +38,18 @@ const mapFaq = {
   mainEntity: [
     {
       '@type': 'Question',
+      name: 'Where can I find a Temecula wine map?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `This page is a Temecula wine map and Temecula wineries map with ${withCoords.length} pinned tasting rooms. Use it with our full list of wineries in Temecula to plan a route across Temecula Valley.`,
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Where can I find a map of Temecula wineries?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `This page is an interactive map of Temecula wineries with ${withCoords.length} pinned tasting rooms. Use it with our full Temecula wineries list to plan a route across Temecula Valley.`,
+        text: `This interactive map of Temecula wineries shows ${withCoords.length} pinned tasting rooms. Pair it with the Temecula wineries list for details on each estate.`,
       },
     },
     {
@@ -66,15 +74,15 @@ const mapFaq = {
 const mapPlace = {
   '@context': 'https://schema.org',
   '@type': 'Map',
-  name: 'Temecula Wineries Map',
-  description: `Map of Temecula wineries — interactive pins for Temecula Valley tasting rooms.`,
+  name: 'Temecula Wine Map',
+  description: `Temecula wine map / Temecula wineries map — interactive pins for Temecula Valley tasting rooms.`,
   url: 'https://bellieacreswine.com/map/',
 };
 ---
 
 <Layout
-  title={`Temecula Wineries Map (${year}) · Map of Temecula Wineries`}
-  description={`Temecula wineries map and map of Temecula wineries — interactive pins for ${withCoords.length} Temecula Valley tasting rooms. Plan routes with our Temecula wine map, directory list, and trip guides.`}
+  title={`Temecula Wine Map (${year}) · Temecula Wineries Map`}
+  description={`Temecula wine map and Temecula wineries map — interactive pins for ${withCoords.length} Temecula Valley tasting rooms. Plan routes with this map of Temecula wineries, then open the full list of wineries in Temecula.`}
   jsonLd={[mapPlace, mapItemList, mapFaq]}
 >
   <Navbar />
@@ -85,11 +93,11 @@ const mapPlace = {
         Temecula Valley · Interactive route tool
       </p>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight">
-        Temecula Wineries Map
+        Temecula Wine Map
       </h1>
       <p class="text-xl text-stone-600 mt-4 leading-relaxed">
-        An interactive <strong>map of Temecula wineries</strong> with street-level pins for
-        {withCoords.length} estates in this directory. Use this <strong>Temecula wineries map</strong> to
+        An interactive <strong>Temecula wineries map</strong> (map of Temecula wineries) with street-level pins for
+        {withCoords.length} estates in this directory. Use this <strong>Temecula wine map</strong> to
         see how tasting rooms sit across the valley, then open any pin for address and details.
       </p>
       <p class="text-base text-stone-600 mt-3 leading-relaxed">

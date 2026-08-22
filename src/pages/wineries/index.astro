@@ -38,8 +38,9 @@ const searchBlob = (w: (typeof wineries)[number]) => {
 const itemListJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Temecula Wineries Directory & List',
-  description: `Complete list of ${wineries.length} Temecula Valley wineries for tasting-room trip planning.`,
+  name: 'List of Wineries in Temecula',
+  alternateName: ['Temecula Wineries List', 'Temecula Wineries Directory'],
+  description: `Complete list of wineries in Temecula — ${wineries.length} Temecula Valley tasting rooms for trip planning.`,
   numberOfItems: wineries.length,
   itemListElement: sorted.slice(0, 40).map((w, i) => ({
     '@type': 'ListItem',
@@ -55,10 +56,18 @@ const faqJsonLd = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How many Temecula wineries are in this directory?',
+      name: 'Where can I find a list of wineries in Temecula?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `This Temecula wine directory currently lists ${wineries.length} estates with practical trip details such as location, varietals, pet and family notes, and links to official sites.`,
+        text: `This page is a complete list of wineries in Temecula with ${wineries.length} estates. Browse the Temecula wineries list for ratings, varietals, pet and family notes, then open any profile or the Temecula wine map to plan a route.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many Temecula wineries are on this list?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `This Temecula wineries list currently includes ${wineries.length} Temecula Valley tasting rooms with practical trip details and links to official winery sites.`,
       },
     },
     {
@@ -77,13 +86,21 @@ const faqJsonLd = {
         text: 'No. Bellie Acres Wine is an independent Temecula wineries list and trip-planning directory. Always verify fees, hours, and policies with each winery before you go.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Where is the Temecula wineries map?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Use our interactive Temecula wineries map (also called a Temecula wine map) at bellieacreswine.com/map/ for pins and route planning, then return here for the full list of wineries in Temecula.',
+      },
+    },
   ],
 };
 ---
 
 <Layout
-  title="Temecula Wineries Directory & List"
-  description={`Complete Temecula wineries list and directory — ${wineries.length} Temecula Valley tasting rooms with ratings, varietals, pet/family notes, and links. Plan Temecula wine stops in one place.`}
+  title={`Temecula Wineries List (${new Date().getFullYear()}) · List of Wineries in Temecula`}
+  description={`Temecula wineries list and complete list of wineries in Temecula — ${wineries.length} Temecula Valley tasting rooms with ratings, varietals, pet/family notes, and links. Pair with the Temecula wine map to plan stops.`}
   jsonLd={[itemListJsonLd, faqJsonLd]}
 >
   <Navbar />
@@ -93,11 +110,11 @@ const faqJsonLd = {
       <div class="max-w-3xl">
         <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Temecula Valley · Independent guide</p>
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight">
-          Temecula Wineries Directory &amp; List
+          Temecula Wineries List
         </h1>
         <p class="text-xl text-stone-600 mt-4 leading-relaxed">
-          Browse the full <strong>Temecula wineries list</strong> — {wineries.length} estates in this
-          <strong> Temecula wine directory</strong>. Search by name, varietal, or features, then open any listing for tasting context and planning notes.
+          A complete <strong>list of wineries in Temecula</strong> — {wineries.length} estates in this independent
+          <strong> Temecula wineries</strong> directory. Search by name, varietal, or features, then open any listing for tasting context and planning notes.
         </p>
       </div>
       <a href="/" class="text-[var(--accent)] hover:underline shrink-0">← Back to home</a>
@@ -259,12 +276,20 @@ const faqJsonLd = {
 
     <!-- FAQ / keyword support (human-readable) -->
     <section class="mt-16 max-w-3xl border-t border-stone-200 pt-12">
-      <h2 class="font-serif text-3xl tracking-tight mb-6">Temecula wine directory FAQs</h2>
+      <h2 class="font-serif text-3xl tracking-tight mb-6">Temecula wineries list FAQs</h2>
       <div class="space-y-6 text-stone-700 leading-relaxed">
+        <div>
+          <h3 class="font-semibold text-stone-900 text-lg">Where can I find a list of wineries in Temecula?</h3>
+          <p class="mt-2">
+            Right here — this page is our living <strong>list of wineries in Temecula</strong> and
+            <strong> Temecula wineries list</strong>. Cards include planning details; each profile links to the estate’s official site for reservations, fees, and live hours.
+          </p>
+        </div>
         <div>
           <h3 class="font-semibold text-stone-900 text-lg">Is this a full Temecula wineries list?</h3>
           <p class="mt-2">
-            Yes — this page is our living <strong>Temecula wineries list</strong> and directory index. Listings focus on visitor planning details and link out to each estate’s official site for reservations, fees, and live hours.
+            Yes — {wineries.length} Temecula Valley tasting rooms are indexed for trip planning. Use search for pets, views, or varietals, then open the
+            <a class="text-[var(--accent)] underline" href="/map">Temecula wine map</a> to cluster nearby stops.
           </p>
         </div>
         <div>
@@ -278,7 +303,7 @@ const faqJsonLd = {
         <div>
           <h3 class="font-semibold text-stone-900 text-lg">Do you sell Temecula wine online?</h3>
           <p class="mt-2">
-            No. Bellie Acres Wine is an independent guide only. We help you discover Temecula wine country; purchases and tastings happen directly with each winery.
+            No. Bellie Acres Wine is an independent guide only. We help you discover Temecula wineries; purchases and tastings happen directly with each winery.
           </p>
         </div>
         <div>

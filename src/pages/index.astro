@@ -51,10 +51,17 @@ const homeJsonLd = [
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Bellie Acres Wine',
-    alternateName: ['Temecula Wine Directory', 'Temecula Wineries List'],
+    alternateName: [
+      'Temecula Wine Directory',
+      'Temecula Wineries',
+      'Temecula Wineries List',
+      'List of Wineries in Temecula',
+      'Temecula Wineries Map',
+      'Temecula Wine Map',
+    ],
     url: 'https://bellieacreswine.com/',
     description:
-      'Independent Temecula wine directory and wineries list for Temecula Valley tasting rooms, maps, pairings, and trip planning.',
+      'Independent guide to Temecula wineries — full list of wineries in Temecula, Temecula wine map, pairings, and trip planning.',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://bellieacreswine.com/wineries/?q={search_term_string}',
@@ -77,8 +84,8 @@ const homeJsonLd = [
 ---
 
 <Layout
-  title="Temecula Wine Directory | Wineries List & Best Stops"
-  description={`Independent Temecula wine directory with a full Temecula wineries list (${wineryCount}+ estates). Compare tasting rooms, find the best Temecula winery stops, maps, pairings, and trip guides.`}
+  title="Temecula Wineries · List of Wineries in Temecula & Wine Map | Bellie Acres Wine"
+  description={`Temecula wineries directory: full list of wineries in Temecula (${wineryCount}+ estates), Temecula wineries list, interactive Temecula wine map / Temecula wineries map, pairings, and trip guides. Independent guide — not a winery.`}
   jsonLd={homeJsonLd}
 >
   <Navbar />
@@ -94,22 +101,22 @@ const homeJsonLd = [
         </div>
         
         <h1 class="text-5xl sm:text-6xl md:text-7xl font-serif text-white tracking-[-2px] leading-[1.05] mb-6">
-          Temecula Wine Directory
+          Temecula Wineries
         </h1>
         
         <p class="max-w-2xl mx-auto text-lg md:text-xl text-white/90 mb-3">
-          Wine country, elevated — an independent guide to Temecula wine.
+          Independent directory · list of wineries in Temecula · wine map
         </p>
         <p class="max-w-xl mx-auto text-base text-white/80 mb-8">
-          Browse the full Temecula wineries list, shortlist the best Temecula winery stops for your day, and plan with maps, pairings, and practical guides.
+          Browse the full Temecula wineries list, open the Temecula wine map, shortlist the best stops for your day, and plan with pairings and practical guides.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/wineries" class="px-8 py-3.5 bg-white text-[#2B322C] rounded-full font-medium hover:bg-[#F6F7F2] transition">
-            Wineries list
+            Temecula wineries list
           </a>
           <a href="/map" class="px-8 py-3.5 border border-white/70 text-white rounded-full font-medium hover:bg-white/10 transition">
-            Temecula wineries map
+            Temecula wine map
           </a>
           <a href="/guides/best-temecula-wineries" class="px-8 py-3.5 bg-[#4A5E4E] text-white rounded-full font-medium hover:bg-[#3a4a3d] transition shadow-lg shadow-black/15">
             Best Temecula wineries
@@ -133,22 +140,27 @@ const homeJsonLd = [
       <div class="grid lg:grid-cols-5 gap-10 items-start">
         <div class="lg:col-span-3">
           <h2 class="text-3xl sm:text-4xl font-serif tracking-tight text-stone-900 mb-4">
-            Plan Temecula wine country without twenty browser tabs
+            Plan Temecula wineries without twenty browser tabs
           </h2>
           <p class="text-lg text-stone-700 leading-relaxed">
-            Bellie Acres Wine is an independent <strong>Temecula wine directory</strong> built for trip planning.
-            Use our <strong>Temecula wineries list</strong> to compare estates by vibe, varietals, pet and family policies, and price feel —
-            then open the map, pairings, and guides when you’re ready to build a route.
+            Bellie Acres Wine is an independent guide to <strong>Temecula wineries</strong> — a practical
+            <strong>list of wineries in Temecula</strong> built for trip planning. Use our
+            <strong>Temecula wineries list</strong> to compare estates by vibe, varietals, pet and family policies, and price feel —
+            then open the <a href="/map" class="text-[var(--accent)] underline"><strong>Temecula wine map</strong></a>, pairings, and guides when you are ready to build a route.
           </p>
           <p class="text-lg text-stone-700 leading-relaxed mt-4">
             Looking for the <strong>best Temecula winery</strong> for a first visit, a celebration, or a relaxed patio afternoon?
-            Start with featured estates below, or read our curated best-of guide. We don’t sell alcohol here — we help you choose where to taste.
+            Start with featured estates below, or read our curated best-of guide. We do not sell alcohol here — we help you choose where to taste.
           </p>
         </div>
         <div class="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-3">
           <a href="/wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
-            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Directory</div>
-            <div class="font-serif text-xl mt-1">Full wineries list</div>
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">List</div>
+            <div class="font-serif text-xl mt-1">List of wineries in Temecula</div>
+          </a>
+          <a href="/map" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
+            <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Map</div>
+            <div class="font-serif text-xl mt-1">Temecula wineries map</div>
           </a>
           <a href="/guides/best-temecula-wineries" class="rounded-2xl border border-stone-200 bg-white p-5 hover:shadow-md transition">
             <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Best of</div>
