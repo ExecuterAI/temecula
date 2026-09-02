@@ -134,14 +134,16 @@ def build() -> None:
 
     story: list = []
 
-    # COVER
-    story.append(Spacer(1, 0.08 * inch))
+    # COVER — logo smaller + top pad so crown never clips on frame
+    story.append(Spacer(1, 0.28 * inch))
     if LOGO_COVER.exists():
-        # slightly smaller so full crown/hair + wordmark fit inside gold frame
-        cw = 3.5 * inch
-        ch = cw * (442 / 460)  # approx; actual ratio from file
+        from PIL import Image as PILImage
+
+        iw, ih = PILImage.open(LOGO_COVER).size
+        cw = 2.95 * inch  # keep well inside gold frame
+        ch = cw * (ih / float(iw))
         story.append(RLImage(str(LOGO_COVER), width=cw, height=ch, hAlign="CENTER"))
-    story.append(Spacer(1, 0.12 * inch))
+    story.append(Spacer(1, 0.18 * inch))
     story.append(p("Temecula Wine<br/>Day Planner", "CoverTitle"))
     story.append(p("Printable routes · Day 1 &amp; Day 2 · Any day of the week", "CoverSub"))
     story.append(HRFlowable(width="42%", thickness=1, color=GOLD, spaceBefore=4, spaceAfter=10, hAlign="CENTER"))
