@@ -10,6 +10,8 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   /** When true, use `title` as the full <title> (no brand suffix) */
   fullTitle?: boolean;
+  /** When true, discourage indexing (thank-you / receipt pages) */
+  noindex?: boolean;
 }
 
 const {
@@ -18,6 +20,7 @@ const {
   ogImage = 'https://bellieacreswine.com/images/hero-estate-v20260728.jpg',
   jsonLd,
   fullTitle = false,
+  noindex = false,
 } = Astro.props;
 
 const siteOrigin = 'https://bellieacreswine.com';
@@ -33,7 +36,7 @@ const jsonLdBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large'} />
     <meta name="author" content="Bellie Acres Wine" />
     <meta
       name="keywords"

@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import offer from '../../data/weekend-planner-pdf.json';
+
+const pdfUrl = offer.pdf_path;
+---
+
+<Layout
+  title="Thank you — Temecula Weekend Planner PDF"
+  description="Download your Temecula Weekend Wine Planner PDF."
+  noindex={true}
+>
+  <Navbar />
+  <main class="max-w-2xl mx-auto px-6 py-20 text-center">
+    <p class="text-sm font-medium tracking-wide uppercase text-[var(--accent)] mb-3">Payment received</p>
+    <h1 class="text-4xl sm:text-5xl font-serif tracking-tight mb-4">Thank you</h1>
+    <p class="text-lg text-stone-600 mb-10 leading-relaxed">
+      Your Temecula Weekend Wine Planner is ready. Download the PDF, save it to your phone, or print page&nbsp;2 for the car.
+    </p>
+    <a
+      href={pdfUrl}
+      download="temecula-weekend-planner.pdf"
+      class="inline-flex items-center justify-center px-8 py-4 bg-[var(--primary)] hover:opacity-90 text-white text-base font-medium rounded-full transition shadow-sm"
+    >
+      Download PDF
+    </a>
+    <p class="text-sm text-stone-500 mt-8">
+      Didn’t get here from Stripe? You can still
+      <a class="underline text-[var(--accent)]" href="/weekend-planner">purchase the planner for $2</a>.
+      Need help?
+      <a class="underline" href="mailto:executerceo@gmail.com?subject=Weekend%20Planner%20PDF%20download">Email us</a>.
+    </p>
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 text-left">
+      <a href="/map" class="block p-5 rounded-2xl border border-stone-200 bg-white hover:shadow-md transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Next</div>
+        <div class="font-serif text-xl">Open the wine map →</div>
+      </a>
+      <a href="/wineries" class="block p-5 rounded-2xl border border-stone-200 bg-white hover:shadow-md transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Directory</div>
+        <div class="font-serif text-xl">Browse wineries →</div>
+      </a>
+    </div>
+  </main>
+</Layout>

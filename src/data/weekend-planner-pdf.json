@@ -1,0 +1,12 @@
+{
+  "product_id": "prod_VBUJEo68vz1E3P",
+  "price_id": "price_1UB7KQ6dLedwu6cN0ejU2LfN",
+  "payment_link_id": "plink_1UB7KR6dLedwu6cNOaED3KsD",
+  "payment_link_url": "https://buy.stripe.com/28E6oA7gkb5N78e6MzaIM02",
+  "amount_cents": 200,
+  "currency": "usd",
+  "name": "Temecula Weekend Wine Planner (PDF)",
+  "sku": "temecula-weekend-pdf",
+  "pdf_path": "/downloads/temecula-weekend-planner.pdf",
+  "thanks_path": "/weekend-planner/thanks"
+}
