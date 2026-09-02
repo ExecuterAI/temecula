@@ -1,0 +1,19 @@
+{
+  "name": "Temecula Wine Day Planner (PDF)",
+  "sku": "temecula-wine-day-pdf",
+  "pdf_path": "/downloads/temecula-wine-day-planner.pdf",
+  "pdf_download_name": "temecula-wine-day-planner.pdf",
+  "page_path": "/wine-day-planner",
+  "free": true,
+  "tip": {
+    "product_id": "prod_VBcn63z0mWCdSK",
+    "price_id": "price_1UBFXc6dLedwu6cNvhysRKJw",
+    "payment_link_id": "plink_1UBFXc6dLedwu6cN2b8VGvzE",
+    "payment_link_url": "https://buy.stripe.com/fZu9AM0RW3Dl78e6MzaIM03",
+    "currency": "usd",
+    "minimum_cents": 100,
+    "preset_cents": 500,
+    "maximum_cents": 50000,
+    "label": "Leave a tip"
+  }
+}

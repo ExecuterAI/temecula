@@ -1,97 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
-import offer from '../../data/weekend-planner-pdf.json';
-
-const checkoutUrl = offer.payment_link_url;
-const priceDisplay = `$${(offer.amount_cents / 100).toFixed(0)}`;
 ---
 
 <Layout
-  title="Temecula Wine Day Planner PDF"
-  description="Printable Temecula wine day planner: Day 1 and Day 2 corridor routes, named estate clusters, sip-and-spit pacing, and field checklist. Instant PDF download."
+  title="Wine Day Planner moved"
+  description="The Temecula Wine Day Planner is free at /wine-day-planner."
+  noindex={true}
 >
   <Navbar />
-  <main class="max-w-4xl mx-auto px-6 py-16">
-    <p class="text-sm font-medium tracking-wide uppercase text-[var(--accent)] mb-3">Digital download · {priceDisplay}</p>
-    <h1 class="text-5xl sm:text-6xl font-serif tracking-tight mb-4">Temecula Wine Day Planner</h1>
-    <p class="text-xl text-stone-600 mb-10 max-w-2xl leading-relaxed">
-      A printable multi-page planner with real corridor clusters, named estate examples, Day 1 and Day 2 timing,
-      sip-and-spit pacing, and a field checklist — for any day of the week in Temecula Valley.
+  <main class="max-w-2xl mx-auto px-6 py-20 text-center">
+    <h1 class="text-4xl font-serif mb-4">Moved</h1>
+    <p class="text-stone-600 mb-8">
+      The planner is free and lives at the Wine Day Planner page.
     </p>
-
-    <div class="bg-white border border-stone-200 rounded-3xl p-8 sm:p-10 shadow-sm mb-12">
-      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-8">
-        <div>
-          <div class="text-sm text-stone-500 mb-1">One-time · instant PDF</div>
-          <div class="flex items-baseline gap-2">
-            <span class="text-5xl font-serif text-stone-900">{priceDisplay}</span>
-            <span class="text-stone-500">USD</span>
-          </div>
-          <p class="text-stone-600 mt-3 max-w-md">
-            Support the independent directory and leave with routes you can print or save offline.
-          </p>
-        </div>
-        <a
-          href={checkoutUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center px-8 py-4 bg-[var(--primary)] hover:opacity-90 text-white text-base font-medium rounded-full transition shadow-sm"
-        >
-          Get the PDF — {priceDisplay} (Stripe)
-        </a>
-      </div>
-
-      <ul class="grid sm:grid-cols-2 gap-3 text-stone-700 text-sm">
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Day 1 main-corridor route with named estates</li>
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Day 2 quieter-corridor route</li>
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Sip-and-spit pacing (more wines, clearer head)</li>
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> First-visit, views, and kids/dogs themes</li>
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Bar questions + bottle-buying notes</li>
-        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Field checklist + map/directory links</li>
-      </ul>
-    </div>
-
-    <section class="mb-14">
-      <h2 class="font-serif text-3xl mb-6">How it works</h2>
-      <ol class="space-y-5">
-        <li class="flex gap-4">
-          <span class="shrink-0 w-9 h-9 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-medium">1</span>
-          <div>
-            <div class="font-medium text-stone-900">Pay {priceDisplay}</div>
-            <p class="text-stone-600 text-sm mt-1">Secure Stripe checkout. Receipt by email.</p>
-          </div>
-        </li>
-        <li class="flex gap-4">
-          <span class="shrink-0 w-9 h-9 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-medium">2</span>
-          <div>
-            <div class="font-medium text-stone-900">Download</div>
-            <p class="text-stone-600 text-sm mt-1">After payment, open the thank-you page and download your PDF.</p>
-          </div>
-        </li>
-        <li class="flex gap-4">
-          <span class="shrink-0 w-9 h-9 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-medium">3</span>
-          <div>
-            <div class="font-medium text-stone-900">Plan the day</div>
-            <p class="text-stone-600 text-sm mt-1">Print or save offline. Swap estates anytime on our free map and winery list.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="mb-14 rounded-3xl border border-stone-200 bg-stone-50 p-8">
-      <h2 class="font-serif text-2xl mb-3">Free long-read still available</h2>
-      <p class="text-stone-600 text-sm leading-relaxed mb-4">
-        Prefer a free article first?
-        <a class="text-[var(--accent)] underline" href="/guides/weekend-in-temecula-wine-country">Weekend in Temecula Wine Country</a>
-        stays free. This PDF is the printable Day 1 / Day 2 route book with checklists and named clusters.
-      </p>
-    </section>
-
-    <p class="text-xs text-stone-500 leading-relaxed max-w-2xl">
-      Independent travel guide only. We do not sell alcohol or take winery reservations. Confirm all estate policies before you go.
-      Payments processed by Stripe. Questions:
-      <a class="underline" href="mailto:executerceo@gmail.com?subject=Wine%20Day%20Planner%20PDF">executerceo@gmail.com</a>.
-    </p>
+    <a
+      href="/wine-day-planner/"
+      class="inline-flex items-center justify-center px-8 py-4 bg-[var(--primary)] text-white rounded-full font-medium"
+    >
+      Go to free Wine Day Planner →
+    </a>
+    <meta http-equiv="refresh" content="0;url=/wine-day-planner/" />
   </main>
 </Layout>

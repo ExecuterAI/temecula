@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import planner from '../../data/wine-day-planner.json';
+
+const pdfUrl = planner.pdf_path;
+const tipUrl = planner.tip.payment_link_url;
+const tipped = Astro.url.searchParams.get('tipped') === '1';
+---
+
+<Layout
+  title="Temecula Wine Day Planner — Free PDF"
+  description="Free printable Temecula wine day planner: Day 1 and Day 2 corridor routes, named estate clusters, sip-and-spit pacing, and field checklist. Optional tip via Stripe."
+>
+  <Navbar />
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    {
+      tipped && (
+        <div class="mb-8 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-emerald-900 text-sm">
+          Thank you for the tip — it helps keep this independent Temecula wine directory free to use.
+        </div>
+      )
+    }
+
+    <p class="text-sm font-medium tracking-wide uppercase text-[var(--accent)] mb-3">Free printable · optional tip</p>
+    <h1 class="text-5xl sm:text-6xl font-serif tracking-tight mb-4">Temecula Wine Day Planner</h1>
+    <p class="text-xl text-stone-600 mb-10 max-w-2xl leading-relaxed">
+      A free multi-page PDF with corridor clusters, named estate examples, Day 1 and Day 2 timing,
+      sip-and-spit pacing, and a field checklist — for any day of the week in Temecula Valley.
+    </p>
+
+    <div class="bg-white border border-stone-200 rounded-3xl p-8 sm:p-10 shadow-sm mb-12">
+      <div class="flex flex-col gap-6">
+        <div>
+          <div class="text-sm text-stone-500 mb-1">Instant download · no account</div>
+          <div class="flex items-baseline gap-2">
+            <span class="text-5xl font-serif text-stone-900">Free</span>
+          </div>
+          <p class="text-stone-600 mt-3 max-w-lg">
+            Download the planner, print it, or save it offline. If it helps your trip, you can leave any amount as a tip
+            — 100% optional, processed securely by Stripe.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3">
+          <a
+            href={pdfUrl}
+            download={planner.pdf_download_name}
+            class="inline-flex items-center justify-center px-8 py-4 bg-[var(--primary)] hover:opacity-90 text-white text-base font-medium rounded-full transition shadow-sm"
+          >
+            Download free PDF
+          </a>
+          <a
+            href={tipUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white text-base font-medium rounded-full transition"
+          >
+            {planner.tip.label} (any amount)
+          </a>
+        </div>
+        <p class="text-xs text-stone-500">
+          Tips open Stripe checkout where you choose the amount (minimum $1). Goes to the Bellie Acres Wine Stripe account.
+        </p>
+      </div>
+
+      <ul class="grid sm:grid-cols-2 gap-3 text-stone-700 text-sm mt-10 pt-8 border-t border-stone-100">
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Day 1 main-corridor route with named estates</li>
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Day 2 quieter-corridor route</li>
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Sip-and-spit pacing</li>
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> First-visit, views, and kids/dogs themes</li>
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Bar questions + bottle-buying notes</li>
+        <li class="flex gap-2"><span class="text-[var(--gold)]">✓</span> Field checklist + map/directory links</li>
+      </ul>
+    </div>
+
+    <section class="mb-14 rounded-3xl border border-stone-200 bg-stone-50 p-8">
+      <h2 class="font-serif text-2xl mb-3">More free guides</h2>
+      <p class="text-stone-600 text-sm leading-relaxed mb-4">
+        Prefer a long-read article?
+        <a class="text-[var(--accent)] underline" href="/guides/weekend-in-temecula-wine-country">How to spend time in Temecula wine country</a>
+        and the full
+        <a class="text-[var(--accent)] underline" href="/wineries">winery directory</a>
+        stay free.
+      </p>
+    </section>
+
+    <p class="text-xs text-stone-500 leading-relaxed max-w-2xl">
+      Independent travel guide only. We do not sell alcohol or take winery reservations. Confirm all estate policies before you go.
+      Optional tips processed by Stripe. Questions:
+      <a class="underline" href="mailto:executerceo@gmail.com?subject=Wine%20Day%20Planner">executerceo@gmail.com</a>.
+    </p>
+  </main>
+</Layout>
