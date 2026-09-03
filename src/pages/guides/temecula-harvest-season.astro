@@ -1,0 +1,392 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const pick = (slug: string) => wineries.find((w) => w.slug === slug);
+const W = {
+  callaway: pick('callaway-winery'),
+  southCoast: pick('south-coast-winery'),
+  ponte: pick('ponte-winery'),
+  wilson: pick('wilson-creek-winery'),
+  thornton: pick('thornton-winery'),
+  danza: pick('danza-del-sol'),
+  frangipani: pick('frangipani'),
+  palumbo: pick('palumbo'),
+  chapin: pick('chapin'),
+  falkner: pick('falkner-winery'),
+};
+
+function link(w: (typeof wineries)[0] | undefined, label: string) {
+  if (w) return `<a href="/wineries/${w.slug}">${label}</a>`;
+  return label;
+}
+---
+
+<Layout
+  title="Harvest Season in Temecula Valley: When Wine Country Comes Alive"
+  description="Temecula harvest season guide: timing from July through October, early whites to late reds, major and boutique wineries, grape stomps, and how to visit during crush."
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm text-[var(--accent)] font-medium tracking-wide uppercase mb-3">
+      Seasonal guide · Harvest 2026 · Updated September 2026
+    </p>
+    <h1 class="text-5xl md:text-6xl font-serif tracking-tight mb-6">
+      Harvest Season in Temecula Valley: When Wine Country Comes Alive
+    </h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-6">
+      By late summer, Temecula Valley undergoes its most important transformation of the year. Tasting rooms stay busy,
+      patios stay full, and balloons still drift at sunrise — but behind the scenes, the real work of wine country is
+      reaching its climax.
+    </p>
+    <p class="text-xl text-stone-800 font-medium leading-relaxed mb-10">Harvest season has arrived.</p>
+
+    <div class="rounded-3xl border border-[var(--gold)]/40 bg-[#faf7f2] p-6 sm:p-8 mb-12 not-prose">
+      <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium mb-2">Plan around harvest</div>
+      <p class="text-stone-700 text-sm leading-relaxed mb-4">
+        Pair this guide with our free <a class="text-[var(--accent)] underline" href="/wine-day-planner/">Wine Day Planner PDF</a>,
+        the <a class="text-[var(--accent)] underline" href="/wineries">winery directory</a>, and the
+        <a class="text-[var(--accent)] underline" href="/map">interactive map</a>. Confirm events and hours on each estate’s official site — harvest schedules move with the fruit.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/wine-day-planner/" class="inline-flex px-5 py-2.5 rounded-full bg-[var(--primary)] text-white text-sm font-medium">Free day planner</a>
+        <a href="/map" class="inline-flex px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium text-stone-800">Wine map</a>
+        <a href="/guides/weekday-vs-weekend-tasting" class="inline-flex px-5 py-2.5 rounded-full border border-stone-300 text-sm font-medium text-stone-800">Crowd timing</a>
+      </div>
+    </div>
+
+    <article class="prose prose-stone prose-lg max-w-none">
+      <p>
+        From approximately <strong>August through October</strong>, with some vineyards beginning earlier and some
+        late-ripening fruit extending into <strong>October or even November</strong>, Temecula Valley’s vineyards become a
+        hive of activity. Grapes are sampled repeatedly, tested for sugar and acidity, inspected for flavor development,
+        and ultimately picked — often in the cool darkness of night or during the earliest morning hours.
+      </p>
+      <p>
+        For wine lovers, harvest is one of the most fascinating times to experience Temecula. This is when the region
+        stops simply <em>showing</em> visitors wine country and starts actively <em>making</em> the next generation of
+        Temecula wines.
+      </p>
+
+      <h2>Temecula’s harvest season: earlier than many visitors expect</h2>
+      <p>
+        Temecula Valley’s warm Southern California climate gives the region a distinctive growing season. Harvest
+        generally begins with grapes intended for lighter, fresher wines and progresses toward the fuller-bodied red
+        varietals that need a longer period on the vine.
+      </p>
+      <p>A typical Temecula Valley harvest follows this general rhythm:</p>
+
+      <h3>July–August: the early harvest</h3>
+      <p>
+        Some vineyards can begin harvesting as early as <strong>July</strong>, although <strong>August</strong> is more
+        commonly associated with the start of widespread harvest activity.
+      </p>
+      <p>Early varieties often include:</p>
+      <ul>
+        <li><strong>Sauvignon Blanc</strong></li>
+        <li><strong>Pinot Grigio</strong></li>
+        <li><strong>Viognier</strong></li>
+        <li>Other early-ripening white grapes</li>
+      </ul>
+      <p>
+        These grapes are generally picked while they retain the bright acidity that gives white wines their freshness and
+        structure. Sparkling programs (see <Fragment set:html={link(W.thornton, 'Thornton Winery')} />) often prioritize
+        that same early freshness.
+      </p>
+
+      <h3>September: harvest reaches full speed</h3>
+      <p>
+        September is often the heart of harvest season in Temecula Valley. Vineyards are busy, crush facilities become
+        active, and many of the region’s most recognizable harvest celebrations take place. Medium- and early-ripening
+        reds begin arriving alongside later whites.
+      </p>
+
+      <h3>Late September–October: the big reds</h3>
+      <p>The final stretch often belongs to Temecula’s powerful red wines. Late-season grapes frequently include:</p>
+      <ul>
+        <li><strong>Cabernet Sauvignon</strong></li>
+        <li><strong>Petite Sirah</strong></li>
+        <li><strong>Zinfandel</strong></li>
+        <li>Other late-ripening red varietals</li>
+      </ul>
+      <p>
+        Depending on weather, vineyard location, elevation, and style goals, some fruit can remain on the vine into
+        October and occasionally later.
+      </p>
+      <blockquote>
+        <p>
+          <strong>Important:</strong> There is no single universal “Temecula harvest date.” Each vineyard and varietal is
+          harvested according to ripeness, weather, sugar levels, acidity, flavor development, and the winemaker’s
+          objectives.
+        </p>
+      </blockquote>
+      <p>
+        For example, <Fragment set:html={link(W.ponte, 'Ponte Winery')} /> has described targeting red grapes around
+        roughly <strong>22–25 Brix</strong> and whites around <strong>21–23 Brix</strong> at optimal maturity, with much of
+        the fruit brought in at night or early morning to protect quality. Always treat lab numbers and windows as
+        estate-specific — and confirm current practices with the winery.
+      </p>
+
+      <h2>Major destination wineries during harvest</h2>
+      <p>
+        Temecula combines large destination properties with family-owned and boutique estates. During harvest, that mix is
+        part of the story: festivals and grape stomps on one hand, quiet vineyard work on the other.
+      </p>
+
+      <h3>
+        <Fragment set:html={link(W.callaway, 'Callaway Vineyard & Winery')} /> — a historic name
+      </h3>
+      <p>
+        Callaway occupies an important place in modern Temecula wine-country history. During harvest, estates like
+        Callaway represent the full cycle — vineyard management, crush, fermentation, aging, and the finished wine
+        visitors taste the rest of the year. Grower listings across the valley show dozens of varieties ripening on
+        staggered schedules, not a single “Cabernet week” or “Chardonnay week.”
+      </p>
+
+      <h3>
+        <Fragment set:html={link(W.southCoast, 'South Coast Winery')} /> — a major harvest destination
+      </h3>
+      <p>
+        South Coast is one of Temecula’s largest and most recognizable destinations, combining vineyard production with
+        winery, resort, restaurant, and spa energy. Its program spans a broad range of whites and reds — a reminder that
+        Temecula is an active agricultural region, not only a tasting-room circuit.
+      </p>
+
+      <h3>
+        <Fragment set:html={link(W.ponte, 'Ponte Winery')} /> — diverse vineyard program
+      </h3>
+      <p>
+        Ponte is especially interesting at harvest because of the range of grapes associated with its vineyards — from
+        Italian and Rhône varieties to Bordeaux-leaning reds and crisp whites (including Aglianico, Arneis, Barbera,
+        Cabernet Franc, Cabernet Sauvignon, Chardonnay, Merlot, Montepulciano, Petit Verdot, Petite Sirah, Pinot Grigio,
+        Sangiovese, Syrah, Tannat, Tempranillo, Vermentino, and more, per regional grower information). Ponte’s grape
+        stomp has also become one of the valley’s recognizable harvest traditions — confirm current event dates on their
+        site.
+      </p>
+
+      <h3>
+        <Fragment set:html={link(W.wilson, 'Wilson Creek Winery')} /> — harvest meets celebration
+      </h3>
+      <p>
+        Wilson Creek brings a distinctly celebratory personality to the season: festivals, grape stomps, family
+        gatherings, and communal energy. Behind the celebration is the same agricultural clock every producer watches —
+        fruit must come in at the right moment.
+      </p>
+
+      <h3>
+        <Fragment set:html={link(W.thornton, 'Thornton Winery')} /> — sparkling and early fruit
+      </h3>
+      <p>
+        Thornton has long been associated with sparkling wine and is known as Temecula’s original Champagne-style house.
+        Grapes for sparkling wine are often picked earlier than fruit destined for rich, high-alcohol reds, because
+        winemakers want freshness and acidity. That is harvest timing made visible in the glass.
+      </p>
+
+      <h2>Boutique wineries: where harvest becomes personal</h2>
+      <p>
+        Smaller estates can offer the most intimate view of harvest — closer to the rows, closer to the people making
+        block-by-block decisions, and closer to how one vintage differs from the next.
+      </p>
+
+      <h3><Fragment set:html={link(W.danza, 'Danza del Sol Winery')} /></h3>
+      <p>
+        On the De Portola corridor, Danza del Sol’s estate-vineyard focus suits visitors who want a vineyard-centered day.
+        Recognition for styles such as Sauvignon Blanc, Gewürztraminer, and white blends reflects Temecula’s range beyond
+        the usual California shortlist.
+      </p>
+
+      <h3><Fragment set:html={link(W.frangipani, 'Frangipani Estate Winery')} /></h3>
+      <p>
+        Frangipani represents the family-oriented side of the valley along De Portola — a contrast to large destination
+        properties. At smaller scale, harvest can feel more human: fewer anonymous cases, more visible craft.
+      </p>
+
+      <h3><Fragment set:html={link(W.palumbo, 'Palumbo Family Vineyards')} /></h3>
+      <p>
+        Palumbo is known for a small-lot, handcrafted approach and a strong red-wine reputation (including Sangiovese and
+        Bordeaux-inspired blends). Late harvest is a natural time to appreciate that story as reds approach maturity.
+      </p>
+
+      <h3>Lorenzi Estate, Vindemia, and other quiet corners</h3>
+      <p>
+        Boutique red-focused and rural estates — including names such as Lorenzi and Vindemia — reward travelers who want
+        agricultural scenery and a calmer pace than the busiest main-road patios. Use our
+        <a href="/map">map</a> and <a href="/wineries">directory</a> to cluster De Portola and side-road stops without
+        backtracking.
+      </p>
+
+      <h3><Fragment set:html={link(W.chapin, 'Chapin Family Vineyards')} /></h3>
+      <p>
+        Chapin offers a relaxed, scenic family-owned experience. A versatile list (Cabernet Sauvignon, Cabernet Franc,
+        Syrah, Zinfandel, Merlot, Chardonnay, Sauvignon Blanc, Viognier, Vermentino, Montepulciano, and more) means harvest
+        stretches across weeks as each variety hits its window.
+      </p>
+
+      <h3><Fragment set:html={link(W.falkner, 'Falkner Winery')} /></h3>
+      <p>
+        Falkner’s hillside setting and classic Temecula varietal range make it a natural stop when you want views with
+        your harvest-season tasting. Pair with our
+        <a href="/guides/sip-with-a-view">Sip with a View</a> guide when scenery is the priority.
+      </p>
+
+      <h2>Temecula’s most interesting harvest varietals</h2>
+      <h3>Early whites</h3>
+      <ul>
+        <li><strong>Sauvignon Blanc</strong> — freshness, acidity, citrus-driven character.</li>
+        <li><strong>Pinot Grigio</strong> — picked to keep bright acidity and crispness.</li>
+        <li><strong>Viognier</strong> — Rhône aromatic style with floral and stone-fruit notes.</li>
+        <li><strong>Muscat</strong> — from dry aromatic to sweeter or late-harvest expressions.</li>
+      </ul>
+
+      <h3>September’s expanding harvest</h3>
+      <p>
+        As the season progresses, vineyards may bring in Chardonnay, Merlot, Sangiovese, Barbera, Grenache, Tempranillo,
+        Syrah, Cabernet Franc, Malbec, Montepulciano, and more. Exact order varies by block and vintage — which is why
+        “what they’re picking this week” can change fast.
+      </p>
+
+      <h3>Late harvest reds</h3>
+      <ul>
+        <li><strong>Cabernet Sauvignon</strong> — a cornerstone red for many Temecula programs.</li>
+        <li><strong>Petite Sirah</strong> — deep color, structure, and power when fully ripe.</li>
+        <li><strong>Zinfandel</strong> — a California classic that can run late depending on style.</li>
+        <li><strong>Tannat</strong> and other firm reds — often among the last to leave the vine.</li>
+      </ul>
+      <p>
+        Italian-leaning grapes (Sangiovese, Barbera, Montepulciano, and others) are a real part of Temecula’s identity —
+        see also our <a href="/guides/temecula-red-varietals">Temecula red varietals guide</a>. Producers such as Robert
+        Renzoni, Gershon Bachus, Akash, and others (check the directory for current listings and profiles) help tell that
+        Mediterranean and modern-California story in the glass.
+      </p>
+
+      <h2>A practical Temecula harvest calendar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Window</th>
+            <th>What is often happening</th>
+            <th>Visitor angle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>July–early August</td>
+            <td>Earliest whites; some sparkling fruit</td>
+            <td>Quieter valley days; ask about early crush</td>
+          </tr>
+          <tr>
+            <td>Mid–late August</td>
+            <td>Early harvest expands</td>
+            <td>Book tastings; watch estate event pages</td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>Peak activity; many harvest events</td>
+            <td>Grape stomps, Wine Month energy, busier roads</td>
+          </tr>
+          <tr>
+            <td>Late Sept–October</td>
+            <td>Big reds; late blocks</td>
+            <td>Beautiful light; still confirm hours and events</td>
+          </tr>
+          <tr>
+            <td>Into November (select blocks)</td>
+            <td>Latest fruit in some years</td>
+            <td>Vintage-dependent — call ahead</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Why harvest is a great time to understand Temecula</h2>
+      <p>During harvest, everything becomes concrete:</p>
+      <ul>
+        <li>The vineyard is no longer only a photo backdrop</li>
+        <li>Grapes on the vine are about to become wine</li>
+        <li>Morning decisions — wait a day, pick overnight, take one block and leave another — shape the vintage</li>
+      </ul>
+      <p>Visitors may encounter:</p>
+      <ul>
+        <li>Vineyard crews working early</li>
+        <li>Fruit arriving at crush pads</li>
+        <li>The aroma of fermentation</li>
+        <li>Harvest bins and equipment in motion</li>
+        <li>Grape stomps and harvest celebrations</li>
+        <li>Winemaker and vineyard teams focused on the next vintage</li>
+      </ul>
+      <p>
+        September Wine Month and estate harvest events add another layer — always verify dates, tickets, and age policies
+        on official winery sites before you drive out.
+      </p>
+
+      <h2>Visitor tips (Bellie Acres practical notes)</h2>
+      <ul>
+        <li>
+          <strong>Expect working agriculture.</strong> Harvest is beautiful and busy. Stay clear of crews, bins, and
+          equipment unless you are on a hosted experience.
+        </li>
+        <li>
+          <strong>Book ahead</strong> for seated tastings and popular stomps — especially September weekends.
+        </li>
+        <li>
+          <strong>Cluster stops</strong> with the <a href="/map">map</a> so you are not crossing the valley between every
+          pour. Our free <a href="/wine-day-planner/">Wine Day Planner</a> uses Day 1 / Day 2 corridor templates.
+        </li>
+        <li>
+          <strong>Designate a driver</strong> or rideshare — harvest events can stretch the day.
+        </li>
+        <li>
+          <strong>Ask what is coming in this week.</strong> Staff answers change with the fruit; that conversation is half
+          the fun.
+        </li>
+        <li>
+          <strong>Heat and timing.</strong> Late-summer afternoons can be hot; early tastings and shaded patios help. See
+          <a href="/guides/weekday-vs-weekend-tasting">weekday vs weekend tasting</a>.
+        </li>
+      </ul>
+
+      <h2>The heart of Temecula harvest</h2>
+      <p>
+        Harvest is more than stomps, tastings, and fall festivals. It is the annual culmination of a full year of work:
+        pruning, budbreak, flowering, fruit set, veraison, summer heat, irrigation, vineyard management — and finally
+        the pick.
+      </p>
+      <p>
+        From crisp Sauvignon Blanc and aromatic Viognier to Sangiovese, Tempranillo, Syrah, Cabernet Sauvignon, Petite
+        Sirah, and Zinfandel, Temecula’s diversity means harvest unfolds over months rather than days.
+      </p>
+      <p>And that may be the best reason to visit now.</p>
+      <p>
+        During harvest, a glass of Temecula wine is no longer simply something you taste.
+        <strong> It is something you can see being born.</strong>
+      </p>
+
+      <hr />
+      <p>
+        <em
+          >Independent travel guide from Bellie Acres Wine. We do not sell alcohol or take winery reservations. Confirm
+          all harvest events, fees, and policies with each estate. Drink responsibly.</em
+        >
+      </p>
+    </article>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 not-prose">
+      <a href="/wine-day-planner/" class="block p-6 rounded-3xl border border-[var(--gold)]/40 bg-[#faf7f2] hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Free PDF</div>
+        <div class="font-serif text-2xl">Wine Day Planner →</div>
+      </a>
+      <a href="/wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-[var(--accent)] font-medium mb-1">Directory</div>
+        <div class="font-serif text-2xl">Browse wineries →</div>
+      </a>
+      <a href="/guides/best-temecula-wineries" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">Best of</div>
+        <div class="font-serif text-2xl">Best Temecula wineries →</div>
+      </a>
+      <a href="/guides" class="block p-6 rounded-3xl border border-stone-200 bg-white hover:shadow-lg transition">
+        <div class="text-sm text-stone-500 font-medium mb-1">More</div>
+        <div class="font-serif text-2xl">All guides →</div>
+      </a>
+    </div>
+  </main>
+</Layout>
