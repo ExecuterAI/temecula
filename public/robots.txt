@@ -1,5 +1,5 @@
 # Bellie Acres Wine — https://bellieacreswine.com
-# Explicit allows for Google ad/search crawlers (belt-and-suspenders; * already allows all)
+# Explicit allows for Google ad/search crawlers (Google docs name these for AdSense)
 
 User-agent: Mediapartners-Google
 Allow: /
@@ -10,12 +10,17 @@ Allow: /
 User-agent: AdsBot-Google-Mobile
 Allow: /
 
+User-agent: Google-Display-Ads-Bot
+Allow: /
+
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: *
 Allow: /
 
-Sitemap: https://bellieacreswine.com/sitemap-temecula.xml
+# One canonical sitemap index (avoid duplicate/conflicting sitemap signals)
 Sitemap: https://bellieacreswine.com/sitemap_index.xml
-Sitemap: https://bellieacreswine.com/sitemap.xml
