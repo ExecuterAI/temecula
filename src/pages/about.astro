@@ -2,63 +2,172 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import RelocateCta from '../components/RelocateCta.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About Bellie Acres Wine',
+  url: 'https://bellieacreswine.com/about/',
+  description:
+    'About Bellie Acres Wine — independent Temecula Valley wine-country publisher: guides, harvest coverage, tasting routes, and a practical wineries list.',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Bellie Acres Wine',
+    url: 'https://bellieacreswine.com/',
+    email: 'executerceo@gmail.com',
+    description:
+      'Independent editorial guide to Temecula Valley wine country for trip planning — long-form guides, maps, and estate context.',
+  },
+};
 ---
 
 <Layout
-  title="About This Temecula Wine Directory"
-  description="About Bellie Acres Wine — independent Temecula wine directory and Temecula wineries list helping visitors plan tastings, maps, events, balloon rides, and best-stop shortlists."
+  title="About Bellie Acres Wine — Temecula Wine Country Guides"
+  description="About Bellie Acres Wine: who publishes this Temecula wine guide, our editorial approach, harvest and tasting coverage, and how we help visitors plan wine country trips."
+  jsonLd={jsonLd}
 >
   <Navbar />
 
-  <main class="max-w-4xl mx-auto px-6 py-16">
-    <h1 class="text-6xl font-serif tracking-tight mb-8">About Bellie Acres Wine</h1>
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Publisher</p>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight mb-6 text-stone-900">
+      About Bellie Acres Wine
+    </h1>
+    <p class="text-xl text-stone-600 leading-relaxed mb-10">
+      Bellie Acres Wine is an independent <strong>Temecula Valley wine-country publisher</strong> at
+      <strong>bellieacreswine.com</strong>. We write practical guides for visitors — harvest season, tasting routes,
+      weekday vs weekend pacing, views, pets, pairings — and we maintain a clear list and map so those articles connect
+      to real estates you can visit.
+    </p>
 
-    <div class="space-y-6 text-lg text-stone-700 leading-relaxed">
+    <article class="space-y-6 text-lg text-stone-700 leading-relaxed">
       <p>
-        <strong>Bellie Acres Wine</strong> (bellieacreswine.com) is an independent <strong>Temecula wine directory</strong> and
-        <strong> Temecula wineries list</strong> for trip planning. We help visitors discover tasting rooms, compare practical details
-        (pets, kids, price feel, varietals), browse a map, check event listings, shortlist the <strong>best Temecula winery</strong> stops
-        for their day, and explore sunrise balloon operators that pair well with a wine-country trip.
+        Years ago, many small publishers could drop AdSense on a thin page and move on. Today Google’s review bots expect
+        something closer to a <em>content site with a point of view</em>: who you are, what you cover, and enough original
+        writing that an ad system can understand the page. That is the standard we build toward — not a bare link farm,
+        and not a single-winery brochure.
       </p>
 
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Who publishes this site</h2>
       <p>
-        Temecula Valley is one of Southern California’s most accessible wine destinations — more than forty wineries
-        set in the rolling hills of Riverside County, roughly an hour from many coastal and inland cities depending on traffic.
-        A unique mix of elevation, marine influence, and diverse soils supports everything from crisp whites and sparkling
-        programs to bold reds and Mediterranean-inspired blends. Whether you searched for Temecula wine, a wineries directory,
-        or a simple list of places to taste, this site is built to answer the next practical question.
+        Bellie Acres Wine is operated as a local Southern California project focused on Temecula Valley travel and wine
+        education for adults. Editorial and site operations are handled under the Bellie Acres Wine name; business and
+        correction emails go to
+        <a class="text-[var(--accent)] underline" href="mailto:executerceo@gmail.com">executerceo@gmail.com</a>. We are
+        based in the Temecula / Southern California area and write for people actually planning a day or weekend among
+        the hills — not for generic “wine affiliate” spam.
+      </p>
+      <p>
+        Related local real-estate context (moving to Temecula, estate questions) is handled separately via
+        <a class="text-[var(--accent)] underline" href="https://lauradfarley.com/" rel="noopener noreferrer" target="_blank"
+          >lauradfarley.com</a
+        >
+        when relevant. The wine site itself does not sell homes or alcohol.
       </p>
 
-      <h2 class="font-serif text-3xl text-stone-900 pt-6">Our mission</h2>
-      <p>
-        Planning a first visit should not require twenty browser tabs. We organize estate-level snapshots so you can build
-        a realistic half-day or full-day route: who is pet-friendly, where families fit, which houses lean sparkling versus
-        Cabernet, and how to move between stops without guesswork.
-      </p>
-
-      <h2 class="font-serif text-3xl text-stone-900 pt-6">What we are / are not</h2>
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">What we publish</h2>
+      <p>Our core inventory is long-form and mid-form articles, including:</p>
       <ul class="list-disc pl-6 space-y-2">
-        <li>We <strong>are</strong> an independent guide and directory.</li>
-        <li>We are <strong>not</strong> the official site of any single winery unless clearly labeled.</li>
-        <li>We do <strong>not</strong> process alcohol sales on this website.</li>
-        <li>Hours, fees, and policies change — always confirm with the business before you go.</li>
+        <li>
+          <a class="text-[var(--accent)] underline" href="/guides/temecula-harvest-season">Harvest season in Temecula Valley</a>
+          — timing, varietals, destination and boutique estates, visitor tips
+        </li>
+        <li>
+          <a class="text-[var(--accent)] underline" href="/guides/best-temecula-wineries">Best Temecula wineries</a> — how
+          we think about “best,” not a single universal ranking
+        </li>
+        <li>
+          <a class="text-[var(--accent)] underline" href="/guides/first-timer-tasting-route">First-timer tasting routes</a>,
+          <a class="text-[var(--accent)] underline" href="/guides/weekend-in-temecula-wine-country">weekend pacing</a>, and
+          <a class="text-[var(--accent)] underline" href="/guides/weekday-vs-weekend-tasting">weekday vs weekend</a>
+        </li>
+        <li>
+          Style and place guides:
+          <a class="text-[var(--accent)] underline" href="/guides/temecula-red-varietals">red varietals</a>,
+          <a class="text-[var(--accent)] underline" href="/guides/sip-with-a-view">sip with a view</a>,
+          <a class="text-[var(--accent)] underline" href="/guides/pet-friendly-wineries">pet-friendly estates</a>,
+          <a class="text-[var(--accent)] underline" href="/pairings">pairings</a>
+        </li>
+        <li>
+          Free planning tools such as the
+          <a class="text-[var(--accent)] underline" href="/wine-day-planner/">Wine Day Planner PDF</a>
+        </li>
+      </ul>
+      <p>
+        Alongside the guides, we keep a structured <a class="text-[var(--accent)] underline" href="/wineries">wineries list</a>
+        and <a class="text-[var(--accent)] underline" href="/map">wine map</a> so readers can move from an article to a
+        concrete stop. Estate pages add context (varietals, vibe, practical notes). Those pages support the journalism;
+        they are not the only thing on the site.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Editorial standards</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>We write for trip planning: pacing, corridors, heat, reservations, and responsible tasting.</li>
+        <li>We label independence clearly — we are not the official site of any winery unless a page says otherwise.</li>
+        <li>We do not sell alcohol on this website and we do not take tasting reservations.</li>
+        <li>Hours, fees, pet rules, and events change. We urge readers to confirm on the estate’s official site before driving.</li>
+        <li>Featured listings, when present, are paid placements for discovery. Editorial guides are written to stay useful either way.</li>
+        <li>Alcohol content is framed for adults 21+ with a sitewide responsibility notice.</li>
       </ul>
 
-      <h2 class="font-serif text-3xl text-stone-900 pt-6">Visit responsibly</h2>
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Why Temecula</h2>
       <p>
-        Alcohol service is for adults 21+. Designate a driver, use rideshare, or book a wine-country shuttle if you plan
-        multiple tastings. Many estates offer beautiful grounds, food programs, and non-alcoholic options — ask on site.
+        Temecula Valley is one of Southern California’s most accessible wine destinations — dozens of tasting rooms in
+        the rolling hills of Riverside County, roughly an hour from many coastal and inland cities depending on traffic.
+        Elevation, marine influence, and varied soils support crisp whites, sparkling programs, bold reds, and
+        Mediterranean-leaning blends. Harvest often runs from late summer into fall, with early whites and sparkling fruit
+        ahead of the bigger reds — which is why seasonal coverage matters as much as a static list.
+      </p>
+      <p>
+        Visitors still waste time on contradictory blog posts and outdated hours. Our job is to reduce that friction with
+        clear structure, honest limits, and guides you can finish in one sitting before you leave the hotel.
       </p>
 
-      <h2 class="font-serif text-3xl text-stone-900 pt-6">Corrections & contact</h2>
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">How to use the site</h2>
+      <ol class="list-decimal pl-6 space-y-2">
+        <li>Start with a guide that matches your trip (harvest, first-timer, weekend, pets, views).</li>
+        <li>Open the map or list to cluster stops on one corridor.</li>
+        <li>Read two or three estate pages, then book or call the properties directly.</li>
+        <li>Optional: download the free Wine Day Planner PDF for Day 1 / Day 2 templates.</li>
+      </ol>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Advertising & privacy</h2>
       <p>
-        Own a listing or spot outdated info? Email <a class="text-[var(--accent)] underline" href="mailto:executerceo@gmail.com">executerceo@gmail.com</a>
-        or use our <a class="text-[var(--accent)] underline" href="/contact">contact page</a>. Privacy details live on our
-        <a class="text-[var(--accent)] underline" href="/privacy">Privacy Policy</a>.
+        We may display ads (including Google AdSense) and offer winery featured listings. Ads help keep guides free to
+        read. Our
+        <a class="text-[var(--accent)] underline" href="/privacy">Privacy Policy</a> explains cookies, AdSense, and
+        contact data.
+        <a class="text-[var(--accent)] underline" href="/terms">Terms of Use</a> cover acceptable use. Wineries interested
+        in placement can see <a class="text-[var(--accent)] underline" href="/advertise">Advertise</a>.
       </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Corrections</h2>
+      <p>
+        Own a Temecula estate or spot something outdated? Email
+        <a class="text-[var(--accent)] underline" href="mailto:executerceo@gmail.com">executerceo@gmail.com</a>
+        or use the <a class="text-[var(--accent)] underline" href="/contact">contact page</a>. We prefer accurate local
+        information over a pretty mistake.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-4">Visit responsibly</h2>
+      <p>
+        Alcohol service is for adults 21+. Designate a driver, use rideshare, or book a shuttle if you plan multiple
+        tastings. Harvest and festival days get busy — leave margin for parking, heat, and a real meal between pours.
+      </p>
+    </article>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4">
+      <a href="/guides/temecula-harvest-season" class="rounded-3xl border border-stone-200 bg-white p-6 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Read next</div>
+        <div class="font-serif text-2xl mt-1">Harvest season guide →</div>
+      </a>
+      <a href="/guides" class="rounded-3xl border border-stone-200 bg-white p-6 hover:shadow-md transition">
+        <div class="text-xs uppercase tracking-[2px] text-[var(--accent)] font-medium">Library</div>
+        <div class="font-serif text-2xl mt-1">All Temecula guides →</div>
+      </a>
     </div>
 
-    <div class="mt-14">
+    <div class="mt-10">
       <RelocateCta variant="card" />
     </div>
   </main>
