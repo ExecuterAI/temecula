@@ -1,0 +1,275 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const dePortola = [...wineries]
+  .filter((w) => String((w as any).corridor || '').toLowerCase().includes('de portola'))
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0));
+
+const nearby = [...wineries]
+  .filter((w) => {
+    const c = String((w as any).corridor || '').toLowerCase();
+    return c.includes('calle contento') || c.includes('de portola');
+  })
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 10);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'De Portola Road Wine Tasting Guide — Temecula',
+  datePublished: '2026-09-06',
+  dateModified: '2026-09-06',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'De Portola Road Temecula wine tasting guide — why this corridor feels different, how to cluster stops, who it suits, and practical pacing tips.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/de-portola-road-wine-tasting/',
+};
+---
+
+<Layout
+  title="De Portola Road Wine Tasting Guide | Temecula"
+  description="De Portola Road wine tasting in Temecula: corridor character, boutique energy, how to plan 2–3 stops, drive logic, and linked estates from our directory."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Corridor · Sep 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          De Portola Road Wine Tasting Guide
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          De Portola is where many visitors go when they want Temecula’s hills and vineyard views without living all day
+          on the busiest main-road energy. This guide explains the corridor’s character, who it fits, how to cluster
+          tastings, and how to pair it with a calmer day plan.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Hours,
+          fees, and pet policies change — confirm with each winery. 21+ for tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What De Portola feels like</h2>
+        <p>
+          Temecula Valley is not one street. Rancho California Road carries a lot of the destination-resort gravity —
+          larger properties, heavy weekend flow, easy discovery for first-timers who type “Temecula wineries” and follow
+          the biggest names. <strong>De Portola Road</strong> sits in a different emotional register: more rolling
+          agricultural scenery, more boutique and family-estate energy, and a pacing that rewards people who like the
+          drive as part of the tasting.
+        </p>
+        <p>
+          That does not mean “empty” or “always quiet.” Popular De Portola addresses still book out on peak Saturdays,
+          especially in harvest season. It means the corridor’s default story is vineyard edges, smaller parking stories,
+          and flights where you can still hear the person across the table. If your group wants nightclub volume, this
+          may not be your only day. If your group wants landscape and conversation, start here.
+        </p>
+        <p>
+          Use the <a href="/map" class="text-[var(--accent)] underline font-medium">map</a> to see how De Portola relates
+          to Calle Contento and the main Rancho spine. Clustering is the whole game — a beautiful corridor still becomes
+          exhausting if you bounce to the opposite side of the valley between every pour.
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">Who this corridor is for</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Couples and small groups who want views and a slightly softer social volume</li>
+          <li>Return visitors who already did the big-name main-road circuit</li>
+          <li>Photographers and “sip with a view” travelers (pair with our scenic guide)</li>
+          <li>People building a two-day trip: one day Rancho-heavy, one day De Portola-heavy</li>
+          <li>Designated-driver-friendly itineraries with shorter hops between stops</li>
+        </ul>
+        <p class="pt-2">
+          Who might prefer a different anchor day: first-timers who want maximum amenities and on-site restaurants under
+          one roof; large party-bus energy; guests who need the most frequent ride-hail density at the busiest nodes.
+          Even then, a single De Portola stop can be the palate cleanser in a mixed day.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">How many stops on De Portola?</h2>
+        <p>
+          Match the corridor to the stop-count logic in our
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries in one day</a>
+          guide. On De Portola specifically:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Two stops:</strong> Excellent for heat days, deep conversation, or a long lunch elsewhere.</li>
+          <li><strong>Three stops:</strong> The sweet spot when you stay on/near the corridor all day.</li>
+          <li><strong>Four stops:</strong> Only with spit discipline, early start, and almost no cross-valley detours.</li>
+        </ul>
+        <p>
+          Boutique flights can run long because hosts like to talk — budget time generously. That is a feature, not a
+          bug, if you came for hospitality rather than a checklist.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Building a De Portola day</h2>
+        <p>
+          <strong>Morning:</strong> Start earlier than you think, especially on weekends. Morning light on the vines is
+          part of the product, and check-in lines are shorter. Bring water in the car before you taste anything.
+        </p>
+        <p>
+          <strong>Midday:</strong> Protect food. Some estates have robust kitchens; others are tasting-focused. If lunch
+          is uncertain, plan a deliberate break in Old Town Temecula or a known restaurant rather than gambling on “we’ll
+          figure it out between pours.” Palate and mood both depend on calories.
+        </p>
+        <p>
+          <strong>Afternoon:</strong> Heat climbs. Choose shaded patios, indoor options, or shorter final flights. If
+          harvest events are on, verify whether your “quiet boutique” stop is actually hosting a stomp or ticketed party
+          that day — read
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest season</a>
+          and estate event pages.
+        </p>
+        <p>
+          <strong>Reservations:</strong> Weekends still want holds. Weekdays are more forgiving but not a void —
+          special experiences and small seatings fill. See
+          <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Estates tagged De Portola in our directory</h2>
+        <p>
+          Listings below reflect corridor tags in our data. Always confirm location and access on the winery’s official
+          site — roads, gates, and tasting venues evolve.
+        </p>
+        {dePortola.length === 0 ? (
+          <p>
+            Corridor tags may be incomplete for some estates — browse the full
+            <a href="/wineries" class="text-[var(--accent)] underline">wineries list</a> and filter geographically on the
+            <a href="/map" class="text-[var(--accent)] underline">map</a>.
+          </p>
+        ) : (
+          <ul class="space-y-2">
+            {dePortola.map((w) => (
+              <li class="rounded-xl border border-stone-200 bg-white px-4 py-3">
+                <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-stone-500 text-sm">
+                  {' '}
+                  · {w.price_range} · {w.rating}/5
+                  {w.pet_friendly ? ' · pet-friendly tag' : ''}
+                  {w.has_views ? ' · views tag' : ''}
+                </span>
+                {w.description && <p class="text-sm text-stone-600 mt-1 line-clamp-2">{w.description}</p>}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Nearby corridor companions</h2>
+        <p>
+          De Portola days often share logic with adjacent quieter pockets (including Calle Contento tags in our data).
+          Sample highly rated nearby/corridor-adjacent picks to mix carefully without sprinting back to the heaviest
+          main-road congestion between every glass:
+        </p>
+        <ul class="space-y-2">
+          {nearby.map((w) => (
+            <li class="rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm">
+              <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              <span class="text-stone-500"> · {(w as any).corridor || w.location}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Views, pets, and practical packing</h2>
+        <p>
+          Many De Portola experiences are outdoor-forward. That is wonderful until wind, sun, or a surprised dog meets a
+          tasting flight. Skim
+          <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Sip with a View</a>
+          and
+          <a href="/guides/pet-friendly-wineries" class="text-[var(--accent)] underline">pet-friendly wineries</a>
+          before you promise a patio to someone in heels or a reactive pup.
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Closed-toe shoes help on gravel and vineyard-edge paths.</li>
+          <li>Layers beat a single fashion choice — mornings cool, afternoons bright.</li>
+          <li>Sunscreen, hat, refillable water, and a simple snack in the car.</li>
+          <li>Cashless is common; still keep a card backup and rideshare app logged in.</li>
+          <li>Spit cup comfort: if you are driving later, behave like a professional taster.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">De Portola vs Rancho California Road</h2>
+        <p>
+          Think of Rancho as the high-discovery boulevard: big signs, big calendars, big group capacity. Think of De
+          Portola as the scenic working-vineyard lane: still professional hospitality, often more intimate scale. Neither
+          is “better.” They solve different days.
+        </p>
+        <p>
+          A strong two-day Temecula trip is one day weighted toward destination amenities and one day weighted toward
+          corridor scenery — not six random pins connected by hope. Download the free
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">Wine Day Planner</a>
+          and assign De Portola to Day 1 or Day 2 deliberately.
+        </p>
+        <p>
+          First visit only have one day? You can still do a hybrid: one main-road landmark stop plus two De Portola
+          tastings — if and only if the drive order is clean on the map. Order of operations beats brand-name collecting.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Wine styles you may meet</h2>
+        <p>
+          Temecula’s strength is range. On and near De Portola you will still see Bordeaux-leaning reds, Rhône
+          inspirations, Italian-leaning grapes, crisp whites, and occasional sparkling or dessert pours depending on the
+          estate. Do not assume “quiet road = only light wine.” Read
+          <a href="/guides/temecula-red-varietals" class="text-[var(--accent)] underline">Temecula red varietals</a>
+          if you want a style primer before you buy club memberships in a moment of patio joy.
+        </p>
+        <p>
+          Ask what was picked recently in harvest months. Staff answers change weekly — that live detail is half the fun
+          of visiting during crush season.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Responsible tasting on a scenic road</h2>
+        <p>
+          Scenic corridors are still real roads with real enforcement and real families sharing the lane. Plan a
+          designated driver, a tour operator, or rideshare segments. Spit more than you swallow when you are moving
+          between estates. If anyone in the car is “surprised” by how they feel after stop two, cancel stop three. The
+          vines will be there next season.
+        </p>
+        <p>
+          We are an independent publisher, not a winery and not a transportation company. We do not sell alcohol on this
+          site. Our job is to help you plan a day you will remember for the right reasons.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          De Portola Road is one of Temecula’s best answers to “we want wine country, not only a busy boulevard.” Cluster
+          two or three stops, feed people, respect heat and harvest calendars, and use the map before you book. For
+          contrast and amenities, keep Rancho California in your toolkit — just do not make every pin a mandatory trophy
+          in a single afternoon.
+        </p>
+        <p>
+          Continue with
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries per day</a>,
+          <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a>,
+          or the full
+          <a href="/guides" class="text-[var(--accent)] underline">guides library</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>

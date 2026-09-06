@@ -1,0 +1,285 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const examples = [...wineries]
+  .filter((w) => (w.rating || 0) >= 4.5)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 6);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How Many Wineries to Visit in One Day in Temecula',
+  datePublished: '2026-09-06',
+  dateModified: '2026-09-06',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'How many Temecula wineries to visit in one day — 2, 3, or 4 stops, sip-and-spit pacing, drive time, food, and when more is too many.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/how-many-wineries-one-day/',
+};
+---
+
+<Layout
+  title="How Many Wineries to Visit in One Day in Temecula"
+  description="How many Temecula wineries should you visit in one day? Practical guidance for 2, 3, or 4 stops — timing, sip-and-spit, food, drivers, and corridor clustering."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Planning · Sep 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          How Many Wineries to Visit in One Day in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          The internet loves “hit five estates before sunset.” Temecula Valley rewards the opposite: a few intentional
+          tastings, real food, and short drives. This guide gives clear numbers — two, three, or four stops — and the
+          conditions that make each choice work.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Always
+          confirm hours and reservations with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">The short answer</h2>
+        <p>
+          For most visitors, <strong>three focused tastings</strong> is the sweet spot for a full day. 
+          <strong>Two stops</strong> is ideal if you want long conversations, a sit-down lunch, or you are traveling with
+          kids or heat-sensitive guests. <strong>Four stops</strong> can work when you cluster on one corridor, use
+          sip-and-spit generously, keep pours intentional, and protect a real meal — not a granola bar between parking lots.
+        </p>
+        <p>
+          Five or more in a single calendar day is where quality collapses for almost everyone: palate fatigue, rushed
+          staff interactions, risky driving decisions, and a blur instead of a memory. Plot stops on our
+          <a href="/map" class="text-[var(--accent)] underline font-medium">Temecula wine map</a> and shortlist from the
+          <a href="/wineries" class="text-[var(--accent)] underline font-medium">wineries list</a> before you fall in love
+          with five pins on opposite ridges.
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">Why “one more winery” fails in Temecula</h2>
+        <p>
+          Temecula is compact compared with Napa, but it is not a mall with shared parking. Each estate has its own
+          driveway rhythm, check-in line, tasting length, and exit onto Rancho California Road, De Portola, or a side
+          lane. Add photo stops, restrooms, water, and a bathroom break for the dog or the toddler, and a “quick” stop is
+          rarely fifteen minutes.
+        </p>
+        <p>
+          Heat matters. Late spring through early fall afternoons can push patios from pleasant to draining. A schedule
+          that looked brilliant at the hotel breakfast buffet can feel punishing by 2:30 p.m. That is why our
+          <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend guide</a>
+          and harvest coverage both stress pacing — not heroics.
+        </p>
+        <p>
+          Finally, tasting is cumulative. Even small pours add up if you swallow everything. Sip-and-spit is normal,
+          polite, and how industry people taste through a long day. It is how you keep a fourth stop sharp instead of
+          fuzzy. Pair that habit with a designated driver or rideshare. We do not sell alcohol here and we do not
+          encourage drinking and driving — ever.
+        </p>
+      </section>
+
+      <section class="space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Two wineries in one day</h2>
+        <p>
+          Two stops is not a half-effort day. It is the right plan when the experience is the point: a milestone
+          anniversary, a first visit with someone who gets overwhelmed in crowds, a long lunch with a view, or a hot
+          forecast where shade and hydration matter more than a checklist.
+        </p>
+        <p>
+          Build two stops with contrast. Example shape: one larger destination estate with amenities and a clear
+          reservation product, then one smaller or boutique property where the pour feels personal. Or reverse it —
+          quiet hillside morning, livelier afternoon patio if energy allows. Use
+          <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Sip with a View</a> if scenery is the
+          priority, or <a href="/guides/pet-friendly-wineries" class="text-[var(--accent)] underline">pet-friendly notes</a>
+          if a dog is part of the party.
+        </p>
+        <p>
+          Timing template: late morning tasting (60–90 minutes including arrival buffer), proper lunch, afternoon tasting
+          (another 60–90 minutes), then hotel, rideshare, or a non-alcoholic wind-down. That single arc often feels more
+          “wine country” than four hurried flights.
+        </p>
+      </section>
+
+      <section class="space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Three wineries in one day</h2>
+        <p>
+          Three is the classic Temecula day for couples and small friend groups who want range without chaos. You can
+          taste a sparkling or crisp white program early, a mid-weight red or Rhône-leaning flight late morning, and a
+          final stop that matches sunset light or a celebration mood — if the calendar and reservations cooperate.
+        </p>
+        <p>
+          Keys to making three work:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Cluster on one primary corridor; cross-valley ping-pong burns the clock.</li>
+          <li>Book the scarcest reservation first (often weekend midday), then fill gaps.</li>
+          <li>Put food in the middle, not as an afterthought at 4 p.m.</li>
+          <li>Decide in advance which stop is “flexible” if a flight runs long.</li>
+          <li>Use spit cups without apology; ask for water; pace conversation.</li>
+        </ul>
+        <p>
+          For a ready-made shape, see our
+          <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer tasting route</a>
+          and the free
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">Wine Day Planner PDF</a> (Day 1 / Day 2
+          templates, any day of the week).
+        </p>
+      </section>
+
+      <section class="space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Four wineries in one day</h2>
+        <p>
+          Four is advanced mode. It is doable for experienced tasters, industry folks, or locals who already know the
+          drive times and which estates run efficient flights. It is a poor default for a first visit, a large bachelor
+          or bachelorette caravan, or a 95°F afternoon with no shade plan.
+        </p>
+        <p>
+          If you insist on four:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Stay inside a tight cluster (one road system, minimal backtracking).</li>
+          <li>Start at opening; end before staff and your palate are exhausted.</li>
+          <li>Make at least two stops shorter “spotlight” flights if offered.</li>
+          <li>Swallow less, spit more; eat real food; hydrate on a schedule.</li>
+          <li>Designate a driver who is truly not drinking — not “mostly not.”</li>
+        </ul>
+        <p>
+          Harvest season adds another variable: events, stomps, and busier roads. Read
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">Harvest Season in Temecula Valley</a>
+          before you stack four pins in September.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">A simple decision table</h2>
+        <div class="overflow-x-auto rounded-2xl border border-stone-200 bg-white">
+          <table class="w-full text-sm text-left">
+            <thead class="bg-stone-900 text-white">
+              <tr>
+                <th class="p-3 font-medium">Stops</th>
+                <th class="p-3 font-medium">Best for</th>
+                <th class="p-3 font-medium">Watch-outs</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100">
+              <tr>
+                <td class="p-3 font-medium text-stone-900">2</td>
+                <td class="p-3">Milestones, heat, kids in tow, deep conversation</td>
+                <td class="p-3">FOMO — ignore it; depth beats breadth</td>
+              </tr>
+              <tr class="bg-stone-50">
+                <td class="p-3 font-medium text-stone-900">3</td>
+                <td class="p-3">Most first-timers and full-day visitors</td>
+                <td class="p-3">Weak clustering; no lunch plan</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium text-stone-900">4</td>
+                <td class="p-3">Experienced tasters, tight corridor, spit discipline</td>
+                <td class="p-3">Weekend peaks; long cross-valley drives</td>
+              </tr>
+              <tr class="bg-stone-50">
+                <td class="p-3 font-medium text-stone-900">5+</td>
+                <td class="p-3">Almost nobody as a quality goal</td>
+                <td class="p-3">Fatigue, risk, blurry memory</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Time budget (realistic)</h2>
+        <p>
+          Use this as a planning floor, not a stopwatch:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Arrival + check-in + settle:</strong> 15–25 minutes per estate</li>
+          <li><strong>Tasting flight itself:</strong> 45–75 minutes depending on format and chat</li>
+          <li><strong>Drive between clustered stops:</strong> often 5–20 minutes; more if you mis-cluster</li>
+          <li><strong>Lunch:</strong> 60–90 minutes if you want it to count</li>
+        </ul>
+        <p>
+          Three tastings with lunch can honestly fill 6–8 hours door to door once you include photo pauses and “we should
+          buy a bottle” moments. That is a full day — and a good one.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Sample high-rated estates to shortlist</h2>
+        <p>
+          Not a mandatory circuit — examples with strong visitor ratings in our directory as you build your own two-to-four
+          stop list:
+        </p>
+        <ul class="space-y-2">
+          {examples.map((w) => (
+            <li class="rounded-xl border border-stone-200 bg-white px-4 py-3">
+              <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              <span class="text-stone-500 text-sm">
+                {' '}
+                · {w.price_range} · {w.rating}/5 · {(w as any).corridor || w.location}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p>
+          For “best of” framing rather than raw ratings, read
+          <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">Best Temecula Wineries</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Pacing habits that protect the day</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Water in the car and at the table — non-negotiable in warm months.</li>
+          <li>Eat protein and fat, not only sugar, between pours.</li>
+          <li>Spit when you are evaluating; swallow when a wine truly deserves it.</li>
+          <li>Skip the open-bottle “road soda” fantasy between estates.</li>
+          <li>Build a hard stop time so dinner or the drive home is not improvisation.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Two-day thinking beats one overloaded day</h2>
+        <p>
+          If your trip allows an overnight, split the valley: Day 1 three stops on one corridor, Day 2 two or three on
+          another. That is how you taste more of Temecula without treating your liver and your schedule like a stunt. The
+          free Day Planner PDF is built exactly around that idea — Day 1 / Day 2, not “Friday-only” assumptions, because
+          people taste all week.
+        </p>
+        <p>
+          Weekend-only visitors should still resist the five-stop fantasy. Crowds and reservation scarcity make ambition
+          expensive. See
+          <a href="/guides/weekend-in-temecula-wine-country" class="text-[var(--accent)] underline">Weekend in Temecula Wine Country</a>
+          for a calmer template.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          <strong>Default to three.</strong> Choose two when you want depth or gentler logistics. Attempt four only with
+          clustering, spit discipline, food, and a sober driver. Skip five-plus as a quality goal. Temecula is close to
+          Southern California’s population centers — you can come back. The bottle you remember will not be the one you
+          rushed past in stop number six.
+        </p>
+        <p>
+          Next reads:
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola Road guide</a>,
+          <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer route</a>,
+          <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>
