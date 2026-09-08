@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'What to Wear for Temecula Wine Tasting',
+  datePublished: '2026-09-08',
+  dateModified: '2026-09-08',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'What to wear for Temecula wine tasting: shoes, layers, heat, photo-ready outfits, and what to skip on gravel driveways and vineyard edges.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/what-to-wear-temecula-wine-tasting/',
+};
+---
+
+<Layout
+  title="What to Wear for Temecula Wine Tasting"
+  description="Temecula wine tasting outfit guide: comfortable shoes, layers for heat, weekend photo looks, and practical tips for gravel, patios, and harvest season."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Practical · Sep 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          What to Wear for Temecula Wine Tasting
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Temecula is sunny hills, gravel parking, patio furniture, and the occasional photo you will keep for years. Dress
+          for walking and weather first — then make it look intentional. This guide covers shoes, layers, fabrics, and
+          weekend vs weekday reality.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent tips from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Estate
+          dress codes are rare; comfort and respect still matter. 21+ for tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">The short answer</h2>
+        <p>
+          <strong>Closed-toe shoes you can walk in, breathable layers, sun protection, and clothes you can sit in for an
+          hour without suffering.</strong> Save brand-new stilettos and pure white linen sets for flat indoor venues.
+          Vineyard edges and decomposed granite laugh at fashion that cannot pivot.
+        </p>
+        <p>
+          Smart casual wins: elevated jeans or trousers, a dress with a real shoe, collared shirt or neat top, light
+          jacket for AC tasting rooms and evening cool-down. You will see everything from athleisure to cocktail — aim
+          for the middle unless you know the event is black-tie (almost never for standard flights).
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">Shoes: the decision that makes or breaks the day</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Best:</strong> clean sneakers, stylish loafers, block heels, sturdy sandals with straps</li>
+          <li><strong>Risky:</strong> needle heels, brand-new stiff dress shoes, flip-flops on long gravel walks</li>
+          <li><strong>Bring:</strong> blister kit if you insist on fashion shoes for photos only</li>
+        </ul>
+        <p>
+          Many estates mix paved paths with gravel and lawn. If your plan includes
+          <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">view terraces</a>
+          or grounds photos, prioritize traction over height.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Heat, sun, and layers</h2>
+        <p>
+          Inland valleys run warmer than coastal Instagram suggests. Late morning can jump fast. Wear breathable fabrics
+          (cotton, linen blends, technical weaves) and bring a light layer for indoor pours and evening.
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Hat and sunglasses — not optional in summer</li>
+          <li>Sunscreen that will not drip into your tasting glass (apply before you leave the car)</li>
+          <li>Avoid heavy black head-to-toe in August unless you enjoy suffering</li>
+          <li>Winter/spring: mornings cool, afternoons mild — layers still win</li>
+        </ul>
+        <p>
+          Harvest-season days can be long and bright; see
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest guide</a>
+          for seasonal context.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Colors and wine reality</h2>
+        <p>
+          Red wine finds cream silk. If you are accident-prone or tasting with a lively group, choose patterns or deeper
+          colors. Spit cups and crowded tables happen. A dark jacket can hide a splash better than a pure white dress —
+          not romantic, just true.
+        </p>
+        <p>
+          That said, wear what makes you feel like the day matters. Just pack a backup top in the car if the outfit is
+          precious.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Weekend photo energy vs weekday comfort</h2>
+        <p>
+          Weekends on
+          <a href="/guides/rancho-california-road-wine-tasting" class="text-[var(--accent)] underline">Rancho California Road</a>
+          skew more dressed-up: celebrations, group photos, live music. Weekdays allow quieter comfort without looking
+          underdressed. Neither requires a ballgown.
+        </p>
+        <p>
+          Proposal or anniversary? Elevate fabrics and tailoring, keep shoes walkable, and still plan
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">two or three stops max</a>
+          so you are not limping by stop four.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bags and extras</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Crossbody or small backpack — hands free for glasses and gates</li>
+          <li>Phone charger / battery; offline reservation screenshots</li>
+          <li>Light scarf or wrap for aggressive indoor AC</li>
+          <li>For families: see
+            <a href="/guides/temecula-wine-tasting-with-kids" class="text-[var(--accent)] underline">tasting with kids</a>
+            for gear beyond fashion</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What to skip</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Team jerseys soaked in pre-game energy if you want a quiet boutique flight (read the room)</li>
+          <li>Strong perfume that wrecks everyone’s nose before the first white</li>
+          <li>Costume heels for a full De Portola walking day</li>
+          <li>Assuming every lawn is stiletto-safe</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Sample outfits that work</h2>
+        <p>
+          <strong>Weekend couple:</strong> midi dress + block heel or clean sneaker; button-up, chinos, loafers; shared
+          light jacket in the car.
+        </p>
+        <p>
+          <strong>Weekday deep dive:</strong> elevated casual — dark jeans, breathable tee or knit, trail-capable fashion
+          sneaker, sun hat.
+        </p>
+        <p>
+          <strong>Group celebration:</strong> coordinated colors without matching costumes; everyone in walkable shoes;
+          one bag holds sunscreen and bandages for the collective.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Season tweaks</h2>
+        <p>
+          <strong>Spring:</strong> layers for cool starts; pollen can be real — sunglasses help more than you think.  
+          <strong>Summer:</strong> shade strategy is clothing strategy; light colors, hat, less leather.  
+          <strong>Harvest / early fall:</strong> photo-friendly but still walkable; evenings cool after hot afternoons.  
+          <strong>Winter:</strong> closed shoes, jacket, possible damp ground — pretty boots with grip beat suede that fears dirt.
+        </p>
+        <p>
+          Corridor choice changes how much you walk.
+          <a href="/guides/rancho-california-road-wine-tasting" class="text-[var(--accent)] underline">Rancho</a>
+          destination campuses can mean more paved strolling between car, check-in, and patio.
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola</a>
+          days may add driveway gravel and hillside paths. Match sole to map.
+        </p>
+        <p>
+          If you are on a
+          <a href="/guides/temecula-wine-tour-vs-self-drive" class="text-[var(--accent)] underline">bus or SUV tour</a>,
+          you still walk from vehicle to door repeatedly — the same shoe rules apply. Costume heels fail on step stools
+          and coach stairs as reliably as on vineyard rows.
+        </p>
+        <p>
+          Final pre-door checklist: phone charged, reservation ready, water in the car, spit comfort if driving later,
+          and one layer you can put on when the tasting room AC is set to “meat locker.” Looking good is allowed.
+          Looking stranded is optional.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          Dress like you will walk gravel, sit in sun, and maybe dance to one song — not like you are only standing on
+          marble. Shoes and layers beat trends. Look good in photos <em>and</em> still like your feet at mile three.
+          When in doubt, choose the outfit you could wear through a delayed reservation, a longer-than-expected grounds
+          walk, and a windy patio without becoming the group’s emergency. Temecula rewards people who planned the glass
+          and the shoe with equal seriousness.
+        </p>
+        <p>
+          Plan the day:
+          <a href="/guides/temecula-wine-tour-vs-self-drive" class="text-[var(--accent)] underline">tour vs self-drive</a>,
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free Day Planner</a>,
+          <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>

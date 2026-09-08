@@ -1,0 +1,224 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const kidFriendly = [...wineries]
+  .filter((w) => w.kid_friendly?.allowed)
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 10);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Temecula Wine Tasting with Kids — Practical Family Guide',
+  datePublished: '2026-09-08',
+  dateModified: '2026-09-08',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'Temecula wine tasting with kids: which estates allow children, pacing, food, nap windows, and how to keep the day fun without pretending a tasting room is a playground.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-wine-tasting-with-kids/',
+};
+---
+
+<Layout
+  title="Temecula Wine Tasting with Kids | Family Wine Country Guide"
+  description="Bring kids to Temecula wine country without chaos: kid-friendly estate tips, stop counts, food, timing, and honest limits. Independent Bellie Acres guide."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Families · Sep 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Temecula Wine Tasting with Kids
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Yes, you can taste wine in Temecula with children in the party — if you pick the right estates, cut the stop
+          count, and plan like a parent, not like a bachelor weekend. This guide is practical: policies, pacing, food,
+          heat, and the limits nobody puts on the brochure.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Kid
+          policies change — always confirm with the winery before you go. Alcohol tastings are 21+.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">The honest short answer</h2>
+        <p>
+          <strong>Some Temecula estates welcome kids; some do not; many allow children outdoors or in specific areas
+          only.</strong> A tasting room is still an adult alcohol environment. Your job is to choose places where a
+          restless kid is manageable, keep the day short, feed everyone, and never treat the patio like a free babysitter.
+        </p>
+        <p>
+          Default to <strong>two stops</strong> (maybe a soft third if everyone is thriving). Read
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries in one day</a>
+          and then subtract one for childhood. Use the
+          <a href="/wineries" class="text-[var(--accent)] underline">wineries list</a> filters and call ahead — directory
+          tags help; official policy wins.
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">What “kid-friendly” usually means</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Children allowed on grounds or patio, not necessarily at the bar rail during a seated flight</li>
+          <li>Space to move, lawns, or outdoor seating where a stroller fits</li>
+          <li>Food options that are not only wine-and-cheese for adults</li>
+          <li>Staff who have seen a toddler before and will not panic at crayon volume</li>
+          <li>Clear rules: no running near pour stations, no kids tasting alcohol, no unsupervised exploration of production areas</li>
+        </ul>
+        <p>
+          It does <em>not</em> mean unlimited free childcare, splash pads at every address, or that every adult guest
+          wanted a family reunion next to their Cabernet flight. Be the group that makes kid-friendly policies sustainable.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Build the day around the smallest human</h2>
+        <p>
+          <strong>Nap and meal windows rule the calendar</strong> — not the influencer itinerary. If your child melts at
+          2 p.m., do not schedule the “best” tasting at 1:45. Morning seatings often win: cooler, calmer, shorter lines.
+        </p>
+        <p>
+          <strong>One parent fully on kid duty</strong> while the other tastes — or swap halves of the flight. Trying to
+          dual-wield a glass and a sprinting preschooler is how wine ends up on linen and patience ends up in the car.
+        </p>
+        <p>
+          <strong>Bring the boring gear:</strong> snacks you know they will eat, water, wipes, sunscreen, hat, a quiet
+          activity, change of clothes. Do not rely on gift-shop crackers as a complete nutrition plan.
+        </p>
+        <p>
+          <strong>Designate a sober driver</strong> who is truly sober. Kids in the car raise the stakes; rideshare with
+          car seats is logistics-heavy — plan it before the first pour.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Stop count and corridor choice</h2>
+        <p>
+          Main-road destination estates with food and lawns can be easier than tiny quiet rooms with no buffer space —
+          but weekends on
+          <a href="/guides/rancho-california-road-wine-tasting" class="text-[var(--accent)] underline">Rancho California Road</a>
+          are louder. Quieter
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola</a>
+          days can be lovely if the estate explicitly allows kids and you keep expectations modest.
+        </p>
+        <p>
+          Two clustered stops beat three heroic ones. If the first stop is a win, leave while joy is high. Ending on a
+          tantrum in a third parking lot teaches nobody about Syrah.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Estates with kid-friendly tags in our directory</h2>
+        <p>
+          These listings carry a kid-friendly flag in our data. <strong>Call or check the winery site the week you go</strong>
+          — events, private buyouts, and policy updates override any directory.
+        </p>
+        <ul class="space-y-2">
+          {kidFriendly.map((w) => (
+            <li class="rounded-xl border border-stone-200 bg-white px-4 py-3">
+              <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                {w.name}
+              </a>
+              <span class="text-stone-500 text-sm">
+                {' '}
+                · {w.price_range} · {w.rating}/5 · {(w as any).corridor || w.location}
+              </span>
+              {w.kid_friendly?.notes && (
+                <p class="text-sm text-stone-600 mt-1">{w.kid_friendly.notes}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+        <p>
+          Full searchable list:
+          <a href="/wineries" class="text-[var(--accent)] underline">Temecula wineries directory</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Food, shade, and heat</h2>
+        <p>
+          Hungry kids and warm wine-country afternoons are a bad cocktail. Prioritize estates with real food or plan a
+          proper lunch break off-site. Shade matters — strollers on full-sun gravel turn into ovens. Summer strategy
+          overlaps our heat guidance: earlier tastings, water always in the car, shorter final stop.
+        </p>
+        <p>
+          Non-alcoholic options for the designated adult and older teens (where allowed on property — still no underage
+          alcohol) keep the table from feeling like a punishment zone. Ask about juice, soda, or mocktails without
+          embarrassment.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Etiquette that keeps doors open</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Reserve and mention kids if the form allows notes — surprises help nobody</li>
+          <li>Keep volume reasonable; step outside for meltdowns</li>
+          <li>Do not let children handle glasses, spit cups, or production equipment</li>
+          <li>Tip well when staff help your family succeed</li>
+          <li>Skip peak festival stomps unless the event is explicitly family-designed</li>
+        </ul>
+        <p>
+          Harvest weekends are magical and crowded — see
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest season</a>
+          before you bring littles into peak chaos.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">When to leave the kids with a sitter</h2>
+        <p>
+          Choose adult-only if you want long seated pairings, heavy weekend party energy, multiple serious red flights,
+          or a proposal/anniversary mood that needs quiet. There is no moral failure in hiring help and doing a deeper
+          tasting day. Temecula will still be there next season — with or without crayons.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Sample family day (template)</h2>
+        <p>
+          <strong>10:00</strong> — Arrive first kid-friendly estate; order water immediately; one adult starts the flight
+          while the other walks the lawn edge.  
+          <strong>11:15</strong> — Snack in the car; bathroom break.  
+          <strong>11:45</strong> — Short drive to stop two (already clustered on the
+          <a href="/map" class="text-[var(--accent)] underline">map</a>).  
+          <strong>12:00–1:15</strong> — Second tasting or shared food-focused visit.  
+          <strong>1:30</strong> — Real lunch or head home before the heat-and-nap crash.
+        </p>
+        <p>
+          That is a full win. Resist the “one more famous place” add-on unless both kids and adults still have margin.
+          Weekday versions of this template are calmer; weekend versions need holds — see
+          <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a>.
+        </p>
+        <p>
+          If grandparents are along, assign roles explicitly: who tastes, who spots the toddler near the parking curb,
+          who holds the reservation QR. Ambiguity creates the only kind of blend you do not want.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          Wine tasting with kids in Temecula works when policy, pacing, food, and parental attention are designed on
+          purpose. Two good stops beat four miserable ones. Confirm kid rules, cluster on the map, keep someone sober,
+          and exit while the day is still a win.
+        </p>
+        <p>
+          Next:
+          <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a>,
+          <a href="/guides/pet-friendly-wineries" class="text-[var(--accent)] underline">pets</a> (different logistics),
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free Day Planner PDF</a>,
+          <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>

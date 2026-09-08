@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const rancho = [...wineries]
+  .filter((w) => String((w as any).corridor || '').toLowerCase().includes('rancho california'))
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0));
+
+const topRated = [...wineries]
+  .filter((w) => String((w as any).corridor || '').toLowerCase().includes('rancho'))
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 8);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Rancho California Road Wine Tasting Guide — Temecula',
+  datePublished: '2026-09-08',
+  dateModified: '2026-09-08',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'Rancho California Road Temecula wine tasting guide — destination energy, how to cluster stops, weekend vs weekday, and practical pacing.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/rancho-california-road-wine-tasting/',
+};
+---
+
+<Layout
+  title="Rancho California Road Wine Tasting Guide | Temecula"
+  description="Rancho California Road wine tasting in Temecula: corridor character, destination estates, reservations, clustering, and how to plan 2–3 stops without chaos."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Corridor · Sep 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Rancho California Road Wine Tasting Guide
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Rancho California Road is Temecula’s high-discovery spine — big signs, destination estates, restaurants, and
+          the weekend energy first-timers often imagine when they picture wine country. This guide explains how to use
+          the corridor well: who it fits, how many stops, when to book, and how to avoid turning a great day into a
+          parking-lot marathon.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Confirm
+          hours, fees, and reservations with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What Rancho California Road feels like</h2>
+        <p>
+          If De Portola is the scenic working-vineyard lane, <strong>Rancho California Road</strong> is the boulevard of
+          arrival. Many of Temecula’s most recognized names, largest amenity sets, and easiest “we Googled wineries and
+          drove” destinations sit along or just off this corridor. You will see coaches, rideshares, anniversary parties,
+          and people dressed for photos — especially Friday afternoon through Sunday.
+        </p>
+        <p>
+          That density is a feature when you want options: food on-site, structured tastings, gift shops, occasional live
+          music, and clear reservation products. It is a tax when you want silence, empty parking, and a two-hour
+          philosophical chat with the winemaker on a peak Saturday at 2 p.m. without a hold. Neither corridor is morally
+          better. They solve different days. Pair this guide with our
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola Road guide</a>
+          if you are building a two-day trip.
+        </p>
+        <p>
+          Use the <a href="/map" class="text-[var(--accent)] underline font-medium">Temecula wine map</a> before you fall
+          in love with three pins that look close on a phone and are not close in traffic. Clustering still wins on the
+          main road — “nearby on the same spine” beats “famous but opposite ends of the valley.”
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">Who this corridor is for</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>First-timers who want recognizable estates and clear hospitality products</li>
+          <li>Groups that need food, restrooms, and shade without a separate restaurant scavenger hunt</li>
+          <li>Celebrations that benefit from atmosphere, music calendars, and photo-friendly grounds</li>
+          <li>Visitors short on research time who still want a polished tasting day</li>
+          <li>Anyone pairing one landmark stop with quieter corridor stops on a second day</li>
+        </ul>
+        <p>
+          Who might weight elsewhere: travelers allergic to weekend crowds; people seeking only boutique isolation; guests
+          who refuse to book ahead on Saturdays. Even then, one Rancho stop can anchor a mixed itinerary if the drive
+          order is clean.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">How many stops on Rancho?</h2>
+        <p>
+          Same physics as our
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries in one day</a>
+          guide — with a main-road twist: check-in lines and parking add minutes you did not budget in the hotel lobby.
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Two stops:</strong> Ideal on hot weekends, with kids in the party, or when lunch is a real event.</li>
+          <li><strong>Three stops:</strong> Sweet spot for most full days if you book the scarce midday slot first.</li>
+          <li><strong>Four stops:</strong> Only with spit discipline, early start, and almost no backtracking off-corridor.</li>
+        </ul>
+        <p>
+          Destination estates often run longer experiences when you add grounds walks, food, and retail. That is not
+          failure — it is the product. Cut stop count before you cut enjoyment.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Weekends vs weekdays on the spine</h2>
+        <p>
+          <strong>Weekends</strong> bring the full social product: energy, music, full kitchens, and competition for
+          seats. Book ahead. Arrive at the front of your window. Accept that “just walking in” is a hobby, not a plan.
+          Read
+          <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend tasting</a>
+          for corridor-wide patterns.
+        </p>
+        <p>
+          <strong>Weekdays</strong> still have life — Temecula is not empty Tuesday — but staff often have more time, and
+          parking is less of a blood sport. Some food programs run reduced hours; verify lunch if you are counting on a
+          full menu. Heat still matters in summer afternoons; earlier seatings help.
+        </p>
+        <p>
+          Harvest season (late summer into fall) stacks events on top of normal weekend load. See
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest season in Temecula</a>
+          before you assume a quiet patio in September.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Building a Rancho day that works</h2>
+        <p>
+          <strong>Book the bottleneck first.</strong> The tasting you care about most — or the one with the worst
+          walk-in odds — gets the calendar hold. Build lunch and softer stops around it.
+        </p>
+        <p>
+          <strong>Start earlier than Instagram suggests.</strong> Morning light, shorter lines, cooler air. Late afternoon
+          can be beautiful and also exhausted.
+        </p>
+        <p>
+          <strong>Protect food and water.</strong> Main-road estates often make this easy; still do not skip calories
+          between pours. Designate a driver or rideshare. Sip-and-spit is normal when you are moving between properties.
+        </p>
+        <p>
+          <strong>One flex stop.</strong> Decide in advance which visit can shrink or vanish if a flight runs long. Rigid
+          four-stop grids break on Rancho faster than on quiet roads because amenities invite lingering.
+        </p>
+        <p>
+          For a printable corridor template, grab the free
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">Wine Day Planner PDF</a>
+          (Day 1 / Day 2 — any day of the week).
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Estates tagged Rancho California in our directory</h2>
+        <p>
+          Corridor tags in our data help shortlisting. Always confirm address and access on the winery’s official site —
+          driveways and tasting venues evolve.
+        </p>
+        {rancho.length === 0 ? (
+          <p>
+            Browse the full <a href="/wineries" class="text-[var(--accent)] underline">wineries list</a> and
+            <a href="/map" class="text-[var(--accent)] underline">map</a> if tags are incomplete.
+          </p>
+        ) : (
+          <ul class="space-y-2">
+            {rancho.map((w) => (
+              <li class="rounded-xl border border-stone-200 bg-white px-4 py-3">
+                <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-stone-500 text-sm">
+                  {' '}
+                  · {w.price_range} · {w.rating}/5
+                  {w.pet_friendly ? ' · pet-friendly tag' : ''}
+                  {w.has_views ? ' · views tag' : ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {topRated.length > 0 && rancho.length === 0 && (
+          <ul class="space-y-2">
+            {topRated.map((w) => (
+              <li class="rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm">
+                <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-stone-500"> · {(w as any).corridor || w.location}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Rancho vs De Portola (quick contrast)</h2>
+        <p>
+          <strong>Rancho:</strong> discovery, amenities, social energy, heavier weekend load.  
+          <strong>De Portola:</strong> scenery-forward, often more boutique scale, still busy when famous — just a
+          different default mood.
+        </p>
+        <p>
+          Best two-day shape for many visitors: one day weighted Rancho for polish and options, one day weighted De
+          Portola for hills and conversation — not six random trophies in one afternoon. First-timer single day? Anchor
+          one or two Rancho stops, keep total at three, and read
+          <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer tasting route</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Practical packing for the main road</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Reservations screenshots offline — cell service can hiccup in pockets of the valley</li>
+          <li>Layers, sunscreen, water bottle; closed-toe shoes if you will walk grounds</li>
+          <li>Rideshare app logged in if your group is swallowing flights</li>
+          <li>Patience budget for parking and check-in on peak days</li>
+          <li>Spit cup comfort without apology when you are the driver later</li>
+        </ul>
+        <p>
+          For views-first planning on any corridor, see
+          <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Sip with a View</a>.
+          For “best of” framing,
+          <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">Best Temecula Wineries</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Responsible tasting</h2>
+        <p>
+          Main roads still have real traffic, families, and enforcement. Plan a designated driver, tour, or rideshare.
+          We are an independent publisher — not a winery, not a taxi, not a booking desk. We do not sell alcohol on this
+          site. Confirm everything with the estate before you drive.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          Rancho California Road is Temecula’s front door for a reason: options, energy, and destination hospitality.
+          Use it with reservations, tight clustering, realistic stop counts, and respect for heat and harvest calendars.
+          Save quieter corridors for contrast — not as a punishment for “doing the famous road wrong.”
+        </p>
+        <p>
+          Continue with
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola</a>,
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">stop counts</a>,
+          or <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>
