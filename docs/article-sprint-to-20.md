@@ -22,14 +22,14 @@
 | 2–3 | 12 | `temecula-wine-tasting-with-kids` | Temecula Wine Tasting with Kids | **done 2026-09-08** (catch-up) |
 | 2–3 | 13 | `temecula-wine-tour-vs-self-drive` | Wine Tour vs Self-Drive in Temecula | **done 2026-09-08** (catch-up) |
 | 2–3 | 14 | `what-to-wear-temecula-wine-tasting` | What to Wear for Temecula Wine Tasting | **done 2026-09-08** (catch-up) |
-| 4 | 15 | `temecula-sparkling-wine-guide` | Temecula Sparkling Wine Guide | pending |
-| 4 | 16 | `temecula-wine-country-in-summer-heat` | Temecula Wine Country in Summer Heat | pending |
+| 4 | 15 | `temecula-sparkling-wine-guide` | Temecula Sparkling Wine Guide | **done 2026-09-11** |
+| 4 | 16 | `temecula-wine-country-in-summer-heat` | Temecula Wine Country in Summer Heat | **done 2026-09-11** |
 | 5 | 17 | `temecula-anniversary-wine-day` | Anniversary or Proposal Day in Temecula | pending |
 | 5 | 18 | `temecula-wine-and-food-pairing-day` | Building a Food-and-Wine Day in Temecula | pending |
 | 6 | 19 | `temecula-wine-mistakes-first-visit` | First-Visit Mistakes to Avoid in Temecula | pending |
 | 6 | 20 | `temecula-fall-wine-events-guide` | Fall Wine Events & Stomps in Temecula | pending |
 
-**Long-form guide count after catch-up: 14 / 20** (6 remaining)
+**Long-form guide count: 16 / 20** (4 remaining)
 
 ## Existing 8 (do not rewrite as “new”)
 1. best-temecula-wineries  

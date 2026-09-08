@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineries from '../../data/wineries.json';
+
+const sparklingHints = [...wineries]
+  .filter((w) =>
+    (w.varietals || []).some((v) =>
+      /spark|champ|brut|blanc de|prosecco|cava|methode|méthode|bubbl/i.test(v)
+    )
+  )
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+  .slice(0, 12);
+
+const topRated = [...wineries].sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 8);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Temecula Sparkling Wine Guide',
+  datePublished: '2026-09-11',
+  dateModified: '2026-09-11',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'Temecula sparkling wine guide: how bubbles show up in the valley, what to ask for, pairing and celebration tips, and how to plan a sparkling-forward tasting day.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-sparkling-wine-guide/',
+};
+---
+
+<Layout
+  title="Temecula Sparkling Wine Guide | Bubbles in Wine Country"
+  description="Plan a Temecula sparkling wine day: styles, questions to ask, celebration pacing, heat tips, and directory-linked estates. Independent Bellie Acres guide."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Styles · Sep 11, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Temecula Sparkling Wine Guide
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Bubbles are not a side note in Temecula — they are how many celebrations start, how hot afternoons stay
+          drinkable, and how first-timers discover that “wine country” is not only heavy reds. This guide covers what
+          sparkling can mean here, how to ask for it, and how to build a day that keeps the fizz (and your pace) intact.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Confirm
+          current pours and fees with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What “sparkling” means on a Temecula menu</h2>
+        <p>
+          Labels and flight lists use several words for bubbles: sparkling, brut, extra dry, blanc de blancs, blanc de
+          noirs, sparkling rosé, or a house cuvée name. Methods and grape choices vary by producer. Some estates lean
+          traditional bottle fermentation stories; others feature tank-method freshness or a simple, fruit-forward
+          sparkler built for patio joy. You do not need a sommelier certificate — you need curiosity and a few good
+          questions.
+        </p>
+        <p>
+          Temecula’s warm-climate fruit often shows ripe orchard and citrus notes in whites and berries in rosés. That
+          profile can make sparkling feel generous and food-friendly. It is also why a chilled pour can outshine a warm
+          heavy red at 2 p.m. in August — see our
+          <a href="/guides/temecula-wine-country-in-summer-heat" class="text-[var(--accent)] underline">summer heat guide</a>
+          for full-day pacing.
+        </p>
+      </section>
+
+      <section class="rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 space-y-4">
+        <h2 class="text-2xl font-serif text-stone-900">Questions worth asking at the bar</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Do you pour a sparkling today — still, flight, or by the glass?</li>
+          <li>Is it dry (brut) or sweeter? What fruit shows first?</li>
+          <li>Any sparkling rosé or blanc de noirs on the list?</li>
+          <li>Is this made for aging talk, or for drink-now celebration?</li>
+          <li>Can we open with bubbles before the red flight?</li>
+        </ul>
+        <p>
+          Opening with sparkling is smart for groups: it sets a festive tone, cleanses the palate, and gives the
+          designated driver a clear moment to commit to spit or skip. Staff would rather guide you than watch someone
+          force a hot Cabernet first when the patio is ninety degrees.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Build a sparkling-forward day</h2>
+        <p>
+          You rarely need six bubble stops. Treat sparkling as a <strong>theme</strong>, not a scavenger hunt.
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>
+            <strong>Two stops:</strong> Ideal for proposals, anniversaries, or weekday calm — one estate known for a
+            polished flight, one for views or food.
+          </li>
+          <li>
+            <strong>Three stops:</strong> Full day with lunch. Ask for sparkling at stop one and three; let stop two be a
+            still wine contrast.
+          </li>
+          <li>
+            <strong>Skip the fourth</strong> if anyone is already warm, tired, or sugar-fatigued from dessert styles.
+          </li>
+        </ul>
+        <p>
+          Cluster on the
+          <a href="/map" class="text-[var(--accent)] underline">map</a>.
+          <a href="/guides/rancho-california-road-wine-tasting" class="text-[var(--accent)] underline">Rancho California Road</a>
+          often has destination energy and food; 
+          <a href="/guides/de-portola-road-wine-tasting" class="text-[var(--accent)] underline">De Portola</a>
+          can pair scenery with a quieter pour. Use
+          <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">stop-count physics</a>
+          so celebration does not become logistics failure.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Food, heat, and glass care</h2>
+        <p>
+          Bubbles love salt, fat, and crunch: chips and dips, fried appetizers, creamy cheeses, brunch eggs, spicy bites.
+          If an estate has a real kitchen, ask what they pair with the house sparkling instead of guessing.
+        </p>
+        <p>
+          Heat is the enemy of both wine and mood. Keep bottles and flutes out of direct sun when you can. Order ice
+          water with every flight. If you are self-driving, designate a sober driver before the first cork-pop energy
+          hits the table — see
+          <a href="/guides/temecula-wine-tour-vs-self-drive" class="text-[var(--accent)] underline">tour vs self-drive</a>.
+        </p>
+        <p>
+          Sparkling can feel “lighter” and sneak up on people. Sip-and-spit is still allowed on a celebration day. You
+          are tasting, not auditioning for a champagne-only endurance contest.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Celebrations without chaos</h2>
+        <p>
+          Anniversaries, birthdays, and proposals often start with bubbles. Book the scarce seat first. Mention the
+          occasion in the reservation note if you want a slightly better table — not a flash mob. Keep the group small
+          enough that everyone hears the pour story. For proposal pacing and privacy cues, pair this guide with future
+          anniversary planning notes and our
+          <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free Wine Day Planner PDF</a>.
+        </p>
+        <p>
+          Dress for photos and gravel — 
+          <a href="/guides/what-to-wear-temecula-wine-tasting" class="text-[var(--accent)] underline">what to wear</a>
+          still applies when you are holding a flute.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Directory clues for sparkling seekers</h2>
+        <p>
+          Our winery data tags varietals when known. Listings that mention sparkling-related terms are a starting point —
+          menus rotate. Always confirm the pour the week you go.
+        </p>
+        {sparklingHints.length > 0 ? (
+          <ul class="space-y-2">
+            {sparklingHints.map((w) => (
+              <li class="rounded-xl border border-stone-200 bg-white px-4 py-3">
+                <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-stone-500 text-sm">
+                  {' '}
+                  · {w.price_range} · {w.rating}/5 · {(w as any).corridor || w.location}
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>
+            Varietal tags are incomplete for bubbles in the data set right now. Use the
+            <a href="/wineries" class="text-[var(--accent)] underline">full directory</a>
+            and estate sites, or start with highly rated hosts known for full hospitality programs:
+          </p>
+        )}
+        {sparklingHints.length === 0 && (
+          <ul class="space-y-2">
+            {topRated.map((w) => (
+              <li class="rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm">
+                <a href={`/wineries/${w.slug}`} class="font-medium text-stone-900 hover:text-[var(--accent)]">
+                  {w.name}
+                </a>
+                <span class="text-stone-500"> · {w.rating}/5</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">How sparkling fits a broader Temecula education</h2>
+        <p>
+          After bubbles, many visitors graduate to Rhône-leaning reds, Cabernet, or Rhône whites. Use sparkling as the
+          on-ramp, not the only lane. Our
+          <a href="/guides/temecula-red-varietals" class="text-[var(--accent)] underline">red varietals guide</a>
+          and
+          <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer route</a>
+          help you sequence learning without overloading one afternoon.
+        </p>
+        <p>
+          Harvest season can add limited releases and event energy — 
+          <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest guide</a>
+          — which sometimes includes special sparkling pours. Book early when calendars fill.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Responsible fizz</h2>
+        <p>
+          Carbonation can accelerate how fast you feel alcohol. Eat real food. Alternate water. Do not drive impaired.
+          We are an independent publisher — not a winery, tour operator, or booking desk. Confirm everything with the
+          estate before you celebrate.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Buying bottles to take home</h2>
+        <p>
+          If a sparkling wine is the highlight of the flight, ask about club allocations, disgorgement notes if offered,
+          and how the estate wants bottles stored for the ride home. Keep purchases out of a hot trunk. A soft cooler in
+          the car is not overkill in inland summer — it is how the bottle you loved on the patio still tastes like itself
+          at dinner.
+        </p>
+        <p>
+          Not every great pour needs a case purchase. One or two bottles that mark the day are enough. If you are flying
+          home, confirm airline and packing rules before you stack glass in a suitcase. Local guests can return on a
+          cooler weekday for a quieter repurchase without weekend parking stress.
+        </p>
+        <p>
+          First-timers sometimes assume sparkling is only for toasting. In Temecula it can be a full flight theme, a heat
+          strategy, and a bridge into still wines the same afternoon. Let the staff sequence the pours; your job is to
+          stay curious, hydrated, and on the clock you actually booked.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Bottom line</h2>
+        <p>
+          Temecula sparkling wine is celebration fuel, heat strategy, and a friendly first pour. Ask for it by name, open
+          the day with it when it fits, keep stop counts sane, and let the bubbles serve the people at the table — not the
+          other way around.
+        </p>
+        <p>
+          Continue with
+          <a href="/guides/temecula-wine-country-in-summer-heat" class="text-[var(--accent)] underline">summer heat</a>,
+          <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best wineries</a>,
+          or <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+</Layout>
