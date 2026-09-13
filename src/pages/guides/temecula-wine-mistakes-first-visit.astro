@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'First-Visit Mistakes to Avoid in Temecula Wine Country',
+  datePublished: '2026-09-13',
+  dateModified: '2026-09-13',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'Common first-visit mistakes in Temecula wine country — overbooking, skipping reservations, heat, food, and driving — and how to avoid them.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-wine-mistakes-first-visit/',
+};
+---
+
+<Layout
+  title='First-Visit Mistakes to Avoid in Temecula Wine Country'
+  description='First-visit mistakes to avoid in Temecula: too many wineries, no reservations, heat, skipping food, and driving after full pours.'
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Planning · Sep 13, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          First-Visit Mistakes to Avoid in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Most disappointing Temecula days are not about “bad wine.” They are about too many stops, no reservations, heat, empty stomachs, and driving after full pours. This guide names the mistakes so your first visit can skip them.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Confirm
+          hours, fees, and policies with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 1: Collecting estates instead of clustering them</h2>
+        <p>
+          Five pins on opposite ridges looks efficient on a phone and miserable in a car. Temecula rewards two or three nearby stops. Use the <a href="/map" class="text-[var(--accent)] underline">map</a> and <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries in one day</a> before you fall in love with a random top-ten list.
+        </p>
+        <p>
+          A first-timer route already exists: <a href="/guides/first-timer-tasting-route" class="text-[var(--accent)] underline">first-timer tasting route</a>. Steal its pacing even if you swap the names.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 2: Treating Saturday walk-ins as a plan</h2>
+        <p>
+          Popular patios book. Live music days book. Harvest weekends book. Walk-in hope is a strategy tax. Reserve the seats that matter, then leave room for one flexible stop if the day is going well.
+        </p>
+        <p>
+          Screenshot the holds. Arrive at the opening of your window. Late groups get compressed flights and less of the conversation that makes a first visit educational.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 3: Ignoring heat and shoes</h2>
+        <p>
+          Inland afternoons can drain a patio that looked perfect at breakfast. Book earlier in summer. Bring water. Wear gravel-capable shoes. Read <a href="/guides/temecula-wine-country-in-summer-heat" class="text-[var(--accent)] underline">summer heat</a> and <a href="/guides/what-to-wear-temecula-wine-tasting" class="text-[var(--accent)] underline">what to wear</a>.
+        </p>
+        <p>
+          Uncovered hilltop views are windy and hot in turns. A view you cannot sit in is not a win. See <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Sip with a View</a> for seating honesty.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 4: No food, then surprise hunger</h2>
+        <p>
+          Flights on an empty stomach feel stronger and worse. Hold lunch. Protein helps. Sugar-only snacks make reds taste harsher. Build a food-and-wine day on purpose rather than foraging at 3 p.m.
+        </p>
+        <p>
+          Kids and dogs add logistics. Confirm both policies independently. Do not assume a “family vibe” Instagram photo is a written rule.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 5: Everyone drinks, nobody drives</h2>
+        <p>
+          This is the expensive mistake. Designate a driver, book a tour, or use rideshare with a tight geography. Sip-and-spit is normal and smart. Buying the bottle is better than “winning” the flight. Our <a href="/guides/temecula-wine-tour-vs-self-drive" class="text-[var(--accent)] underline">tour vs self-drive</a> guide is blunt on purpose.
+        </p>
+        <p>
+          Impaired driving is not a wine-country souvenir. End the tasting day before you need heroics in Saturday traffic.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Mistake 6: Trusting a ranking more than the estate in front of you</h2>
+        <p>
+          “Best” depends on sparkling vs reds, kids, dogs, noise, and whether you have a table. Use <a href="/guides/best-temecula-wineries" class="text-[var(--accent)] underline">best Temecula wineries</a> as a filter, then confirm today’s menu on the official site. Featured badges on the list page are paid discovery, not an editorial score.
+        </p>
+        <p>
+          Smaller estates can be the better first visit if the staff has time to talk. Weekdays help. Read <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">A cleaner first-visit script</h2>
+        <p>
+          Pick a corridor. Reserve two stops. Eat. Water. One sober adult or a car service. Screenshot policies. Leave white space. That is the whole trick.
+        </p>
+        <p>
+          Independent guide from Bellie Acres Wine. We do not sell alcohol or take reservations. Confirm everything with each estate. 21+ for tastings. Print the <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free Wine Day Planner</a> and actually fill it in.
+        </p>
+      </section>
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What a strong first visit actually looks like</h2>
+        <p>
+          You wake up with two named estates, one lunch, water in the car, and a driver plan. You are not still arguing
+          in the hotel lobby about whether to add a famous name that sits twenty minutes off the cluster. You arrive a
+          few minutes early, check in without panic, and actually hear the pour notes. You eat. You skip the third stop
+          if the second one ran long. You buy a bottle you liked. You get home without a story you have to hide.
+        </p>
+        <p>
+          That day will not look like an influencer montage. It will look like a competent trip. First-timers who chase
+          volume usually remember parking lots. First-timers who chase fit remember a patio, a grape, and a conversation.
+          Use the <a href="/wineries" class="text-[var(--accent)] underline">wineries list</a> to confirm addresses, then
+          stop collecting tabs. The list is a tool. It is not a dare.
+        </p>
+        <p>
+          If the group is mixed — one collector, one person who just wants lunch — say so out loud before you book.
+          Split the difference toward the slower person. Wine country is terrible at reconciling unspoken agendas. Put
+          the agenda on a note in the <a href="/wine-day-planner/" class="text-[var(--accent)] underline">planner PDF</a>
+          and treat it as the itinerary, not a suggestion you abandon at the first billboard.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Small operational misses that still ruin the mood</h2>
+        <p>
+          Forgetting the confirmation email. Arriving in dress shoes that cannot handle gravel. Leaving water in the
+          hotel. Assuming the dog can come indoors. Assuming the child can sit through a ninety-minute reserve flight.
+          Assuming the kitchen is open because the tasting room is open. These are not exotic errors. They are the ones
+          that turn a pretty valley into an irritable car.
+        </p>
+        <p>
+          Put policies, addresses, and hold times in one note. Charge the phone. Screenshot the map cluster. If someone
+          in the group is a planner and someone is a wanderer, let the planner win until the first glass is poured. After
+          that, wander inside the reservation you already have. That split of duties keeps first visits kind.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Write the plan before the freeway</h2>
+      <p>
+        Independent travel guidance from Bellie Acres Wine stays practical on purpose: clustered drives, reserved seats,
+        honest heat, real meals, and a designated driver. Confirm every fee, pour list, and outdoor policy with the
+        estate before you leave the hotel. Harvest weeks, holiday weekends, and sold-out terraces change the product
+        without changing the grapes. Plan the day you can actually keep, then enjoy the valley instead of managing a
+        spreadsheet of leftover pins.
+      </p>
+      </section>
+
+    </article>
+  </main>
+</Layout>

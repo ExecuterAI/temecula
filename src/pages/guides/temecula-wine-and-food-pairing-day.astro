@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Building a Food-and-Wine Day in Temecula',
+  datePublished: '2026-09-13',
+  dateModified: '2026-09-13',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'Plan a Temecula food-and-wine day: lunch holds, pairing logic, two-stop pacing, and how kitchens and tasting rooms actually line up.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-wine-and-food-pairing-day/',
+};
+---
+
+<Layout
+  title='Building a Food-and-Wine Day in Temecula'
+  description='How to build a Temecula food-and-wine day — real meals, pairing logic, two-stop pacing, and kitchens that match your tasting clock.'
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Food · Sep 13, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Building a Food-and-Wine Day in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          A Temecula food-and-wine day is a meal plan with two tasting rooms attached — not a tasting crawl with snacks. This guide shows how to sequence pours, hold real lunch, match protein to reds, and keep the kitchen and the flight on the same clock.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Confirm
+          hours, fees, and policies with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Start with the table, then pick the pours</h2>
+        <p>
+          If lunch is the centerpiece, book it first. Then choose one tasting before the meal and one after only if the drive is short and the group still has attention. Three tastings plus a serious lunch is how people skip food and regret it.
+        </p>
+        <p>
+          Estates with full restaurants, picnic programs, or nearby kitchens are easier than a tasting-only room plus a mystery drive to Old Town at peak traffic. Plot the meal on the <a href="/map" class="text-[var(--accent)] underline">map</a> beside the tasting, not across the valley.
+        </p>
+        <p>
+          Tell the restaurant you are tasting nearby. They can pace courses. You can avoid stacking a heavy Cabernet flight immediately before a rich entrée if the staff knows the plan.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Pairing without a textbook</h2>
+        <p>
+          Simple rules travel well: sparkling and salads or oysters if offered; richer whites with cream or poultry; Grenache and lighter reds with picnic boards; Cabernet and Syrah with steak or short ribs. Temecula’s ripe fruit likes salt, fat, and grill marks more than sugar-only snacks.
+        </p>
+        <p>
+          Our <a href="/pairings" class="text-[var(--accent)] underline">pairings hub</a> and <a href="/guides/temecula-red-varietals" class="text-[var(--accent)] underline">red varietals guide</a> give estate-linked examples. Use them as a shopping list for the day, not as a homework assignment at the table.
+        </p>
+        <p>
+          If the group splits — one person wants bubbles, one wants Syrah — start together on sparkling or a lighter pour, eat, then let the reds happen after protein. Palates reset with food. They do not reset with another cracker.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Two-stop food day template</h2>
+        <p>
+          Late morning tasting (sixty to ninety minutes). Walk or short drive to lunch. Sit down. No “quick extra winery” while the kitchen holds your table. Optional afternoon tasting next door only if everyone is still sharp and someone is sober enough to drive.
+        </p>
+        <p>
+          Weekend holds fill. Book both the tasting and the lunch. Leave a buffer so a slow check-in does not make you late for courses. Read <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a> if you can move the celebration to a Thursday.
+        </p>
+        <p>
+          Picnic-only days still need shade, water, and a backup indoor plan for heat. Do not trespass into vineyard rows with a blanket.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What not to do</h2>
+        <p>
+          Do not treat the tasting flight as lunch. Do not drink four reds on an empty stomach and then order a heavy steak as if the food will rewind the clock. Do not skip water. Do not leave the designated driver tasting “just a little.”
+        </p>
+        <p>
+          Do not assume every estate kitchen runs full hours on weekdays. Verify. A tasting room that served a great Saturday lunch may be pours-only on Tuesday.
+        </p>
+        <p>
+          Do not force a pairing stunt that the kitchen does not offer. If they have a set menu, enjoy it. The goal is a good meal with wine, not a sommelier exam.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Shopping the list after you eat</h2>
+        <p>
+          Buy bottles that matched the food you actually liked. Keep them out of a hot car. A small cooler is part of a food-and-wine kit, not an extra. If you are flying home, pack later — do not bake wine in a trunk while you take a scenic detour.
+        </p>
+        <p>
+          Continue with <a href="/guides/how-many-wineries-one-day" class="text-[var(--accent)] underline">how many wineries in one day</a> and the <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free planner</a>. Independent guide only. Confirm menus with each estate. 21+ for alcohol tastings.
+        </p>
+      </section>
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">A realistic clock for a food-and-wine day</h2>
+        <p>
+          Ten-thirty tasting. Twelve-thirty lunch. Three o’clock optional nearby pour only if lunch did not run long.
+          That is the whole architecture. Anything denser turns the meal into an inconvenience, which is the opposite of
+          a food-and-wine day. If you want a tasting-forward day, skip the long lunch and eat a proper breakfast plus a
+          serious snack — but do not pretend crackers are a culinary itinerary.
+        </p>
+        <p>
+          Share dishes if the table is small. Order water as if it were part of the pairing. If someone is tasting
+          seriously, spit during the morning flight and drink with food later. That is how professionals keep a palate
+          and a driver’s license. It is also how you still taste the Syrah after the salad.
+        </p>
+        <p>
+          When in doubt, fewer wines, better food. Temecula has enough kitchens and picnic programs to support that
+          choice. Use the list and map, then put the fork on the schedule with the same seriousness as the glass.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Dietary needs and mixed groups</h2>
+        <p>
+          Vegetarian, gluten-free, and no-alcohol guests are common. Ask the kitchen when you book, not when the bread
+          arrives. A food-and-wine day that leaves one person eating fries from a kids menu while everyone else gets a
+          pairing board is not hospitality. Most Temecula kitchens can adapt if they have notice.
+        </p>
+        <p>
+          Mixed drinkers should not force a single flight identity. Sparkling or a lighter pour to start, food, then
+          optional reds for those who want them. The designated driver gets a real meal and a real mocktail or water
+          service without being treated as an afterthought. That is part of pairing too — pairing the day to the people.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Keep the meal on the itinerary</h2>
+      <p>
+        Independent travel guidance from Bellie Acres Wine stays practical on purpose: clustered drives, reserved seats,
+        honest heat, real meals, and a designated driver. Confirm every fee, pour list, and outdoor policy with the
+        estate before you leave the hotel. Harvest weeks, holiday weekends, and sold-out terraces change the product
+        without changing the grapes. Plan the day you can actually keep, then enjoy the valley instead of managing a
+        spreadsheet of leftover pins.
+      </p>
+      </section>
+
+    </article>
+  </main>
+</Layout>

@@ -1,0 +1,148 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Fall Wine Events and Grape Stomps in Temecula',
+  datePublished: '2026-09-13',
+  dateModified: '2026-09-13',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'Temecula fall wine events and grape stomps — harvest timing, what to expect, reservations, crowds, and how to plan around festivals.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-fall-wine-events-guide/',
+};
+---
+
+<Layout
+  title='Fall Wine Events and Grape Stomps in Temecula'
+  description='Temecula fall wine events and grape stomps: harvest timing, what stomps are like, crowd strategy, and how to plan around festivals.'
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Seasonal · Sep 13, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Fall Wine Events &amp; Stomps in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Fall in Temecula is harvest energy, weekend events, and the occasional grape stomp — plus real vineyard work happening in the background. This guide explains how to pick an event day, what stomps are actually like, and how not to let a festival crowd wreck the tasting you came for.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. Confirm
+          hours, fees, and policies with each estate. 21+ for alcohol tastings.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-12 text-stone-700 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Fall is a season, not a single weekend</h2>
+        <p>
+          Harvest in Temecula stretches. Early whites can move in summer; many reds run later. “Fall events” therefore overlap harvest work, not a neat calendar square. Read our <a href="/guides/temecula-harvest-season" class="text-[var(--accent)] underline">harvest season guide</a> for the agricultural arc, then use this page for visitor events.
+        </p>
+        <p>
+          Estate calendars change every year. Treat any stomp, harvest dinner, or concert listing as something to confirm on the winery’s official site the week you go. We are an independent publisher, not the box office.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">What a grape stomp usually is</h2>
+        <p>
+          Most public stomps are timed, ticketed, and playful — bins, grapes, laughter, photos — not a secret invitation onto a commercial crush pad. Wear shoes you can wash or skip. Expect stains. Expect a line. Expect that the wine you drink afterward was not the fruit you just stepped on.
+        </p>
+        <p>
+          If you want romance more than a festival, a reserved patio during harvest weeks can be quieter than a stampeded stomp slot. Families should confirm age rules; 21+ still applies to alcohol even when kids are watching a stomp from the side.
+        </p>
+        <p>
+          Do not wander into vineyard rows or equipment areas for a better camera angle. Harvest crews are working. Stay where guests are invited.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Crowd strategy</h2>
+        <p>
+          Event weekends behave like peak Saturdays with extra parking stress. Reserve everything. Arrive early. Cluster on one corridor. Do not add a third tasting across the valley after a stomp. Use <a href="/guides/weekday-vs-weekend-tasting" class="text-[var(--accent)] underline">weekday vs weekend</a> if you can take a Thursday harvest lunch instead.
+        </p>
+        <p>
+          Live music plus stomps plus full pours is a lot of stimulus. If anyone in the group wants a quiet educational tasting, book that on a different day. Mixing both into one afternoon usually fails one of them.
+        </p>
+        <p>
+          Designate a driver or book a tour. Festival energy is exactly when people over-pour. See <a href="/guides/temecula-wine-tour-vs-self-drive" class="text-[var(--accent)] underline">tour vs self-drive</a>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">How to build a fall day that is not only an event</h2>
+        <p>
+          Morning tasting before the stomp or concert. Real lunch. Event slot. Done. Or: skip the stomp, book a harvest-week patio, walk the permitted grounds, and watch bins move from a respectful distance. Both are legitimate fall days.
+        </p>
+        <p>
+          If you care about views, remember that fall light can be beautiful and parking worse. Hold the table. Bring a layer for evening. Pair with <a href="/guides/sip-with-a-view" class="text-[var(--accent)] underline">Sip with a View</a> only if the estate still has outdoor seating during the event.
+        </p>
+        <p>
+          Buy bottles you loved and get them out of the sun. A cooler in the car is harvest hygiene, not fussiness.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Tickets, fees, and honesty</h2>
+        <p>
+          Stomp tickets, tasting fees, and concert add-ons stack. Read the fine print. Some events include a glass; some do not. Some require a separate tasting reservation the same day. Screenshot the email.
+        </p>
+        <p>
+          Independent guide only. We do not sell tickets. Confirm dates, rain plans, and age policies with each estate. Drink responsibly. 21+ for alcohol. Continue with the <a href="/wine-day-planner/" class="text-[var(--accent)] underline">free Wine Day Planner</a> and <a href="/guides" class="text-[var(--accent)] underline">all guides</a>.
+        </p>
+      </section>
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">How to read an estate calendar like a visitor, not a marketer</h2>
+        <p>
+          Look for three facts: start time, what is included, and whether you still need a separate tasting reservation.
+          A stomp ticket that does not include a seated tasting can leave you standing in a line with no pour. A concert
+          add-on can close a patio you thought was yours. If the listing is vague, call. Vague plus harvest weekend is
+          how people arrive dressed for a quiet flight and walk into a festival.
+        </p>
+        <p>
+          Weather still wins. Inland fall afternoons can be hot; evenings can drop. Layers beat a single cute outfit.
+          If smoke or high wind cancels outdoor programming, have an indoor tasting hold or a meal reservation that does
+          not depend on the lawn. Do not assume a rain date. Ask.
+        </p>
+        <p>
+          Photograph the event you were invited to, not the workers you were not. Stay out of bins that are not the
+          public stomp. Thank staff — harvest weeks are long. A polite group gets better guidance on what is pouring
+          that week than a group treating the crush pad like a theme park.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Stomp day packing list</h2>
+        <p>
+          Shoes you can wash, a change if you are actually stepping in fruit, sunscreen, water, a layer for evening,
+          reservation screenshots, and a cooler for bottles. Leave the white linen fantasy at home unless the estate
+          told you the event is seated and clean. Public stomps are joyful and messy. Dress for the messy version.
+        </p>
+        <p>
+          If you do not want mess, skip the stomp and book a harvest-week tasting instead. You still get the season —
+          bins, early sun, a sense that the valley is working — without standing in a line of costumes. Both choices are
+          legitimate fall visits. The mistake is showing up to the wrong one by accident.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-serif text-stone-900">Keep fall plans written down</h2>
+      <p>
+        Ticketed stomps still need a written start time and a backup indoor tasting if the lawn closes.
+        Independent travel guidance from Bellie Acres Wine stays practical on purpose: clustered drives, reserved seats,
+        honest heat, real meals, and a designated driver. Confirm every fee, pour list, and outdoor policy with the
+        estate before you leave the hotel. Harvest weeks, holiday weekends, and sold-out terraces change the product
+        without changing the grapes. Plan the day you can actually keep, then enjoy the valley instead of managing a
+        spreadsheet of leftover pins.
+      </p>
+      </section>
+
+    </article>
+  </main>
+</Layout>
