@@ -13,7 +13,7 @@ export function getStaticPaths() {
 const { balloon } = Astro.props;
 ---
 
-<Layout title={balloon.name} description={`${balloon.name} — ${balloon.tagline}. Temecula hot air balloon trip planning on bellieacreswine.com.`}>
+<Layout title={balloon.name} description={`${balloon.name} — ${balloon.tagline}. Temecula hot air balloon trip planning on bellieacreswine.com.`} noindex={true}>
   <Navbar />
   <main class="max-w-5xl mx-auto px-6 py-12">
     <a href="/balloons" class="text-sm text-stone-500 hover:text-[var(--accent)]">← All balloon operators</a>

@@ -8,7 +8,11 @@ const events = wineries
   .flatMap(w => w.events.map(e => ({ ...e, winery: w.name, slug: w.slug })));
 ---
 
-<Layout title="Upcoming Events">
+<Layout
+  title="Upcoming Events"
+  description="Temecula winery events change constantly — confirm live music and specials with each estate. Bellie Acres Wine is an independent guide."
+  noindex={true}
+>
   <Navbar />
 
   <main class="max-w-5xl mx-auto px-6 py-16">
