@@ -1,43 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
-import wineries from '../data/wineries.json';
-
-const events = wineries
-  .filter(w => w.events && w.events.length > 0)
-  .flatMap(w => w.events.map(e => ({ ...e, winery: w.name, slug: w.slug })));
+import events from '../data/curated-events.json';
 ---
 
 <Layout
-  title="Upcoming Events"
-  description="Temecula winery events change constantly — confirm live music and specials with each estate. Bellie Acres Wine is an independent guide."
-  noindex={true}
+  title="Temecula Wine Country Events"
+  description="Upcoming Temecula community and wine-country events, including the Wine Country Run on November 8, 2026. Confirm dates with organizers. Independent notes from Bellie Acres Wine."
 >
   <Navbar />
-
   <main class="max-w-5xl mx-auto px-6 py-16">
-    <h1 class="text-6xl font-serif tracking-tight mb-3">Upcoming Events</h1>
-    <p class="text-xl text-stone-600 mb-12">Live music, tastings, and special events at Temecula wineries</p>
+    <h1 class="text-5xl sm:text-6xl font-serif tracking-tight mb-3">Upcoming events</h1>
+    <p class="text-xl text-stone-600 mb-6 max-w-3xl leading-relaxed">
+      A short list of dated Temecula wine-country and community events we can verify. Hours, tickets, and street
+      closures change — use the official link before you plan a tasting day around them.
+    </p>
+    <p class="text-stone-600 mb-12">
+      For harvest pacing (not a calendar), read the
+      <a class="text-[var(--accent)] underline" href="/guides/temecula-fall-wine-events-guide">fall events & grape stomps guide</a>.
+    </p>
 
-    {events.length > 0 ? (
-      <div class="space-y-6">
-        {events.map(event => (
-          <div class="bg-white border border-stone-200 rounded-3xl p-8 flex flex-col md:flex-row md:items-center gap-6">
-            <div class="flex-1">
-              <div class="text-emerald-600 font-medium">🎵 {event.type}</div>
-              <div class="text-3xl font-serif mt-1">{event.band}</div>
-              <div class="text-stone-600 mt-1">{event.winery}</div>
-            </div>
-            <div class="text-right md:text-left">
-              <div class="text-xl font-medium">{event.date}</div>
-              <div class="text-stone-600">{event.time}</div>
-              <a href={`/wineries/${event.slug}`} class="inline-block mt-3 text-[var(--accent)] hover:underline">View Winery →</a>
-            </div>
-          </div>
-        ))}
-      </div>
-    ) : (
-      <p class="text-stone-600">No upcoming events listed at this time. Check back soon!</p>
-    )}
+    <div class="space-y-6">
+      {events.map((event) => (
+        <article class="bg-white border border-stone-200 rounded-3xl p-8">
+          <div class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium">{event.date}</div>
+          <h2 class="text-3xl font-serif mt-2">{event.name}</h2>
+          <p class="text-stone-600 mt-1">{event.where}</p>
+          <p class="text-stone-700 mt-4 leading-relaxed">{event.blurb}</p>
+          <p class="mt-4 text-sm">
+            <a class="text-[var(--accent)] font-medium hover:underline" href={event.url} target="_blank" rel="noopener noreferrer">
+              Official info →
+            </a>
+            {event.facebook && (
+              <span>
+                <span class="mx-2 text-stone-300">·</span>
+                <a class="text-[var(--accent)] hover:underline" href={event.facebook} target="_blank" rel="noopener noreferrer">
+                  Facebook
+                </a>
+              </span>
+            )}
+          </p>
+        </article>
+      ))}
+    </div>
   </main>
 </Layout>

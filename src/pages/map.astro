@@ -135,6 +135,7 @@ const mapPlace = {
         <span class="w-3 h-3 bg-[var(--accent)] rounded-full"></span>
         Click any marker for address + details
       </span>
+      <span>Neighborhood names in dark sage are for orientation (not HOA lines)</span>
       <span>{withCoords.length} mapped estates on this Temecula wine map</span>
     </div>
 
@@ -266,9 +267,49 @@ const mapPlace = {
         map.setView(bounds[0], 13);
       }
 
+      const communityLabels = [
+        { name: 'Chardonnay Hills', lat: 33.5224194, lng: -117.1045772 },
+        { name: 'Crowne Hill', lat: 33.4993483, lng: -117.0834405 },
+        { name: 'Harveston', lat: 33.5377583, lng: -117.1573558 },
+        { name: 'Morgan Hill', lat: 33.4733989, lng: -117.0624849 },
+        { name: 'Paloma Del Sol', lat: 33.4956173, lng: -117.1036855 },
+        { name: 'Wolf Creek', lat: 33.4639213, lng: -117.1037230 },
+        { name: 'Meadowview', lat: 33.5212683, lng: -117.1359027 },
+        { name: 'Temeku Hills', lat: 33.5156503, lng: -117.1155894 },
+        { name: 'De Luz', lat: 33.5054275, lng: -117.2316669 },
+        { name: 'Redhawk', lat: 33.4692684, lng: -117.0911760 },
+      ];
+      communityLabels.forEach((c) => {
+        L.marker([c.lat, c.lng], {
+          icon: L.divIcon({
+            className: 'community-map-label',
+            html: `<span>${c.name}</span>`,
+            iconSize: [0, 0],
+            iconAnchor: [0, 0],
+          }),
+          zIndexOffset: 800,
+          interactive: false,
+        }).addTo(map);
+      });
+
       setTimeout(() => map.invalidateSize(), 100);
       window.addEventListener('resize', () => map.invalidateSize());
     };
     document.head.appendChild(script);
   </script>
+  <style is:global>
+    .community-map-label {
+      background: none !important;
+      border: none !important;
+    }
+    .community-map-label span {
+      color: #4a5e4e;
+      font-weight: 650;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      text-shadow: 0 0 6px #ffffff, 0 1px 0 #fff;
+      font-family: Montserrat, system-ui, sans-serif;
+    }
+  </style>
 </Layout>

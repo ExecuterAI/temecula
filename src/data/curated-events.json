@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Wine Country Run (Temecula Half Marathon, 10K, 5K & Kids Run)",
+    "date": "November 8, 2026",
+    "where": "Wilson Creek Winery & Vineyards",
+    "blurb": "Half marathon, 10K, 5K, and kids run through Temecula wine country. Start and finish at Wilson Creek. Confirm registration and course details on the official site.",
+    "url": "https://www.temeculahalf.com/",
+    "facebook": "https://www.facebook.com/temeculahalf"
+  },
+  {
+    "name": "De Portola Wine Trail Harvest Celebration",
+    "date": "November 8, 2026",
+    "where": "De Portola Road wineries",
+    "blurb": "Trail-wide harvest day with participating De Portola tasting rooms. Same date as the Wine Country Run — confirm parking and tickets.",
+    "url": "https://deportolawinetrail.com/events/"
+  },
+  {
+    "name": "Peltzer Pumpkin Farm & Harvest Festival",
+    "date": "Through October 31, 2026",
+    "where": "Peltzer Farms",
+    "blurb": "Seasonal pumpkin farm and harvest activities. Confirm hours on the farm site.",
+    "url": "https://www.peltzerfarms.com/"
+  },
+  {
+    "name": "Temecula Chilled",
+    "date": "December 2026",
+    "where": "Old Town Temecula",
+    "blurb": "Old Town winter / ice program. Dates posted each season by Visit Temecula Valley.",
+    "url": "https://www.visittemeculavalley.com/temecula-chilled/"
+  },
+  {
+    "name": "Holiday Taste of Old Town",
+    "date": "December 3, 2026",
+    "where": "Old Town Temecula",
+    "blurb": "Holiday tasting walk. Confirm tickets with Old Town Temecula.",
+    "url": "https://oldtowntemecula.org/events-tickets/"
+  }
+]
