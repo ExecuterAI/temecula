@@ -13,8 +13,8 @@ const wineryIndex = wineries.map((w) => ({
     w.location,
     w.price_range,
     ...(w.varietals || []),
-    w.pet_friendly ? 'pet friendly dogs' : '',
-    w.kid_friendly?.allowed ? 'kid friendly family children' : '',
+    w.pet_friendly ? 'pet friendly dog friendly dogs welcome pets dog dogs' : '',
+    w.kid_friendly?.allowed ? 'kid friendly family children kids' : '',
     w.has_views ? ['view views scenic', ...(w.view_tags || [])].join(' ') : '',
     w.slug,
   ]
@@ -96,6 +96,20 @@ const wineryIndex = wineries.map((w) => ({
           .replace(/"/g, '&quot;');
       }
 
+      function tokens(s) {
+        return String(s || '')
+          .toLowerCase()
+          .split(/[^a-z0-9]+/)
+          .filter(function (t) { return t.length >= 2; });
+      }
+
+      function haystackHas(hay, query) {
+        var words = tokens(query);
+        if (!words.length) return false;
+        hay = String(hay || '').toLowerCase();
+        return words.every(function (t) { return hay.indexOf(t) !== -1; });
+      }
+
       function go(href) {
         window.location.href = href;
       }
@@ -117,12 +131,11 @@ const wineryIndex = wineries.map((w) => ({
           return;
         }
 
-        var needle = key;
         var pageHits = pageList.filter(function (p) {
-          return (p.title + ' ' + p.blurb + ' ' + p.keywords).toLowerCase().indexOf(needle) !== -1;
+          return haystackHas(p.title + ' ' + p.blurb + ' ' + p.keywords, key);
         });
         var wineryHits = wineryList.filter(function (w) {
-          return (w.blob && w.blob.indexOf(needle) !== -1) || (w.name && w.name.toLowerCase().indexOf(needle) !== -1);
+          return haystackHas((w.blob || '') + ' ' + (w.name || ''), key);
         });
 
         if (jump && pageHits.length === 1 && wineryHits.length === 0) {
