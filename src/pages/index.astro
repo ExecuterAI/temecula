@@ -268,20 +268,19 @@ const homeJsonLd = [
       <!-- Search Bar -->
         <form action="/search/" method="get" role="search" class="mb-8 max-w-md">
         <label for="search-input" class="sr-only">Search wineries and site pages</label>
-        <div class="flex gap-2">
+        <div class="flex flex-col sm:flex-row gap-2">
         <input
           type="search"
           id="search-input"
           name="q"
           enterkeyhint="search"
-          placeholder="Search wineries, puns, guides, pairings…"
+          placeholder="Search wineries, puns, dog friendly…"
           autocomplete="off"
-          class="flex-1 min-w-0 px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
+          class="w-full min-w-0 min-h-12 px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-base sm:text-lg bg-white"
         />
-        <button type="submit" class="shrink-0 px-5 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium">Search</button>
+        <button type="submit" class="w-full sm:w-auto min-h-12 px-5 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium">Search</button>
         </div>
         <p class="text-xs text-stone-500 mt-2">Type a word, then tap Search or Enter.</p>
-        <div id="site-hits" class="hidden mt-4 space-y-2"></div>
         </form>
 
       <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -29,13 +29,13 @@ const wineryIndex = wineries.map((w) => ({
   description="Search Bellie Acres Wine — Temecula wineries, guides, Fun Puns, pairings, map, and events."
 >
   <Navbar />
-  <main class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
     <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine</p>
     <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-6">Search</h1>
 
-    <form id="search-form" action="/search/" method="get" role="search" class="mb-10">
+    <form id="search-form" action="/search/" method="get" role="search" class="mb-8">
       <label for="q" class="sr-only">Search this site</label>
-      <div class="flex flex-col sm:flex-row gap-3">
+      <div class="flex flex-col gap-3">
         <input
           id="q"
           name="q"
@@ -43,29 +43,46 @@ const wineryIndex = wineries.map((w) => ({
           enterkeyhint="search"
           autocapitalize="none"
           autocomplete="off"
-          placeholder="Try events, puns, or wineries"
-          class="flex-1 px-5 py-3.5 border border-stone-300 rounded-2xl text-lg bg-white focus:outline-none focus:border-[#4A5E4E]"
+          placeholder="Try dog friendly, puns, events…"
+          class="w-full min-h-12 px-5 py-3.5 border border-stone-300 rounded-2xl text-base sm:text-lg bg-white focus:outline-none focus:border-[#4A5E4E]"
         />
-        <button type="submit" class="px-6 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium hover:opacity-90">
+        <button
+          type="submit"
+          class="w-full sm:w-auto min-h-12 px-6 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium hover:opacity-90"
+        >
           Search
         </button>
       </div>
     </form>
 
     <div id="search-results">
-      <p class="text-stone-600 leading-relaxed">
-        Type a word and tap Search. Shortcuts: <strong>events</strong>, <strong>puns</strong>, <strong>wineries</strong>.
+      <p class="text-stone-600 leading-relaxed text-base">
+        Type a word and tap Search.
       </p>
     </div>
   </main>
 
-  <script define:vars={{ pages: siteSearch, wineries: wineryIndex }}>
+  <script type="application/json" id="search-page-data">{JSON.stringify(siteSearch)}</script>
+  <script type="application/json" id="search-winery-data">{JSON.stringify(wineryIndex)}</script>
+
+  <script>
     (function () {
       var input = document.getElementById('q');
       var out = document.getElementById('search-results');
       var form = document.getElementById('search-form');
-      var pageList = pages || [];
-      var wineryList = wineries || [];
+
+      function readJson(id) {
+        var el = document.getElementById(id);
+        if (!el) return [];
+        try {
+          return JSON.parse(el.textContent || '[]');
+        } catch (e) {
+          return [];
+        }
+      }
+
+      var pageList = readJson('search-page-data');
+      var wineryList = readJson('search-winery-data');
 
       var shortcuts = {
         events: '/events/',
@@ -73,7 +90,6 @@ const wineryIndex = wineries.map((w) => ({
         puns: '/guides/good-wine-no-whine/',
         pun: '/guides/good-wine-no-whine/',
         'fun puns': '/guides/good-wine-no-whine/',
-        'fun pun': '/guides/good-wine-no-whine/',
         wineries: '/wineries/',
         winery: '/wineries/',
         pairings: '/pairings/',
@@ -100,18 +116,38 @@ const wineryIndex = wineries.map((w) => ({
         return String(s || '')
           .toLowerCase()
           .split(/[^a-z0-9]+/)
-          .filter(function (t) { return t.length >= 2; });
+          .filter(function (t) {
+            return t.length >= 2;
+          });
       }
 
       function haystackHas(hay, query) {
         var words = tokens(query);
         if (!words.length) return false;
         hay = String(hay || '').toLowerCase();
-        return words.every(function (t) { return hay.indexOf(t) !== -1; });
+        return words.every(function (t) {
+          return hay.indexOf(t) !== -1;
+        });
       }
 
       function go(href) {
         window.location.href = href;
+      }
+
+      function card(href, title, blurb, serif) {
+        return (
+          '<li><a class="block rounded-2xl border border-stone-200 bg-white px-5 py-4 min-h-14" href="' +
+          href +
+          '"><span class="' +
+          (serif ? 'font-serif text-xl' : 'font-medium text-base sm:text-lg') +
+          ' text-[#2B322C]">' +
+          esc(title) +
+          '</span>' +
+          (blurb
+            ? '<span class="block text-sm text-stone-600 mt-1">' + esc(blurb) + '</span>'
+            : '') +
+          '</a></li>'
+        );
       }
 
       function run(qRaw, jump) {
@@ -119,8 +155,7 @@ const wineryIndex = wineries.map((w) => ({
         if (input) input.value = q;
         if (!q) {
           if (out) {
-            out.innerHTML =
-              '<p class="text-stone-600 leading-relaxed">Type a word and tap Search. Shortcuts: <strong>events</strong>, <strong>puns</strong>, <strong>wineries</strong>.</p>';
+            out.innerHTML = '<p class="text-stone-600 leading-relaxed">Type a word and tap Search.</p>';
           }
           return;
         }
@@ -138,77 +173,50 @@ const wineryIndex = wineries.map((w) => ({
           return haystackHas((w.blob || '') + ' ' + (w.name || ''), key);
         });
 
-        if (jump && pageHits.length === 1 && wineryHits.length === 0) {
-          go(pageHits[0].href);
-          return;
-        }
-
         if (!out) return;
-        var html = '<p class="text-stone-600 mb-8">Results for <strong class="text-[#2B322C]">“' + esc(q) + '”</strong></p>';
-        html += '<section class="mb-10"><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Pages</h2>';
-        if (pageHits.length) {
-          html += '<ul class="space-y-3">';
-          pageHits.forEach(function (p) {
-            html +=
-              '<li><a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-5 py-4" href="' +
-              p.href +
-              '"><span class="font-medium text-[#2B322C]">' +
-              esc(p.title) +
-              '</span><span class="block text-sm text-stone-600 mt-1">' +
-              esc(p.blurb) +
-              '</span></a></li>';
-          });
-          html += '</ul>';
-        } else {
-          html += '<p class="text-stone-500">No matching pages.</p>';
-        }
-        html += '</section><section><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Wineries</h2>';
-        if (wineryHits.length) {
-          html += '<ul class="space-y-3">';
-          wineryHits.forEach(function (w) {
-            html +=
-              '<li><a class="block rounded-2xl border border-stone-200 bg-white px-5 py-4" href="/wineries/' +
-              w.slug +
-              '"><span class="font-serif text-xl text-[#2B322C]">' +
-              esc(w.name) +
-              '</span><span class="block text-sm text-stone-600 mt-1">' +
-              esc(w.location || '') +
-              '</span></a></li>';
-          });
-          html += '</ul>';
-        } else {
-          html += '<p class="text-stone-500">No matching tasting rooms.</p>';
-        }
-        html += '</section>';
-        out.innerHTML = html;
-      }
 
-      function submitSearch(jump) {
-        var q = input ? String(input.value || '').trim() : '';
-        if (!q) {
-          run('', false);
+        if (!pageHits.length && !wineryHits.length) {
+          out.innerHTML =
+            '<p class="text-stone-600">Nothing matched <strong class="text-[#2B322C]">“' +
+            esc(q) +
+            '”</strong>. Try dog friendly, puns, harvest, or a winery name.</p>';
           return;
         }
-        if (jump && shortcuts[q.toLowerCase()]) {
-          go(shortcuts[q.toLowerCase()]);
-          return;
-        }
-        if (window.history && window.history.replaceState) {
-          window.history.replaceState(null, '', '/search/?q=' + encodeURIComponent(q));
-        }
-        run(q, jump);
+
+        var html = '<p class="text-stone-600 mb-6">Results for <strong class="text-[#2B322C]">“' + esc(q) + '”</strong></p>';
+        html += '<ul class="space-y-3">';
+        pageHits.forEach(function (p) {
+          html += card(p.href, p.title, p.blurb, false);
+        });
+        wineryHits.forEach(function (w) {
+          html += card('/wineries/' + w.slug, w.name, w.location || '', true);
+        });
+        html += '</ul>';
+        out.innerHTML = html;
       }
 
       if (form) {
         form.addEventListener('submit', function (e) {
           e.preventDefault();
-          submitSearch(true);
+          var q = input ? String(input.value || '').trim() : '';
+          if (!q) {
+            run('', false);
+            return;
+          }
+          if (shortcuts[q.toLowerCase()]) {
+            go(shortcuts[q.toLowerCase()]);
+            return;
+          }
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', '/search/?q=' + encodeURIComponent(q));
+          }
+          run(q, false);
         });
       }
 
       var params = new URLSearchParams(window.location.search);
       var initial = params.get('q') || '';
-      if (initial) run(initial, true);
+      if (initial) run(initial, !!(shortcuts[initial.toLowerCase()]));
     })();
   </script>
 </Layout>
