@@ -64,7 +64,7 @@ const homeJsonLd = [
       'Independent Temecula Valley wine-country publisher — harvest guides, tasting routes, pairings, plus a practical wineries list and map.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://bellieacreswine.com/search?q={search_term_string}',
+      target: 'https://bellieacreswine.com/search/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   },
@@ -266,7 +266,7 @@ const homeJsonLd = [
       </div>
 
       <!-- Search Bar -->
-        <form action="/search" method="get" role="search" class="mb-8 max-w-md">
+        <form action="/search/" method="get" role="search" class="mb-8 max-w-md">
         <label for="search-input" class="sr-only">Search wineries and site pages</label>
         <div class="flex gap-2">
         <input

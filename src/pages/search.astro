@@ -7,7 +7,7 @@ import siteSearch from '../data/site-search.json';
 const wineryIndex = wineries.map((w) => ({
   name: w.name,
   slug: w.slug,
-  location: w.location,
+  location: w.location || '',
   blob: [
     w.name,
     w.location,
@@ -33,7 +33,7 @@ const wineryIndex = wineries.map((w) => ({
     <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine</p>
     <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-6">Search</h1>
 
-    <form id="search-form" action="/search" method="get" role="search" class="mb-10">
+    <form id="search-form" action="/search/" method="get" role="search" class="mb-10">
       <label for="q" class="sr-only">Search this site</label>
       <div class="flex flex-col sm:flex-row gap-3">
         <input
@@ -43,7 +43,7 @@ const wineryIndex = wineries.map((w) => ({
           enterkeyhint="search"
           autocapitalize="none"
           autocomplete="off"
-          placeholder="Wineries, puns, harvest, pairings…"
+          placeholder="Try events, puns, or wineries"
           class="flex-1 px-5 py-3.5 border border-stone-300 rounded-2xl text-lg bg-white focus:outline-none focus:border-[#4A5E4E]"
         />
         <button type="submit" class="px-6 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium hover:opacity-90">
@@ -54,62 +54,148 @@ const wineryIndex = wineries.map((w) => ({
 
     <div id="search-results">
       <p class="text-stone-600 leading-relaxed">
-        Type a word and tap Search (or Enter). Looks through tasting rooms plus Fun Puns, guides, map, pairings, and events.
+        Type a word and tap Search. Shortcuts: <strong>events</strong>, <strong>puns</strong>, <strong>wineries</strong>.
       </p>
     </div>
   </main>
 
   <script define:vars={{ pages: siteSearch, wineries: wineryIndex }}>
-    const input = document.getElementById('q') as HTMLInputElement | null;
-    const out = document.getElementById('search-results');
-    const pageList = pages as { title: string; href: string; blurb: string; keywords: string }[];
-    const wineryList = wineries as { name: string; slug: string; location: string; blob: string }[];
+    (function () {
+      var input = document.getElementById('q');
+      var out = document.getElementById('search-results');
+      var form = document.getElementById('search-form');
+      var pageList = pages || [];
+      var wineryList = wineries || [];
 
-    function esc(s: string) {
-      return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    }
+      var shortcuts = {
+        events: '/events/',
+        event: '/events/',
+        puns: '/guides/good-wine-no-whine/',
+        pun: '/guides/good-wine-no-whine/',
+        'fun puns': '/guides/good-wine-no-whine/',
+        'fun pun': '/guides/good-wine-no-whine/',
+        wineries: '/wineries/',
+        winery: '/wineries/',
+        pairings: '/pairings/',
+        pairing: '/pairings/',
+        map: '/map/',
+        guides: '/guides/',
+        harvest: '/guides/temecula-harvest-season/',
+        halloween: '/guides/temecula-halloween-fall-family/',
+        holiday: '/guides/temecula-holiday-wine-country/',
+        christmas: '/guides/temecula-holiday-wine-country/',
+        balloons: '/balloons/',
+        contact: '/contact/',
+        about: '/about/'
+      };
 
-    function run(qRaw: string) {
-      if (!out) return;
-      const q = qRaw.trim();
-      if (input) input.value = q;
-      if (!q) {
-        out.innerHTML =
-          '<p class="text-stone-600 leading-relaxed">Type a word and tap Search (or Enter). Looks through tasting rooms plus Fun Puns, guides, map, pairings, and events.</p>';
-        return;
+      function esc(s) {
+        return String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/"/g, '&quot;');
       }
-      const needle = q.toLowerCase();
-      const pageHits = pageList.filter((p) =>
-        `${p.title} ${p.blurb} ${p.keywords}`.toLowerCase().includes(needle)
-      );
-      const wineryHits = wineryList.filter(
-        (w) => w.blob.includes(needle) || w.name.toLowerCase().includes(needle)
-      );
 
-      let html = `<p class="text-stone-600 mb-8">Results for <strong class="text-[#2B322C]">“${esc(q)}”</strong></p>`;
-      html += '<section class="mb-10"><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Pages</h2>';
-      html += pageHits.length
-        ? `<ul class="space-y-3">${pageHits
-            .map(
-              (p) =>
-                `<li><a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-5 py-4 hover:border-[#4A5E4E]" href="${p.href}"><span class="font-medium text-[#2B322C]">${esc(p.title)}</span><span class="block text-sm text-stone-600 mt-1">${esc(p.blurb)}</span></a></li>`
-            )
-            .join('')}</ul>`
-        : '<p class="text-stone-500">No matching pages.</p>';
-      html += '</section><section><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Wineries</h2>';
-      html += wineryHits.length
-        ? `<ul class="space-y-3">${wineryHits
-            .map(
-              (w) =>
-                `<li><a class="block rounded-2xl border border-stone-200 bg-white px-5 py-4 hover:border-[#4A5E4E]" href="/wineries/${w.slug}"><span class="font-serif text-xl text-[#2B322C]">${esc(w.name)}</span><span class="block text-sm text-stone-600 mt-1">${esc(w.location || '')}</span></a></li>`
-            )
-            .join('')}</ul>`
-        : '<p class="text-stone-500">No matching tasting rooms. Try a winery name, varietal, “pet”, or “view”.</p>';
-      html += '</section>';
-      out.innerHTML = html;
-    }
+      function go(href) {
+        window.location.href = href;
+      }
 
-    const params = new URLSearchParams(window.location.search);
-    run(params.get('q') || '');
+      function run(qRaw, jump) {
+        var q = String(qRaw || '').trim();
+        if (input) input.value = q;
+        if (!q) {
+          if (out) {
+            out.innerHTML =
+              '<p class="text-stone-600 leading-relaxed">Type a word and tap Search. Shortcuts: <strong>events</strong>, <strong>puns</strong>, <strong>wineries</strong>.</p>';
+          }
+          return;
+        }
+
+        var key = q.toLowerCase();
+        if (jump && shortcuts[key]) {
+          go(shortcuts[key]);
+          return;
+        }
+
+        var needle = key;
+        var pageHits = pageList.filter(function (p) {
+          return (p.title + ' ' + p.blurb + ' ' + p.keywords).toLowerCase().indexOf(needle) !== -1;
+        });
+        var wineryHits = wineryList.filter(function (w) {
+          return (w.blob && w.blob.indexOf(needle) !== -1) || (w.name && w.name.toLowerCase().indexOf(needle) !== -1);
+        });
+
+        if (jump && pageHits.length === 1 && wineryHits.length === 0) {
+          go(pageHits[0].href);
+          return;
+        }
+
+        if (!out) return;
+        var html = '<p class="text-stone-600 mb-8">Results for <strong class="text-[#2B322C]">“' + esc(q) + '”</strong></p>';
+        html += '<section class="mb-10"><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Pages</h2>';
+        if (pageHits.length) {
+          html += '<ul class="space-y-3">';
+          pageHits.forEach(function (p) {
+            html +=
+              '<li><a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-5 py-4" href="' +
+              p.href +
+              '"><span class="font-medium text-[#2B322C]">' +
+              esc(p.title) +
+              '</span><span class="block text-sm text-stone-600 mt-1">' +
+              esc(p.blurb) +
+              '</span></a></li>';
+          });
+          html += '</ul>';
+        } else {
+          html += '<p class="text-stone-500">No matching pages.</p>';
+        }
+        html += '</section><section><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Wineries</h2>';
+        if (wineryHits.length) {
+          html += '<ul class="space-y-3">';
+          wineryHits.forEach(function (w) {
+            html +=
+              '<li><a class="block rounded-2xl border border-stone-200 bg-white px-5 py-4" href="/wineries/' +
+              w.slug +
+              '"><span class="font-serif text-xl text-[#2B322C]">' +
+              esc(w.name) +
+              '</span><span class="block text-sm text-stone-600 mt-1">' +
+              esc(w.location || '') +
+              '</span></a></li>';
+          });
+          html += '</ul>';
+        } else {
+          html += '<p class="text-stone-500">No matching tasting rooms.</p>';
+        }
+        html += '</section>';
+        out.innerHTML = html;
+      }
+
+      function submitSearch(jump) {
+        var q = input ? String(input.value || '').trim() : '';
+        if (!q) {
+          run('', false);
+          return;
+        }
+        if (jump && shortcuts[q.toLowerCase()]) {
+          go(shortcuts[q.toLowerCase()]);
+          return;
+        }
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', '/search/?q=' + encodeURIComponent(q));
+        }
+        run(q, jump);
+      }
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          submitSearch(true);
+        });
+      }
+
+      var params = new URLSearchParams(window.location.search);
+      var initial = params.get('q') || '';
+      if (initial) run(initial, true);
+    })();
   </script>
 </Layout>
