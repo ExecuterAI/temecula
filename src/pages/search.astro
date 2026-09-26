@@ -4,38 +4,28 @@ import Navbar from '../components/Navbar.astro';
 import wineries from '../data/wineries.json';
 import siteSearch from '../data/site-search.json';
 
-const q = (Astro.url.searchParams.get('q') || '').trim();
-const qLower = q.toLowerCase();
-
-function wineryBlob(w: (typeof wineries)[number]) {
-  return [
+const wineryIndex = wineries.map((w) => ({
+  name: w.name,
+  slug: w.slug,
+  location: w.location,
+  blob: [
     w.name,
     w.location,
     w.price_range,
     ...(w.varietals || []),
     w.pet_friendly ? 'pet friendly dogs' : '',
     w.kid_friendly?.allowed ? 'kid friendly family children' : '',
-    w.has_views
-      ? ['view views scenic', w.view_level || '', w.view_notes || '', ...(w.view_tags || [])].join(' ')
-      : '',
+    w.has_views ? ['view views scenic', ...(w.view_tags || [])].join(' ') : '',
     w.slug,
   ]
     .filter(Boolean)
     .join(' ')
-    .toLowerCase();
-}
-
-const wineryHits = qLower
-  ? wineries.filter((w) => wineryBlob(w).includes(qLower) || w.name.toLowerCase().includes(qLower))
-  : [];
-
-const pageHits = qLower
-  ? siteSearch.filter((p) => `${p.title} ${p.blurb} ${p.keywords}`.toLowerCase().includes(qLower))
-  : [];
+    .toLowerCase(),
+}));
 ---
 
 <Layout
-  title={q ? `Search: ${q}` : 'Search'}
+  title="Search"
   description="Search Bellie Acres Wine — Temecula wineries, guides, Fun Puns, pairings, map, and events."
 >
   <Navbar />
@@ -43,83 +33,83 @@ const pageHits = qLower
     <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine</p>
     <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-6">Search</h1>
 
-    <form action="/search" method="get" role="search" class="mb-10">
+    <form id="search-form" action="/search" method="get" role="search" class="mb-10">
       <label for="q" class="sr-only">Search this site</label>
       <div class="flex flex-col sm:flex-row gap-3">
         <input
           id="q"
           name="q"
           type="search"
-          value={q}
           enterkeyhint="search"
           autocapitalize="none"
           autocomplete="off"
           placeholder="Wineries, puns, harvest, pairings…"
           class="flex-1 px-5 py-3.5 border border-stone-300 rounded-2xl text-lg bg-white focus:outline-none focus:border-[#4A5E4E]"
         />
-        <button
-          type="submit"
-          class="px-6 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium hover:opacity-90"
-        >
+        <button type="submit" class="px-6 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium hover:opacity-90">
           Search
         </button>
       </div>
     </form>
 
-    {!q && (
+    <div id="search-results">
       <p class="text-stone-600 leading-relaxed">
         Type a word and tap Search (or Enter). Looks through tasting rooms plus Fun Puns, guides, map, pairings, and events.
       </p>
-    )}
-
-    {q && (
-      <div class="space-y-10">
-        <p class="text-stone-600">
-          Results for <strong class="text-[#2B322C]">“{q}”</strong>
-        </p>
-
-        <section>
-          <h2 class="font-serif text-2xl text-[#2B322C] mb-4">Pages</h2>
-          {pageHits.length === 0 ? (
-            <p class="text-stone-500">No matching pages.</p>
-          ) : (
-            <ul class="space-y-3">
-              {pageHits.map((p) => (
-                <li>
-                  <a
-                    href={p.href}
-                    class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-5 py-4 hover:border-[#4A5E4E]"
-                  >
-                    <span class="font-medium text-[#2B322C]">{p.title}</span>
-                    <span class="block text-sm text-stone-600 mt-1">{p.blurb}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-
-        <section>
-          <h2 class="font-serif text-2xl text-[#2B322C] mb-4">Wineries</h2>
-          {wineryHits.length === 0 ? (
-            <p class="text-stone-500">No matching tasting rooms. Try a winery name, varietal, “pet”, or “view”.</p>
-          ) : (
-            <ul class="space-y-3">
-              {wineryHits.map((w) => (
-                <li>
-                  <a
-                    href={`/wineries/${w.slug}`}
-                    class="block rounded-2xl border border-stone-200 bg-white px-5 py-4 hover:border-[#4A5E4E]"
-                  >
-                    <span class="font-serif text-xl text-[#2B322C]">{w.name}</span>
-                    <span class="block text-sm text-stone-600 mt-1">{w.location}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      </div>
-    )}
+    </div>
   </main>
+
+  <script define:vars={{ pages: siteSearch, wineries: wineryIndex }}>
+    const input = document.getElementById('q') as HTMLInputElement | null;
+    const out = document.getElementById('search-results');
+    const pageList = pages as { title: string; href: string; blurb: string; keywords: string }[];
+    const wineryList = wineries as { name: string; slug: string; location: string; blob: string }[];
+
+    function esc(s: string) {
+      return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    }
+
+    function run(qRaw: string) {
+      if (!out) return;
+      const q = qRaw.trim();
+      if (input) input.value = q;
+      if (!q) {
+        out.innerHTML =
+          '<p class="text-stone-600 leading-relaxed">Type a word and tap Search (or Enter). Looks through tasting rooms plus Fun Puns, guides, map, pairings, and events.</p>';
+        return;
+      }
+      const needle = q.toLowerCase();
+      const pageHits = pageList.filter((p) =>
+        `${p.title} ${p.blurb} ${p.keywords}`.toLowerCase().includes(needle)
+      );
+      const wineryHits = wineryList.filter(
+        (w) => w.blob.includes(needle) || w.name.toLowerCase().includes(needle)
+      );
+
+      let html = `<p class="text-stone-600 mb-8">Results for <strong class="text-[#2B322C]">“${esc(q)}”</strong></p>`;
+      html += '<section class="mb-10"><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Pages</h2>';
+      html += pageHits.length
+        ? `<ul class="space-y-3">${pageHits
+            .map(
+              (p) =>
+                `<li><a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-5 py-4 hover:border-[#4A5E4E]" href="${p.href}"><span class="font-medium text-[#2B322C]">${esc(p.title)}</span><span class="block text-sm text-stone-600 mt-1">${esc(p.blurb)}</span></a></li>`
+            )
+            .join('')}</ul>`
+        : '<p class="text-stone-500">No matching pages.</p>';
+      html += '</section><section><h2 class="font-serif text-2xl text-[#2B322C] mb-4">Wineries</h2>';
+      html += wineryHits.length
+        ? `<ul class="space-y-3">${wineryHits
+            .map(
+              (w) =>
+                `<li><a class="block rounded-2xl border border-stone-200 bg-white px-5 py-4 hover:border-[#4A5E4E]" href="/wineries/${w.slug}"><span class="font-serif text-xl text-[#2B322C]">${esc(w.name)}</span><span class="block text-sm text-stone-600 mt-1">${esc(w.location || '')}</span></a></li>`
+            )
+            .join('')}</ul>`
+        : '<p class="text-stone-500">No matching tasting rooms. Try a winery name, varietal, “pet”, or “view”.</p>';
+      html += '</section>';
+      out.innerHTML = html;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    run(params.get('q') || '');
+  </script>
 </Layout>
