@@ -5,13 +5,17 @@ import RelocateCta from './RelocateCta.astro';
   <div class="max-w-6xl mx-auto px-6 py-16">
     <div class="grid md:grid-cols-4 gap-10">
       <div>
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-8 h-8 bg-white/10 rounded-2xl flex items-center justify-center">
-            <span class="text-lg">🍷</span>
-          </div>
-          <span class="font-serif text-2xl text-white tracking-tight">Bellie Acres Wine</span>
-        </div>
-        <p class="text-sm">Independent Temecula wine-country publisher at bellieacreswine.com — guides, harvest coverage, tasting routes, plus a practical list and map.</p>
+          <a href="https://bellieacreswine.com/" class="flex items-center gap-3 mb-4 text-white hover:text-white">
+            <div class="w-8 h-8 bg-white/10 rounded-2xl flex items-center justify-center">
+              <span class="text-lg">🍷</span>
+            </div>
+            <span class="font-serif text-2xl text-white tracking-tight">Bellie Acres Wine</span>
+          </a>
+        <p class="text-sm">
+          Independent Temecula wine-country publisher at
+          <a class="text-white underline hover:text-white" href="https://bellieacreswine.com/">https://bellieacreswine.com</a>
+          — guides, harvest coverage, tasting routes, plus a practical list and map.
+        </p>
         <RelocateCta variant="footer" />
       </div>
 
@@ -72,7 +76,7 @@ import RelocateCta from './RelocateCta.astro';
     </div>
 
     <div class="border-t border-white/10 mt-12 pt-8 text-xs flex flex-col md:flex-row justify-between gap-4">
-      <div>© {new Date().getFullYear()} Bellie Acres Wine (bellieacreswine.com). All rights reserved.</div>
+      <div>© {new Date().getFullYear()} Bellie Acres Wine (<a class="text-white/80 underline hover:text-white" href="https://bellieacreswine.com/">bellieacreswine.com</a>). All rights reserved.</div>
       <div>Please drink responsibly. 21+ for alcohol tastings.</div>
     </div>
   </div>

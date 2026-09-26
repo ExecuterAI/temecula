@@ -12,7 +12,7 @@ import Navbar from '../components/Navbar.astro';
     <h1 class="text-5xl font-serif tracking-tight mb-4">Contact</h1>
     <p class="text-xl text-stone-600 mb-10">
       Questions, listing corrections, or partnership inquiries for the independent Temecula wine-country directory at
-      <strong>bellieacreswine.com</strong>.
+      <a class="text-[var(--accent)] underline font-medium" href="https://bellieacreswine.com/">https://bellieacreswine.com</a>.
     </p>
 
     <div class="bg-white border border-stone-200 rounded-3xl p-8 mb-10 space-y-4">
@@ -24,7 +24,9 @@ import Navbar from '../components/Navbar.astro';
       </div>
       <div>
         <div class="text-sm text-stone-500">Website</div>
-        <div class="text-lg">https://bellieacreswine.com</div>
+        <a class="text-lg text-[var(--accent)] hover:underline font-medium" href="https://bellieacreswine.com/">
+          https://bellieacreswine.com
+        </a>
       </div>
       <div>
         <div class="text-sm text-stone-500">Response time</div>
