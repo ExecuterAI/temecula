@@ -13,7 +13,11 @@ const links = [
 ];
 
 // Mobile hamburger needs an explicit Home (logo is easy to miss once the panel is open)
-const mobileLinks = [{ href: '/', label: 'Home' }, ...links];
+const mobileLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/search', label: 'Search' },
+  ...links,
+];
 ---
 <nav class="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50" id="site-nav">
   <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
@@ -30,6 +34,7 @@ const mobileLinks = [{ href: '/', label: 'Home' }, ...links];
 
     <!-- Desktop Navigation -->
     <div class="hidden md:flex items-center gap-2 lg:gap-3 xl:gap-4 text-[13px] lg:text-sm font-medium text-stone-800">
+      <a href="/search" class="hover:text-[var(--primary)] transition whitespace-nowrap">Search</a>
       {links.map((l) => (
         <a href={l.href} class="hover:text-[var(--primary)] transition whitespace-nowrap">{l.label}</a>
       ))}

@@ -180,18 +180,23 @@ const faqJsonLd = {
     </div>
 
     <!-- Search -->
-    <div class="mb-8 max-w-md">
+    <form action="/search" method="get" role="search" class="mb-8 max-w-md">
       <label for="search-input" class="sr-only">Search Temecula wineries</label>
+      <div class="flex gap-2">
       <input
         type="search"
         id="search-input"
+        name="q"
+        enterkeyhint="search"
         placeholder="Search name, varietal, pet, views, puns, guides…"
         autocomplete="off"
-        class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
+        class="flex-1 min-w-0 px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
       />
+      <button type="submit" class="shrink-0 px-5 py-3.5 rounded-full bg-[#4A5E4E] text-white font-medium">Search</button>
+      </div>
       <p id="search-status" class="text-sm text-stone-500 mt-3 hidden" aria-live="polite"></p>
       <div id="site-hits" class="hidden mt-4 space-y-2"></div>
-    </div>
+    </form>
 
     <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {sorted.map(winery => (
