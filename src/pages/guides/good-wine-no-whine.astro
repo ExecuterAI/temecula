@@ -1,0 +1,82 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const lines = [
+  'Bring the bottle, leave the bellyache.',
+  'Your group chat is a tasting flight of complaints. We’re the spit bucket — and the pour.',
+  'Some people age like wine. Some people just whine.',
+  'We mapped the wineries so you can stop mapping grievances.',
+  'Harvest is messy. Whining is optional.',
+  'Reservations: yes. Recriminations: no.',
+  'Two-stop day. Zero sermons.',
+  'Corks out. Complaints out.',
+  'Pairing of the day: Cabernet and a closed complaint department.',
+  'De Portola doesn’t need your TED Talk. It needs a designated driver.',
+  'If you’re still narrating the traffic, you haven’t had enough Temecula yet.',
+  'Bellyache: unpaid intern. Bellie Acres: management.',
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Good Wine. No Whine. — Bellie Acres one-liners',
+  datePublished: '2026-09-25',
+  dateModified: '2026-09-25',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'Short Bellie Acres Wine one-liners: bellyachers whine, Temecula wine is the better use of the afternoon.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/good-wine-no-whine/',
+};
+---
+
+<Layout
+  title="Good Wine. No Whine."
+  description="Bellie Acres Wine one-liners — bellyachers whine; Temecula wine country is the cure. Short, shareable, 21+."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#F6F7F2]">
+    <header class="border-b border-[#9AAB97]/35 bg-[#4A5E4E] text-[#F6F7F2]">
+      <div class="max-w-3xl mx-auto px-6 py-16 sm:py-20 text-center">
+        <p class="text-[11px] tracking-[0.28em] uppercase text-[#9AAB97] font-medium mb-4">Bellie Acres Wine</p>
+        <h1 class="font-serif text-4xl sm:text-6xl tracking-tight leading-[1.05]">
+          Good wine.<br />No whine.
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-white/85 leading-relaxed max-w-xl mx-auto">
+          Bellyachers whine. Bellie Acres Wine is the other option: a mapped tasting day and a closed complaint department.
+        </p>
+        <p class="mt-4 text-sm text-white/55">
+          Independent Temecula notes. 21+ for alcohol. Logo seal coming — the lines don’t need it.
+        </p>
+      </div>
+    </header>
+
+    <section class="max-w-3xl mx-auto px-6 py-14 sm:py-16">
+      <ol class="space-y-5">
+        {lines.map((line, i) => (
+          <li>
+            <blockquote class="bg-white border border-[#9AAB97]/40 rounded-3xl px-6 sm:px-8 py-7 shadow-[0_10px_30px_rgba(43,50,44,0.06)]">
+              <div class="text-[11px] tracking-[0.22em] uppercase text-[#4A5E4E] font-medium mb-3">
+                {String(i + 1).padStart(2, '0')}
+              </div>
+              <p class="font-serif text-2xl sm:text-3xl text-[#2B322C] leading-snug tracking-tight">
+                {line}
+              </p>
+            </blockquote>
+          </li>
+        ))}
+      </ol>
+
+      <p class="mt-12 text-[#2B322C]/70 leading-relaxed text-lg">
+        If you actually need a plan (not a punchline), start with the
+        <a class="underline text-[#4A5E4E] font-medium" href="/guides/temecula-harvest-season">harvest guide</a>,
+        the
+        <a class="underline text-[#4A5E4E] font-medium" href="/wineries">wineries list</a>,
+        or the
+        <a class="underline text-[#4A5E4E] font-medium" href="/map">wine map</a>.
+      </p>
+    </section>
+  </main>
+</Layout>
