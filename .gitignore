@@ -20,5 +20,11 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# pdf stamp backups / local venv
+*.pdf.bak
+.venv-pdf/
+scripts/inspect-pdf.py
+scripts/render-pdf-pages.py
+
 # jetbrains setting folder
 .idea/
