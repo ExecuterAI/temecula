@@ -1,0 +1,25 @@
+---
+interface Props {
+  size?: 'sm' | 'md';
+  onDark?: boolean;
+}
+const { size = 'sm', onDark = false } = Astro.props;
+const px = size === 'md' ? 'w-9 h-9' : 'w-7 h-7';
+const nameClass = onDark
+  ? 'font-serif text-white tracking-tight'
+  : 'font-serif text-[#2B322C] tracking-tight';
+const year = new Date().getFullYear();
+---
+<div class="inline-flex items-center gap-2 min-w-0">
+  <img
+    src="/images/bellie-acres-seal.jpg"
+    alt=""
+    width="1254"
+    height="1254"
+    class={`${px} rounded-full object-cover shrink-0 ring-1 ring-[#4A5E4E]/25`}
+  />
+  <span class={`${nameClass} ${size === 'md' ? 'text-xl' : 'text-base'}`}>Bellie Acres Wine</span>
+  <span class={onDark ? 'text-white/70 text-xs sm:text-sm' : 'text-stone-500 text-xs sm:text-sm'}>
+    © {year}
+  </span>
+</div>

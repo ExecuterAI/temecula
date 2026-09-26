@@ -1,14 +1,19 @@
 ---
 import RelocateCta from './RelocateCta.astro';
+import CopyrightMark from './CopyrightMark.astro';
 ---
 <footer class="bg-dark-sage text-white/70 mt-20">
   <div class="max-w-6xl mx-auto px-6 py-16">
     <div class="grid md:grid-cols-4 gap-10">
       <div>
           <a href="https://bellieacreswine.com/" class="flex items-center gap-3 mb-4 text-white hover:text-white">
-            <div class="w-8 h-8 bg-white/10 rounded-2xl flex items-center justify-center">
-              <span class="text-lg">🍷</span>
-            </div>
+            <img
+              src="/images/bellie-acres-seal.jpg"
+              alt=""
+              width="1254"
+              height="1254"
+              class="w-10 h-10 rounded-full object-cover ring-1 ring-white/20"
+            />
             <span class="font-serif text-2xl text-white tracking-tight">Bellie Acres Wine</span>
           </a>
         <p class="text-sm">
@@ -79,8 +84,14 @@ import RelocateCta from './RelocateCta.astro';
       </div>
     </div>
 
-    <div class="border-t border-white/10 mt-12 pt-8 text-xs flex flex-col md:flex-row justify-between gap-4">
-      <div>© {new Date().getFullYear()} Bellie Acres Wine (<a class="text-white/80 underline hover:text-white" href="https://bellieacreswine.com/">bellieacreswine.com</a>). All rights reserved.</div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-xs flex flex-col md:flex-row justify-between gap-4 items-start md:items-center">
+      <div class="space-y-2">
+        <CopyrightMark onDark size="sm" />
+        <div>
+          © {new Date().getFullYear()} Bellie Acres Wine. All rights reserved. Original articles, guides, and PDFs.
+          <a class="text-white/80 underline hover:text-white" href="https://bellieacreswine.com/">bellieacreswine.com</a>
+        </div>
+      </div>
       <div>Please drink responsibly. 21+ for alcohol tastings.</div>
     </div>
   </div>

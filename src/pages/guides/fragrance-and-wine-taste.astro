@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
+import CopyrightMark from '../../components/CopyrightMark.astro';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -35,6 +36,9 @@ const jsonLd = {
         <p class="mt-4 text-sm text-stone-500">
           Independent guide from <a href="/about" class="underline hover:text-stone-800">Bellie Acres Wine</a>. 21+ for alcohol tastings.
         </p>
+        <div class="mt-5">
+          <CopyrightMark size="sm" />
+        </div>
       </div>
     </header>
 
