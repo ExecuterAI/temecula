@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import entries from '../../data/wine-in-world-languages.json';
+
+const groups = [];
+for (const row of entries) {
+  const last = groups[groups.length - 1];
+  if (!last || last.country !== row.country) {
+    groups.push({ country: row.country, items: [row] });
+  } else {
+    last.items.push(row);
+  }
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'How to say wine around the world',
+  description:
+    'Living, country-aware database of the word for wine across languages — native script first, with learner pronunciation.',
+  url: 'https://bellieacreswine.com/guides/wine-in-world-languages/',
+  creator: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  license: 'https://bellieacreswine.com/terms/',
+};
+---
+
+<Layout
+  title='How to Say “Wine” Around the World'
+  description="Living database of how to say wine around the world — native script first, pronunciation beside it, sorted by country then language. 260 entries and growing."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+    <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine · Living database v2</p>
+    <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-4">
+      How to say “wine” around the world
+    </h1>
+    <p class="text-stone-600 leading-relaxed mb-4">
+      Native script first. Learner pronunciation beside it. Sorted by country, then language.
+      Country is an association — not a claim that a language belongs to one nation.
+    </p>
+    <p class="text-sm text-stone-500 leading-relaxed mb-8">
+      {entries.length} records. Historical and constructed languages stay labeled. Living set — we add, we do not overwrite.
+    </p>
+
+    <label for="lang-q" class="sr-only">Search countries, languages, or words for wine</label>
+    <input
+      id="lang-q"
+      type="search"
+      enterkeyhint="search"
+      autocapitalize="none"
+      autocomplete="off"
+      placeholder="Search country, language, or word (vino, vin, 葡萄酒…)"
+      class="w-full min-h-12 px-5 py-3.5 border border-stone-300 rounded-2xl text-base bg-white focus:outline-none focus:border-[#4A5E4E] mb-3"
+    />
+    <p id="lang-count" class="text-sm text-stone-500 mb-6">{entries.length} entries</p>
+
+    <div id="lang-list" class="space-y-8">
+      {groups.map((g) => (
+        <section class="country-group" data-country={g.country.toLowerCase()}>
+          <h2 class="font-serif text-2xl text-[#2B322C] mb-3 sticky top-0 bg-[#F6F7F2]/95 backdrop-blur-sm py-2">{g.country}</h2>
+          <ul class="space-y-2">
+            {g.items.map((row) => (
+              <li
+                class="lang-row rounded-2xl border border-stone-200 bg-white px-4 py-3 sm:px-5"
+                data-search={`${row.word} ${row.pronunciation} ${row.where} ${row.country} ${row.language}`.toLowerCase()}
+              >
+                <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <p class="font-serif text-2xl sm:text-3xl text-[#2B322C] leading-tight" dir="auto">{row.word}</p>
+                  {row.kind !== 'modern' && (
+                    <span class="text-[10px] uppercase tracking-[0.16em] text-[#4A5E4E] border border-[#9AAB97]/60 rounded-full px-2 py-0.5">
+                      {row.kind}
+                    </span>
+                  )}
+                </div>
+                <p class="text-sm text-stone-600 mt-1">
+                  <span class="italic">{row.pronunciation}</span>
+                  <span class="text-stone-400"> · </span>
+                  <span>{row.language}</span>
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+
+    <p class="text-xs text-stone-500 mt-10 leading-relaxed">
+      Entries need periodic checks against dictionaries. Uncertain or dialect forms are kept, not silently “corrected.”
+      Related: <a class="underline hover:text-stone-700" href="/guides/wine-words">Wine Word Archive</a>.
+    </p>
+  </main>
+
+  <script>
+    (function () {
+      var q = document.getElementById('lang-q');
+      var status = document.getElementById('lang-count');
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.lang-row'));
+      var groups = Array.prototype.slice.call(document.querySelectorAll('.country-group'));
+      var total = rows.length;
+
+      function filter() {
+        var needle = (q && q.value ? q.value : '').trim().toLowerCase();
+        var visible = 0;
+        rows.forEach(function (row) {
+          var hay = row.getAttribute('data-search') || '';
+          var show = !needle || hay.indexOf(needle) !== -1;
+          row.classList.toggle('hidden', !show);
+          if (show) visible += 1;
+        });
+        groups.forEach(function (g) {
+          var any = g.querySelector('.lang-row:not(.hidden)');
+          g.classList.toggle('hidden', !any);
+        });
+        if (status) {
+          status.textContent = needle
+            ? visible + (visible === 1 ? ' match' : ' matches')
+            : total + ' entries';
+        }
+      }
+      if (q) {
+        q.addEventListener('input', filter);
+        q.addEventListener('search', filter);
+      }
+    })();
+  </script>
+</Layout>

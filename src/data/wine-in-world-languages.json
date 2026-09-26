@@ -1,0 +1,2082 @@
+[
+  {
+    "word": "می / شراب",
+    "pronunciation": "may / sha-RAAB",
+    "where": "Afghanistan/Pakistan — Pashto",
+    "country": "Afghanistan/Pakistan",
+    "language": "Pashto",
+    "kind": "modern"
+  },
+  {
+    "word": "verë",
+    "pronunciation": "VEH-reh",
+    "where": "Albania — Albanian",
+    "country": "Albania",
+    "language": "Albanian",
+    "kind": "modern"
+  },
+  {
+    "word": "verë",
+    "pronunciation": "VEH-reh",
+    "where": "Albania/Kosovo — Albanian",
+    "country": "Albania/Kosovo",
+    "language": "Albanian",
+    "kind": "modern"
+  },
+  {
+    "word": "ccṛab",
+    "pronunciation": "tsr-AB",
+    "where": "Algeria — Kabyle",
+    "country": "Algeria",
+    "language": "Kabyle",
+    "kind": "modern"
+  },
+  {
+    "word": "ḫaluli",
+    "pronunciation": "kha-LOO-lee",
+    "where": "Ancient Armenia/Anatolia — Urartian",
+    "country": "Ancient Armenia/Anatolia",
+    "language": "Urartian",
+    "kind": "historical"
+  },
+  {
+    "word": "jrp",
+    "pronunciation": "jerp",
+    "where": "Ancient Egypt — Egyptian",
+    "country": "Ancient Egypt",
+    "language": "Egyptian",
+    "kind": "historical"
+  },
+  {
+    "word": "οἶνος",
+    "pronunciation": "OI-nos",
+    "where": "Ancient Greece — Ancient Greek",
+    "country": "Ancient Greece",
+    "language": "Ancient Greek",
+    "kind": "historical"
+  },
+  {
+    "word": "सुरा / मदिरा",
+    "pronunciation": "su-RAA / ma-dee-RAA",
+    "where": "Ancient India — Sanskrit",
+    "country": "Ancient India",
+    "language": "Sanskrit",
+    "kind": "historical"
+  },
+  {
+    "word": "vinu",
+    "pronunciation": "VEE-noo",
+    "where": "Ancient Italy — Faliscan",
+    "country": "Ancient Italy",
+    "language": "Faliscan",
+    "kind": "historical"
+  },
+  {
+    "word": "𐌅𐌉𐌍𐌖",
+    "pronunciation": "VEE-noo",
+    "where": "Ancient Italy — Umbrian",
+    "country": "Ancient Italy",
+    "language": "Umbrian",
+    "kind": "historical"
+  },
+  {
+    "word": "𐎊𐎐",
+    "pronunciation": "yn",
+    "where": "Ancient Levant — Ugaritic",
+    "country": "Ancient Levant",
+    "language": "Ugaritic",
+    "kind": "historical"
+  },
+  {
+    "word": "karānum",
+    "pronunciation": "ka-RAH-num",
+    "where": "Ancient Mesopotamia — Akkadian",
+    "country": "Ancient Mesopotamia",
+    "language": "Akkadian",
+    "kind": "historical"
+  },
+  {
+    "word": "𒃾",
+    "pronunciation": "geštin",
+    "where": "Ancient Mesopotamia — Sumerian",
+    "country": "Ancient Mesopotamia",
+    "language": "Sumerian",
+    "kind": "historical"
+  },
+  {
+    "word": "vīnum",
+    "pronunciation": "WEE-noom",
+    "where": "Ancient Rome — Latin",
+    "country": "Ancient Rome",
+    "language": "Latin",
+    "kind": "historical"
+  },
+  {
+    "word": "català: vi",
+    "pronunciation": "vee",
+    "where": "Andorra — Catalan",
+    "country": "Andorra",
+    "language": "Catalan",
+    "kind": "modern"
+  },
+  {
+    "word": "نَبِيذ / خَمْر",
+    "pronunciation": "nabīdh / khamr",
+    "where": "Arab world — Arabic",
+    "country": "Arab world",
+    "language": "Arabic",
+    "kind": "modern"
+  },
+  {
+    "word": "wáán / wáin",
+    "pronunciation": "WAAN / wine",
+    "where": "Arizona/New Mexico — Navajo",
+    "country": "Arizona/New Mexico",
+    "language": "Navajo",
+    "kind": "modern"
+  },
+  {
+    "word": "գինի",
+    "pronunciation": "gini",
+    "where": "Armenia — Armenian",
+    "country": "Armenia",
+    "language": "Armenian",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Austria — German",
+    "country": "Austria",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "şərab / çaxır",
+    "pronunciation": "sheh-RAB / cha-KHUR",
+    "where": "Azerbaijan — Azerbaijani",
+    "country": "Azerbaijan",
+    "language": "Azerbaijani",
+    "kind": "modern"
+  },
+  {
+    "word": "yin",
+    "pronunciation": "yin",
+    "where": "Balkans — Aromanian",
+    "country": "Balkans",
+    "language": "Aromanian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Balkans — Megleno-Romanian",
+    "country": "Balkans",
+    "language": "Megleno-Romanian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино / víno",
+    "pronunciation": "VEE-no",
+    "where": "Balkans — Serbo-Croatian",
+    "country": "Balkans",
+    "language": "Serbo-Croatian",
+    "kind": "modern"
+  },
+  {
+    "word": "wīns",
+    "pronunciation": "weens",
+    "where": "Baltic region — Old Prussian",
+    "country": "Baltic region",
+    "language": "Old Prussian",
+    "kind": "historical"
+  },
+  {
+    "word": "মদ / শরাব",
+    "pronunciation": "mod / shô-rab",
+    "where": "Bangladesh/India — Bengali",
+    "country": "Bangladesh/India",
+    "language": "Bengali",
+    "kind": "modern"
+  },
+  {
+    "word": "ardo",
+    "pronunciation": "AR-doh",
+    "where": "Basque Country — Basque",
+    "country": "Basque Country",
+    "language": "Basque",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Belarus — Belarusian",
+    "country": "Belarus",
+    "language": "Belarusian",
+    "kind": "modern"
+  },
+  {
+    "word": "віно́",
+    "pronunciation": "vee-NOH",
+    "where": "Belarus — Belarusian",
+    "country": "Belarus",
+    "language": "Belarusian",
+    "kind": "modern"
+  },
+  {
+    "word": "wijn",
+    "pronunciation": "wine",
+    "where": "Belgium — Dutch",
+    "country": "Belgium",
+    "language": "Dutch",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "Belgium — French",
+    "country": "Belgium",
+    "language": "French",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Belgium — German",
+    "country": "Belgium",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "vén",
+    "pronunciation": "vayn",
+    "where": "Belgium — Walloon",
+    "country": "Belgium",
+    "language": "Walloon",
+    "kind": "modern"
+  },
+  {
+    "word": "wien",
+    "pronunciation": "ween",
+    "where": "Belgium/Netherlands — Limburgish",
+    "country": "Belgium/Netherlands",
+    "language": "Limburgish",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Bosnia and Herzegovina — Bosnian",
+    "country": "Bosnia and Herzegovina",
+    "language": "Bosnian",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Bosnia and Herzegovina — Croatian",
+    "country": "Bosnia and Herzegovina",
+    "language": "Croatian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Bosnia and Herzegovina — Serbian",
+    "country": "Bosnia and Herzegovina",
+    "language": "Serbian",
+    "kind": "modern"
+  },
+  {
+    "word": "vĩjũ",
+    "pronunciation": "vee-JOON",
+    "where": "Brazil — Kaingang",
+    "country": "Brazil",
+    "language": "Kaingang",
+    "kind": "modern"
+  },
+  {
+    "word": "kaûĩ",
+    "pronunciation": "ka-oo-EE",
+    "where": "Brazil — Old Tupi",
+    "country": "Brazil",
+    "language": "Old Tupi",
+    "kind": "historical"
+  },
+  {
+    "word": "ви́но",
+    "pronunciation": "VEE-noh",
+    "where": "Bulgaria — Bulgarian",
+    "country": "Bulgaria",
+    "language": "Bulgarian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Bulgaria — Bulgarian",
+    "country": "Bulgaria",
+    "language": "Bulgarian",
+    "kind": "modern"
+  },
+  {
+    "word": "ស្រា",
+    "pronunciation": "sraa",
+    "where": "Cambodia — Khmer",
+    "country": "Cambodia",
+    "language": "Khmer",
+    "kind": "modern"
+  },
+  {
+    "word": "mazhoominaaboo",
+    "pronunciation": "ma-zhoo-MEE-na-boo",
+    "where": "Canada/United States — Ojibwe",
+    "country": "Canada/United States",
+    "language": "Ojibwe",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VY-no",
+    "where": "Carpathians — Carpathian Rusyn",
+    "country": "Carpathians",
+    "language": "Carpathian Rusyn",
+    "kind": "modern"
+  },
+  {
+    "word": "vi",
+    "pronunciation": "vee",
+    "where": "Catalonia — Catalan",
+    "country": "Catalonia",
+    "language": "Catalan",
+    "kind": "modern"
+  },
+  {
+    "word": "𐕔𐔼",
+    "pronunciation": "fi",
+    "where": "Caucasus — Aghwan",
+    "country": "Caucasus",
+    "language": "Aghwan",
+    "kind": "modern"
+  },
+  {
+    "word": "сӕн",
+    "pronunciation": "sæn",
+    "where": "Caucasus — Ossetian",
+    "country": "Caucasus",
+    "language": "Ossetian",
+    "kind": "modern"
+  },
+  {
+    "word": "фи",
+    "pronunciation": "fee",
+    "where": "Caucasus — Udi",
+    "country": "Caucasus",
+    "language": "Udi",
+    "kind": "modern"
+  },
+  {
+    "word": "masanga",
+    "pronunciation": "ma-SAHN-ga",
+    "where": "Central Africa — Lingala",
+    "country": "Central Africa",
+    "language": "Lingala",
+    "kind": "modern"
+  },
+  {
+    "word": "чагӏар",
+    "pronunciation": "CHA-ghar",
+    "where": "Chechnya — Chechen",
+    "country": "Chechnya",
+    "language": "Chechen",
+    "kind": "modern"
+  },
+  {
+    "word": "pulku",
+    "pronunciation": "POOL-koo",
+    "where": "Chile/Argentina — Mapudungun",
+    "country": "Chile/Argentina",
+    "language": "Mapudungun",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "pou⁴ tou⁴ zau²",
+    "where": "China — Cantonese",
+    "country": "China",
+    "language": "Cantonese",
+    "kind": "modern"
+  },
+  {
+    "word": "путоҗю",
+    "pronunciation": "pu-to-jyu",
+    "where": "China — Dungan",
+    "country": "China",
+    "language": "Dungan",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "phù-thò-chiú",
+    "where": "China — Hakka",
+    "country": "China",
+    "language": "Hakka",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "pútáojiǔ",
+    "where": "China — Mandarin",
+    "country": "China",
+    "language": "Mandarin",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "bu-dau-cieu",
+    "where": "China — Wu",
+    "country": "China",
+    "language": "Wu",
+    "kind": "modern"
+  },
+  {
+    "word": "laeuj",
+    "pronunciation": "lae-oozh",
+    "where": "China — Zhuang",
+    "country": "China",
+    "language": "Zhuang",
+    "kind": "modern"
+  },
+  {
+    "word": "vinyo",
+    "pronunciation": "VIN-yo",
+    "where": "Comoros — Maore Comorian",
+    "country": "Comoros",
+    "language": "Maore Comorian",
+    "kind": "modern"
+  },
+  {
+    "word": "gwin",
+    "pronunciation": "gwin",
+    "where": "Cornwall, UK — Cornish",
+    "country": "Cornwall, UK",
+    "language": "Cornish",
+    "kind": "modern"
+  },
+  {
+    "word": "vinu",
+    "pronunciation": "VEE-noo",
+    "where": "Corsica — Corsican",
+    "country": "Corsica",
+    "language": "Corsican",
+    "kind": "modern"
+  },
+  {
+    "word": "şarap",
+    "pronunciation": "sha-RAP",
+    "where": "Crimea — Crimean Tatar",
+    "country": "Crimea",
+    "language": "Crimean Tatar",
+    "kind": "modern"
+  },
+  {
+    "word": "шараб",
+    "pronunciation": "sha-RAB",
+    "where": "Crimea/Caucasus — Karaim",
+    "country": "Crimea/Caucasus",
+    "language": "Karaim",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Croatia — Croatian",
+    "country": "Croatia",
+    "language": "Croatian",
+    "kind": "modern"
+  },
+  {
+    "word": "veîn",
+    "pronunciation": "vayn",
+    "where": "Croatia — Istriot",
+    "country": "Croatia",
+    "language": "Istriot",
+    "kind": "modern"
+  },
+  {
+    "word": "κρασί",
+    "pronunciation": "kra-SEE",
+    "where": "Cyprus — Greek",
+    "country": "Cyprus",
+    "language": "Greek",
+    "kind": "modern"
+  },
+  {
+    "word": "şarap",
+    "pronunciation": "sha-RAP",
+    "where": "Cyprus — Turkish",
+    "country": "Cyprus",
+    "language": "Turkish",
+    "kind": "modern"
+  },
+  {
+    "word": "víno",
+    "pronunciation": "VEE-no",
+    "where": "Czech Republic — Czech",
+    "country": "Czech Republic",
+    "language": "Czech",
+    "kind": "modern"
+  },
+  {
+    "word": "víno",
+    "pronunciation": "VEE-no",
+    "where": "Czechia — Czech",
+    "country": "Czechia",
+    "language": "Czech",
+    "kind": "modern"
+  },
+  {
+    "word": "чагъир",
+    "pronunciation": "CHA-ghir",
+    "where": "Dagestan — Avar",
+    "country": "Dagestan",
+    "language": "Avar",
+    "kind": "modern"
+  },
+  {
+    "word": "чягъир",
+    "pronunciation": "chuh-GHEER",
+    "where": "Dagestan — Kaitag",
+    "country": "Dagestan",
+    "language": "Kaitag",
+    "kind": "modern"
+  },
+  {
+    "word": "чехир",
+    "pronunciation": "che-KHEER",
+    "where": "Dagestan — Lezgi",
+    "country": "Dagestan",
+    "language": "Lezgi",
+    "kind": "modern"
+  },
+  {
+    "word": "ven / vain",
+    "pronunciation": "ven / vain",
+    "where": "Dalmatia — Dalmatian",
+    "country": "Dalmatia",
+    "language": "Dalmatian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Denmark — Danish",
+    "country": "Denmark",
+    "language": "Danish",
+    "kind": "modern"
+  },
+  {
+    "word": "divai",
+    "pronunciation": "dee-VAI",
+    "where": "East Africa — Swahili",
+    "country": "East Africa",
+    "language": "Swahili",
+    "kind": "modern"
+  },
+  {
+    "word": "ⰲⰻⱀⱁ",
+    "pronunciation": "vee-no",
+    "where": "Eastern Europe — Old Church Slavonic",
+    "country": "Eastern Europe",
+    "language": "Old Church Slavonic",
+    "kind": "historical"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Eastern Europe — Old East Slavic",
+    "country": "Eastern Europe",
+    "language": "Old East Slavic",
+    "kind": "historical"
+  },
+  {
+    "word": "ⲏⲣⲡ",
+    "pronunciation": "ērp",
+    "where": "Egypt — Coptic",
+    "country": "Egypt",
+    "language": "Coptic",
+    "kind": "historical"
+  },
+  {
+    "word": "wīn",
+    "pronunciation": "ween",
+    "where": "England — Old English",
+    "country": "England",
+    "language": "Old English",
+    "kind": "historical"
+  },
+  {
+    "word": "vein",
+    "pronunciation": "vayn",
+    "where": "Estonia — Estonian",
+    "country": "Estonia",
+    "language": "Estonian",
+    "kind": "modern"
+  },
+  {
+    "word": "vein",
+    "pronunciation": "vayn",
+    "where": "Estonia — Võro",
+    "country": "Estonia",
+    "language": "Võro",
+    "kind": "modern"
+  },
+  {
+    "word": "ወይን ጠጅ",
+    "pronunciation": "wäyn ṭäǧ",
+    "where": "Ethiopia — Amharic",
+    "country": "Ethiopia",
+    "language": "Amharic",
+    "kind": "modern"
+  },
+  {
+    "word": "waynii",
+    "pronunciation": "why-NEE",
+    "where": "Ethiopia — Oromo",
+    "country": "Ethiopia",
+    "language": "Oromo",
+    "kind": "modern"
+  },
+  {
+    "word": "ነቢት / ወይኒ",
+    "pronunciation": "näbit / wäyni",
+    "where": "Ethiopia/Eritrea — Tigrinya",
+    "country": "Ethiopia/Eritrea",
+    "language": "Tigrinya",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Europe — Ido",
+    "country": "Europe",
+    "language": "Ido",
+    "kind": "modern"
+  },
+  {
+    "word": "mol",
+    "pronunciation": "mol",
+    "where": "Europe/Asia — Romani",
+    "country": "Europe/Asia",
+    "language": "Romani",
+    "kind": "modern"
+  },
+  {
+    "word": "vín",
+    "pronunciation": "veen",
+    "where": "Faroe Islands — Faroese",
+    "country": "Faroe Islands",
+    "language": "Faroese",
+    "kind": "modern"
+  },
+  {
+    "word": "viini",
+    "pronunciation": "VEE-nee",
+    "where": "Finland — Finnish",
+    "country": "Finland",
+    "language": "Finnish",
+    "kind": "modern"
+  },
+  {
+    "word": "gwin",
+    "pronunciation": "gwin",
+    "where": "France — Breton",
+    "country": "France",
+    "language": "Breton",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "France — French",
+    "country": "France",
+    "language": "French",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "France — Occitan",
+    "country": "France",
+    "language": "Occitan",
+    "kind": "modern"
+  },
+  {
+    "word": "ღვინო",
+    "pronunciation": "GHVEE-no",
+    "where": "Georgia — Georgian",
+    "country": "Georgia",
+    "language": "Georgian",
+    "kind": "modern"
+  },
+  {
+    "word": "ღვინი",
+    "pronunciation": "GHVEE-nee",
+    "where": "Georgia — Laz",
+    "country": "Georgia",
+    "language": "Laz",
+    "kind": "modern"
+  },
+  {
+    "word": "վե",
+    "pronunciation": "ve",
+    "where": "Georgia/Dagestan — Bats",
+    "country": "Georgia/Dagestan",
+    "language": "Bats",
+    "kind": "modern"
+  },
+  {
+    "word": "𐍅𐌴𐌹𐌽",
+    "pronunciation": "wein",
+    "where": "Germanic Europe — Gothic",
+    "country": "Germanic Europe",
+    "language": "Gothic",
+    "kind": "historical"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Germany — German",
+    "country": "Germany",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vайн",
+    "where": "Germany/Austria — German",
+    "country": "Germany/Austria",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "Wien",
+    "pronunciation": "ween",
+    "where": "Germany/Poland — Plautdietsch",
+    "country": "Germany/Poland",
+    "language": "Plautdietsch",
+    "kind": "modern"
+  },
+  {
+    "word": "wein",
+    "pronunciation": "vayn",
+    "where": "Ghana/Togo — Ewe",
+    "country": "Ghana/Togo",
+    "language": "Ewe",
+    "kind": "modern"
+  },
+  {
+    "word": "aahsanteepakwaapowi",
+    "pronunciation": "ah-san-tee-pah-kwah-poh-wee",
+    "where": "Great Lakes, North America — Miami",
+    "country": "Great Lakes, North America",
+    "language": "Miami",
+    "kind": "modern"
+  },
+  {
+    "word": "κρασί",
+    "pronunciation": "kra-SEE",
+    "where": "Greece — Greek",
+    "country": "Greece",
+    "language": "Greek",
+    "kind": "modern"
+  },
+  {
+    "word": "viinni",
+    "pronunciation": "VEE-nee-nee",
+    "where": "Greenland — Greenlandic",
+    "country": "Greenland",
+    "language": "Greenlandic",
+    "kind": "modern"
+  },
+  {
+    "word": "waina",
+    "pronunciation": "WHY-na",
+    "where": "Hawaii — Hawaiian",
+    "country": "Hawaii",
+    "language": "Hawaiian",
+    "kind": "modern"
+  },
+  {
+    "word": "bor",
+    "pronunciation": "bor",
+    "where": "Hungary — Hungarian",
+    "country": "Hungary",
+    "language": "Hungarian",
+    "kind": "modern"
+  },
+  {
+    "word": "vinho",
+    "pronunciation": "VEEN-yo",
+    "where": "Iberia — Old Galician-Portuguese",
+    "country": "Iberia",
+    "language": "Old Galician-Portuguese",
+    "kind": "historical"
+  },
+  {
+    "word": "vín",
+    "pronunciation": "veen",
+    "where": "Iceland — Icelandic",
+    "country": "Iceland",
+    "language": "Icelandic",
+    "kind": "modern"
+  },
+  {
+    "word": "সুৰা",
+    "pronunciation": "xura",
+    "where": "India — Assamese",
+    "country": "India",
+    "language": "Assamese",
+    "kind": "modern"
+  },
+  {
+    "word": "વાઇન",
+    "pronunciation": "VAI-na",
+    "where": "India — Gujarati",
+    "country": "India",
+    "language": "Gujarati",
+    "kind": "modern"
+  },
+  {
+    "word": "शराब",
+    "pronunciation": "sha-RAAB",
+    "where": "India — Hindi",
+    "country": "India",
+    "language": "Hindi",
+    "kind": "modern"
+  },
+  {
+    "word": "ವೈನ್",
+    "pronunciation": "vain",
+    "where": "India — Kannada",
+    "country": "India",
+    "language": "Kannada",
+    "kind": "modern"
+  },
+  {
+    "word": "വീഞ്ഞ്",
+    "pronunciation": "VEE-nyu",
+    "where": "India — Malayalam",
+    "country": "India",
+    "language": "Malayalam",
+    "kind": "modern"
+  },
+  {
+    "word": "ग्रेप वाईन",
+    "pronunciation": "grep vāīn",
+    "where": "India — Marathi",
+    "country": "India",
+    "language": "Marathi",
+    "kind": "modern"
+  },
+  {
+    "word": "ମଦ",
+    "pronunciation": "ma-da",
+    "where": "India — Odia",
+    "country": "India",
+    "language": "Odia",
+    "kind": "modern"
+  },
+  {
+    "word": "drākṣa sārāyi",
+    "pronunciation": "DRAAK-sha sa-RAA-yee",
+    "where": "India — Telugu",
+    "country": "India",
+    "language": "Telugu",
+    "kind": "modern"
+  },
+  {
+    "word": "ਸ਼ਰਾਬ",
+    "pronunciation": "sha-RAAB",
+    "where": "India/Pakistan — Punjabi",
+    "country": "India/Pakistan",
+    "language": "Punjabi",
+    "kind": "modern"
+  },
+  {
+    "word": "வைன்",
+    "pronunciation": "vaiṉ",
+    "where": "India/Sri Lanka — Tamil",
+    "country": "India/Sri Lanka",
+    "language": "Tamil",
+    "kind": "modern"
+  },
+  {
+    "word": "anggur",
+    "pronunciation": "ANG-goor",
+    "where": "Indonesia — Indonesian",
+    "country": "Indonesia",
+    "language": "Indonesian",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "International — Esperanto",
+    "country": "International",
+    "language": "Esperanto",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "International — Interlingua",
+    "country": "International",
+    "language": "Interlingua",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "International — Volapük",
+    "country": "International",
+    "language": "Volapük",
+    "kind": "modern"
+  },
+  {
+    "word": "شَراب / مِی",
+    "pronunciation": "sha-RAB / may",
+    "where": "Iran — Persian",
+    "country": "Iran",
+    "language": "Persian",
+    "kind": "modern"
+  },
+  {
+    "word": "بادە / مەی",
+    "pronunciation": "BA-deh / may",
+    "where": "Iraq/Iran — Central Kurdish",
+    "country": "Iraq/Iran",
+    "language": "Central Kurdish",
+    "kind": "modern"
+  },
+  {
+    "word": "fíon",
+    "pronunciation": "FEE-un",
+    "where": "Ireland — Irish",
+    "country": "Ireland",
+    "language": "Irish",
+    "kind": "modern"
+  },
+  {
+    "word": "feeyn",
+    "pronunciation": "fayn",
+    "where": "Isle of Man — Manx",
+    "country": "Isle of Man",
+    "language": "Manx",
+    "kind": "modern"
+  },
+  {
+    "word": "יין / יַיִן",
+    "pronunciation": "YA-yin",
+    "where": "Israel — Hebrew",
+    "country": "Israel",
+    "language": "Hebrew",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Israel/Levant — Ladino",
+    "country": "Israel/Levant",
+    "language": "Ladino",
+    "kind": "modern"
+  },
+  {
+    "word": "vir",
+    "pronunciation": "veer",
+    "where": "Istria — Istro-Romanian",
+    "country": "Istria",
+    "language": "Istro-Romanian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Italy — Friulian",
+    "country": "Italy",
+    "language": "Friulian",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Italy — Italian",
+    "country": "Italy",
+    "language": "Italian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Italy — Ligurian",
+    "country": "Italy",
+    "language": "Ligurian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Italy — Lombard",
+    "country": "Italy",
+    "language": "Lombard",
+    "kind": "modern"
+  },
+  {
+    "word": "vvino",
+    "pronunciation": "VEE-no",
+    "where": "Italy — Neapolitan",
+    "country": "Italy",
+    "language": "Neapolitan",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Italy — Piedmontese",
+    "country": "Italy",
+    "language": "Piedmontese",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Italy — Venetian",
+    "country": "Italy",
+    "language": "Venetian",
+    "kind": "modern"
+  },
+  {
+    "word": "lat. vīnum",
+    "pronunciation": "WEE-noom",
+    "where": "Italy/Vatican City — Latin",
+    "country": "Italy/Vatican City",
+    "language": "Latin",
+    "kind": "modern"
+  },
+  {
+    "word": "ワイン",
+    "pronunciation": "wain",
+    "where": "Japan — Japanese",
+    "country": "Japan",
+    "language": "Japanese",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "budōshu",
+    "where": "Japan — Japanese (formal/native compound)",
+    "country": "Japan",
+    "language": "Japanese (formal/native compound)",
+    "kind": "modern"
+  },
+  {
+    "word": "ווײַן",
+    "pronunciation": "vayn",
+    "where": "Jewish communities — Yiddish",
+    "country": "Jewish communities",
+    "language": "Yiddish",
+    "kind": "modern"
+  },
+  {
+    "word": "шарап",
+    "pronunciation": "sha-RAP",
+    "where": "Kazakhstan — Kazakh",
+    "country": "Kazakhstan",
+    "language": "Kazakh",
+    "kind": "modern"
+  },
+  {
+    "word": "HIq",
+    "pronunciation": "[xɪqʰ]",
+    "where": "Klingon (constructed) — Klingon",
+    "country": "Klingon (constructed)",
+    "language": "Klingon",
+    "kind": "constructed"
+  },
+  {
+    "word": "шарап",
+    "pronunciation": "sha-RAP",
+    "where": "Kyrgyzstan — Kyrgyz",
+    "country": "Kyrgyzstan",
+    "language": "Kyrgyz",
+    "kind": "modern"
+  },
+  {
+    "word": "ແວງ",
+    "pronunciation": "wèng",
+    "where": "Laos — Lao",
+    "country": "Laos",
+    "language": "Lao",
+    "kind": "modern"
+  },
+  {
+    "word": "vīns",
+    "pronunciation": "veens",
+    "where": "Latvia — Latvian",
+    "country": "Latvia",
+    "language": "Latvian",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Liechtenstein — German",
+    "country": "Liechtenstein",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "vynas",
+    "pronunciation": "VEE-nas",
+    "where": "Lithuania — Lithuanian",
+    "country": "Lithuania",
+    "language": "Lithuanian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "Luxembourg — French",
+    "country": "Luxembourg",
+    "language": "French",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Luxembourg — German",
+    "country": "Luxembourg",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "Wäin",
+    "pronunciation": "vayn",
+    "where": "Luxembourg — Luxembourgish",
+    "country": "Luxembourg",
+    "language": "Luxembourgish",
+    "kind": "modern"
+  },
+  {
+    "word": "divay",
+    "pronunciation": "dee-VAI",
+    "where": "Madagascar — Malagasy",
+    "country": "Madagascar",
+    "language": "Malagasy",
+    "kind": "modern"
+  },
+  {
+    "word": "wain",
+    "pronunciation": "wain",
+    "where": "Malaysia — Malay",
+    "country": "Malaysia",
+    "language": "Malay",
+    "kind": "modern"
+  },
+  {
+    "word": "wain",
+    "pronunciation": "wain",
+    "where": "Malaysia/Indonesia — Central Melanau",
+    "country": "Malaysia/Indonesia",
+    "language": "Central Melanau",
+    "kind": "modern"
+  },
+  {
+    "word": "inbid",
+    "pronunciation": "IN-bid",
+    "where": "Malta — Maltese",
+    "country": "Malta",
+    "language": "Maltese",
+    "kind": "modern"
+  },
+  {
+    "word": "divin",
+    "pronunciation": "dee-VEEN",
+    "where": "Mauritius — Mauritian Creole",
+    "country": "Mauritius",
+    "language": "Mauritian Creole",
+    "kind": "modern"
+  },
+  {
+    "word": "ܚܡܪܐ",
+    "pronunciation": "ḥamrā",
+    "where": "Mesopotamia — Aramaic/Syriac",
+    "country": "Mesopotamia",
+    "language": "Aramaic/Syriac",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Mexico — Classical Nahuatl",
+    "country": "Mexico",
+    "language": "Classical Nahuatl",
+    "kind": "historical"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "veen",
+    "where": "Moldova — Romanian",
+    "country": "Moldova",
+    "language": "Romanian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Monaco — French",
+    "country": "Monaco",
+    "language": "French",
+    "kind": "modern"
+  },
+  {
+    "word": "дарс",
+    "pronunciation": "dars",
+    "where": "Mongolia — Mongolian",
+    "country": "Mongolia",
+    "language": "Mongolian",
+    "kind": "modern"
+  },
+  {
+    "word": "ᠳᠠᠷᠠᠰᠤ",
+    "pronunciation": "darasu",
+    "where": "Mongolia — Mongolian traditional script",
+    "country": "Mongolia",
+    "language": "Mongolian traditional script",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Montenegro — Montenegrin",
+    "country": "Montenegro",
+    "language": "Montenegrin",
+    "kind": "modern"
+  },
+  {
+    "word": "ဝိုင်",
+    "pronunciation": "wuing",
+    "where": "Myanmar — Burmese",
+    "country": "Myanmar",
+    "language": "Burmese",
+    "kind": "modern"
+  },
+  {
+    "word": "𐀺𐀜",
+    "pronunciation": "wo-no",
+    "where": "Mycenaean Greece — Mycenaean Greek",
+    "country": "Mycenaean Greece",
+    "language": "Mycenaean Greek",
+    "kind": "historical"
+  },
+  {
+    "word": "wijn",
+    "pronunciation": "wine",
+    "where": "Netherlands — Dutch",
+    "country": "Netherlands",
+    "language": "Dutch",
+    "kind": "modern"
+  },
+  {
+    "word": "wijn",
+    "pronunciation": "wайн",
+    "where": "Netherlands/Belgium — Dutch",
+    "country": "Netherlands/Belgium",
+    "language": "Dutch",
+    "kind": "modern"
+  },
+  {
+    "word": "wāina",
+    "pronunciation": "WHY-na",
+    "where": "New Zealand — Māori",
+    "country": "New Zealand",
+    "language": "Māori",
+    "kind": "modern"
+  },
+  {
+    "word": "udi",
+    "pronunciation": "OO-dee",
+    "where": "Nigeria — Urhobo",
+    "country": "Nigeria",
+    "language": "Urhobo",
+    "kind": "modern"
+  },
+  {
+    "word": "wáìnì",
+    "pronunciation": "why-EE-nee",
+    "where": "Nigeria — Yoruba",
+    "country": "Nigeria",
+    "language": "Yoruba",
+    "kind": "modern"
+  },
+  {
+    "word": "vîn",
+    "pronunciation": "veen",
+    "where": "Normandy, France — Norman",
+    "country": "Normandy, France",
+    "language": "Norman",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "North Macedonia — Macedonian",
+    "country": "North Macedonia",
+    "language": "Macedonian",
+    "kind": "modern"
+  },
+  {
+    "word": "Wien",
+    "pronunciation": "ween",
+    "where": "Northern Germany — Low German",
+    "country": "Northern Germany",
+    "language": "Low German",
+    "kind": "modern"
+  },
+  {
+    "word": "viidni",
+    "pronunciation": "VEE-dnee",
+    "where": "Northern Scandinavia — Northern Sami",
+    "country": "Northern Scandinavia",
+    "language": "Northern Sami",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Norway — Norwegian",
+    "country": "Norway",
+    "language": "Norwegian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Norway — Norwegian Bokmål",
+    "country": "Norway",
+    "language": "Norwegian Bokmål",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Norway — Norwegian Nynorsk",
+    "country": "Norway",
+    "language": "Norwegian Nynorsk",
+    "kind": "modern"
+  },
+  {
+    "word": "شَراب",
+    "pronunciation": "sha-RAAB",
+    "where": "Pakistan/India — Urdu",
+    "country": "Pakistan/India",
+    "language": "Urdu",
+    "kind": "modern"
+  },
+  {
+    "word": "𐤉𐤍",
+    "pronunciation": "yn",
+    "where": "Phoenician Levant — Phoenician",
+    "country": "Phoenician Levant",
+    "language": "Phoenician",
+    "kind": "historical"
+  },
+  {
+    "word": "wino",
+    "pronunciation": "VEE-no",
+    "where": "Poland — Kashubian",
+    "country": "Poland",
+    "language": "Kashubian",
+    "kind": "modern"
+  },
+  {
+    "word": "wino",
+    "pronunciation": "VEE-no",
+    "where": "Poland — Polish",
+    "country": "Poland",
+    "language": "Polish",
+    "kind": "modern"
+  },
+  {
+    "word": "wino",
+    "pronunciation": "VEE-no",
+    "where": "Poland — Silesian",
+    "country": "Poland",
+    "language": "Silesian",
+    "kind": "modern"
+  },
+  {
+    "word": "vinho",
+    "pronunciation": "VEEN-yo",
+    "where": "Portugal — Portuguese",
+    "country": "Portugal",
+    "language": "Portuguese",
+    "kind": "modern"
+  },
+  {
+    "word": "vinho",
+    "pronunciation": "VEEN-yo",
+    "where": "Portugal/Brazil — Portuguese",
+    "country": "Portugal/Brazil",
+    "language": "Portuguese",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "Réunion — Réunion Creole",
+    "country": "Réunion",
+    "language": "Réunion Creole",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Romania — Romanian",
+    "country": "Romania",
+    "language": "Romanian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Romania/Moldova — Romanian",
+    "country": "Romania/Moldova",
+    "language": "Romanian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Adyghe (Adygea)",
+    "country": "Russia",
+    "language": "Adyghe (Adygea)",
+    "kind": "modern"
+  },
+  {
+    "word": "аракъ",
+    "pronunciation": "a-RAQ",
+    "where": "Russia — Avar (Dagestan)",
+    "country": "Russia",
+    "language": "Avar (Dagestan)",
+    "kind": "modern"
+  },
+  {
+    "word": "шарап",
+    "pronunciation": "sha-RAP",
+    "where": "Russia — Bashkir",
+    "country": "Russia",
+    "language": "Bashkir",
+    "kind": "modern"
+  },
+  {
+    "word": "шарап",
+    "pronunciation": "sha-RAP",
+    "where": "Russia — Bashkir (Bashkortostan)",
+    "country": "Russia",
+    "language": "Bashkir (Bashkortostan)",
+    "kind": "modern"
+  },
+  {
+    "word": "архи",
+    "pronunciation": "AR-khee",
+    "where": "Russia — Buryat",
+    "country": "Russia",
+    "language": "Buryat",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Buryat (Buryatia)",
+    "country": "Russia",
+    "language": "Buryat (Buryatia)",
+    "kind": "modern"
+  },
+  {
+    "word": "аракъ",
+    "pronunciation": "a-RAQ",
+    "where": "Russia — Chechen (Chechnya)",
+    "country": "Russia",
+    "language": "Chechen (Chechnya)",
+    "kind": "modern"
+  },
+  {
+    "word": "эрех",
+    "pronunciation": "EH-rekh",
+    "where": "Russia — Chuvash",
+    "country": "Russia",
+    "language": "Chuvash",
+    "kind": "modern"
+  },
+  {
+    "word": "ҫыра",
+    "pronunciation": "suh-RA",
+    "where": "Russia — Chuvash (Chuvashia)",
+    "country": "Russia",
+    "language": "Chuvash (Chuvashia)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Erzya (Mordovia)",
+    "country": "Russia",
+    "language": "Erzya (Mordovia)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Ingush (Ingushetia)",
+    "country": "Russia",
+    "language": "Ingush (Ingushetia)",
+    "kind": "modern"
+  },
+  {
+    "word": "шарап",
+    "pronunciation": "sha-RAP",
+    "where": "Russia — Kabardian (Kabardino-Balkaria)",
+    "country": "Russia",
+    "language": "Kabardian (Kabardino-Balkaria)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Kalmyk (Kalmykia)",
+    "country": "Russia",
+    "language": "Kalmyk (Kalmykia)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Karachay-Balkar (Karachay-Cherkessia)",
+    "country": "Russia",
+    "language": "Karachay-Balkar (Karachay-Cherkessia)",
+    "kind": "modern"
+  },
+  {
+    "word": "вина",
+    "pronunciation": "VEE-na",
+    "where": "Russia — Komi",
+    "country": "Russia",
+    "language": "Komi",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Komi (Komi Republic)",
+    "country": "Russia",
+    "language": "Komi (Komi Republic)",
+    "kind": "modern"
+  },
+  {
+    "word": "чагъир",
+    "pronunciation": "cha-GHEER",
+    "where": "Russia — Lezgin (Dagestan)",
+    "country": "Russia",
+    "language": "Lezgin (Dagestan)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Mari (Mari El)",
+    "country": "Russia",
+    "language": "Mari (Mari El)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Moksha (Mordovia)",
+    "country": "Russia",
+    "language": "Moksha (Mordovia)",
+    "kind": "modern"
+  },
+  {
+    "word": "араки",
+    "pronunciation": "a-RA-kee",
+    "where": "Russia — Nanai",
+    "country": "Russia",
+    "language": "Nanai",
+    "kind": "modern"
+  },
+  {
+    "word": "сæн",
+    "pronunciation": "sæn",
+    "where": "Russia — Ossetian (North Ossetia–Alania)",
+    "country": "Russia",
+    "language": "Ossetian (North Ossetia–Alania)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Russia — Russian",
+    "country": "Russia",
+    "language": "Russian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино́",
+    "pronunciation": "vee-NOH",
+    "where": "Russia — Russian",
+    "country": "Russia",
+    "language": "Russian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Sakha/Yakut (Sakha Republic)",
+    "country": "Russia",
+    "language": "Sakha/Yakut (Sakha Republic)",
+    "kind": "modern"
+  },
+  {
+    "word": "шәраб",
+    "pronunciation": "sha-RAB",
+    "where": "Russia — Tatar",
+    "country": "Russia",
+    "language": "Tatar",
+    "kind": "modern"
+  },
+  {
+    "word": "арага",
+    "pronunciation": "a-RA-ga",
+    "where": "Russia — Tuvan (Tuva)",
+    "country": "Russia",
+    "language": "Tuvan (Tuva)",
+    "kind": "modern"
+  },
+  {
+    "word": "вина",
+    "pronunciation": "VEE-na",
+    "where": "Russia — Udmurt",
+    "country": "Russia",
+    "language": "Udmurt",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Russia — Udmurt (Udmurtia)",
+    "country": "Russia",
+    "language": "Udmurt (Udmurtia)",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "vee-NOH",
+    "where": "Sakha/Yakutia — Yakut",
+    "country": "Sakha/Yakutia",
+    "language": "Yakut",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "San Marino — Italian",
+    "country": "San Marino",
+    "language": "Italian",
+    "kind": "modern"
+  },
+  {
+    "word": "binu",
+    "pronunciation": "BEE-noo",
+    "where": "Sardinia — Sardinian",
+    "country": "Sardinia",
+    "language": "Sardinian",
+    "kind": "modern"
+  },
+  {
+    "word": "vín",
+    "pronunciation": "veen",
+    "where": "Scandinavia — Old Norse",
+    "country": "Scandinavia",
+    "language": "Old Norse",
+    "kind": "historical"
+  },
+  {
+    "word": "fìon",
+    "pronunciation": "FEE-un",
+    "where": "Scotland — Scottish Gaelic",
+    "country": "Scotland",
+    "language": "Scottish Gaelic",
+    "kind": "modern"
+  },
+  {
+    "word": "вино",
+    "pronunciation": "VEE-no",
+    "where": "Serbia — Serbian",
+    "country": "Serbia",
+    "language": "Serbian",
+    "kind": "modern"
+  },
+  {
+    "word": "араки",
+    "pronunciation": "a-RA-kee",
+    "where": "Siberia/Russia — Evenki",
+    "country": "Siberia/Russia",
+    "language": "Evenki",
+    "kind": "modern"
+  },
+  {
+    "word": "vinu",
+    "pronunciation": "VEE-noo",
+    "where": "Sicily — Sicilian",
+    "country": "Sicily",
+    "language": "Sicilian",
+    "kind": "modern"
+  },
+  {
+    "word": "víno",
+    "pronunciation": "VEE-no",
+    "where": "Slovakia — Slovak",
+    "country": "Slovakia",
+    "language": "Slovak",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Slovenia — Slovene",
+    "country": "Slovenia",
+    "language": "Slovene",
+    "kind": "modern"
+  },
+  {
+    "word": "khamri",
+    "pronunciation": "KHAM-ree",
+    "where": "Somalia — Somali",
+    "country": "Somalia",
+    "language": "Somali",
+    "kind": "modern"
+  },
+  {
+    "word": "wyn",
+    "pronunciation": "win",
+    "where": "South Africa/Namibia — Afrikaans",
+    "country": "South Africa/Namibia",
+    "language": "Afrikaans",
+    "kind": "modern"
+  },
+  {
+    "word": "포도주",
+    "pronunciation": "po-do-ju",
+    "where": "South Korea — Korean",
+    "country": "South Korea",
+    "language": "Korean",
+    "kind": "modern"
+  },
+  {
+    "word": "vene",
+    "pronunciation": "VEH-neh",
+    "where": "Southern Africa — Sotho",
+    "country": "Southern Africa",
+    "language": "Sotho",
+    "kind": "modern"
+  },
+  {
+    "word": "iwayini",
+    "pronunciation": "ee-wa-YEE-nee",
+    "where": "Southern Africa — Zulu",
+    "country": "Southern Africa",
+    "language": "Zulu",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Spain — Aragonese",
+    "country": "Spain",
+    "language": "Aragonese",
+    "kind": "modern"
+  },
+  {
+    "word": "vinu",
+    "pronunciation": "VEE-noo",
+    "where": "Spain — Asturian",
+    "country": "Spain",
+    "language": "Asturian",
+    "kind": "modern"
+  },
+  {
+    "word": "viño",
+    "pronunciation": "VEE-nyo",
+    "where": "Spain — Galician",
+    "country": "Spain",
+    "language": "Galician",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Spain — Spanish",
+    "country": "Spain",
+    "language": "Spanish",
+    "kind": "modern"
+  },
+  {
+    "word": "වයින්",
+    "pronunciation": "why-in",
+    "where": "Sri Lanka — Sinhalese",
+    "country": "Sri Lanka",
+    "language": "Sinhalese",
+    "kind": "modern"
+  },
+  {
+    "word": "win",
+    "pronunciation": "win",
+    "where": "Sweden — Elfdalian",
+    "country": "Sweden",
+    "language": "Elfdalian",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "veen",
+    "where": "Sweden — Swedish",
+    "country": "Sweden",
+    "language": "Swedish",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "vin",
+    "where": "Sweden — Swedish",
+    "country": "Sweden",
+    "language": "Swedish",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "Switzerland — French",
+    "country": "Switzerland",
+    "language": "French",
+    "kind": "modern"
+  },
+  {
+    "word": "Wein",
+    "pronunciation": "vayn",
+    "where": "Switzerland — German",
+    "country": "Switzerland",
+    "language": "German",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Switzerland — Italian",
+    "country": "Switzerland",
+    "language": "Italian",
+    "kind": "modern"
+  },
+  {
+    "word": "vegn",
+    "pronunciation": "vayn",
+    "where": "Switzerland — Romansh",
+    "country": "Switzerland",
+    "language": "Romansh",
+    "kind": "modern"
+  },
+  {
+    "word": "vegn / vin",
+    "pronunciation": "ven / vin",
+    "where": "Switzerland — Romansh",
+    "country": "Switzerland",
+    "language": "Romansh",
+    "kind": "modern"
+  },
+  {
+    "word": "葡萄酒",
+    "pronunciation": "phû-tô-chiú",
+    "where": "Taiwan/China — Hokkien",
+    "country": "Taiwan/China",
+    "language": "Hokkien",
+    "kind": "modern"
+  },
+  {
+    "word": "ไวน์",
+    "pronunciation": "waai",
+    "where": "Thailand — Thai",
+    "country": "Thailand",
+    "language": "Thai",
+    "kind": "modern"
+  },
+  {
+    "word": "རྒུན་ཆང",
+    "pronunciation": "rgun chang",
+    "where": "Tibet — Tibetan",
+    "country": "Tibet",
+    "language": "Tibetan",
+    "kind": "modern"
+  },
+  {
+    "word": "tua-uvas",
+    "pronunciation": "TOO-a OO-vas",
+    "where": "Timor-Leste — Tetum",
+    "country": "Timor-Leste",
+    "language": "Tetum",
+    "kind": "modern"
+  },
+  {
+    "word": "şarap",
+    "pronunciation": "sha-RAP",
+    "where": "Turkey — Turkish",
+    "country": "Turkey",
+    "language": "Turkish",
+    "kind": "modern"
+  },
+  {
+    "word": "şerab / wîn",
+    "pronunciation": "sheh-RAB / ween",
+    "where": "Turkey/Iraq/Syria — Northern Kurdish",
+    "country": "Turkey/Iraq/Syria",
+    "language": "Northern Kurdish",
+    "kind": "modern"
+  },
+  {
+    "word": "арага",
+    "pronunciation": "a-RA-ga",
+    "where": "Tuva — Tuvan",
+    "country": "Tuva",
+    "language": "Tuvan",
+    "kind": "modern"
+  },
+  {
+    "word": "бі́ле вино́",
+    "pronunciation": "BEE-leh vee-NOH",
+    "where": "Ukraine — Ukrainian",
+    "country": "Ukraine",
+    "language": "Ukrainian",
+    "kind": "modern"
+  },
+  {
+    "word": "вино́",
+    "pronunciation": "vee-NOH",
+    "where": "Ukraine — Ukrainian",
+    "country": "Ukraine",
+    "language": "Ukrainian",
+    "kind": "modern"
+  },
+  {
+    "word": "wine",
+    "pronunciation": "wain",
+    "where": "United Kingdom — English",
+    "country": "United Kingdom",
+    "language": "English",
+    "kind": "modern"
+  },
+  {
+    "word": "fíon",
+    "pronunciation": "FEE-un",
+    "where": "United Kingdom — Irish",
+    "country": "United Kingdom",
+    "language": "Irish",
+    "kind": "modern"
+  },
+  {
+    "word": "fìon",
+    "pronunciation": "FEE-un",
+    "where": "United Kingdom — Scottish Gaelic",
+    "country": "United Kingdom",
+    "language": "Scottish Gaelic",
+    "kind": "modern"
+  },
+  {
+    "word": "gwin",
+    "pronunciation": "gwin",
+    "where": "United Kingdom — Welsh",
+    "country": "United Kingdom",
+    "language": "Welsh",
+    "kind": "modern"
+  },
+  {
+    "word": "wine",
+    "pronunciation": "/waɪn/",
+    "where": "United States/United Kingdom — English",
+    "country": "United States/United Kingdom",
+    "language": "English",
+    "kind": "modern"
+  },
+  {
+    "word": "sharob",
+    "pronunciation": "sha-ROB",
+    "where": "Uzbekistan — Uzbek",
+    "country": "Uzbekistan",
+    "language": "Uzbek",
+    "kind": "modern"
+  },
+  {
+    "word": "vino",
+    "pronunciation": "VEE-no",
+    "where": "Vatican City — Italian",
+    "country": "Vatican City",
+    "language": "Italian",
+    "kind": "modern"
+  },
+  {
+    "word": "vīnum",
+    "pronunciation": "WEE-noom",
+    "where": "Vatican City — Latin",
+    "country": "Vatican City",
+    "language": "Latin",
+    "kind": "modern"
+  },
+  {
+    "word": "rượu vang",
+    "pronunciation": "rɯəu vang",
+    "where": "Vietnam — Vietnamese",
+    "country": "Vietnam",
+    "language": "Vietnamese",
+    "kind": "modern"
+  },
+  {
+    "word": "gwin",
+    "pronunciation": "gwin",
+    "where": "Wales — Welsh",
+    "country": "Wales",
+    "language": "Welsh",
+    "kind": "modern"
+  },
+  {
+    "word": "wyn",
+    "pronunciation": "win",
+    "where": "Wales/Friesland — Frisian",
+    "country": "Wales/Friesland",
+    "language": "Frisian",
+    "kind": "modern"
+  },
+  {
+    "word": "ئۈزۈم ھارىقى",
+    "pronunciation": "üzüm hariqi",
+    "where": "Xinjiang, China — Uyghur",
+    "country": "Xinjiang, China",
+    "language": "Uyghur",
+    "kind": "modern"
+  },
+  {
+    "word": "taliʼ",
+    "pronunciation": "ta-LEE",
+    "where": "Yucatán, Mexico — Yucatec Maya",
+    "country": "Yucatán, Mexico",
+    "language": "Yucatec Maya",
+    "kind": "modern"
+  }
+]
