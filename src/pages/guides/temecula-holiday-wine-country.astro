@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Thanksgiving, Christmas, and Holiday Wine Country in Temecula 2026',
+  datePublished: '2026-09-25',
+  dateModified: '2026-09-25',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'Temecula Thanksgiving weekend, Temecula Chilled, ice skating, Old Town lights, and how to taste without fighting parade traffic. Official 2026 links.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-holiday-wine-country/',
+};
+---
+
+<Layout
+  title="Thanksgiving and Christmas in Temecula Wine Country 2026"
+  description="Temecula Chilled, Peltzer Ice Rink, Holiday Taste of Old Town, Santa’s Electric Light Parade, and tasting-day advice for Thanksgiving through New Year 2026."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Seasonal · Sep 25, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Thanksgiving through New Year in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          There is no single “Temecula Thanksgiving festival” that replaces a family table. What you get instead is
+          Shop Small weekend, then a month of lights, ice, and tasting rooms under the
+          <a class="underline" href="https://www.visittemeculavalley.com/temecula-chilled/" target="_blank" rel="noopener noreferrer">Temecula Chilled</a>
+          umbrella (day after Thanksgiving through December 31). Plan the table first, the lights second, and the
+          tasting third — or you will sit in Old Town traffic with a cold flight waiting.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-6 text-lg text-stone-700 leading-relaxed">
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">Thanksgiving week</h2>
+      <p>
+        Thanksgiving Day 2026 is Thursday, November 26. Many tasting rooms run reduced hours or close so staff can be
+        with family. Do not assume a walk-in flight exists that afternoon. Call the estate or use the
+        <a class="text-[var(--accent)] underline" href="/wineries">wineries list</a> as a starting point, then confirm
+        the holiday hours on the winery’s own site.
+      </p>
+      <p>
+        Friday–Saturday, November 27–28, Old Town lists
+        <strong>Shop Small Weekend</strong> (Black Friday and Small Business Saturday) and
+        <strong>Santa’s Arrival at Pennypickle’s Workshop</strong> Friday evening, with weekend Santa hours after that.
+        Official: <a class="text-[var(--accent)] underline" href="https://oldtowntemecula.org/events-tickets/" target="_blank" rel="noopener noreferrer">Old Town Temecula events</a>.
+        If relatives want a stroll, that is the civic program. If they want wine, book Friday or Sunday on a corridor
+        away from Front Street.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">Temecula Chilled and ice</h2>
+      <p>
+        Visit Temecula Valley frames winter as
+        <a class="text-[var(--accent)] underline" href="https://www.visittemeculavalley.com/temecula-chilled/" target="_blank" rel="noopener noreferrer">Temecula Chilled</a>:
+        Wine Country, Old Town, and Pechanga each running their own holiday programming after Thanksgiving. Use that
+        hub for the seasonal overlay; use our
+        <a class="text-[var(--accent)] underline" href="/events">events list</a> for the dated items we have checked.
+      </p>
+      <p>
+        <a class="text-[var(--accent)] underline" href="https://www.peltzerfarms.com/peltzer-ice-rink" target="_blank" rel="noopener noreferrer">Peltzer Ice Rink</a>
+        is listed as closed until November 2026, with Visit Temecula Valley showing sessions from about
+        <strong>November 19, 2026 into January 2027</strong>. Sessions are reserved, rain or shine, 21+ bar on site.
+        That is a family block, not a substitute for a tasting reservation. If you skate and taste the same day, skate
+        first, eat, then one estate — not the reverse.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">December lights, taste, and parade</h2>
+      <p>
+        Old Town’s own 2026 calendar (stronger than a third-party roundup) currently lists:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Dec 1–26</strong> — A Very Temecula Christmas window walk (self-guided storefronts).</li>
+        <li><strong>Dec 3, 5:00–8:30 p.m.</strong> — Holiday Taste of Old Town (ticketed stroll). Tickets typically release about a month out on the same <a class="text-[var(--accent)] underline" href="https://oldtowntemecula.org/events-tickets/" target="_blank" rel="noopener noreferrer">Old Town events page</a>.</li>
+        <li><strong>Dec 4, 7:00 p.m.</strong> — Santa’s Electric Light Parade on Front Street (OTTA listing; some city calendars still say Dec 5 — confirm the week of).</li>
+        <li><strong>Dec 10–12</strong> — A Very Temecula Christmas weekend, including a holiday boutique crawl and Cars, Cocoa &amp; Carolers.</li>
+        <li><strong>Dec 12</strong> — Santa under the Civic Center tree.</li>
+        <li><strong>Dec 31, 6:00–10:00 p.m.</strong> — New Year’s Eve Grape Drop at the Civic Center Quad.</li>
+      </ul>
+      <p>
+        Parade night is the worst night to “just swing by a tasting room in Old Town.” Front Street is the show. Book
+        wine country itself — Rancho California or De Portola — and come into Old Town after the last float, or skip
+        wine that evening.
+      </p>
+      <p>
+        Old Town Temecula Community Theater also lists
+        <a class="text-[var(--accent)] underline" href="https://www.visittemeculavalley.com/event/a-christmas-carol-the-musical/12303/" target="_blank" rel="noopener noreferrer">A Christmas Carol, The Musical (Dec 5–13, 2026)</a>.
+        That is a seated night. Pair it with lunch tasting, not a three-stop afternoon.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">How this fits a tasting plan</h2>
+      <p>
+        Holiday weeks are reservation weeks. Estates host private dinners, clubs, and early closures. Use the
+        <a class="text-[var(--accent)] underline" href="/map">wine map</a> to cluster two nearby rooms, then protect
+        time for lights. Sparkling and lighter reds suit heavy meals; our
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-sparkling-wine-guide">sparkling guide</a>
+        and
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-wine-and-food-pairing-day">food-and-wine day</a>
+        are the pairing pages, not this calendar.
+      </p>
+      <p>
+        For Halloween and pumpkin farms, use
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-halloween-fall-family">Halloween and fall family days</a>.
+        For stomps earlier in fall, stay on the
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-fall-wine-events-guide">grape stomp guide</a>.
+      </p>
+      <p class="text-sm text-stone-500">
+        Independent overview. We do not sell tickets. Confirm every date with the organizer.
+      </p>
+    </article>
+  </main>
+</Layout>

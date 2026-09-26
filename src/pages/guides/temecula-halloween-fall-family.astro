@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Halloween and Fall Family Events in Temecula 2026',
+  datePublished: '2026-09-25',
+  dateModified: '2026-09-25',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'How to plan Temecula Halloween and pumpkin-farm days in 2026 without wrecking a tasting itinerary. Official links, crowds, and 21+ rules.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/temecula-halloween-fall-family/',
+};
+---
+
+<Layout
+  title="Halloween and Fall Family Events in Temecula 2026"
+  description="Temecula Halloween carnival, pumpkin farms, and how to pair a family fall day with wine country. Official links. Independent 2026 notes."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · Seasonal · Sep 25, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Halloween and fall family days in Temecula
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          October here is harvest leftover energy plus pumpkins, corn mazes, and one civic Halloween night. If you try to
+          stack a pumpkin farm, trick-or-treat, and three tasting rooms, everyone is tired and nobody tastes well. This
+          page is how to pick one family block and keep wine country in its own window.
+        </p>
+        <p class="mt-4 text-sm text-stone-500">
+          Dates below were checked against organizer pages in September 2026. They still move. Confirm before you drive.
+          Alcohol is 21+.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-6 text-lg text-stone-700 leading-relaxed">
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">Pumpkin season, not a one-night party</h2>
+      <p>
+        The reliable October family draw is
+        <a class="text-[var(--accent)] underline" href="https://www.peltzerfarms.com/" target="_blank" rel="noopener noreferrer">Peltzer Pumpkin Farm</a>
+        (open through Halloween on the 2026 farm calendar, with weekday vs weekend hours and a no-dogs rule). Attractions
+        are ticketed separately from farm entry. Weekends fill; the farm itself asks people to consider weekdays. Pair
+        that with our
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-wine-tasting-with-kids">wine tasting with kids</a>
+        notes if the same trip includes an estate: two stops max, food first, and confirm the patio policy that day.
+      </p>
+      <p>
+        Visit Temecula Valley also lists a
+        <a class="text-[var(--accent)] underline" href="https://www.visittemeculavalley.com/events/" target="_blank" rel="noopener noreferrer">Big Horse Corn Maze through October 31</a>
+        on the city-area calendar. Treat that as a second family block, not something you squeeze between De Portola
+        tastings.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">Halloween night in town</h2>
+      <p>
+        Old Town Temecula Association lists
+        <strong>Halloween Carnival and trick-or-treating on Friday, October 30, 2026, 5:30–8:30 p.m.</strong>
+        at the Civic Center plus participating Old Town businesses. Official listing:
+        <a class="text-[var(--accent)] underline" href="https://oldtowntemecula.org/events-tickets/" target="_blank" rel="noopener noreferrer">Old Town events</a>.
+        That is a family street night, not a winery crawl. Parking and Front Street congestion are the planning problem,
+        not which Cabernet to open.
+      </p>
+      <p>
+        If you still want wine the same weekend, do a reserved tasting <em>before</em> 4 p.m. on a different corridor, or
+        wait until Saturday when Old Town is not in costume mode. Do not drive after full pours to a carnival. Use
+        rideshare or a designated driver. See
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-wine-tour-vs-self-drive">tour vs self-drive</a>.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">Harvest events in the same month</h2>
+      <p>
+        Late September into October still has grape stomps and harvest festivals. Those are ticketed, often 21+, and they
+        collide with pumpkin traffic on Rancho California Road. Use the
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-fall-wine-events-guide">fall events and stomps guide</a>
+        for pacing, and the dated list on
+        <a class="text-[var(--accent)] underline" href="/events">upcoming events</a>
+        for anything we have verified with an organizer URL.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-2">A sane October weekend</h2>
+      <ol class="list-decimal pl-6 space-y-2">
+        <li>One family outdoor block (farm or carnival), not both in one afternoon.</li>
+        <li>One reserved tasting the other day, two estates clustered on the <a class="text-[var(--accent)] underline" href="/map">wine map</a>.</li>
+        <li>A real meal. Empty stomachs and carnival sugar are a bad flight.</li>
+        <li>Confirm dog rules. Peltzer is humans only; many tasting patios are leashed-dog only.</li>
+      </ol>
+      <p>
+        After Halloween, the calendar flips to ice rinks and Old Town lights. That is a different guide:
+        <a class="text-[var(--accent)] underline" href="/guides/temecula-holiday-wine-country">Thanksgiving through New Year in Temecula</a>.
+      </p>
+      <p>
+        Costume weekends also change winery policies. Some estates host ticketed Halloween parties that displace
+        regular tastings. If the website says “private event” or “sold out patio,” believe it. The
+        <a class="text-[var(--accent)] underline" href="/guides/weekday-vs-weekend-tasting">weekday vs weekend</a>
+        logic still holds: a Wednesday pumpkin-farm visit plus a Thursday tasting is calmer than Saturday everything.
+      </p>
+      <p>
+        Bring layers. Inland October evenings drop fast after a warm carnival. Closed-toe shoes for farm dirt and
+        tasting-room gravel beat costume heels. More clothing detail is in
+        <a class="text-[var(--accent)] underline" href="/guides/what-to-wear-temecula-wine-tasting">what to wear</a>.
+      </p>
+    </article>
+  </main>
+</Layout>
