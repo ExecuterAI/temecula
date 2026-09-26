@@ -5,6 +5,7 @@ const links = [
   { href: '/map', label: 'Wine Map' },
   { href: '/collection', label: 'Wine Collection' },
   { href: '/guides', label: 'Guides' },
+  { href: '/guides/good-wine-no-whine', label: 'Fun Puns' },
   { href: '/events', label: 'Events' },
   { href: '/balloons', label: 'Balloons' },
   { href: '/about', label: 'About' },
@@ -28,7 +29,7 @@ const mobileLinks = [{ href: '/', label: 'Home' }, ...links];
     </a>
 
     <!-- Desktop Navigation -->
-    <div class="hidden md:flex items-center gap-3 lg:gap-4 text-sm font-medium text-stone-800">
+    <div class="hidden md:flex items-center gap-2 lg:gap-3 xl:gap-4 text-[13px] lg:text-sm font-medium text-stone-800">
       {links.map((l) => (
         <a href={l.href} class="hover:text-[var(--primary)] transition whitespace-nowrap">{l.label}</a>
       ))}

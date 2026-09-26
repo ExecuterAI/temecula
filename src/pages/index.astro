@@ -5,6 +5,7 @@ import RelocateCta from '../components/RelocateCta.astro';
 import wineries from '../data/wineries.json';
 import balloons from '../data/balloons.json';
 import wineCollection from '../data/wine-collection.json';
+import siteSearch from '../data/site-search.json';
 
 const featured = wineries.filter(w => w.featured);
 const featuredBalloons = balloons.slice(0, 3);
@@ -266,14 +267,16 @@ const homeJsonLd = [
 
       <!-- Search Bar -->
       <div class="mb-8 max-w-md">
-        <label for="search-input" class="sr-only">Search featured wineries</label>
+        <label for="search-input" class="sr-only">Search wineries and site pages</label>
         <input
           type="search"
           id="search-input"
-          placeholder="Search wineries by name, varietal, pet, or views..."
+          placeholder="Search wineries, puns, guides, pairings…"
           autocomplete="off"
           class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
         />
+        <p class="text-xs text-stone-500 mt-2">Looks in featured estates and in site pages (guides, Fun Puns, map, events).</p>
+        <div id="site-hits" class="hidden mt-4 space-y-2"></div>
       </div>
 
       <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -484,9 +487,11 @@ const homeJsonLd = [
     </section>
   </main>
 
-  <script>
+  <script define:vars={{ sitePages: siteSearch }}>
     const input = document.getElementById('search-input') as HTMLInputElement | null;
     const cards = Array.from(document.querySelectorAll<HTMLElement>('#winery-grid .winery-card'));
+    const hits = document.getElementById('site-hits');
+    const pages = sitePages as { title: string; href: string; blurb: string; keywords: string }[];
 
     function filterWineries() {
       if (!input) return;
@@ -495,6 +500,30 @@ const homeJsonLd = [
         const hay = card.dataset.search || card.textContent?.toLowerCase() || '';
         card.classList.toggle('hidden', !!(q && !hay.includes(q)));
       }
+      if (!hits) return;
+      if (!q) {
+        hits.classList.add('hidden');
+        hits.innerHTML = '';
+        return;
+      }
+      const matched = pages.filter((p) =>
+        `${p.title} ${p.blurb} ${p.keywords}`.toLowerCase().includes(q)
+      );
+      if (!matched.length) {
+        hits.classList.add('hidden');
+        hits.innerHTML = '';
+        return;
+      }
+      hits.classList.remove('hidden');
+      hits.innerHTML =
+        `<p class="text-xs uppercase tracking-[0.18em] text-[#4A5E4E] font-medium">Also on this site</p>` +
+        matched
+          .slice(0, 6)
+          .map(
+            (p) =>
+              `<a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-4 py-3 hover:border-[#4A5E4E]" href="${p.href}"><span class="font-medium text-[#2B322C]">${p.title}</span><span class="block text-sm text-stone-600 mt-0.5">${p.blurb}</span></a>`
+          )
+          .join('');
     }
 
     input?.addEventListener('input', filterWineries);

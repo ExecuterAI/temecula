@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import wineries from '../../data/wineries.json';
+import siteSearch from '../../data/site-search.json';
 
 // Paid Featured listings first, then name
 const sorted = [...wineries].sort((a, b) => {
@@ -184,11 +185,12 @@ const faqJsonLd = {
       <input
         type="search"
         id="search-input"
-        placeholder="Search name, varietal, pet, or views (sip with a view)…"
+        placeholder="Search name, varietal, pet, views, puns, guides…"
         autocomplete="off"
         class="w-full px-5 py-3.5 border border-stone-300 rounded-2xl focus:outline-none focus:border-[var(--accent)] text-lg bg-white"
       />
       <p id="search-status" class="text-sm text-stone-500 mt-3 hidden" aria-live="polite"></p>
+      <div id="site-hits" class="hidden mt-4 space-y-2"></div>
     </div>
 
     <div id="winery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -317,10 +319,39 @@ const faqJsonLd = {
     </section>
   </main>
 
-  <script>
+  <script define:vars={{ sitePages: siteSearch }}>
     const input = document.getElementById('search-input') as HTMLInputElement | null;
     const status = document.getElementById('search-status');
+    const hits = document.getElementById('site-hits');
     const cards = Array.from(document.querySelectorAll<HTMLElement>('#winery-grid .winery-card'));
+    const pages = sitePages as { title: string; href: string; blurb: string; keywords: string }[];
+
+    function renderPageHits(q: string) {
+      if (!hits) return;
+      if (!q) {
+        hits.classList.add('hidden');
+        hits.innerHTML = '';
+        return;
+      }
+      const matched = pages.filter((p) =>
+        `${p.title} ${p.blurb} ${p.keywords}`.toLowerCase().includes(q)
+      );
+      if (!matched.length) {
+        hits.classList.add('hidden');
+        hits.innerHTML = '';
+        return;
+      }
+      hits.classList.remove('hidden');
+      hits.innerHTML =
+        `<p class="text-xs uppercase tracking-[0.18em] text-[#4A5E4E] font-medium">Also on this site</p>` +
+        matched
+          .slice(0, 6)
+          .map(
+            (p) =>
+              `<a class="block rounded-2xl border border-[#9AAB97]/40 bg-[#F6F7F2] px-4 py-3 hover:border-[#4A5E4E]" href="${p.href}"><span class="font-medium text-[#2B322C]">${p.title}</span><span class="block text-sm text-stone-600 mt-0.5">${p.blurb}</span></a>`
+          )
+          .join('');
+    }
 
     function filterWineries() {
       if (!input) return;
@@ -333,6 +364,8 @@ const faqJsonLd = {
         card.classList.toggle('hidden', !show);
         if (show) visible += 1;
       }
+
+      renderPageHits(q);
 
       if (status) {
         if (!q) {
@@ -348,7 +381,6 @@ const faqJsonLd = {
       }
     }
 
-    // Support ?q= from WebSite SearchAction
     const params = new URLSearchParams(window.location.search);
     const qParam = params.get('q');
     if (qParam && input) {
