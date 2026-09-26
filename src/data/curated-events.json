@@ -4,14 +4,16 @@
     "date": "Through October 31, 2026",
     "where": "Peltzer Farms, Temecula",
     "blurb": "Fall pumpkin farm and attractions. No dogs. Weekday hours differ from weekends. Confirm tickets on the farm site.",
-    "url": "https://www.peltzerfarms.com/"
+    "url": "https://www.peltzerfarms.com/",
+    "end": "2026-10-31"
   },
   {
     "name": "Halloween Carnival & Trick-or-Treating",
     "date": "October 30, 2026 · 5:30–8:30 p.m.",
     "where": "Temecula Civic Center and Old Town",
     "blurb": "City carnival plus participating Old Town businesses. Family night — not a tasting crawl.",
-    "url": "https://oldtowntemecula.org/events-tickets/"
+    "url": "https://oldtowntemecula.org/events-tickets/",
+    "end": "2026-10-30"
   },
   {
     "name": "Wine Country Run (Temecula Half Marathon, 10K, 5K & Kids Run)",
@@ -19,55 +21,63 @@
     "where": "Wilson Creek Winery & Vineyards",
     "blurb": "Half marathon, 10K, 5K, and kids run through wine country. Same date as the De Portola harvest celebration — confirm parking.",
     "url": "https://www.temeculahalf.com/",
-    "facebook": "https://www.facebook.com/temeculahalf"
+    "facebook": "https://www.facebook.com/temeculahalf",
+    "end": "2026-11-08"
   },
   {
     "name": "De Portola Wine Trail Harvest Celebration",
     "date": "November 8, 2026",
     "where": "De Portola Road wineries",
     "blurb": "Trail-wide harvest day among participating tasting rooms.",
-    "url": "https://deportolawinetrail.com/events/"
+    "url": "https://deportolawinetrail.com/events/",
+    "end": "2026-11-08"
   },
   {
     "name": "Shop Small Weekend & Santa’s Arrival",
     "date": "November 27–28, 2026",
     "where": "Old Town Temecula / Pennypickle’s Workshop",
     "blurb": "Thanksgiving weekend shopping plus Santa’s arrival Friday evening. Tasting rooms may run holiday hours on Thursday the 26th — confirm each estate.",
-    "url": "https://oldtowntemecula.org/events-tickets/"
+    "url": "https://oldtowntemecula.org/events-tickets/",
+    "end": "2026-11-28"
   },
   {
     "name": "Temecula Chilled",
     "date": "Day after Thanksgiving through December 31, 2026",
     "where": "Wine Country, Old Town, Pechanga",
     "blurb": "Seasonal holiday overlay: lights, dining, and winter programming. Not a single ticketed festival.",
-    "url": "https://www.visittemeculavalley.com/temecula-chilled/"
+    "url": "https://www.visittemeculavalley.com/temecula-chilled/",
+    "end": "2026-12-31"
   },
   {
     "name": "Peltzer Ice Rink",
     "date": "From November 2026 (VTV lists Nov 19 into January 2027)",
     "where": "Peltzer Winery / Farm",
     "blurb": "Reserved skate sessions. Rink page says closed until November 2026. 21+ bar on site.",
-    "url": "https://www.peltzerfarms.com/peltzer-ice-rink"
+    "url": "https://www.peltzerfarms.com/peltzer-ice-rink",
+    "end": "2027-01-15"
   },
   {
     "name": "Holiday Taste of Old Town",
     "date": "December 3, 2026 · 5:00–8:30 p.m.",
     "where": "Old Town Temecula",
     "blurb": "Ticketed tasting stroll. Tickets typically release about a month prior.",
-    "url": "https://oldtowntemecula.org/events-tickets/"
+    "url": "https://oldtowntemecula.org/events-tickets/",
+    "end": "2026-12-03"
   },
   {
     "name": "Santa’s Electric Light Parade",
     "date": "December 4, 2026 · 7:00 p.m. (confirm; some calendars say Dec 5)",
     "where": "Old Town Front Street",
     "blurb": "Holiday parade. Expect street closures. Poor night for an Old Town tasting walk.",
-    "url": "https://oldtowntemecula.org/events-tickets/"
+    "url": "https://oldtowntemecula.org/events-tickets/",
+    "end": "2026-12-04"
   },
   {
     "name": "New Year’s Eve Grape Drop",
     "date": "December 31, 2026 · 6:00–10:00 p.m.",
     "where": "Civic Center Quad",
     "blurb": "Temecula-style countdown with an East Coast drop at 9 p.m. per Old Town listing.",
-    "url": "https://oldtowntemecula.org/events-tickets/"
+    "url": "https://oldtowntemecula.org/events-tickets/",
+    "end": "2026-12-31"
   }
 ]

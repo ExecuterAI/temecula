@@ -2,6 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import events from '../data/curated-events.json';
+
+function addDays(iso: string, n: number) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + n);
+  return dt.toISOString().slice(0, 10);
+}
+const todayPt = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+const liveEvents = events.filter((e) => !e.end || todayPt <= addDays(e.end, 3));
 ---
 
 <Layout
@@ -24,7 +33,7 @@ import events from '../data/curated-events.json';
     </p>
 
     <div class="space-y-6">
-      {events.map((event) => (
+      {liveEvents.length > 0 ? liveEvents.map((event) => (
         <article class="bg-white border border-stone-200 rounded-3xl p-8">
           <div class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium">{event.date}</div>
           <h2 class="text-3xl font-serif mt-2">{event.name}</h2>
@@ -44,7 +53,9 @@ import events from '../data/curated-events.json';
             )}
           </p>
         </article>
-      ))}
+      )) : (
+        <p class="text-stone-600">No upcoming dated events on the list right now. Check the seasonal guides above, or confirm with organizers.</p>
+      )}
     </div>
   </main>
 </Layout>
