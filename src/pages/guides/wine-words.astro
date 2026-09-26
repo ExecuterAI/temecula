@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import wineWords from '../../data/wine-words.json';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Wine Word Archive',
+  description: 'Searchable archive of Bellie Acres Wine words of the day — tasting-room vocabulary in plain English.',
+  url: 'https://bellieacreswine.com/guides/wine-words/',
+};
+---
+
+<Layout
+  title="Wine Word Archive"
+  description="Searchable archive of Wine Word of the Day — terroir, tannin, AVA, and other tasting-room words in plain English. Rotates at midnight, Temecula time."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+    <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine</p>
+    <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-4">Wine Word Archive</h1>
+    <p class="text-stone-600 leading-relaxed mb-2">
+      Every word we rotate onto the homepage. A new one posts at <strong>midnight, Temecula time</strong> (Pacific, including daylight saving).
+    </p>
+    <p class="text-stone-600 leading-relaxed mb-8">
+      Today’s word is marked. Search the archive any time — July curiosity counts.
+    </p>
+
+    <div id="today-card" class="rounded-3xl border border-[#9AAB97]/50 bg-[#F6F7F2] px-5 py-5 mb-8">
+      <p class="text-[11px] tracking-[0.22em] uppercase text-[#4A5E4E] font-medium mb-2">Today in Temecula</p>
+      <h2 id="today-term" class="font-serif text-3xl text-[#2B322C]">{wineWords[0].term}</h2>
+      <p id="today-def" class="text-stone-700 mt-2 leading-relaxed">{wineWords[0].definition}</p>
+    </div>
+
+    <label for="word-q" class="sr-only">Search wine words</label>
+    <input
+      id="word-q"
+      type="search"
+      enterkeyhint="search"
+      autocapitalize="none"
+      autocomplete="off"
+      placeholder="Search the archive (tannin, AVA, spit…)"
+      class="w-full min-h-12 px-5 py-3.5 border border-stone-300 rounded-2xl text-base bg-white focus:outline-none focus:border-[#4A5E4E] mb-6"
+    />
+    <p id="word-count" class="text-sm text-stone-500 mb-4">{wineWords.length} words</p>
+
+    <ul id="word-list" class="space-y-3">
+      {wineWords.map((w) => (
+        <li class="word-row rounded-2xl border border-stone-200 bg-white px-5 py-4" data-search={`${w.term} ${w.definition}`.toLowerCase()}>
+          <h3 class="font-serif text-xl text-[#2B322C]">{w.term}</h3>
+          <p class="text-sm text-stone-600 mt-1 leading-relaxed">{w.definition}</p>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <script define:vars={{ count: wineWords.length, words: wineWords }}>
+    (function () {
+      function pacificYmd() {
+        return new Intl.DateTimeFormat('en-CA', {
+          timeZone: 'America/Los_Angeles',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        }).format(new Date());
+      }
+      function indexFor(ymd) {
+        var p = ymd.split('-');
+        var days = Math.floor((Date.UTC(+p[0], +p[1] - 1, +p[2]) - Date.UTC(2026, 0, 1)) / 86400000);
+        var n = count || words.length;
+        return ((days % n) + n) % n;
+      }
+      function applyToday() {
+        var i = indexFor(pacificYmd());
+        var w = words[i];
+        if (!w) return;
+        var t = document.getElementById('today-term');
+        var d = document.getElementById('today-def');
+        if (t) t.textContent = w.term;
+        if (d) d.textContent = w.definition;
+        var rows = document.querySelectorAll('.word-row');
+        for (var r = 0; r < rows.length; r++) {
+          rows[r].classList.toggle('ring-2', r === i);
+          rows[r].classList.toggle('ring-[#4A5E4E]', r === i);
+        }
+      }
+      applyToday();
+      setInterval(applyToday, 60000);
+
+      var q = document.getElementById('word-q');
+      var status = document.getElementById('word-count');
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.word-row'));
+      function filter() {
+        var needle = (q && q.value ? q.value : '').trim().toLowerCase();
+        var visible = 0;
+        rows.forEach(function (row) {
+          var hay = row.getAttribute('data-search') || '';
+          var show = !needle || hay.indexOf(needle) !== -1;
+          row.classList.toggle('hidden', !show);
+          if (show) visible += 1;
+        });
+        if (status) {
+          status.textContent = needle
+            ? visible + (visible === 1 ? ' match' : ' matches')
+            : words.length + ' words';
+        }
+      }
+      if (q) {
+        q.addEventListener('input', filter);
+        q.addEventListener('search', filter);
+      }
+    })();
+  </script>
+</Layout>

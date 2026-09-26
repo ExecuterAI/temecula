@@ -6,6 +6,7 @@ import wineries from '../data/wineries.json';
 import balloons from '../data/balloons.json';
 import wineCollection from '../data/wine-collection.json';
 import siteSearch from '../data/site-search.json';
+import wineWords from '../data/wine-words.json';
 
 const featured = wineries.filter(w => w.featured);
 const featuredBalloons = balloons.slice(0, 3);
@@ -34,17 +35,6 @@ const searchBlob = (w: (typeof wineries)[number]) => {
   return bits.filter(Boolean).join(' ').toLowerCase();
 };
 
-// Wine Word of the Day (rotates daily based on date)
-const wineWords = [
-  { term: "Terroir", definition: "The unique combination of soil, climate, and topography that gives wine its distinctive character." },
-  { term: "Malolactic Fermentation", definition: "A secondary fermentation that converts sharp malic acid into softer, creamier lactic acid." },
-  { term: "Cuvée", definition: "A blend of wines, often used for sparkling wines and Champagne." },
-  { term: "Appellation", definition: "A legally defined geographic region known for producing wines with specific characteristics." },
-  { term: "Brix", definition: "A measurement of sugar content in grapes, used to predict potential alcohol levels." },
-];
-
-const today = new Date().getDate();
-const wordOfTheDay = wineWords[today % wineWords.length];
 const wineryCount = wineries.length;
 
 const homeJsonLd = [
@@ -249,9 +239,12 @@ const homeJsonLd = [
           <div class="text-2xl">🍷</div>
           <div class="uppercase tracking-[2px] text-xs font-medium text-[var(--accent)]">Wine Word of the Day</div>
         </div>
-        <h3 class="font-serif text-4xl tracking-tight mb-3">{wordOfTheDay.term}</h3>
-        <p class="text-xl text-stone-700 leading-relaxed">{wordOfTheDay.definition}</p>
-        <p class="text-xs text-stone-500 mt-6">New word every day • Come back tomorrow</p>
+        <h3 id="wotd-term" class="font-serif text-4xl tracking-tight mb-3">{wineWords[0].term}</h3>
+        <p id="wotd-def" class="text-xl text-stone-700 leading-relaxed">{wineWords[0].definition}</p>
+        <p class="text-xs text-stone-500 mt-6">
+          New word at midnight, Temecula time (Pacific).
+          <a class="text-[var(--accent)] underline" href="/guides/wine-words">Search the archive</a>
+        </p>
       </div>
     </section>
 
@@ -532,5 +525,30 @@ const homeJsonLd = [
 
     input?.addEventListener('input', filterWineries);
     input?.addEventListener('search', filterWineries);
+  </script>
+  <script define:vars={{ words: wineWords }}>
+    (function () {
+      function pacificYmd() {
+        return new Intl.DateTimeFormat('en-CA', {
+          timeZone: 'America/Los_Angeles',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        }).format(new Date());
+      }
+      function pick() {
+        if (!words || !words.length) return;
+        var p = pacificYmd().split('-');
+        var days = Math.floor((Date.UTC(+p[0], +p[1] - 1, +p[2]) - Date.UTC(2026, 0, 1)) / 86400000);
+        var i = ((days % words.length) + words.length) % words.length;
+        var w = words[i];
+        var t = document.getElementById('wotd-term');
+        var d = document.getElementById('wotd-def');
+        if (t) t.textContent = w.term;
+        if (d) d.textContent = w.definition;
+      }
+      pick();
+      setInterval(pick, 60000);
+    })();
   </script>
 </Layout>
