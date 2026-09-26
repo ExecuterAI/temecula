@@ -3,40 +3,39 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import events from '../data/curated-events.json';
 
-function addDays(iso: string, n: number) {
-  const [y, m, d] = iso.split('-').map(Number);
-  const dt = new Date(Date.UTC(y, m - 1, d));
-  dt.setUTCDate(dt.getUTCDate() + n);
-  return dt.toISOString().slice(0, 10);
-}
 const todayPt = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
-const liveEvents = events.filter((e) => !e.end || todayPt <= addDays(e.end, 3));
+function isUpcoming(e: { end?: string }) {
+  return !e.end || todayPt <= e.end;
+}
+const upcomingEvents = events.filter(isUpcoming);
+const pastEvents = events.filter((e) => !isUpcoming(e)).slice().reverse();
 ---
 
 <Layout
   title="Temecula Wine Country Events"
-  description="Upcoming Temecula community and wine-country events, including the Wine Country Run on November 8, 2026. Confirm dates with organizers. Independent notes from Bellie Acres Wine."
+  description="Upcoming and past Temecula wine-country events. Seasonal guides stay up year-round. Confirm dates with organizers. Independent notes from Bellie Acres Wine."
 >
   <Navbar />
   <main class="max-w-5xl mx-auto px-6 py-16">
-    <h1 class="text-5xl sm:text-6xl font-serif tracking-tight mb-3">Upcoming events</h1>
+    <h1 class="text-5xl sm:text-6xl font-serif tracking-tight mb-3">Events</h1>
     <p class="text-xl text-stone-600 mb-6 max-w-3xl leading-relaxed">
-      A short list of dated Temecula wine-country and community events we can verify. Hours, tickets, and street
-      closures change — use the official link before you plan a tasting day around them.
+      Dated community listings stay on this page: they sit under Upcoming through the event day, then move to Past Events.
+      Seasonal write-ups (Halloween, holidays, harvest) stay published all year — including July Christmas reading and New Year flower nostalgia.
     </p>
     <p class="text-stone-600 mb-12">
-      Longer seasonal write-ups:
+      Year-round guides:
       <a class="text-[var(--accent)] underline" href="/guides/temecula-halloween-fall-family">Halloween and fall family days</a>,
       <a class="text-[var(--accent)] underline" href="/guides/temecula-holiday-wine-country">Thanksgiving through New Year</a>,
       and the
       <a class="text-[var(--accent)] underline" href="/guides/temecula-fall-wine-events-guide">fall events & grape stomps guide</a>.
     </p>
 
-    <div class="space-y-6">
-      {liveEvents.length > 0 ? liveEvents.map((event) => (
-        <article class="bg-white border border-stone-200 rounded-3xl p-8">
+    <h2 class="text-3xl font-serif mb-6">Upcoming</h2>
+    <div id="upcoming-events" class="space-y-6 mb-16">
+      {upcomingEvents.map((event) => (
+        <article class="event-card bg-white border border-stone-200 rounded-3xl p-8" data-end={event.end || ''}>
           <div class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium">{event.date}</div>
-          <h2 class="text-3xl font-serif mt-2">{event.name}</h2>
+          <h3 class="text-3xl font-serif mt-2">{event.name}</h3>
           <p class="text-stone-600 mt-1">{event.where}</p>
           <p class="text-stone-700 mt-4 leading-relaxed">{event.blurb}</p>
           <p class="mt-4 text-sm">
@@ -53,9 +52,48 @@ const liveEvents = events.filter((e) => !e.end || todayPt <= addDays(e.end, 3));
             )}
           </p>
         </article>
-      )) : (
-        <p class="text-stone-600">No upcoming dated events on the list right now. Check the seasonal guides above, or confirm with organizers.</p>
-      )}
+      ))}
+      <p id="upcoming-empty" class:list={['text-stone-600', upcomingEvents.length > 0 && 'hidden']}>
+        No dated events on the upcoming list right now. Seasonal guides above stay up year-round.
+      </p>
     </div>
+
+    <section id="past-events-wrap" class:list={[pastEvents.length === 0 && 'hidden']}>
+      <h2 class="text-3xl font-serif mb-2">Past events</h2>
+      <p class="text-stone-600 mb-6">Kept for reference. Confirm next year’s dates with the organizer — they change.</p>
+      <div id="past-events" class="space-y-6">
+        {pastEvents.map((event) => (
+          <article class="event-card bg-white border border-stone-200 rounded-3xl p-8 opacity-90" data-end={event.end || ''}>
+            <div class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium">{event.date}</div>
+            <h3 class="text-3xl font-serif mt-2">{event.name}</h3>
+            <p class="text-stone-600 mt-1">{event.where}</p>
+            <p class="text-stone-700 mt-4 leading-relaxed">{event.blurb}</p>
+            <p class="mt-4 text-sm">
+              <a class="text-[var(--accent)] font-medium hover:underline" href={event.url} target="_blank" rel="noopener noreferrer">
+                Official info →
+              </a>
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
   </main>
+  <script>
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+    const upcoming = document.getElementById('upcoming-events');
+    const past = document.getElementById('past-events');
+    const wrap = document.getElementById('past-events-wrap');
+    const empty = document.getElementById('upcoming-empty');
+    if (upcoming && past && wrap) {
+      document.querySelectorAll('.event-card').forEach((card) => {
+        const end = card.getAttribute('data-end');
+        if (end && today > end) past.appendChild(card);
+      });
+      wrap.classList.toggle('hidden', past.children.length === 0);
+      if (empty) {
+        const n = upcoming.querySelectorAll('.event-card').length;
+        empty.classList.toggle('hidden', n > 0);
+      }
+    }
+  </script>
 </Layout>
