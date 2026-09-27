@@ -62,27 +62,11 @@ const wineryIndex = wineries.map((w) => ({
     </div>
   </main>
 
-  <script type="application/json" id="search-page-data">{JSON.stringify(siteSearch)}</script>
-  <script type="application/json" id="search-winery-data">{JSON.stringify(wineryIndex)}</script>
-
-  <script>
+  <script define:vars={{ pageList: siteSearch, wineryList: wineryIndex }}>
     (function () {
       var input = document.getElementById('q');
       var out = document.getElementById('search-results');
       var form = document.getElementById('search-form');
-
-      function readJson(id) {
-        var el = document.getElementById(id);
-        if (!el) return [];
-        try {
-          return JSON.parse(el.textContent || '[]');
-        } catch (e) {
-          return [];
-        }
-      }
-
-      var pageList = readJson('search-page-data');
-      var wineryList = readJson('search-winery-data');
 
       var shortcuts = {
         events: '/events/',
