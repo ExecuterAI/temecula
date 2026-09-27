@@ -43,13 +43,29 @@ const jsonLd = {
   <main class="bg-[#F6F7F2]">
     <header class="border-b border-[#9AAB97]/35 bg-[#4A5E4E] text-[#F6F7F2]">
       <div class="max-w-3xl mx-auto px-6 py-16 sm:py-20 text-center">
-        <img
-          src="/images/bellie-acres-seal.jpg"
-          alt="Bellie Acres Wine seal"
-          class="mx-auto mb-8 w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover"
-          width="1254"
-          height="1254"
-        />
+        <figure class="mx-auto mb-8 max-w-[18rem] sm:max-w-[22rem]">
+          <video
+            id="logo-live"
+            class="w-full h-auto rounded-2xl bg-[#4A5E4E]"
+            poster="/images/bellie-acres-logo-live-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            width="720"
+            height="720"
+          >
+            <source src="/videos/bellie-acres-logo-live-web.mp4" type="video/mp4" />
+          </video>
+          <button
+            type="button"
+            id="logo-live-toggle"
+            class="mt-3 inline-flex items-center justify-center min-h-11 px-4 rounded-full border border-[#F6F7F2]/40 text-[#F6F7F2] text-sm"
+          >
+            Tap for sound
+          </button>
+        </figure>
         <p class="text-[11px] tracking-[0.28em] uppercase text-[#9AAB97] font-medium mb-4">Fun Puns</p>
         <h1 class="font-serif text-4xl sm:text-6xl tracking-tight leading-[1.05]">
           Good wine.<br />No whine.
@@ -89,4 +105,16 @@ const jsonLd = {
       </p>
     </section>
   </main>
+  <script>
+    (function () {
+      var v = document.getElementById('logo-live');
+      var btn = document.getElementById('logo-live-toggle');
+      if (!v || !btn) return;
+      btn.addEventListener('click', function () {
+        v.muted = !v.muted;
+        v.play();
+        btn.textContent = v.muted ? 'Tap for sound' : 'Sound on — tap to mute';
+      });
+    })();
+  </script>
 </Layout>
