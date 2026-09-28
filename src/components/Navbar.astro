@@ -41,7 +41,12 @@ const mobileLinks = [
     </div>
 
     <!-- CTA Button -->
-    <div class="hidden md:flex items-center gap-2">
+    <div class="hidden md:flex items-center gap-3">
+      <span
+        id="temecula-temp"
+        class="text-xs lg:text-sm text-stone-500 tabular-nums whitespace-nowrap"
+        aria-live="polite"
+      ></span>
       <a
         href="/advertise"
         class="px-4 py-2.5 border border-stone-300 hover:border-[var(--primary)] text-stone-800 text-sm rounded-full transition font-medium whitespace-nowrap"
@@ -56,11 +61,17 @@ const mobileLinks = [
       </a>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button
+    <!-- Mobile temp + menu -->
+    <div class="md:hidden flex items-center gap-1 shrink-0">
+      <span
+        id="temecula-temp-m"
+        class="text-xs text-stone-500 tabular-nums whitespace-nowrap"
+        aria-live="polite"
+      ></span>
+      <button
       type="button"
       id="mobile-menu-btn"
-      class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-xl text-stone-700 hover:bg-stone-100 transition"
+      class="inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-xl text-stone-700 hover:bg-stone-100 transition"
       aria-label="Open menu"
       aria-controls="mobile-menu"
       aria-expanded="false"
@@ -74,6 +85,7 @@ const mobileLinks = [
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
+    </div>
   </div>
 
   <!-- Mobile Menu Panel -->
@@ -140,4 +152,33 @@ const mobileLinks = [
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) setOpen(false);
   });
+</script>
+<script>
+  (function () {
+    var desk = document.getElementById('temecula-temp');
+    var mob = document.getElementById('temecula-temp-m');
+    if (!desk && !mob) return;
+    var url =
+      'https://api.open-meteo.com/v1/forecast?latitude=33.4936&longitude=-117.1484&current=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles';
+    function paint(n) {
+      if (typeof n !== 'number' || isNaN(n)) return;
+      var deg = Math.round(n) + '\u00b0';
+      if (desk) {
+        desk.textContent = 'Temecula ' + deg;
+        desk.setAttribute('title', 'Current temperature in Temecula');
+      }
+      if (mob) {
+        mob.textContent = deg;
+        mob.setAttribute('title', 'Current temperature in Temecula');
+      }
+    }
+    fetch(url)
+      .then(function (r) {
+        return r.json();
+      })
+      .then(function (d) {
+        paint(d && d.current && d.current.temperature_2m);
+      })
+      .catch(function () {});
+  })();
 </script>
