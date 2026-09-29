@@ -1,13 +1,5 @@
 [
   {
-    "word": "می / شراب",
-    "pronunciation": "may / sha-RAAB",
-    "where": "Afghanistan/Pakistan — Pashto",
-    "country": "Afghanistan/Pakistan",
-    "language": "Pashto",
-    "kind": "modern"
-  },
-  {
     "word": "verë",
     "pronunciation": "VEH-reh",
     "where": "Albania — Albanian",
@@ -1376,6 +1368,14 @@
     "kind": "modern"
   },
   {
+    "word": "می / شراب",
+    "pronunciation": "may / sha-RAAB",
+    "where": "Pakistan/Afghanistan — Pashto",
+    "country": "Pakistan/Afghanistan",
+    "language": "Pashto",
+    "kind": "modern"
+  },
+  {
     "word": "شَراب",
     "pronunciation": "sha-RAAB",
     "where": "Pakistan/India — Urdu",
@@ -1429,14 +1429,6 @@
     "where": "Portugal/Brazil — Portuguese",
     "country": "Portugal/Brazil",
     "language": "Portuguese",
-    "kind": "modern"
-  },
-  {
-    "word": "vin",
-    "pronunciation": "van",
-    "where": "Réunion — Réunion Creole",
-    "country": "Réunion",
-    "language": "Réunion Creole",
     "kind": "modern"
   },
   {
@@ -1677,6 +1669,14 @@
     "where": "Russia — Udmurt (Udmurtia)",
     "country": "Russia",
     "language": "Udmurt (Udmurtia)",
+    "kind": "modern"
+  },
+  {
+    "word": "vin",
+    "pronunciation": "van",
+    "where": "Réunion — Réunion Creole",
+    "country": "Réunion",
+    "language": "Réunion Creole",
     "kind": "modern"
   },
   {
