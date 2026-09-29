@@ -15,6 +15,9 @@ const wineryIndex = wineries.map((w) => ({
     ...(w.varietals || []),
     w.pet_friendly ? 'pet friendly dog friendly dogs welcome pets dog dogs' : '',
     w.kid_friendly?.allowed ? 'kid friendly family children kids' : '',
+    (w as any).article ? ((w as any).article as string[]).join(' ') : '',
+    (w as any).perspective || '',
+    (w as any).kicker || '',
     w.has_views ? ['view views scenic', ...(w.view_tags || [])].join(' ') : '',
     w.slug,
   ]

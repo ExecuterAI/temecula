@@ -226,7 +226,7 @@ const faqJsonLd = {
                 <p class="text-stone-600 mt-0.5">{winery.location} • {winery.price_range}</p>
               </div>
               <div class="text-right">
-                <div class="font-semibold text-xl">{winery.rating}</div>
+                {winery.rating != null && <div class="font-semibold text-xl">{winery.rating}</div>}
               </div>
             </div>
 

@@ -61,7 +61,7 @@ const wineryJsonLd = {
   description={`${winery.name} Temecula winery guide — tasting context, atmosphere, varietals, pet/family notes, and trip-planning tips on the Bellie Acres Wine directory.`}
   ogImage={winery.image}
   jsonLd={wineryJsonLd}
-  noindex={true}
+  noindex={!((winery as any).perspective)}
 >
   <Navbar />
   
@@ -89,8 +89,12 @@ const wineryJsonLd = {
           <span>{winery.location}</span>
           <span>•</span>
           <span>{winery.price_range}</span>
-          <span>•</span>
-          <span class="font-medium">{winery.rating} / 5</span>
+          {winery.rating != null && (
+            <>
+              <span>•</span>
+              <span class="font-medium">{winery.rating} / 5</span>
+            </>
+          )}
           {(winery as any).corridor && (
             <>
               <span>•</span>
@@ -106,6 +110,23 @@ const wineryJsonLd = {
     <div class="grid md:grid-cols-3 gap-10">
       <!-- Main Content -->
       <div class="md:col-span-2">
+        {(winery as any).article ? (
+          <article class="space-y-5">
+            {(winery as any).kicker && (
+              <p class="text-sm uppercase tracking-[0.22em] text-[#4A5E4E] font-medium">{(winery as any).kicker}</p>
+            )}
+            {((winery as any).article as string[]).map((para) => (
+              <p class="text-lg leading-relaxed text-stone-700">{para}</p>
+            ))}
+            {(winery as any).perspective && (
+              <section class="mt-10 pt-8 border-t border-stone-200">
+                <h2 class="font-serif text-3xl mb-4 tracking-tight">The Bellie Acres Perspective</h2>
+                <p class="text-lg leading-relaxed text-stone-700">{(winery as any).perspective}</p>
+              </section>
+            )}
+          </article>
+        ) : (
+          <>
         <p class="text-xl leading-relaxed text-stone-700">{winery.description}</p>
 
         {winery.about_extended && (
@@ -120,6 +141,8 @@ const wineryJsonLd = {
             <h2 class="font-serif text-3xl mb-4 tracking-tight">Planning a visit to {winery.name}</h2>
             <p class="text-lg leading-relaxed text-stone-600">{(winery as any).visit_guide}</p>
           </section>
+        )}
+          </>
         )}
 
         <section class="mt-10 rounded-3xl border border-stone-200 bg-[#f7f6f2] p-6 md:p-8">
