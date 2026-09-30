@@ -5,13 +5,18 @@
     "slug": "ponte-winery",
     "location": "Temecula",
     "address": "35053 Rancho California Rd, Temecula, CA 92591",
-    "description": "Family-owned estate known for its beautiful grounds, award-winning wines, and relaxed atmosphere. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. Visitor context in our directory: about 4.7/5 with a $$ price feel, located on Rancho California Road at 35053 Rancho California Rd, Temecula, CA 92591. Families: Children welcome until 6pm. Leashed dogs are typically OK in outdoor areas. Views: Expansive manicured grounds and vineyard edges — more park-like scenery than cliff overlook. Phone (951) 694-0177. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Ponte Winery.",
+    "description": "About 300 acres of vineyards, gardens, dining, tours, and Ponte Vineyard Inn — a Temecula stop that can become a full day, or a night among the vines.",
     "image": "/images/wineries/ponte-winery.jpg",
     "varietals": [
       "Cabernet Sauvignon",
       "Chardonnay",
+      "Merlot",
+      "Sangiovese",
       "Syrah",
-      "Zinfandel"
+      "Tempranillo",
+      "Vermentino",
+      "Arneis",
+      "Montepulciano"
     ],
     "rating": 4.7,
     "price_range": "$$",
@@ -36,7 +41,6 @@
         "time": "5:00 PM - 8:00 PM"
       }
     ],
-    "about_extended": "Ponte Winery is best understood as a tasting-room destination with park-like grounds, relaxed outdoor energy, and a family-owned hospitality style that works for both first dates and multi-gen groups. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Children welcome until 6pm.. Scenery note: Expansive manicured grounds and vineyard edges — more park-like scenery than cliff overlook. Geographically, Ponte Winery sits along Rancho California Road, the main wine-country spine most first-timers drive, with a dense run of tasting rooms and resort amenities. Address on file: 35053 Rancho California Rd, Temecula, CA 92591.",
     "has_views": true,
     "view_level": "good",
     "view_notes": "Expansive manicured grounds and vineyard edges — more park-like scenery than cliff overlook.",
@@ -46,7 +50,26 @@
       "garden"
     ],
     "visit_guide": "If you are comparing Temecula tasting rooms, use Ponte Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Because Ponte Winery sits on the busy Rancho California spine, build buffer time for parking and weekend gate traffic. Visitor sentiment in our directory sits around 4.7/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Ponte Winery site or by phone ((951) 694-0177) before you drive out. Start with the winery website: https://www.pontewinery.com.",
-    "corridor": "Rancho California Road"
+    "corridor": "Rancho California Road",
+    "kicker": "Where a Day in Wine Country Becomes a Stay",
+    "article": [
+      "Some wineries invite visitors to taste their wines.",
+      "Ponte Winery invites them to spend the day.",
+      "Set among roughly 300 acres of vineyards in the heart of Temecula Valley Wine Country, Ponte has developed into something considerably larger than a tasting room. The estate brings together wine, gardens, dining, events, tours and lodging, creating a setting where the winery itself becomes a destination.",
+      "The story begins in the vineyard.",
+      "The Ponte family has been growing grapes in Temecula since 1984, eventually opening Ponte Winery in 2003. Today, the property remains rooted in that agricultural history while offering one of the valley’s more complete wine-country experiences.",
+      "The gardens are among the first things that distinguish the property. Manicured paths lead through the estate, creating a sense of movement between the tasting room, vineyard views and dining areas. Rather than making the vineyard merely a backdrop behind a tasting counter, Ponte gives visitors room to experience the grounds themselves.",
+      "The tasting room provides the traditional beginning, with a substantial selection of estate wines representing both familiar California varieties and Mediterranean-influenced grapes. Cabernet Sauvignon, Chardonnay, Merlot, Sangiovese, Syrah, Tempranillo, Vermentino, Arneis and Montepulciano are among the varieties represented in Ponte’s current portfolio.",
+      "For those who want to understand what lies behind the glass, vineyard and winery tours take the experience further.",
+      "Then there is food.",
+      "The Restaurant at Ponte places dining directly into the wine-country landscape, while the property’s additional hospitality spaces give visitors different ways to extend an afternoon. Live music is also part of the current programming, with regular performances associated with both the wine-club reserve room and restaurant.",
+      "And for those who discover that one afternoon isn’t enough, Ponte Vineyard Inn sits within the same wine-country environment.",
+      "The result is a very different rhythm from the typical winery stop. A tasting can lead to a walk through the gardens. A walk can become lunch. Lunch can become another glass of wine. An evening can continue at one of the property’s dining or event spaces.",
+      "Ponte’s annual calendar reinforces that destination character. Its 24th Annual Grape Stomp, for example, took place in September 2026 with wine, sangria, food and an evening celebration built around harvest season.",
+      "There is something appealing about a winery that allows visitors to decide how deeply they want to enter the experience.",
+      "For some, Ponte can be a polished tasting-room visit. For others, it can become an entire wine-country day—or an overnight stay surrounded by vineyards."
+    ],
+    "perspective": "Ponte is wine country designed to unfold slowly. The vineyards provide the setting, the wine provides the reason to arrive, and the gardens, food, music and inn provide reasons to stay. It is less a stop along the wine trail than a destination within it."
   },
   {
     "id": "thornton",
