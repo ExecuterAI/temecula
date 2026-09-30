@@ -605,7 +605,7 @@
     "slug": "halter-ranch",
     "location": "Temecula",
     "address": "41300 Avenida Biona, Temecula, CA 92591",
-    "description": "Formerly Hart Winery. Same Avenida Biona tasting room, now Halter Ranch Temecula — indoor bar, outdoor seating, weekend music, and food trucks, with Temecula fruit alongside the Halter Ranch portfolio.",
+    "description": "Formerly Hart Winery. Opened as Halter Ranch Temecula in 2023 at 41300 Avenida Biona — walk-ins, indoor bar, outdoor seating, weekend music, and a link to Paso Robles.",
     "image": "/images/wineries/hart-winery.jpg",
     "varietals": [
       "Cabernet Franc",
@@ -613,7 +613,8 @@
       "Syrah",
       "Sauvignon Blanc",
       "Tempranillo",
-      "Vermentino"
+      "Vermentino",
+      "Red Blend"
     ],
     "rating": 4.3,
     "price_range": "$$",
@@ -639,7 +640,31 @@
       "outdoor",
       "walkway"
     ],
-    "corridor": "Avenida Biona"
+    "corridor": "Avenida Biona",
+    "kicker": "A New Chapter on Historic Wine-Country Ground",
+    "article": [
+      "Some Temecula wineries have stories that begin decades ago.",
+      "Halter Ranch Temecula has a different kind of story: a new chapter written on an established wine-country property.",
+      "The winery opened under the Halter Ranch name in 2023 after the former Hart Winery property was acquired by Halter Ranch. The current Temecula Valley Winegrowers Association listing identifies Halter Ranch Temecula as established in 2023, with Kevin Sass as winemaker and Halter Ranch as the owner.",
+      "That history makes the property particularly interesting.",
+      "Hart Winery was part of Temecula’s earlier generation of wineries, so the present-day experience exists within a landscape with an established wine-country identity. Yet the Halter Ranch name brings a different winemaking philosophy and a connection to the company’s Paso Robles estate.",
+      "The current property occupies 41300 Avenida Biona, with rolling hills and estate vineyard views surrounding an indoor tasting bar and outdoor seating. The winery welcomes walk-ins and operates daily, with tastings available until the final call in the afternoon.",
+      "The wines themselves give the visitor a glimpse into Halter Ranch’s broader California identity.",
+      "The current Temecula listing includes Cabernet Franc, Cabernet Sauvignon, Syrah, Tempranillo, Sauvignon Blanc, Vermentino and red blends among the varieties associated with the property.",
+      "That combination is interesting in the context of Temecula.",
+      "Tempranillo and Rhône-influenced varieties fit comfortably within the Mediterranean character of the valley, while the presence of wines associated with the larger Halter Ranch portfolio creates a connection between Temecula and Paso Robles.",
+      "The experience is deliberately approachable.",
+      "The tasting room combines an indoor bar with cozy outdoor seating, allowing visitors to choose between the more intimate atmosphere inside and the vineyard landscape outside. Weekend entertainment by local artists adds another dimension, while occasional food trucks provide something to enjoy alongside the wine.",
+      "There is also a picnic-friendly character to the Temecula property, distinguishing it from wineries where the experience is centered almost entirely around formal food service.",
+      "The result is a winery that feels like it is still establishing its own identity.",
+      "That is part of what makes it worth watching.",
+      "Unlike wineries whose personalities have been refined over generations, Halter Ranch Temecula represents an intersection of old and new: a property with Temecula history now carrying a contemporary California wine identity.",
+      "For visitors who remember the property as Hart Winery, the change is especially significant. For newer visitors, it is simply another distinctive stop along the wine trail.",
+      "Either way, the landscape remains the constant.",
+      "The hills are still there. The vines are still there. Wine is still being poured in the Temecula Valley.",
+      "But the name on the door tells a new story."
+    ],
+    "perspective": "Halter Ranch Temecula represents a changing chapter in Temecula wine country—an established wine property carrying a new name, new ownership and a broader California wine identity. Its combination of vineyard views, approachable tasting and relaxed outdoor spaces makes it an interesting example of how Temecula’s wine landscape continues to evolve."
   },
   {
     "id": "mount-palomar",
