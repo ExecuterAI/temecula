@@ -578,17 +578,19 @@
   },
   {
     "id": "hart",
-    "name": "Hart Winery",
-    "slug": "hart-winery",
+    "name": "Halter Ranch Temecula",
+    "slug": "halter-ranch",
     "location": "Temecula",
     "address": "41300 Avenida Biona, Temecula, CA 92591",
-    "description": "One of Temecula’s oldest wineries, known for elegant and balanced wines. Expect classic Temecula strengths such as Chardonnay, Cabernet Sauvignon, Merlot, with bottles often including Chardonnay, Cabernet Sauvignon, Merlot, Sauvignon Blanc. Visitor context in our directory: about 4.3/5 with a $$ price feel, located on Avenida Biona at 41300 Avenida Biona, Temecula, CA 92591. Families: Children welcome in tasting room. Leashed dogs are typically OK in outdoor areas. Views: Compact tasting with outdoor tables along vineyard-facing walkways; arrive early for edge seats on weekends. Phone (951) 676-6300. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Hart Winery.",
+    "description": "Formerly Hart Winery. Same Avenida Biona tasting room, now Halter Ranch Temecula — indoor bar, outdoor seating, weekend music, and food trucks, with Temecula fruit alongside the Halter Ranch portfolio.",
     "image": "/images/wineries/hart-winery.jpg",
     "varietals": [
-      "Chardonnay",
+      "Cabernet Franc",
       "Cabernet Sauvignon",
-      "Merlot",
-      "Sauvignon Blanc"
+      "Syrah",
+      "Sauvignon Blanc",
+      "Tempranillo",
+      "Vermentino"
     ],
     "rating": 4.3,
     "price_range": "$$",
@@ -598,15 +600,14 @@
       "allowed": true,
       "notes": "Children welcome in tasting room."
     },
-    "website": "https://www.hartfamilywinery.com",
-    "phone": "(951) 676-6300",
+    "website": "https://www.halterranch.com/temecula",
+    "phone": "(805) 226-9455",
     "coordinates": {
       "lat": 33.521297,
       "lng": -117.09204
     },
     "featured": true,
     "events": [],
-    "about_extended": "Hart Winery is best understood as a tasting-room destination with smaller, serious-wine posture that rewards visitors who want conversation over spectacle. On the glass, lean into classic Temecula strengths such as Chardonnay, Cabernet Sauvignon, Merlot — house markers often include Chardonnay, Cabernet Sauvignon, Merlot, Sauvignon Blanc. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Children welcome in tasting room.. Scenery note: Compact tasting with outdoor tables along vineyard-facing walkways; arrive early for edge seats on weekends. Geographically, Hart Winery sits along Avenida Biona, a quieter approach road where visits feel more estate-focused than strip-style. Address on file: 41300 Avenida Biona, Temecula, CA 92591.",
     "has_views": true,
     "view_level": "good",
     "view_notes": "Compact tasting with outdoor tables along vineyard-facing walkways; arrive early for edge seats on weekends.",
@@ -615,7 +616,6 @@
       "outdoor",
       "walkway"
     ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Hart Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Chardonnay versus Cabernet Sauvignon, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Hart Winery as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Directory rating context is about 4.3/5 — still verify recent guest notes if you are sensitive to crowds or service style. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Hart Winery site or by phone ((951) 676-6300) before you drive out. Start with the winery website: https://www.hartfamilywinery.com.",
     "corridor": "Avenida Biona"
   },
   {
@@ -1275,44 +1275,6 @@
     "corridor": "Anza Road"
   },
   {
-    "id": "footbridge",
-    "name": "Footbridge Winery",
-    "slug": "footbridge",
-    "location": "Temecula",
-    "address": "40900 Calle Contento, Temecula, CA 92591",
-    "description": "Boutique winery with a focus on sustainable farming and elegant wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Syrah, Grenache. Visitor context in our directory: about 4.5/5 with a $$ price feel, located on Calle Contento at 40900 Calle Contento, Temecula, CA 92591. Families: Kids welcome. Leashed dogs are typically OK in outdoor areas. Phone (951) 676-4500. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Footbridge Winery.",
-    "image": "/images/wineries/footbridge.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
-      "Syrah",
-      "Grenache"
-    ],
-    "rating": 4.5,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome."
-    },
-    "website": "https://www.footbridgewinery.com",
-    "phone": "(951) 676-4500",
-    "coordinates": {
-      "lat": 33.529,
-      "lng": -117.0688
-    },
-    "featured": true,
-    "events": [],
-    "about_extended": "Footbridge Winery is best understood as a tasting-room destination with friendly boutique stop on Calle Contento that fits a two- or three-stop afternoon. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Syrah, Grenache. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome.. Geographically, Footbridge Winery sits along Calle Contento, a side-road cluster of boutique and hillside tasting rooms a short hop off the main corridor. Address on file: 40900 Calle Contento, Temecula, CA 92591.",
-    "has_views": false,
-    "view_level": null,
-    "view_notes": "",
-    "view_tags": [],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Footbridge Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Footbridge Winery, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Visitor sentiment in our directory sits around 4.5/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Footbridge Winery site or by phone ((951) 676-4500) before you drive out. Start with the winery website: https://www.footbridgewinery.com.",
-    "corridor": "Calle Contento"
-  },
-  {
     "id": "cielo",
     "name": "Cielo at the Vineyard",
     "slug": "cielo",
@@ -1706,48 +1668,6 @@
     "view_tags": [],
     "visit_guide": "If you are comparing Temecula tasting rooms, use Temecula Valley Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Temecula Valley Winery, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.0/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Temecula Valley Winery site or by phone ((951) 676-3400) before you drive out. Start with the winery website: https://www.temeculavalleywinery.com.",
     "corridor": "Calle Contento"
-  },
-  {
-    "id": "hidden-mountain",
-    "name": "Hidden Mountain Vineyard",
-    "slug": "hidden-mountain",
-    "location": "Temecula",
-    "address": "38500 De Portola Rd, Temecula, CA 92592",
-    "description": "Secluded vineyard producing small-lot, high-quality wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Syrah, Grenache, Viognier. Visitor context in our directory: about 4.5/5 with a $$ price feel, located on De Portola Road at 38500 De Portola Rd, Temecula, CA 92592. Families: Kids welcome. Leashed dogs are typically OK in outdoor areas. Views: Quieter hillside stop with mountain-country scenery around the tasting areas. Phone (951) 676-4500. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Hidden Mountain Vineyard.",
-    "image": "/images/wineries/hidden-mountain.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Syrah",
-      "Grenache",
-      "Viognier"
-    ],
-    "rating": 4.5,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome."
-    },
-    "website": "https://www.hiddenmountainvineyard.com",
-    "phone": "(951) 676-4500",
-    "coordinates": {
-      "lat": 33.524623,
-      "lng": -117.018929
-    },
-    "featured": true,
-    "events": [],
-    "about_extended": "Hidden Mountain Vineyard is best understood as a tasting-room destination with tucked De Portola discovery vibe for visitors willing to drive a few extra minutes. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Syrah, Grenache, Viognier. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome.. Scenery note: Quieter hillside stop with mountain-country scenery around the tasting areas. Geographically, Hidden Mountain Vineyard sits along De Portola Road, a quieter eastern corridor where estates feel more spread out and drives between pours are short but scenic. Address on file: 38500 De Portola Rd, Temecula, CA 92592.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Quieter hillside stop with mountain-country scenery around the tasting areas.",
-    "view_tags": [
-      "mountain",
-      "hillside",
-      "quiet"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Hidden Mountain Vineyard when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Syrah, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. De Portola visits work best as a clustered half day: pair Hidden Mountain Vineyard with one or two nearby east-valley estates instead of crisscrossing back to the main road after every flight. Visitor sentiment in our directory sits around 4.5/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Hidden Mountain Vineyard site or by phone ((951) 676-4500) before you drive out. Start with the winery website: https://www.hiddenmountainvineyard.com.",
-    "corridor": "De Portola Road"
   },
   {
     "id": "chapin",

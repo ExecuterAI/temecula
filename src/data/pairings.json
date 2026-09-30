@@ -45,7 +45,7 @@
       "summary": "From crisp and citrusy to richer oak-kissed styles, Temecula Chardonnay is one of the valley’s most flexible food wines.",
       "foods": ["Roast chicken with herbs", "Buttery lobster or scallops", "Creamy pasta Alfredo", "Soft cheeses like brie"],
       "why": "Chardonnay’s body and gentle acidity mirror creamy sauces and roasted poultry. Richer styles hug butter and oak; lighter styles stay bright with seafood.",
-      "winerySlugs": ["callaway-winery", "hart-winery", "thornton-winery"],
+      "winerySlugs": ["callaway-winery", "halter-ranch", "thornton-winery"],
       "seoBlurb": "Temecula Chardonnay food pairings for chicken, seafood, pasta, and cheese."
     },
     {
@@ -155,7 +155,7 @@
       "summary": "Chicken is a blank canvas — sauce and cooking method pick the wine more than the bird itself.",
       "foods": ["Herb roast chicken", "Lemon-garlic grilled chicken", "Chicken tacos", "Creamy chicken pasta"],
       "why": "Roast and cream sauces love Chardonnay; tomato, spice, and grill marks lean Grenache or soft reds.",
-      "winerySlugs": ["callaway-winery", "hart-winery", "danza-del-sol"],
+      "winerySlugs": ["callaway-winery", "halter-ranch", "danza-del-sol"],
       "seoBlurb": "Wine with chicken: Temecula Chardonnay, Grenache, and easy red options."
     },
     {
@@ -166,7 +166,7 @@
       "summary": "Keep it bright. Temecula whites and bubbles are the safest (and most delicious) seafood partners.",
       "foods": ["Grilled salmon", "Shrimp scampi", "Fish tacos", "Oysters or ceviche"],
       "why": "Acidity and freshness cut oil and brine. Avoid big tannic reds unless the dish is heavily sauced or smoked.",
-      "winerySlugs": ["thornton-winery", "hart-winery", "danza-del-sol"],
+      "winerySlugs": ["thornton-winery", "halter-ranch", "danza-del-sol"],
       "seoBlurb": "Temecula wine and seafood pairings — salmon, shrimp, tacos, and oysters."
     },
     {
@@ -210,7 +210,7 @@
       "summary": "Easy food, easy wine. No special occasion required — just something that makes Tuesday nicer.",
       "foods": ["Rotisserie chicken", "Burgers or turkey burgers", "Takeout pizza", "Sheet-pan veggies and sausage"],
       "why": "Softer wines forgive imperfect plating and mixed leftovers. Save the big Cabernet for when you’re grilling on purpose.",
-      "winerySlugs": ["lorimar-winery", "hart-winery", "danza-del-sol"],
+      "winerySlugs": ["lorimar-winery", "halter-ranch", "danza-del-sol"],
       "seoBlurb": "Easy weeknight wine pairings with Temecula bottles you’ll actually open."
     },
     {
@@ -243,7 +243,7 @@
       "summary": "Picnic wines should taste great a little cooler than room temp and pair with finger food.",
       "foods": ["Sandwiches and wraps", "Fruit and nuts", "Cheese and crackers", "Fried chicken cold or warm"],
       "why": "Freshness matters outdoors. Chillable bottles travel better and stay refreshing in Temecula sun.",
-      "winerySlugs": ["wilson-creek-winery", "hart-winery", "danza-del-sol"],
+      "winerySlugs": ["wilson-creek-winery", "halter-ranch", "danza-del-sol"],
       "seoBlurb": "Picnic wine ideas for Temecula — rosé, sparkling, and chillable bottles."
     },
     {
@@ -298,7 +298,7 @@
       "summary": "Wildflowers, patio reopenings, and fresher plates — spring wines should taste like a deep breath outdoors.",
       "foods": ["Asparagus and spring peas", "Herb salads with goat cheese", "Lemon chicken", "Strawberries and light pastries"],
       "why": "Green herbs and citrus want bright acidity. Save the heaviest reds for later in the year.",
-      "winerySlugs": ["hart-winery", "wilson-creek-winery", "callaway-winery"],
+      "winerySlugs": ["halter-ranch", "wilson-creek-winery", "callaway-winery"],
       "seoBlurb": "Spring Temecula wine pairings for herbs, salads, lemon chicken, and patio season."
     }
   ]
