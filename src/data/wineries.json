@@ -1077,44 +1077,6 @@
     "corridor": "Rainbow Canyon Road"
   },
   {
-    "id": "vinemark",
-    "name": "Vinemark Cellars",
-    "slug": "vinemark",
-    "location": "Temecula",
-    "address": "33133 Vista Del Monte Rd, Temecula, CA 92591",
-    "description": "Modern winery focusing on small-lot, handcrafted wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Syrah, Grenache, Viognier. Visitor context in our directory: about 4.6/5 with a $$ price feel, located on Temecula Valley wine country roads at 33133 Vista Del Monte Rd, Temecula, CA 92591. Families: Kids welcome with supervision. Leashed dogs are typically OK in outdoor areas. Phone (951) 676-4400. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Vinemark Cellars.",
-    "image": "/images/wineries/vinemark.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Syrah",
-      "Grenache",
-      "Viognier"
-    ],
-    "rating": 4.6,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome with supervision."
-    },
-    "website": "https://www.vinemarkcellars.com",
-    "phone": "(951) 676-4400",
-    "coordinates": {
-      "lat": 33.536174,
-      "lng": -117.080287
-    },
-    "featured": true,
-    "events": [],
-    "about_extended": "Vinemark Cellars is best understood as a tasting-room destination with intimate cellar-door scale for drinkers who prefer depth over entertainment programming. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Syrah, Grenache, Viognier. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome with supervision.. Geographically, Vinemark Cellars sits along Temecula Valley wine country roads, a Temecula Valley corridor with tasting rooms set among vineyards and rolling hills. Address on file: 33133 Vista Del Monte Rd, Temecula, CA 92591.",
-    "has_views": false,
-    "view_level": null,
-    "view_notes": "",
-    "view_tags": [],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Vinemark Cellars when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Syrah, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Vinemark Cellars as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Visitor sentiment in our directory sits around 4.6/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Vinemark Cellars site or by phone ((951) 676-4400) before you drive out. Start with the winery website: https://www.vinemarkcellars.com.",
-    "corridor": "Temecula Valley wine country roads"
-  },
-  {
     "id": "oak-mountain",
     "name": "Oak Mountain Winery",
     "slug": "oak-mountain",
@@ -1196,48 +1158,6 @@
       "vineyard"
     ],
     "visit_guide": "If you are comparing Temecula tasting rooms, use Canyon Oaks Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Canyon Oaks Winery, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.1/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Canyon Oaks Winery site or by phone ((951) 676-3300) before you drive out. Start with the winery website: https://www.canyonoakswinery.com.",
-    "corridor": "Calle Contento"
-  },
-  {
-    "id": "stonehouse",
-    "name": "Stonehouse Cellars",
-    "slug": "stonehouse",
-    "location": "Temecula",
-    "address": "40700 Calle Contento, Temecula, CA 92591",
-    "description": "Intimate winery with a focus on small-production, high-quality wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Syrah, Grenache, Viognier. Visitor context in our directory: about 4.7/5 with a $$$ price feel, located on Calle Contento at 40700 Calle Contento, Temecula, CA 92591. Adults-oriented tasting notes: 21+ only. Not listed as pet-friendly — leave pets at home. Views: Calle Contento elevation with open wine-country surroundings from patio areas. Phone (951) 676-2700. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Stonehouse Cellars.",
-    "image": "/images/wineries/stonehouse.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Syrah",
-      "Grenache",
-      "Viognier"
-    ],
-    "rating": 4.7,
-    "price_range": "$$$",
-    "tasting_room": true,
-    "pet_friendly": false,
-    "kid_friendly": {
-      "allowed": false,
-      "notes": "21+ only."
-    },
-    "website": "https://www.stonehousecellars.com",
-    "phone": "(951) 676-2700",
-    "coordinates": {
-      "lat": 33.5305,
-      "lng": -117.0692
-    },
-    "featured": true,
-    "events": [],
-    "about_extended": "Stonehouse Cellars is best understood as a tasting-room destination with higher-touch, reservation-minded tasting culture and a quieter luxury posture. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Syrah, Grenache, Viognier. Expect a higher price feel ($$$) relative to casual drop-in rooms; budget for tasting fees and possible food add-ons. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. This listing is not treated as pet-friendly in our directory — plan boarding or a no-dog day if animals travel with you. Families: this experience is oriented more to adults (21+ only.). Scenery note: Calle Contento elevation with open wine-country surroundings from patio areas. Geographically, Stonehouse Cellars sits along Calle Contento, a side-road cluster of boutique and hillside tasting rooms a short hop off the main corridor. Address on file: 40700 Calle Contento, Temecula, CA 92591.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Calle Contento elevation with open wine-country surroundings from patio areas.",
-    "view_tags": [
-      "ridge",
-      "patio",
-      "valley"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Stonehouse Cellars when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Syrah, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Stonehouse Cellars, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Visitor sentiment in our directory sits around 4.7/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Stonehouse Cellars site or by phone ((951) 676-2700) before you drive out. Start with the winery website: https://www.stonehousecellars.com.",
     "corridor": "Calle Contento"
   },
   {
@@ -1551,48 +1471,6 @@
     "view_tags": [],
     "visit_guide": "If you are comparing Temecula tasting rooms, use La Reina Vineyards when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Syrah versus Grenache, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at La Reina Vineyards, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.4/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official La Reina Vineyards site or by phone ((951) 676-8231) before you drive out. Start with the winery website: https://www.lareinavineyards.com.",
     "corridor": "Calle Contento"
-  },
-  {
-    "id": "sugarloaf",
-    "name": "Sugarloaf Mountain Vineyard",
-    "slug": "sugarloaf",
-    "location": "Temecula",
-    "address": "38000 De Portola Rd, Temecula, CA 92592",
-    "description": "High elevation vineyard producing concentrated, flavorful wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Syrah, Grenache, Viognier. Visitor context in our directory: about 4.5/5 with a $$ price feel, located on De Portola Road at 38000 De Portola Rd, Temecula, CA 92592. Families: Family friendly. Leashed dogs are typically OK in outdoor areas. Views: Mountain-named De Portola property with elevated outdoor tasting character. Phone (951) 676-4500. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Sugarloaf Mountain Vineyard.",
-    "image": "/images/wineries/sugarloaf.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Syrah",
-      "Grenache",
-      "Viognier"
-    ],
-    "rating": 4.5,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Family friendly."
-    },
-    "website": "https://www.sugarloafmountain.com",
-    "phone": "(951) 676-4500",
-    "coordinates": {
-      "lat": 33.51782,
-      "lng": -117.0197
-    },
-    "featured": true,
-    "events": [],
-    "about_extended": "Sugarloaf Mountain Vineyard is best understood as a tasting-room destination with higher-ground De Portola scenery and a scenic-drive reward before you park. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Syrah, Grenache, Viognier. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Family friendly.. Scenery note: Mountain-named De Portola property with elevated outdoor tasting character. Geographically, Sugarloaf Mountain Vineyard sits along De Portola Road, a quieter eastern corridor where estates feel more spread out and drives between pours are short but scenic. Address on file: 38000 De Portola Rd, Temecula, CA 92592.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Mountain-named De Portola property with elevated outdoor tasting character.",
-    "view_tags": [
-      "mountain",
-      "elevated",
-      "hillside"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Sugarloaf Mountain Vineyard when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Syrah, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. De Portola visits work best as a clustered half day: pair Sugarloaf Mountain Vineyard with one or two nearby east-valley estates instead of crisscrossing back to the main road after every flight. Visitor sentiment in our directory sits around 4.5/5, which usually correlates with busier peak hours — weekday late mornings are calmer. This estate appears as a featured listing in our directory, which means it is easy to find from hub pages when you are shortlisting a first visit. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Sugarloaf Mountain Vineyard site or by phone ((951) 676-4500) before you drive out. Start with the winery website: https://www.sugarloafmountain.com.",
-    "corridor": "De Portola Road"
   },
   {
     "id": "vail",
