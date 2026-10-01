@@ -1,5 +1,75 @@
 [
   {
+    "id": "akash",
+    "name": "Akash Winery & Vineyards",
+    "slug": "akash",
+    "location": "Temecula",
+    "address": "39730 Calle Contento, Temecula, CA 92591",
+    "description": "Family-owned Calle Contento estate — vineyard patios, wine and Akash Brewing, food pop-ups, live music, and a gathering place among the vines.",
+    "image": "/images/wineries/akash.jpg",
+    "varietals": [
+      "Cabernet Franc",
+      "Cabernet Sauvignon",
+      "Malbec",
+      "Syrah",
+      "Zinfandel",
+      "Sauvignon Blanc",
+      "Sparkling"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family / kid friendly; Saturday evenings 21+ only."
+    },
+    "website": "https://www.akashwinery.com/",
+    "phone": "(951) 888-1393",
+    "coordinates": {
+      "lat": 33.537627732178,
+      "lng": -117.075200701374
+    },
+    "featured": true,
+    "events": [],
+    "has_views": true,
+    "view_level": "notable",
+    "view_notes": "Open-air patios facing the vineyard and rolling Calle Contento hills.",
+    "view_tags": [
+      "vineyard",
+      "patio",
+      "hills"
+    ],
+    "corridor": "Calle Contento",
+    "kicker": "Where the Vineyard Becomes a Gathering Place",
+    "article": [
+      "There are wineries where the tasting room is the destination.",
+      "At Akash Winery & Vineyards, the vineyard itself seems to invite people to stay.",
+      "Located on Calle Contento among the rolling hills of Temecula Wine Country, Akash is a family-owned estate built around a 20-acre parcel that has grown into something considerably larger than the vision that first inspired it. The family traces the beginning of that vision to a photograph of a vineyard kept on a fireplace mantle nearly 25 years ago. Eventually, that image became a real vineyard in Temecula.",
+      "That family origin remains central to Akash’s personality.",
+      "The winery repeatedly emphasizes community, connection and the idea that wine is meant to be shared. The physical setting reinforces that philosophy: open-air patios face the vineyards, with indoor and outdoor spaces designed for people to linger rather than simply complete a tasting and leave.",
+      "The scenery is particularly effective from the patios.",
+      "Vines frame the views while the surrounding hills provide the backdrop. On warmer days, outdoor cooling features help make patio time comfortable; when the temperature drops, fire pits create a different atmosphere. The winery even offers games such as cornhole, reinforcing its identity as a place to spend time rather than simply a stop between other wineries.",
+      "Akash’s wine program is equally broad in its invitation.",
+      "The winery describes its philosophy as offering “a wine for every lifestyle,” with a portfolio designed to accommodate different tastes and occasions. Visitors can experience traditional tasting flights or move into more guided formats with wine educators. An Insider’s Tour and Tasting takes guests through the estate vineyard and production areas before returning to the patio for a hosted tasting.",
+      "But wine isn’t the only thing being poured here.",
+      "Akash also operates Akash Brewing, bringing craft beer into the same environment. Non-alcoholic options are available as well, making the property particularly accommodating to groups in which everyone does not necessarily want the same beverage.",
+      "Food is another important part of the experience.",
+      "The winery maintains a rotating schedule of food pop-ups and currently promotes recurring offerings ranging from tacos to pizza, along with charcuterie and other options designed to accompany a longer stay.",
+      "That combination gives Akash a distinctly contemporary personality.",
+      "The traditional image of a winery visit might involve a tasting bar, a few carefully presented wines and a quiet conversation about vintages. Akash can certainly provide that experience, but its current programming expands the idea considerably.",
+      "Music is part of the rhythm.",
+      "The winery’s current schedule includes live music and DJ programming, along with seasonal and special events. Friday afternoon programming and weekend entertainment can shift the atmosphere from a traditional wine tasting toward something closer to an outdoor wine-and-music gathering.",
+      "The difference is important.",
+      "Akash does not appear to treat entertainment as something added after the wine experience. Instead, wine, food, music and the vineyard setting have become interconnected parts of the property.",
+      "For visitors who enjoy a more energetic version of wine country, that can be part of the appeal.",
+      "And yet the foundation remains agricultural.",
+      "The vineyard is not simply an attractive backdrop for the patios. It is the physical expression of the family’s original dream—the transformation of a piece of Temecula land into a working vineyard and eventually into a place where other people could gather.",
+      "That gives Akash’s modern hospitality a deeper story.",
+      "What looks today like a polished wine-country gathering place began with a family imagining itself somewhere among the vines."
+    ],
+    "perspective": "Akash is wine country built around community. The vineyard provides the setting, but food, music, beer, wine, outdoor living and family hospitality all become part of the experience. Its story begins with a family’s dream of owning a vineyard and continues today as a place designed to bring other people together among the vines."
+  },
+  {
     "id": "altisima",
     "name": "Altísima Winery",
     "slug": "altisima",
