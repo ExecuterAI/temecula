@@ -76,7 +76,7 @@
     "location": "Temecula",
     "address": "37440 De Portola Rd, Temecula, CA 92592",
     "description": "Hilltop on De Portola Road — Spanish-rooted wines, Gaspar’s restaurant, decks over the valley, and a tasting that can become an afternoon.",
-    "image": "/images/wineries/altisima.jpg",
+    "image": "/images/wineries/altisima-sign.jpg",
     "varietals": [
       "Tempranillo",
       "Sangiovese",
@@ -131,7 +131,14 @@
       "The hilltop setting does the rest.",
       "As the light changes across the vineyards, the views become increasingly atmospheric, and the experience shifts naturally from tasting-room visit toward wine-country escape."
     ],
-    "perspective": "Altísima is Temecula wine country viewed through a Spanish lens—elevated, contemporary and built around the relationship between wine, food, scenery and social gathering. Its hilltop setting supplies the drama, while its Spanish influence gives the experience a distinctive identity."
+    "perspective": "Altísima is Temecula wine country viewed through a Spanish lens—elevated, contemporary and built around the relationship between wine, food, scenery and social gathering. Its hilltop setting supplies the drama, while its Spanish influence gives the experience a distinctive identity.",
+    "article_images": [
+      {
+        "src": "/images/wineries/altisima-building.jpg",
+        "alt": "Altísima Winery tasting room, stone and wood, with the crowned bird above the entrance",
+        "after": 7
+      }
+    ]
   },
   {
     "id": "baily",

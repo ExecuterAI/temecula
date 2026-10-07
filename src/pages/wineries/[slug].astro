@@ -115,8 +115,17 @@ const wineryJsonLd = {
             {(winery as any).kicker && (
               <p class="text-sm uppercase tracking-[0.22em] text-[#4A5E4E] font-medium">{(winery as any).kicker}</p>
             )}
-            {((winery as any).article as string[]).map((para) => (
-              <p class="text-lg leading-relaxed text-stone-700">{para}</p>
+            {((winery as any).article as string[]).map((para, i) => (
+              <>
+                <p class="text-lg leading-relaxed text-stone-700">{para}</p>
+                {(((winery as any).article_images as {src: string; alt: string; after: number}[]) || [])
+                  .filter((img) => img.after === i)
+                  .map((img) => (
+                    <figure class="my-2">
+                      <img src={img.src} alt={img.alt} class="w-full rounded-2xl object-cover" loading="lazy" />
+                    </figure>
+                  ))}
+              </>
             ))}
             {(winery as any).perspective && (
               <section class="mt-10 pt-8 border-t border-stone-200">
