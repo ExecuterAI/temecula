@@ -866,6 +866,50 @@
     "perspective": "Falkner is Temecula wine country from the hilltop: expansive views, vineyard-centered tasting experiences, a restaurant designed around the landscape and enough depth behind the scenes to make the wine itself part of the story. The view may draw the eye first, but the vineyard, cellar and table complete the experience."
   },
   {
+    "id": "fazeli",
+    "name": "Fazeli Cellars",
+    "slug": "fazeli",
+    "location": "Temecula",
+    "address": "37320 De Portola Rd, Temecula, CA 92592",
+    "description": "De Portola tasting room with Baba Joon’s Kitchen, live music, and wines that nod to Persian heritage and Southern California fruit.",
+    "image": "/images/wineries/fazeli-truck.jpg",
+    "varietals": [
+      "Cabernet Franc",
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Grenache",
+      "Malbec",
+      "Merlot",
+      "Sauvignon Blanc",
+      "Viognier",
+      "Zinfandel"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family / kid friendly. Confirm current policy with the tasting room."
+    },
+    "website": "https://www.fazelicellars.com/",
+    "phone": "(951) 303-3366",
+    "coordinates": {
+      "lat": 33.509110265718,
+      "lng": -117.018027600553
+    },
+    "featured": false,
+    "events": [],
+    "has_views": true,
+    "view_level": "good",
+    "view_notes": "Stone tasting house on De Portola with courtyard and hillside setting.",
+    "view_tags": [
+      "courtyard",
+      "hillside",
+      "de portola"
+    ],
+    "corridor": "De Portola Road"
+  },
+  {
     "id": "foot-path",
     "name": "Foot Path Winery",
     "slug": "foot-path",
@@ -1030,48 +1074,6 @@
       "But the name on the door tells a new story."
     ],
     "perspective": "Halter Ranch Temecula represents a changing chapter in Temecula wine country—an established wine property carrying a new name, new ownership and a broader California wine identity. Its combination of vineyard views, approachable tasting and relaxed outdoor spaces makes it an interesting example of how Temecula’s wine landscape continues to evolve."
-  },
-  {
-    "id": "somerset",
-    "name": "Somerset Vineyard & Winery",
-    "slug": "somerset",
-    "location": "Temecula",
-    "address": "37338 De Portola Rd, Temecula, CA 92592",
-    "description": "Formerly Keyways. 13-acre De Portola estate — Rhône and Spanish varieties, tasting room, and live music later in the week.",
-    "image": "/images/wineries/somerset-sign.jpg",
-    "varietals": [
-      "Viognier",
-      "Roussanne",
-      "Grenache",
-      "Syrah",
-      "Tempranillo",
-      "Monastrell"
-    ],
-    "rating": 4.2,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome."
-    },
-    "website": "https://www.somersetvineyard.com/",
-    "phone": "(951) 365-5522",
-    "coordinates": {
-      "lat": 33.509267,
-      "lng": -117.017936
-    },
-    "featured": false,
-    "events": [],
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "De Portola Rd hillside tasting with open vineyard sightlines.",
-    "view_tags": [
-      "hillside",
-      "vineyard",
-      "de portola"
-    ],
-    "corridor": "De Portola Road"
   },
   {
     "id": "la-reina",
@@ -1639,6 +1641,48 @@
     ],
     "visit_guide": "If you are comparing Temecula tasting rooms, use Rio Vista Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Merlot, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Rio Vista Winery as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Directory rating context is about 4.2/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Rio Vista Winery site or by phone ((951) 676-5250) before you drive out. Start with the winery website: https://www.riovistawinery.com.",
     "corridor": "Anza Road"
+  },
+  {
+    "id": "somerset",
+    "name": "Somerset Vineyard & Winery",
+    "slug": "somerset",
+    "location": "Temecula",
+    "address": "37338 De Portola Rd, Temecula, CA 92592",
+    "description": "Formerly Keyways. 13-acre De Portola estate — Rhône and Spanish varieties, tasting room, and live music later in the week.",
+    "image": "/images/wineries/somerset-sign.jpg",
+    "varietals": [
+      "Viognier",
+      "Roussanne",
+      "Grenache",
+      "Syrah",
+      "Tempranillo",
+      "Monastrell"
+    ],
+    "rating": 4.2,
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Kids welcome."
+    },
+    "website": "https://www.somersetvineyard.com/",
+    "phone": "(951) 365-5522",
+    "coordinates": {
+      "lat": 33.509267,
+      "lng": -117.017936
+    },
+    "featured": false,
+    "events": [],
+    "has_views": true,
+    "view_level": "good",
+    "view_notes": "De Portola Rd hillside tasting with open vineyard sightlines.",
+    "view_tags": [
+      "hillside",
+      "vineyard",
+      "de portola"
+    ],
+    "corridor": "De Portola Road"
   },
   {
     "id": "south-coast",
