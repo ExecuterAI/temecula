@@ -1032,18 +1032,20 @@
     "perspective": "Halter Ranch Temecula represents a changing chapter in Temecula wine country—an established wine property carrying a new name, new ownership and a broader California wine identity. Its combination of vineyard views, approachable tasting and relaxed outdoor spaces makes it an interesting example of how Temecula’s wine landscape continues to evolve."
   },
   {
-    "id": "keyways",
-    "name": "Keyways Vineyard & Winery",
-    "slug": "keyways",
+    "id": "somerset",
+    "name": "Somerset Vineyard & Winery",
+    "slug": "somerset",
     "location": "Temecula",
     "address": "37338 De Portola Rd, Temecula, CA 92592",
-    "description": "Historic property with a focus on small-batch wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. Visitor context in our directory: about 4.2/5 with a $$ price feel, located on De Portola Road at 37338 De Portola Rd, Temecula, CA 92592. Families: Kids welcome. Leashed dogs are typically OK in outdoor areas. Views: De Portola Rd hillside tasting with open vineyard sightlines. Phone (951) 676-1450. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Keyways Vineyard & Winery.",
-    "image": "/images/wineries/keyways.jpg",
+    "description": "Formerly Keyways. 13-acre De Portola estate — Rhône and Spanish varieties, tasting room, and live music later in the week.",
+    "image": "/images/wineries/somerset-sign.jpg",
     "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
+      "Viognier",
+      "Roussanne",
+      "Grenache",
       "Syrah",
-      "Zinfandel"
+      "Tempranillo",
+      "Monastrell"
     ],
     "rating": 4.2,
     "price_range": "$$",
@@ -1053,15 +1055,14 @@
       "allowed": true,
       "notes": "Kids welcome."
     },
-    "website": "https://www.keywayswinery.com",
-    "phone": "(951) 676-1450",
+    "website": "https://www.somersetvineyard.com/",
+    "phone": "(951) 365-5522",
     "coordinates": {
       "lat": 33.509267,
       "lng": -117.017936
     },
     "featured": false,
     "events": [],
-    "about_extended": "Keyways Vineyard & Winery is best understood as a tasting-room destination with east-valley De Portola pacing with fewer main-road bottlenecks between appointments. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome.. Scenery note: De Portola Rd hillside tasting with open vineyard sightlines. Geographically, Keyways Vineyard & Winery sits along De Portola Road, a quieter eastern corridor where estates feel more spread out and drives between pours are short but scenic. Address on file: 37338 De Portola Rd, Temecula, CA 92592.",
     "has_views": true,
     "view_level": "good",
     "view_notes": "De Portola Rd hillside tasting with open vineyard sightlines.",
@@ -1070,7 +1071,6 @@
       "vineyard",
       "de portola"
     ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Keyways Vineyard & Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. De Portola visits work best as a clustered half day: pair Keyways Vineyard & Winery with one or two nearby east-valley estates instead of crisscrossing back to the main road after every flight. Directory rating context is about 4.2/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Keyways Vineyard & Winery site or by phone ((951) 676-1450) before you drive out. Start with the winery website: https://www.keywayswinery.com.",
     "corridor": "De Portola Road"
   },
   {
