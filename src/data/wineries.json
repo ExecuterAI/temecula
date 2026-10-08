@@ -1083,6 +1083,45 @@
     "perspective": "Halter Ranch Temecula represents a changing chapter in Temecula wine country—an established wine property carrying a new name, new ownership and a broader California wine identity. Its combination of vineyard views, approachable tasting and relaxed outdoor spaces makes it an interesting example of how Temecula’s wine landscape continues to evolve."
   },
   {
+    "id": "jordan-parker",
+    "name": "Jordan Parker Winery",
+    "slug": "jordan-parker",
+    "location": "Temecula",
+    "address": "35871 Rancho California Rd, Temecula, CA 92592",
+    "description": "Family-owned tasting room on Rancho California Road. Temecula-grown Syrah, Mourvèdre, Grenache, Tempranillo and Viognier, with a patio and weekend food vendors.",
+    "image": "/images/wineries/jordan-parker.jpg",
+    "varietals": [
+      "Grenache",
+      "Malbec",
+      "Sangiovese",
+      "Syrah",
+      "Tempranillo",
+      "Viognier"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family / kid friendly. Confirm current policy with the tasting room."
+    },
+    "website": "https://jordanparkerwinery.com/",
+    "phone": "(951) 551-6047",
+    "coordinates": {
+      "lat": 33.545489053897,
+      "lng": -117.044102362413
+    },
+    "featured": false,
+    "events": [],
+    "has_views": false,
+    "view_level": "modest",
+    "view_notes": "Roadside tasting barn on Rancho California Road.",
+    "view_tags": [
+      "rancho california"
+    ],
+    "corridor": "Rancho California Road"
+  },
+  {
     "id": "la-reina",
     "name": "La Reina Vineyards",
     "slug": "la-reina",
