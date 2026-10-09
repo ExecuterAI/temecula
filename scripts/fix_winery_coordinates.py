@@ -198,11 +198,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5410,
         "lng": -117.0200,
     },
-    "rio-vista": {
-        "address": "36040 Anza Rd, Temecula, CA 92592",
-        "lat": 33.5250,
-        "lng": -117.0100,
-    },
     "temecula-valley": {
         "address": "41300 Calle Contento, Temecula, CA 92591",
         "lat": 33.5105,

@@ -2806,48 +2806,6 @@
     "perspective": "Ponte is wine country designed to unfold slowly. The vineyards provide the setting, the wine provides the reason to arrive, and the gardens, food, music and inn provide reasons to stay. It is less a stop along the wine trail than a destination within it."
   },
   {
-    "id": "rio-vista",
-    "name": "Rio Vista Winery",
-    "slug": "rio-vista",
-    "location": "Temecula",
-    "address": "36040 Anza Rd, Temecula, CA 92592",
-    "description": "Scenic winery with beautiful grounds and a relaxed tasting experience. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Merlot, Chardonnay, Petite Sirah. Visitor context in our directory: about 4.2/5 with a $$ price feel, located on Anza Road at 36040 Anza Rd, Temecula, CA 92592. Families: Family friendly. Leashed dogs are typically OK in outdoor areas. Views: Vista-oriented Anza Rd property; outdoor tasting leans scenic rather than street-front. Phone (951) 676-5250. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Rio Vista Winery.",
-    "image": "/images/wineries/rio-vista.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Merlot",
-      "Chardonnay",
-      "Petite Sirah"
-    ],
-    "rating": 4.2,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Family friendly."
-    },
-    "website": "https://www.riovistawinery.com",
-    "phone": "(951) 676-5250",
-    "coordinates": {
-      "lat": 33.535,
-      "lng": -117.05
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Rio Vista Winery is best understood as a tasting-room destination with open-air valley light and a casual tasting pace suited to afternoon light. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Merlot, Chardonnay, Petite Sirah. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Family friendly.. Scenery note: Vista-oriented Anza Rd property; outdoor tasting leans scenic rather than street-front. Geographically, Rio Vista Winery sits along Anza Road, a southern-ish wine-country pocket that rewards visitors who want less main-road traffic between stops. Address on file: 36040 Anza Rd, Temecula, CA 92592.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Vista-oriented Anza Rd property; outdoor tasting leans scenic rather than street-front.",
-    "view_tags": [
-      "vista",
-      "scenic",
-      "outdoor"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Rio Vista Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Merlot, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Rio Vista Winery as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Directory rating context is about 4.2/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Rio Vista Winery site or by phone ((951) 676-5250) before you drive out. Start with the winery website: https://www.riovistawinery.com.",
-    "corridor": "Anza Road"
-  },
-  {
     "id": "somerset",
     "name": "Somerset Vineyard & Winery",
     "slug": "somerset",
