@@ -475,44 +475,6 @@
     "perspective": "Carter Estate has built its identity around a very particular kind of wine-country pleasure: sparkling wine enjoyed slowly, surrounded by vineyards. The bubbles provide the personality, while the expansive estate, outdoor tasting areas and private vineyard-view bungalows provide the setting. It is a place that naturally encourages visitors to linger—and perhaps to turn an afternoon tasting into something a little more memorable."
   },
   {
-    "id": "casa-de-luna",
-    "name": "Casa de Luna Winery",
-    "slug": "casa-de-luna",
-    "location": "Temecula",
-    "address": "39840 De Portola Rd, Temecula, CA 92592",
-    "description": "Romantic winery with beautiful grounds and excellent hospitality. Expect Mediterranean and Iberian-leaning varieties that stand out from a pure Cabernet-only day, with bottles often including Tempranillo, Syrah, Grenache, Albariño. Visitor context in our directory: about 4.3/5 with a $$ price feel, located on De Portola Road at 39840 De Portola Rd, Temecula, CA 92592. Families: Family friendly. Leashed dogs are typically OK in outdoor areas. Phone (951) 302-5100. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Casa de Luna Winery.",
-    "image": "/images/wineries/casa-de-luna.jpg",
-    "varietals": [
-      "Tempranillo",
-      "Syrah",
-      "Grenache",
-      "Albariño"
-    ],
-    "rating": 4.3,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Family friendly."
-    },
-    "website": "https://www.casadelunawinery.com",
-    "phone": "(951) 302-5100",
-    "coordinates": {
-      "lat": 33.541788,
-      "lng": -117.006699
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Casa de Luna Winery is best understood as a tasting-room destination with evening-friendly name energy and Spanish-leaning bottles on the De Portola run. On the glass, lean into Mediterranean and Iberian-leaning varieties that stand out from a pure Cabernet-only day — house markers often include Tempranillo, Syrah, Grenache, Albariño. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Family friendly.. Geographically, Casa de Luna Winery sits along De Portola Road, a quieter eastern corridor where estates feel more spread out and drives between pours are short but scenic. Address on file: 39840 De Portola Rd, Temecula, CA 92592.",
-    "has_views": false,
-    "view_level": null,
-    "view_notes": "",
-    "view_tags": [],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Casa de Luna Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Tempranillo versus Syrah, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. De Portola visits work best as a clustered half day: pair Casa de Luna Winery with one or two nearby east-valley estates instead of crisscrossing back to the main road after every flight. Directory rating context is about 4.3/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Casa de Luna Winery site or by phone ((951) 302-5100) before you drive out. Start with the winery website: https://www.casadelunawinery.com.",
-    "corridor": "De Portola Road"
-  },
-  {
     "id": "chapin",
     "name": "Chapin Family Vineyards",
     "slug": "chapin",
