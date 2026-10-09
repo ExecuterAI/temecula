@@ -743,6 +743,68 @@
     "perspective": "Churon’s defining appeal is the opportunity to make wine country a stay rather than an itinerary. Its château-inspired setting, tasting room, café, and 24-suite inn bring together the elements of a leisurely escape, with vineyard views providing the thread that connects them. It is a destination for those who want the feeling of having arrived somewhere—not merely stopped by."
   },
   {
+    "id": "cougar",
+    "name": "Cougar Vineyard & Winery",
+    "slug": "cougar",
+    "location": "Temecula",
+    "address": "39870 De Portola Rd, Temecula, CA 92592",
+    "description": "Family estate on the De Portola Wine Trail. Italian varieties grown, made, and bottled on the property, with Sangio’s Osteria on site.",
+    "image": "/images/wineries/cougar-standin.jpg",
+    "kicker": "An Italian Wine Story Rooted in Temecula",
+    "article": [
+      "Temecula wine country is home to many interpretations of European wine traditions, but Cougar Vineyard & Winery has built its identity around a particularly clear focus: Italian grape varieties grown on the estate and made into wine on the property. The result is a destination where the wines, the vineyard, and the food offering all contribute to a distinctly Italian-inspired experience.",
+      "Family-owned and located along the De Portola Wine Trail, Cougar was developed by Rick and Jennifer Buffington around the idea of an estate rather than simply a wine label. Its vineyard, production facilities, tasting spaces, and on-site Italian eatery are parts of the same story. The winery describes its approach as combining California roots with an Italian soul—a useful way to understand both its wine program and the atmosphere it seeks to create.",
+      "Italian Varieties, Grown Close to Home",
+      "Cougar’s estate vineyards are devoted to Italian varieties, giving visitors an opportunity to explore grapes that may be less familiar than Temecula’s better-known Cabernet Sauvignon or Chardonnay. Depending on the current wine list, the selection can include varieties such as Sangiovese, Vermentino, Falanghina, Arneis, Montepulciano, and other Italian grapes.",
+      "Each variety brings a different perspective on wine. Some are associated with bright acidity and food-friendly character; others offer deeper color, firmer structure, or more savory notes. Their origins span different regions of Italy, so tasting them together can feel like an introduction to the diversity hidden within the broad category of Italian wine.",
+      "What makes Cougar’s approach distinctive is the estate connection. The winery grows its grapes, produces its wines, and bottles them on the property. That continuity links the vineyard landscape visitors see to the wines poured in the tasting room. It also makes the winery a useful stop for anyone curious about how Italian varieties express themselves in Temecula’s growing conditions.",
+      "A Vineyard Setting Made for Lingering",
+      "The De Portola Wine Trail provides a more rural context for Cougar’s experience, with the property offering vineyard and valley views from its outdoor spaces. The landscape gives the visit a natural sense of openness, while the tasting and dining areas create reasons to stay beyond a single flight.",
+      "Cougar’s appeal is not limited to a formal tasting counter. Visitors can explore the wine list, settle into the outdoor setting, and make the visit part of a longer afternoon. Live music and other events add another dimension at scheduled times, though programming can change, making it sensible to check the current calendar when planning a visit.",
+      "The winery’s family-owned identity also contributes to the atmosphere. Its team is involved in the growing, production, and sharing of the wines, allowing the visitor experience to connect with the people behind the estate. For those who enjoy asking questions about unfamiliar grapes or how a wine was made, that connection can be as rewarding as the tasting itself.",
+      "Sangio’s Osteria: Wine Meets the Table",
+      "Food is central to the Cougar experience. Sangio’s Osteria, the winery’s on-site Italian eatery, gives visitors a way to pair the wines with a meal rather than treating food as a secondary addition. The osteria has grown from a deli-style concept into a more developed food offering built around made-to-order dishes and Italian-inspired flavors.",
+      "The pairing feels natural. Italian wines have long been shaped by their relationship with the table, and the variety of grapes at Cougar creates opportunities to explore that relationship. A fresh, aromatic white may complement lighter dishes, while a more structured red can accompany richer flavors. The precise pairing depends on the current menu and wine list, but the larger idea is consistent: food and wine are intended to be enjoyed together.",
+      "Having the osteria on site also changes the pace of a visit. A tasting can become lunch, and lunch can become a longer afternoon overlooking the vines. Rather than moving immediately to the next stop, guests have the option to let the meal and the setting complete the experience.",
+      "A Different Kind of Temecula Wine Trail Stop",
+      "Cougar adds a distinctive strand to Temecula’s wine-country identity. Its concentration on Italian varieties offers something more specific than a general European theme, while its estate production gives that focus an agricultural foundation. The osteria then brings the wines into a culinary context that reflects the traditions behind many of the grapes.",
+      "For wine enthusiasts, the less-common varieties can be an invitation to discover something new. For visitors more interested in the overall outing, the combination of tasting, food, and views makes Cougar a destination where the experience extends naturally beyond the glass.",
+      "Current wine selections, food service, and event schedules can vary, so checking the winery’s official website before visiting is the best way to plan around a particular tasting or meal."
+    ],
+    "perspective": "Cougar’s character comes from a clear point of view: Italian grapes grown in Temecula, wine made on the estate, and food designed to share the table with it. The vineyard setting gives the experience its sense of place, while Sangio’s Osteria makes the connection between wine and cuisine tangible. It is a destination for curious tasters and anyone who believes a good wine-country afternoon should leave room for lunch.",
+    "varietals": [
+      "Sangiovese",
+      "Vermentino",
+      "Falanghina",
+      "Arneis",
+      "Montepulciano",
+      "Pinot Grigio"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family / kid friendly. Confirm current policy with the tasting room."
+    },
+    "website": "https://cougarwinery.com/",
+    "phone": "(951) 491-0825",
+    "coordinates": {
+      "lat": 33.54215548238,
+      "lng": -117.006361672645
+    },
+    "featured": false,
+    "events": [],
+    "has_views": true,
+    "view_level": "good",
+    "view_notes": "Vineyard and valley views from outdoor spaces on the De Portola Wine Trail.",
+    "view_tags": [
+      "vineyard",
+      "valley"
+    ],
+    "corridor": "De Portola Road"
+  },
+  {
     "id": "danza-del-sol",
     "name": "Danza del Sol Winery",
     "slug": "danza-del-sol",
