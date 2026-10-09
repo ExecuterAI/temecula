@@ -555,48 +555,6 @@
     "corridor": "Rancho California Road"
   },
   {
-    "id": "cielo",
-    "name": "Cielo at the Vineyard",
-    "slug": "cielo",
-    "location": "Temecula",
-    "address": "39820 Avenida Acacias, Temecula, CA 92591",
-    "description": "Stunning views and a modern tasting room experience. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Merlot, Syrah. Visitor context in our directory: about 4.3/5 with a $$ price feel, located on Avenida Acacias at 39820 Avenida Acacias, Temecula, CA 92591. Families: Family friendly. Leashed dogs are typically OK in outdoor areas. Views: Modern tasting setting marketed around open skyline and vineyard scenery. Phone (951) 676-5252. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Cielo at the Vineyard.",
-    "image": "/images/wineries/cielo.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
-      "Merlot",
-      "Syrah"
-    ],
-    "rating": 4.3,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Family friendly."
-    },
-    "website": "https://www.cielowinery.com",
-    "phone": "(951) 676-5252",
-    "coordinates": {
-      "lat": 33.5385,
-      "lng": -117.055
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Cielo at the Vineyard is best understood as a tasting-room destination with vineyard-edge sky feeling and photo-friendly outdoor seating when weather cooperates. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Merlot, Syrah. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Family friendly.. Scenery note: Modern tasting setting marketed around open skyline and vineyard scenery. Geographically, Cielo at the Vineyard sits along Avenida Acacias, a smaller-lane pocket suited to unhurried, low-crowd tastings. Address on file: 39820 Avenida Acacias, Temecula, CA 92591.",
-    "has_views": true,
-    "view_level": "standout",
-    "view_notes": "Modern tasting setting marketed around open skyline and vineyard scenery.",
-    "view_tags": [
-      "skyline",
-      "vineyard",
-      "modern"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Cielo at the Vineyard when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Cielo at the Vineyard as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Directory rating context is about 4.3/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Cielo at the Vineyard site or by phone ((951) 676-5252) before you drive out. Start with the winery website: https://www.cielowinery.com.",
-    "corridor": "Avenida Acacias"
-  },
-  {
     "id": "danza-del-sol",
     "name": "Danza del Sol Winery",
     "slug": "danza-del-sol",
