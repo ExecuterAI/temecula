@@ -2972,44 +2972,6 @@
     "corridor": "Rainbow Canyon Road"
   },
   {
-    "id": "temecula-valley",
-    "name": "Temecula Valley Winery",
-    "slug": "temecula-valley",
-    "location": "Temecula",
-    "address": "41300 Calle Contento, Temecula, CA 92591",
-    "description": "Classic Temecula winery with a focus on quality and hospitality. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. Visitor context in our directory: about 4.0/5 with a $$ price feel, located on Calle Contento at 41300 Calle Contento, Temecula, CA 92591. Families: Family friendly. Leashed dogs are typically OK in outdoor areas. Phone (951) 676-3400. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Temecula Valley Winery.",
-    "image": "/images/wineries/temecula-valley.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
-      "Syrah",
-      "Zinfandel"
-    ],
-    "rating": 4.0,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Family friendly."
-    },
-    "website": "https://www.temeculavalleywinery.com",
-    "phone": "(951) 676-3400",
-    "coordinates": {
-      "lat": 33.525834,
-      "lng": -117.066022
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Temecula Valley Winery is best understood as a tasting-room destination with straightforward valley tasting-room stop for flexible drop-in planning. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Syrah, Zinfandel. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Family friendly.. Geographically, Temecula Valley Winery sits along Calle Contento, a side-road cluster of boutique and hillside tasting rooms a short hop off the main corridor. Address on file: 41300 Calle Contento, Temecula, CA 92591.",
-    "has_views": false,
-    "view_level": null,
-    "view_notes": "",
-    "view_tags": [],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Temecula Valley Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Temecula Valley Winery, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.0/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Temecula Valley Winery site or by phone ((951) 676-3400) before you drive out. Start with the winery website: https://www.temeculavalleywinery.com.",
-    "corridor": "Calle Contento"
-  },
-  {
     "id": "thornton",
     "name": "Thornton Winery",
     "slug": "thornton-winery",

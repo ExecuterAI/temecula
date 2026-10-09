@@ -198,11 +198,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5410,
         "lng": -117.0200,
     },
-    "temecula-valley": {
-        "address": "41300 Calle Contento, Temecula, CA 92591",
-        "lat": 33.5105,
-        "lng": -117.0270,
-    },
 }
 
 
