@@ -193,11 +193,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5390,
         "lng": -117.0250,
     },
-    "rancho-pueblo": {
-        "address": "41100 Calle Contento, Temecula, CA 92591",
-        "lat": 33.5120,
-        "lng": -117.0290,
-    },
     "hidden-mountain": {
         "address": "38500 De Portola Rd, Temecula, CA 92592",
         "lat": 33.5410,
