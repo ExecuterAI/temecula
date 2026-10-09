@@ -203,11 +203,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5410,
         "lng": -117.0200,
     },
-    "rancho-california": {
-        "address": "34560 Rancho California Rd, Temecula, CA 92591",
-        "lat": 33.5320,
-        "lng": -117.0700,
-    },
     "rio-vista": {
         "address": "36040 Anza Rd, Temecula, CA 92592",
         "lat": 33.5250,
