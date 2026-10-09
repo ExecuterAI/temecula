@@ -369,6 +369,63 @@
     "perspective": "Bella Vista offers a more intimate encounter with Temecula’s wine-country story. Its historic roots, scenic setting and evolving character create an experience that feels personal rather than sprawling. The landscape is a major part of the attraction, but so is the sense that this is a place with a history worth remembering. For visitors who enjoy discovering the stories behind wine country—not just photographing the scenery—Bella Vista provides an intriguing glimpse into Temecula’s earliest commercial wine-making era."
   },
   {
+    "id": "bottaia",
+    "name": "Bottaia Winery",
+    "slug": "bottaia",
+    "location": "Temecula",
+    "address": "35601 Rancho California Rd, Temecula, CA 92591",
+    "description": "Italian-inspired estate on Rancho California Road. Tastings, food, and a blending lab, with Sangiovese, Montepulciano, Pinot Grigio, Arneis, and Vermentino.",
+    "image": "/images/wineries/bottaia-standin.jpg",
+    "kicker": "Italian Elegance in the Heart of Temecula Wine Country",
+    "article": [
+      "At Bottaia Winery, Temecula wine country takes on a distinctly Italian character. The architecture is contemporary, the spaces are carefully composed, and the surrounding vineyard establishes a natural rhythm beneath the polished setting. Inspired by Northern Italy, Bottaia offers a wine-country experience that brings together estate-grown Italian grape varieties, thoughtfully designed tasting spaces, food, and opportunities to explore the craft of winemaking.",
+      "Located on Rancho California Road, Bottaia grew from the Ponte family’s longstanding involvement in Temecula agriculture and wine. After farming the historic Brookside Ranch for decades, the family developed a vision for a winery devoted to Italian varieties suited to the local growing environment. Bottaia opened in 2018, giving that vision its own distinctive home. The name itself refers to a cask-aging room in Italian, a fitting connection to the traditions that inform the winery’s approach.",
+      "A Modern Interpretation of Italian Wine Country",
+      "The setting balances contemporary design with the vineyard landscape. Large windows and open outdoor areas maintain a connection to the vines, while the tasting spaces provide a more structured environment for exploring the wines. Rather than treating every visit as a quick stop at a tasting counter, Bottaia offers different ways to spend time with its wines, from a relaxed glass on the patio to a guided tasting with food pairings.",
+      "The estate’s Italian varietals shape the wine program. Depending on the current selection, visitors may encounter wines made from grapes such as Sangiovese, Montepulciano, Pinot Grigio, Arneis, and Vermentino. These varieties offer a perspective on Temecula that differs from the region’s more familiar Cabernet Sauvignon and Rhône-style offerings. They also invite comparisons with the diverse wine traditions of Italy, where grape, landscape, food, and regional identity have long been closely connected.",
+      "Bottaia’s approach combines Old World inspiration with modern winemaking technology. Estate wines are made with attention to varietal character, using different vessels and maturation techniques according to the needs of each wine. The result is a program built around the idea that Italian grapes need not travel across an ocean to tell an Italian-inspired story.",
+      "Tastings Designed to Be Experienced",
+      "The winery’s range of tasting options makes the visit as much about discovery as sampling. A guided seated tasting with charcuterie brings wine and food together in a deliberate sequence, allowing guests to consider how cheeses, cured meats, and accompanying flavors interact with each pour. On the outdoor patio, wine by the glass, bottle, or flight can be enjoyed with vineyard views and a more open-air atmosphere.",
+      "One of Bottaia’s most distinctive offerings is its Wine Blending Lab. Here, guests can work with selected wines drawn from barrels, experiment with proportions, and develop their own red blend under guidance. The process offers a practical introduction to the decisions behind a finished bottle: how structure, fruit, and the character of individual varieties can change when combined. Bottling a personal blend provides a tangible reminder that winemaking involves both agricultural craft and creative judgment.",
+      "Food is an integral part of the experience. Seasonal dishes and Italian-inspired small plates give visitors a reason to linger beyond a tasting flight, while the broader property offers spaces for gatherings and wine-club experiences. During the pool season, the Pool at Bottaia adds another dimension, with cabanas, poolside dining, and a café and cocktail bar. Pool access and programming are seasonal and may have separate booking or membership conditions, so visitors should confirm current arrangements before planning around them.",
+      "A Vineyard Day with Room to Choose",
+      "Bottaia’s appeal lies partly in the variety of experiences available in one setting. A visit might center on a formal tasting, a hands-on blending session, a leisurely lunch, or an afternoon outdoors. The property can accommodate different interests without losing its consistent Italian-inspired identity.",
+      "The surrounding vines remain an important part of the experience. They are not simply a backdrop for photographs; they are the source of the estate’s wines and the agricultural foundation of the destination. Their presence gives the architecture and hospitality a sense of place, connecting the refined setting to the working landscape beyond it.",
+      "For visitors exploring Temecula’s different expressions of wine country, Bottaia offers a particular point of view: Italian varietals interpreted through local vineyards, contemporary design, food, and experiences that invite participation rather than passive observation."
+    ],
+    "perspective": "Bottaia brings an Italian sensibility to Temecula without attempting to recreate Italy literally. Its appeal is the combination of vineyard setting, considered design, and opportunities to explore wine through tasting, food, and blending. It is a destination for those who enjoy a polished atmosphere but also want something to discover in the glass—and perhaps a blend of their own to take home.",
+    "varietals": [
+      "Arneis",
+      "Montepulciano",
+      "Pinot Grigio",
+      "Sangiovese",
+      "Vermentino"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": false,
+      "notes": "Summer hours are listed 21+. Confirm current policy before bringing children."
+    },
+    "website": "https://www.bottaiawinery.com/",
+    "phone": "(951) 365-3388",
+    "coordinates": {
+      "lat": 33.539585299029,
+      "lng": -117.04834290965
+    },
+    "featured": false,
+    "events": [],
+    "has_views": true,
+    "view_level": "good",
+    "view_notes": "Vineyard-facing patio on Rancho California Road.",
+    "view_tags": [
+      "vineyard",
+      "rancho california"
+    ],
+    "corridor": "Rancho California Road"
+  },
+  {
     "id": "callaway",
     "name": "Callaway Vineyard & Winery",
     "slug": "callaway-winery",
