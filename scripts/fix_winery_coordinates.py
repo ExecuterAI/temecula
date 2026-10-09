@@ -173,11 +173,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5150,
         "lng": -117.0320,
     },
-    "villa-de-amor": {
-        "address": "41800 Calle Contento, Temecula, CA 92591",
-        "lat": 33.5085,
-        "lng": -117.0230,
-    },
     "footbridge": {
         "address": "40900 Calle Contento, Temecula, CA 92591",
         "lat": 33.5140,
@@ -187,11 +182,6 @@ CURATED: dict[str, dict] = {
         "address": "38000 De Portola Rd, Temecula, CA 92592",
         "lat": 33.5400,
         "lng": -117.0220,
-    },
-    "vail-lake": {
-        "address": "37700 De Portola Rd, Temecula, CA 92592",
-        "lat": 33.5390,
-        "lng": -117.0250,
     },
     "hidden-mountain": {
         "address": "38500 De Portola Rd, Temecula, CA 92592",
