@@ -1449,6 +1449,78 @@
     "perspective": "Jordan Parker Winery captures the energy of a new generation entering Temecula wine country without leaving the family story behind. Its focus on Syrah, Mourvèdre, and other varieties suited to the valley gives the wines a clear direction, while its contemporary tasting room and lively event calendar make the experience welcoming to both seasoned tasters and curious newcomers. It is a winery still writing its story—and that sense of possibility is part of its appeal."
   },
   {
+    "id": "julies-dream",
+    "name": "Julie’s Dream Winery",
+    "slug": "julies-dream",
+    "location": "Temecula",
+    "address": "39820 Calle Contento, Temecula, CA 92591",
+    "description": "Family estate on Calle Contento. About 25 acres of vines, a barn tasting room and distillery, and patios facing the hills.",
+    "image": "/images/wineries/julies-dream-standin.jpg",
+    "kicker": "A Family Dream Rooted in Temecula Wine Country",
+    "article": [
+      "Some wineries begin with a business plan. Others begin with a place, a possibility, and the people who can see what it might become. At Julie’s Dream Winery, the story brings those elements together: a family’s vision, a vineyard with a history stretching back decades, and a tasting destination shaped around the pleasure of sharing wine.",
+      "Located on Calle Contento in Temecula Valley Wine Country, Julie’s Dream occupies approximately 25 acres of estate vineyards among the region’s gently rolling hills. The property’s story reaches further back than the winery itself. The vineyard land was developed during the 1960s, when early agricultural pioneers were exploring Temecula’s potential for growing wine grapes. That legacy gives the estate a connection to the valley’s formative wine-growing years, even as the winery continues to shape its own identity.",
+      "A Dream Shared Across Generations",
+      "Julie’s Dream Winery grew from the vision of Julie Damewood and her father, Jerry, whose professional backgrounds in real estate, development, and hospitality helped shape their approach to the property. Julie visited the winery site with her husband in October 2018 and recognized an opportunity to create something meaningful from a place already steeped in local wine history.",
+      "The project became a family undertaking, bringing together an appreciation for wine, an eye for hospitality, and a desire to make guests feel welcome. Rather than treating the vineyard simply as a backdrop for wine production, the family envisioned a destination where the surroundings and the experience of visiting would be central to the appeal.",
+      "That personal foundation is reflected in the winery’s name. Julie’s Dream suggests more than a tasting room; it conveys the idea of a vision carried forward, developed over time, and shared with others.",
+      "Preserving a Piece of Temecula’s Wine History",
+      "One of the estate’s most compelling details lies among its vines.",
+      "When the vineyard was replanted, Julie made a point of preserving approximately 100 of its oldest grapevines. Some represented varieties that were no longer commonly grown in the valley. Rather than allowing that living history to disappear in the course of redevelopment, the vines were retained for preservation.",
+      "It is a meaningful gesture in a region where wine country continues to evolve. Vineyards are agricultural landscapes, but they are also records of experimentation, adaptation, and changing ideas about which grapes can thrive in a particular place. Older vines connect the present-day winery experience with the generations of growers who helped establish Temecula as a wine-producing region.",
+      "At Julie’s Dream, that connection between past and present becomes part of the property’s identity: a family’s contemporary vision set within a landscape that was already part of the valley’s wine story.",
+      "A Tasting Room with Room to Linger",
+      "The winery’s original barn has been transformed into a tasting room and distillery, giving the property a character that blends its agricultural origins with a more developed hospitality experience.",
+      "Inside, guests can taste wine while looking toward the production area, bringing a glimpse of the winemaking environment into the visit. Outside, spacious patios provide another way to enjoy the estate. The open-air setting places the surrounding vineyards and rolling hills within view, inviting guests to slow the pace and settle into the afternoon.",
+      "The experience is designed around flexibility. A visit might center on a guided exploration of the wine list, a glass enjoyed outdoors, or a bottle shared among friends. Rather than making the landscape something to admire only from a distance, the patios allow it to become part of the tasting itself.",
+      "Julie’s Dream also welcomes dogs and families, extending its appeal beyond the traditional adults-only image sometimes associated with wine tasting. The result is a destination that brings together the vineyard setting and a relaxed, social approach to hospitality.",
+      "The Wines: A Place for Classic Red Varieties",
+      "The estate’s wine identity includes familiar red varieties such as Cabernet Sauvignon, Cabernet Franc, Merlot, Syrah, and Zinfandel. These grapes offer different ways to explore the character of Temecula fruit, from the structure and dark-fruit notes often associated with Cabernet Sauvignon to the varied expressions of Syrah and Zinfandel.",
+      "The winery’s portfolio can change with new releases and vintages, making the current tasting selection the best guide to what is available during a visit. For wine enthusiasts, the opportunity lies in tasting with curiosity: noticing the differences in structure, aroma, texture, and finish, and discovering which wines best suit an individual palate.",
+      "The estate’s distillery adds another dimension to the property’s identity, giving Julie’s Dream a broader beverage and hospitality focus than a conventional tasting room alone.",
+      "Wine Country as a Shared Experience",
+      "Julie’s Dream Winery is also an event destination, with its vineyard setting and outdoor spaces lending themselves to gatherings and celebrations. Weddings and private events form part of the property’s wider hospitality offering, making the landscape meaningful for occasions that extend beyond a standard tasting visit.",
+      "Live music and visiting food vendors have also been part of its social atmosphere. These offerings can vary by date and event schedule, so guests planning a particular experience should check the winery’s current announcements before visiting.",
+      "This blend of wine, outdoor space, and gathering reflects one of the appealing dimensions of Temecula Valley: the ability to experience wine not only as a product to evaluate, but as part of a larger afternoon shaped by scenery, conversation, and shared time.",
+      "A Family Vision with Deep Roots",
+      "Julie’s Dream Winery brings two timelines together. One belongs to the vineyard, whose origins reach into Temecula’s early development as a wine-growing region. The other belongs to a family who saw potential in the property and set out to build a destination around it.",
+      "The preserved old vines make that relationship especially tangible. They stand as reminders that wine country is never created in a single season. It develops through planting, experimentation, care, and the decisions of people who choose to preserve something worth carrying forward.",
+      "At Julie’s Dream, the result is a winery where the story of the land and the story of the family meet—among the vines, across the patios, and in the simple pleasure of sharing a glass."
+    ],
+    "perspective": "Julie’s Dream Winery offers a personal chapter in Temecula’s evolving wine story. Its appeal lies in the meeting of family vision and vineyard heritage, particularly in the decision to preserve a century’s worth of agricultural memory in the form of older vines. For visitors drawn to wine country’s human stories as much as its wines, Julie’s Dream is a reminder that a vineyard can be both a working landscape and a legacy carried into the future.",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Cabernet Franc",
+      "Merlot",
+      "Syrah",
+      "Zinfandel"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": true,
+    "kid_friendly": {
+      "allowed": true,
+      "notes": "Family / kid friendly. Confirm current policy with the tasting room."
+    },
+    "website": "https://www.juliesdreamwinery.com/",
+    "phone": "(951) 271-6329",
+    "coordinates": {
+      "lat": 33.536579106323,
+      "lng": -117.075072594012
+    },
+    "featured": false,
+    "events": [],
+    "has_views": true,
+    "view_level": "good",
+    "view_notes": "Outdoor patios facing estate vineyards and rolling hills on Calle Contento.",
+    "view_tags": [
+      "vineyard",
+      "patio",
+      "hills"
+    ],
+    "corridor": "Calle Contento"
+  },
+  {
     "id": "la-reina",
     "name": "La Reina Vineyards",
     "slug": "la-reina",
