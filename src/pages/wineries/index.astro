@@ -31,6 +31,7 @@ const searchBlob = (w: (typeof wineries)[number]) => {
           ...(w.view_tags || []),
         ].join(' ')
       : '',
+    ...(((w as any).search_terms as string[]) || []),
     w.slug,
   ];
   return bits.filter(Boolean).join(' ').toLowerCase();

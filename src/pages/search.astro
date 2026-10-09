@@ -19,6 +19,7 @@ const wineryIndex = wineries.map((w) => ({
     (w as any).perspective || '',
     (w as any).kicker || '',
     w.has_views ? ['view views scenic', ...(w.view_tags || [])].join(' ') : '',
+    ...(((w as any).search_terms as string[]) || []),
     w.slug,
   ]
     .filter(Boolean)
@@ -100,7 +101,10 @@ const wineryIndex = wineries.map((w) => ({
         vino: '/guides/wine-in-world-languages/',
         fragrance: '/guides/fragrance-and-wine-taste/',
         perfume: '/guides/fragrance-and-wine-taste/',
-        cologne: '/guides/fragrance-and-wine-taste/'
+        cologne: '/guides/fragrance-and-wine-taste/',
+        cave: '/wineries/oak-mountain/',
+        'wine cave': '/wineries/oak-mountain/',
+        speakeasy: '/wineries/oak-mountain/'
       };
 
       function esc(s) {
