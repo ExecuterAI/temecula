@@ -426,6 +426,66 @@
     "corridor": "Rancho California Road"
   },
   {
+    "id": "briar-rose",
+    "name": "Briar Rose Winery",
+    "slug": "briar-rose",
+    "location": "Temecula",
+    "address": "41720 Calle Cabrillo, Temecula, CA 92592",
+    "description": "Family-owned garden winery off the main corridors. Seated tastings and small-lot wines in an English garden setting. Reservations required.",
+    "image": "/images/wineries/briar-rose-garden.jpg",
+    "kicker": "An English Garden Story in Temecula Wine Country",
+    "article": [
+      "Away from the broad sweep of Temecula’s main winery corridors, Briar Rose Winery offers a setting with a different kind of charm. The atmosphere is intimate and garden-centered, with a storybook sensibility that distinguishes it from the region’s larger estates. Here, the landscape and the scale of the property help shape the visit: a seated tasting, a quiet outdoor table, and time to enjoy small-lot wines in surroundings designed to feel personal rather than expansive.",
+      "Family-owned and operated, Briar Rose produces handcrafted wines in small lots. Its identity is closely tied to the English Garden setting, which gives the winery a sense of enclosure and discovery. Instead of emphasizing grand architecture or sweeping resort facilities, Briar Rose draws attention to the details of a more intimate place: garden greenery, shaded seating, and the feeling of having arrived somewhere tucked away from the usual route.",
+      "A Garden with a Storybook Character",
+      "Briar Rose’s atmosphere is part of its identity, not simply decoration around the tasting experience. The property has been described by the Temecula Valley Winegrowers Association as a storybook setting, with garden surroundings and an old olive tree contributing to its distinctive character. The winery’s design history also includes the work of Beldon Fields, whose career included work associated with Disneyland’s early development. That background lends an imaginative dimension to a property that feels intentionally different from a conventional tasting room.",
+      "The garden setting encourages visitors to slow their pace. Outdoor seating places the tasting experience in conversation with the landscape, and the smaller scale makes the visit feel centered on the people at the table rather than on a large itinerary of activities. It is an environment suited to conversation, a special occasion, or an afternoon when the pleasure lies in having nowhere else to be for a while.",
+      "Small-Lot Wines and Seated Tastings",
+      "Briar Rose focuses on premium artisan wines produced in small lots from carefully selected grapes. Its tasting format reflects that boutique identity. Guests can choose from curated selections that may emphasize white wines, reds, or a mixed range, with seated tastings designed to give each wine its own moment. Current offerings and tasting formats can change, so checking the winery’s reservation information before visiting is advisable.",
+      "Food complements the tasting rather than taking over the experience. Charcuterie and small bites are available for purchase, giving guests an option to extend the tasting into a more leisurely gathering. The emphasis is on a considered combination of wine, setting, and hospitality rather than a full restaurant-style visit.",
+      "The small-lot approach also gives Briar Rose a natural place in the broader story of Temecula wine. A wine region is shaped not only by its largest estates and most visible destinations, but also by smaller producers who cultivate their own identities through particular styles, personal service, and a sense of place. Briar Rose contributes that more intimate chapter.",
+      "An Experience Worth Planning",
+      "Briar Rose operates with a reservation-forward approach, and its public tasting hours vary by day. Private tasting experiences may also be arranged under the winery’s current policies. Because the property hosts special occasions and private events, checking availability in advance helps ensure that the visit matches expectations. The winery currently lists regular public tastings Thursday through Sunday, with hours varying by day. It also states that visitors must be at least 21 and that animals are not permitted on the property.",
+      "The intimate setting can also lend itself to celebrations. A garden environment provides a natural backdrop for photographs and meaningful occasions, while the winery’s private experiences offer an alternative to a more conventional group tasting.",
+      "For visitors who value atmosphere as much as the wines themselves, those details are central to Briar Rose’s appeal.",
+      "There is no need for the property to imitate a grand château or a sprawling resort. Its character comes from a different idea of wine-country hospitality: a garden, a table, carefully made wines, and a setting that feels like a small discovery."
+    ],
+    "perspective": "Briar Rose is a reminder that wine country can be intimate as well as expansive. Its English Garden character and seated tasting approach create an experience built around atmosphere, conversation, and small-lot wines. For visitors who appreciate a little storybook charm woven into a winery visit, Briar Rose offers a distinctly personal side of Temecula.",
+    "varietals": [
+      "Cabernet Sauvignon",
+      "Zinfandel",
+      "Petit Verdot",
+      "Cabernet Franc",
+      "Sangiovese",
+      "Viognier",
+      "Gewürztraminer",
+      "Riesling",
+      "Chardonnay"
+    ],
+    "price_range": "$$",
+    "tasting_room": true,
+    "pet_friendly": false,
+    "kid_friendly": {
+      "allowed": false,
+      "notes": "The winery states visitors must be at least 21."
+    },
+    "website": "https://www.briarrosewinery.com/",
+    "phone": "(951) 308-1098",
+    "coordinates": {
+      "lat": 33.517430488792,
+      "lng": -117.082031227563
+    },
+    "featured": false,
+    "events": [],
+    "has_views": false,
+    "view_level": "garden",
+    "view_notes": "Enclosed English garden, not a valley overlook.",
+    "view_tags": [
+      "garden"
+    ],
+    "corridor": "Calle Cabrillo"
+  },
+  {
     "id": "callaway",
     "name": "Callaway Vineyard & Winery",
     "slug": "callaway-winery",
