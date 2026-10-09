@@ -402,48 +402,6 @@
     "perspective": "Some wineries are memorable because of a particular wine. Others are remembered because of the feeling created by the entire setting. Callaway belongs to the latter category. Its elevated position, sweeping vineyard views, long history, food, music and gathering spaces create a sense that the landscape itself is part of the experience. It is a place where tasting wine can naturally become an afternoon spent looking outward—and appreciating how far Temecula’s wine country has come."
   },
   {
-    "id": "canyon-oaks",
-    "name": "Canyon Oaks Winery",
-    "slug": "canyon-oaks",
-    "location": "Temecula",
-    "address": "41000 Calle Contento, Temecula, CA 92591",
-    "description": "Family-owned winery known for its friendly staff and quality wines. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Merlot, Syrah. Visitor context in our directory: about 4.1/5 with a $$ price feel, located on Calle Contento at 41000 Calle Contento, Temecula, CA 92591. Families: Kids welcome with supervision. Leashed dogs are typically OK in outdoor areas. Views: Calle Contento ridge corridor — outdoor seats often catch neighboring canyon and vine views. Phone (951) 676-3300. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Canyon Oaks Winery.",
-    "image": "/images/wineries/canyon-oaks.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
-      "Merlot",
-      "Syrah"
-    ],
-    "rating": 4.1,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome with supervision."
-    },
-    "website": "https://www.canyonoakswinery.com",
-    "phone": "(951) 676-3300",
-    "coordinates": {
-      "lat": 33.5285,
-      "lng": -117.068
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Canyon Oaks Winery is best understood as a tasting-room destination with Calle Contento hillside pocket stop with easy linking to neighboring tasting rooms. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Merlot, Syrah. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome with supervision.. Scenery note: Calle Contento ridge corridor — outdoor seats often catch neighboring canyon and vine views. Geographically, Canyon Oaks Winery sits along Calle Contento, a side-road cluster of boutique and hillside tasting rooms a short hop off the main corridor. Address on file: 41000 Calle Contento, Temecula, CA 92591.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Calle Contento ridge corridor — outdoor seats often catch neighboring canyon and vine views.",
-    "view_tags": [
-      "ridge",
-      "canyon",
-      "vineyard"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Canyon Oaks Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at Canyon Oaks Winery, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.1/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Canyon Oaks Winery site or by phone ((951) 676-3300) before you drive out. Start with the winery website: https://www.canyonoakswinery.com.",
-    "corridor": "Calle Contento"
-  },
-  {
     "id": "carter-estate",
     "name": "Carter Estate Winery & Resort",
     "slug": "carter-estate",
