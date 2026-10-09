@@ -1590,44 +1590,6 @@
     "corridor": "Old Town"
   },
   {
-    "id": "la-reina",
-    "name": "La Reina Vineyards",
-    "slug": "la-reina",
-    "location": "Temecula",
-    "address": "40500 Calle Contento, Temecula, CA 92591",
-    "description": "Small production winery with a focus on quality over quantity. Expect Mediterranean and Iberian-leaning varieties that stand out from a pure Cabernet-only day, with bottles often including Syrah, Grenache, Viognier, Tempranillo. Visitor context in our directory: about 4.4/5 with a $$ price feel, located on Calle Contento at 40500 Calle Contento, Temecula, CA 92591. Families: Kids welcome. Leashed dogs are typically OK in outdoor areas. Phone (951) 676-8231. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with La Reina Vineyards.",
-    "image": "/images/wineries/la-reina.jpg",
-    "varietals": [
-      "Syrah",
-      "Grenache",
-      "Viognier",
-      "Tempranillo"
-    ],
-    "rating": 4.4,
-    "price_range": "$$",
-    "tasting_room": true,
-    "pet_friendly": true,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Kids welcome."
-    },
-    "website": "https://www.lareinavineyards.com",
-    "phone": "(951) 676-8231",
-    "coordinates": {
-      "lat": 33.531062,
-      "lng": -117.068907
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "La Reina Vineyards is best understood as a tasting-room destination with compact Calle Contento visit with Rhône-aromatic interest. On the glass, lean into Mediterranean and Iberian-leaning varieties that stand out from a pure Cabernet-only day — house markers often include Syrah, Grenache, Viognier, Tempranillo. The typical price feel in our directory is $$, which usually means approachable tasting fees by wine-country standards — still confirm current menus online. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. Dogs are generally welcomed in outdoor areas when leashed; indoor bars and restaurants are a different rule set. Families: children are generally welcomed with local notes — Kids welcome.. Geographically, La Reina Vineyards sits along Calle Contento, a side-road cluster of boutique and hillside tasting rooms a short hop off the main corridor. Address on file: 40500 Calle Contento, Temecula, CA 92591.",
-    "has_views": false,
-    "view_level": null,
-    "view_notes": "",
-    "view_tags": [],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use La Reina Vineyards when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Syrah versus Grenache, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Calle Contento rewards a pocket strategy — taste at La Reina Vineyards, then walk or take a two-minute hop to a neighbor rather than replanning the whole valley. Directory rating context is about 4.4/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official La Reina Vineyards site or by phone ((951) 676-8231) before you drive out. Start with the winery website: https://www.lareinavineyards.com.",
-    "corridor": "Calle Contento"
-  },
-  {
     "id": "leoness",
     "name": "Leoness Cellars",
     "slug": "leoness",

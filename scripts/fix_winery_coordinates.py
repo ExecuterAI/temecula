@@ -183,11 +183,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5140,
         "lng": -117.0310,
     },
-    "la-reina": {
-        "address": "40500 Calle Contento, Temecula, CA 92591",
-        "lat": 33.5160,
-        "lng": -117.0340,
-    },
     "sugarloaf": {
         "address": "38000 De Portola Rd, Temecula, CA 92592",
         "lat": 33.5400,
