@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import stays from '../../data/stays.json';
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Wine Country Stays & Experiences',
+  itemListElement: stays.map((stay, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: stay.name,
+    url: `https://bellieacreswine.com/stays/${stay.slug}/`,
+  })),
+};
+---
+
+<Layout
+  title="Wine Country Stays & Experiences | Bellie Acres Wine"
+  description="Places to stay and experiences around Temecula wine country that are not tasting rooms. Independent notes from Bellie Acres Wine."
+  jsonLd={itemListJsonLd}
+>
+  <Navbar />
+  <main class="max-w-5xl mx-auto px-6 py-16">
+    <p class="text-sm uppercase tracking-[0.22em] text-[#4A5E4E] font-medium">Not a tasting-room list</p>
+    <h1 class="font-serif text-4xl sm:text-5xl tracking-tight text-stone-900 mt-3">Wine Country Stays & Experiences</h1>
+    <p class="text-lg leading-relaxed text-stone-700 mt-6 max-w-3xl">
+      Some stops belong in a Temecula day without being wineries. This list is for lodging and related experiences.
+      Confirm rates, hours, and reservations on each property’s own site.
+    </p>
+    <ul class="mt-10 grid gap-6">
+      {stays.map((stay) => (
+        <li>
+          <a href={`/stays/${stay.slug}/`} class="block rounded-3xl border border-stone-200 bg-white p-6 sm:p-8 hover:border-[#4A5E4E] transition">
+            <p class="text-sm uppercase tracking-[0.18em] text-[#4A5E4E]">Stay</p>
+            <h2 class="font-serif text-3xl tracking-tight text-stone-900 mt-2">{stay.name}</h2>
+            <p class="text-stone-600 mt-3 leading-relaxed">{stay.description}</p>
+            <p class="text-sm text-stone-500 mt-4">{stay.address}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Layout>

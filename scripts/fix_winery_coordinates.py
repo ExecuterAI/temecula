@@ -141,11 +141,6 @@ CURATED: dict[str, dict] = {
         "lat": 33.5115,
         "lng": -117.0285,
     },
-    "temecula-creek": {
-        "address": "44501 Rainbow Canyon Rd, Temecula, CA 92592",
-        "lat": 33.46724,
-        "lng": -117.13172,
-    },
     # Additional directory entries — place near correct neighborhood corridors
     # De Portola cluster east / Calle Contento cluster south of Rancho California
     "casa-de-luz": {

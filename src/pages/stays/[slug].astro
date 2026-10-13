@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import stays from '../../data/stays.json';
+
+export function getStaticPaths() {
+  return stays.map((stay) => ({
+    params: { slug: stay.slug },
+    props: { stay },
+  }));
+}
+
+const { stay } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LodgingBusiness',
+  name: stay.name,
+  description: stay.description,
+  url: `https://bellieacreswine.com/stays/${stay.slug}/`,
+  telephone: stay.phone,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: stay.address,
+    addressLocality: 'Temecula',
+    addressRegion: 'CA',
+    addressCountry: 'US',
+  },
+};
+---
+
+<Layout
+  title={`${stay.name} | Wine Country Stays`}
+  description={`${stay.name} is a Temecula wine-country stay, not a tasting room. ${stay.description}`}
+  jsonLd={jsonLd}
+  noindex={!stay.perspective}
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/stays/" class="text-sm text-[#4A5E4E] hover:underline">← Wine Country Stays & Experiences</a>
+    <p class="text-sm uppercase tracking-[0.22em] text-[#4A5E4E] font-medium mt-8">Stay, not a winery</p>
+    <h1 class="font-serif text-4xl sm:text-6xl tracking-tight text-stone-900 mt-3">{stay.name}</h1>
+    {stay.kicker && <p class="text-xl text-stone-600 mt-4">{stay.kicker}</p>}
+    <p class="text-stone-500 mt-4">{stay.address}</p>
+    <article class="space-y-5 mt-10">
+      {stay.article.map((para) => (
+        <p class="text-lg leading-relaxed text-stone-700">{para}</p>
+      ))}
+      {stay.perspective && (
+        <section class="mt-10 pt-8 border-t border-stone-200">
+          <h2 class="font-serif text-3xl mb-4 tracking-tight">The Bellie Acres Perspective</h2>
+          <p class="text-lg leading-relaxed text-stone-700">{stay.perspective}</p>
+        </section>
+      )}
+    </article>
+    <section class="mt-10 rounded-3xl border border-stone-200 bg-[#f7f6f2] p-6 md:p-8">
+      <h2 class="font-serif text-2xl mb-3 tracking-tight">How this page fits your Temecula day</h2>
+      <p class="text-stone-700 leading-relaxed">
+        This is a place to stay, not a stop on the tasting-room list. Use it as a base, then choose wineries from the
+        <a href="/wineries/" class="text-[var(--accent)] underline">Temecula wineries list</a>
+        and the <a href="/map/" class="text-[var(--accent)] underline">wine map</a>. Confirm rooms, Corkfire hours, and golf times on the resort’s own site.
+      </p>
+      <p class="mt-4"><a class="text-[var(--accent)] underline" href={stay.website}>{stay.website.replace('https://', '')}</a></p>
+      <p class="mt-2 text-stone-700">{stay.phone}</p>
+    </section>
+  </main>
+</Layout>

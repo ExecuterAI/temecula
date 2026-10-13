@@ -17,6 +17,7 @@ const hubs = [
   ['/', 'weekly', '1.0'],
   ['/wineries/', 'weekly', '0.9'],
   ['/guides/', 'weekly', '0.9'],
+  ['/stays/', 'weekly', '0.8'],
   ['/map/', 'weekly', '0.8'],
   ['/pairings/', 'weekly', '0.7'],
   ['/balloons/', 'weekly', '0.7'],
@@ -31,6 +32,10 @@ const hubs = [
   ['/advertise/', 'monthly', '0.5'],
 ];
 
+const stays = JSON.parse(readFileSync(join(root, 'src/data/stays.json'), 'utf8'));
+const stayPaths = stays
+  .filter((stay) => typeof stay.perspective === 'string' && stay.perspective.trim())
+  .map((stay) => `/stays/${stay.slug}/`);
 const wineryPaths = wineries
   .filter((winery) => typeof winery.perspective === 'string' && winery.perspective.trim())
   .map((winery) => `/wineries/${winery.slug}/`)
@@ -40,6 +45,7 @@ const urls = [
   ...hubs.map(([path, changefreq, priority]) => ({ path, changefreq, priority })),
   ...guides.map((path) => ({ path, changefreq: 'monthly', priority: '0.85' })),
   ...wineryPaths.map((path) => ({ path, changefreq: 'monthly', priority: '0.8' })),
+  ...stayPaths.map((path) => ({ path, changefreq: 'monthly', priority: '0.75' })),
 ];
 
 const seen = new Set();
@@ -51,7 +57,7 @@ for (const url of urls) {
   seen.add(url.path);
 }
 
-const excluded = ['/wineries/temecula-creek/', '/weekend-planner/'];
+const excluded = ['/weekend-planner/'];
 for (const path of excluded) {
   if ([...seen].some((item) => item.includes(path))) {
     throw new Error(`Noindex path slipped in: ${path}`);

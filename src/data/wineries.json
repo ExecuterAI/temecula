@@ -3321,48 +3321,6 @@
     "perspective": "Some Temecula wineries are stops along a wine-country route. South Coast has the scale to become the route’s destination. Wine, vineyards, dining, lodging and spa experiences all exist within one estate, allowing the visit to unfold without constantly moving from place to place. For anyone who believes the best wine-country experiences should have room to breathe, South Coast offers an especially natural invitation to slow down."
   },
   {
-    "id": "temecula-creek",
-    "name": "Temecula Creek Inn Winery",
-    "slug": "temecula-creek",
-    "location": "Temecula",
-    "address": "44501 Rainbow Canyon Rd, Temecula, CA 92592",
-    "description": "Resort winery with golf course views and elegant tasting experiences. Expect Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping, with bottles often including Cabernet Sauvignon, Chardonnay, Syrah, Pinot Noir. Visitor context in our directory: about 4.4/5 with a $$$ price feel, located on Rainbow Canyon Road at 44501 Rainbow Canyon Rd, Temecula, CA 92592. Families: Children welcome in designated areas. Not listed as pet-friendly — leave pets at home. Views: Resort/golf-course setting with open landscape views from outdoor hospitality areas. Phone (951) 676-5631. This independent overview is for trip planning — confirm hours, tasting fees, and reservations directly with Temecula Creek Inn Winery.",
-    "image": "/images/wineries/temecula-creek.jpg",
-    "varietals": [
-      "Cabernet Sauvignon",
-      "Chardonnay",
-      "Syrah",
-      "Pinot Noir"
-    ],
-    "rating": 4.4,
-    "price_range": "$$$",
-    "tasting_room": true,
-    "pet_friendly": false,
-    "kid_friendly": {
-      "allowed": true,
-      "notes": "Children welcome in designated areas."
-    },
-    "website": "https://www.temeculacreekinn.com",
-    "phone": "(951) 676-5631",
-    "coordinates": {
-      "lat": 33.471867,
-      "lng": -117.127492
-    },
-    "featured": false,
-    "events": [],
-    "about_extended": "Temecula Creek Inn Winery is best understood as a tasting-room destination with inn-and-winery hybrid pacing — think linger, dine, and fewer rushed flights. On the glass, lean into Rhône-leaning reds and aromatic whites that reward slow tasting rather than speed-sipping — house markers often include Cabernet Sauvignon, Chardonnay, Syrah, Pinot Noir. Expect a higher price feel ($$$) relative to casual drop-in rooms; budget for tasting fees and possible food add-ons. A public tasting room is part of the visitor offer; hours, seated versus standing formats, and walk-in rules change seasonally. This listing is not treated as pet-friendly in our directory — plan boarding or a no-dog day if animals travel with you. Families: children are generally welcomed with local notes — Children welcome in designated areas.. Scenery note: Resort/golf-course setting with open landscape views from outdoor hospitality areas. Geographically, Temecula Creek Inn Winery sits along Rainbow Canyon Road, slightly off the densest tasting strip, better when you want resort or inn energy with wine. Address on file: 44501 Rainbow Canyon Rd, Temecula, CA 92592.",
-    "has_views": true,
-    "view_level": "good",
-    "view_notes": "Resort/golf-course setting with open landscape views from outdoor hospitality areas.",
-    "view_tags": [
-      "resort",
-      "golf",
-      "landscape"
-    ],
-    "visit_guide": "If you are comparing Temecula tasting rooms, use Temecula Creek Inn Winery when the vibe matches your day — not every group wants the same mix of scenery, formality, and bottle style. A practical visit runs sixty to ninety minutes if you taste with intention and leave time for grounds or a second outdoor glass; resort-scale properties can run longer if you add a meal. Ask the tasting team how the house styles Cabernet Sauvignon versus Chardonnay, and whether any library, reserve, or sparkling flights need a separate reservation. For route building, open our full Temecula wineries list, the interactive map, and first-timer route guide, then lock reservations on official sites rather than stacking unconfirmed walk-ins on Saturday afternoon. Treat Temecula Creek Inn Winery as an anchor stop and only add neighbors that keep total driving under roughly ten to fifteen minutes between pours. Directory rating context is about 4.4/5 — still verify recent guest notes if you are sensitive to crowds or service style. Responsible hosting still applies: designate a driver, use rideshare, or book a wine-country shuttle if you stack multiple estates. Bellie Acres Wine publishes independent trip context only — always confirm fees, reservations, live music, and policies on the official Temecula Creek Inn Winery site or by phone ((951) 676-5631) before you drive out. Start with the winery website: https://www.temeculacreekinn.com.",
-    "corridor": "Rainbow Canyon Road"
-  },
-  {
     "id": "thornton",
     "name": "Thornton Winery",
     "slug": "thornton-winery",
