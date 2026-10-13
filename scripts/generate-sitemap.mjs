@@ -51,7 +51,7 @@ for (const url of urls) {
   seen.add(url.path);
 }
 
-const excluded = ['/wineries/frangipani/', '/wineries/temecula-creek/', '/weekend-planner/'];
+const excluded = ['/wineries/temecula-creek/', '/weekend-planner/'];
 for (const path of excluded) {
   if ([...seen].some((item) => item.includes(path))) {
     throw new Error(`Noindex path slipped in: ${path}`);
