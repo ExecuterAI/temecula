@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const stops = [
+  { n: 1, slug: 'somerset', name: 'Somerset Vineyard & Winery', address: '37338 De Portola Road', lat: 33.509267, lng: -117.017936, note: 'Rhône and Spanish varieties, terracotta amphorae, and a sociable first stop.' },
+  { n: 2, slug: 'fazeli', name: 'Fazeli Cellars', address: '37320 De Portola Road', lat: 33.509110265718, lng: -117.018027600553, note: 'Persian-inspired architecture and Baba Joon’s Kitchen.' },
+  { n: 3, slug: 'robert-renzoni', name: 'Robert Renzoni Vineyards & Winery', address: '37350 De Portola Road', lat: 33.509375342055, lng: -117.01786861906, note: 'Italian varieties and Mama Rosa’s Trattoria.' },
+  { n: 4, slug: 'altisima', name: 'Altisima Winery', address: '37440 De Portola Road', lat: 33.510207418639, lng: -117.01747767541, note: 'Spanish influence, modern terraces, and Gaspar’s.' },
+  { n: 5, slug: 'gershon-bachus', name: 'Gershon Bachus Vintners', address: '37750 De Portola Road', lat: 33.5166822, lng: -117.0156341, note: 'Small-production reds on a hilltop. Confirm before you go.' },
+  { n: 6, slug: 'oak-mountain', name: 'Oak Mountain Winery', address: '36522 Via Verde', lat: 33.517534, lng: -117.021015, note: 'The trail’s wine cave. Official member, Via Verde address.' },
+  { n: 7, slug: 'leoness', name: 'Leoness Cellars', address: '38311 De Portola Road', lat: 33.523172756599, lng: -117.019242238273, note: 'Hilltop views and a restaurant on the estate.' },
+  { n: 8, slug: 'danza-del-sol', name: 'Danza del Sol Winery', address: '39050 De Portola Road', lat: 33.533618, lng: -117.013656, note: 'Tempranillo, patio, and a less formal tasting.' },
+  { n: 9, slug: 'frangipani', name: 'Frangipani Estate Winery', address: '39750 De Portola Road', lat: 33.540753, lng: -117.007797, note: 'Red-wine focus and Oakey Grape Grill.' },
+  { n: 10, slug: 'cougar', name: 'Cougar Vineyard & Winery', address: '39870 De Portola Road', lat: 33.54215548238, lng: -117.006361672645, note: 'Italian varieties and Sangio’s Osteria.' },
+  { n: 11, slug: 'masia-de-la-vinya', name: 'Masia de la Vinya', address: '40230 De Portola Road', lat: 33.544692217025, lng: -117.003939978343, note: 'Spanish-influenced stop toward the north end of the trail.' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Temecula Valley’s De Portola Wine Trail',
+  datePublished: '2026-10-13',
+  dateModified: '2026-10-13',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description: 'The eleven wineries of Temecula’s De Portola Wine Trail, in geographic order, with a map and a downloadable trail map.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/de-portola-wine-trail/',
+};
+---
+
+<Layout
+  title="De Portola Wine Trail | Eleven Temecula Wineries"
+  description="The official De Portola Wine Trail: eleven Temecula wineries in geographic order, an interactive map, and a free downloadable trail map."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[0.22em] text-[#4A5E4E] font-medium">Temecula Valley</p>
+        <h1 class="font-serif text-4xl sm:text-5xl tracking-tight text-stone-900 mt-3">De Portola Wine Trail</h1>
+        <p class="text-xl text-stone-600 mt-4">Eleven wineries, a scenic country road, and a different side of wine country.</p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-5 text-lg leading-relaxed text-stone-700">
+      <p>Beyond the more heavily traveled stretches of Temecula Valley Wine Country lies a quieter, more rural landscape where vineyards share the countryside with horse properties, rolling hills, and winding country roads. Here, the De Portola Wine Trail offers a distinctive way to explore the region: one winery at a time, with room for discovery along the way.</p>
+      <p>Situated south of Rancho California Road, the trail brings together eleven family-owned winery destinations. Each has its own personality, from contemporary architecture and international wine influences to intimate tasting rooms, expansive patios, vineyard restaurants, and even a wine cave carved underground.</p>
+      <p>The appeal of De Portola is not simply the number of wineries clustered along the route. It is the variety of experiences within a relatively compact part of the valley. Visitors can explore different grape varieties, discover the stories behind individual wine labels, enjoy a leisurely lunch, or settle into a scenic outdoor space and let the afternoon unfold.</p>
+      <p>For those who have already explored Temecula’s better-known winery corridors, De Portola offers another perspective on the region. For first-time visitors, it is an inviting introduction to the diversity of Southern California wine country.</p>
+
+      <h2 class="font-serif text-3xl text-stone-900 pt-6">A rural road with its own character</h2>
+      <p>The De Portola Wine Trail follows a part of Temecula Valley where the landscape retains a distinctly rural character. Equestrian properties, open countryside, and vineyard-covered hills create a different atmosphere from the larger commercial corridors.</p>
+      <p>The drive itself is part of the experience. Winery entrances appear along the country road and its connecting lanes, each leading to a different interpretation of wine country. Some estates feature striking architecture and substantial hospitality facilities; others feel more intimate, with a patio, a small tasting room, and a closer connection to the vineyard.</p>
+      <p>The trail is also notable for its international influences. Italian grape varieties and cuisine appear at some destinations, while Spanish winemaking traditions, Rhône-inspired wines, and broader European influences can be found elsewhere. These differences make the route especially appealing to visitors who enjoy exploring how the same region can produce many styles of wine and hospitality.</p>
+      <p>The De Portola Wine Trail’s official collection consists of eleven wineries. The numbered list below follows the trail’s geographical progression, rather than alphabetical order, to help visitors understand how its destinations fit together. Because some properties sit on connecting roads and several wineries are close together, it is wise to consult a current map before setting out.</p>
+    </article>
+
+    <section class="max-w-5xl mx-auto px-6 pb-4">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
+        <h2 class="font-serif text-3xl text-stone-900">Trail map</h2>
+        <a href="/downloads/de-portola-wine-trail-map.pdf" class="inline-flex items-center justify-center px-5 py-3 rounded-full bg-[#4A5E4E] text-white text-sm font-medium" download>Download the PDF map</a>
+      </div>
+      <div id="trail-map" class="h-[480px] rounded-3xl overflow-hidden border border-stone-200 bg-white"></div>
+      <p class="text-sm text-stone-500 mt-3">Numbers run south to north. Oak Mountain is on Via Verde and is still an official trail member. Pins use the same coordinates as the winery cards.</p>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-6 py-12">
+      <h2 class="font-serif text-3xl text-stone-900 mb-6">The eleven wineries</h2>
+      <ol class="space-y-8">
+        {stops.map((stop) => (
+          <li class="rounded-3xl border border-stone-200 bg-white p-6">
+            <p class="text-sm uppercase tracking-[0.18em] text-[#4A5E4E]">{stop.n}</p>
+            <h3 class="font-serif text-2xl text-stone-900 mt-1"><a class="hover:underline" href={`/wineries/${stop.slug}/`}>{stop.name}</a></h3>
+            <p class="text-stone-500 mt-1">{stop.address}, Temecula, CA 92592</p>
+            <p class="text-stone-700 leading-relaxed mt-3">{stop.note}</p>
+          </li>
+        ))}
+      </ol>
+      <div class="space-y-5 text-lg leading-relaxed text-stone-700 mt-10">
+        <p>Somerset offers a welcoming introduction to the trail, combining a relaxed wine-country setting with an interest in Rhône and Spanish grape varieties. The winery also explores traditional winemaking techniques, including the use of terracotta amphorae, bringing an ancient approach into a modern Temecula setting. Garden-like grounds, indoor and outdoor seating, live music, and seasonal gatherings give the property a sociable atmosphere. Somerset is an appealing first stop for visitors who enjoy learning about the craft behind the wine as well as tasting the finished result.</p>
+        <p>Fazeli Cellars makes a striking architectural statement, with Persian-inspired design, expansive windows, and views across the surrounding hills. Founded by Bizhan “BJ” Fazeli, the winery connects cultural heritage with contemporary California winemaking. Its wine collections draw on literary and cultural references, while Baba Joon’s Kitchen adds Persian-Mediterranean-inspired dining to the experience. The combination of architecture, wine, food, and entertainment makes Fazeli one of the trail’s most distinctive destinations.</p>
+        <p>Italian heritage is at the heart of Robert Renzoni Vineyards & Winery. The family’s winemaking story reaches back to Italy, and the Temecula estate continues that connection through its interest in Italian grape varieties such as Sangiovese, Barbera, Montepulciano, and Pinot Grigio. The winery pairs its wine collection with Mama Rosa’s Trattoria, where Italian-inspired dining, including brick-oven pizza, adds a culinary dimension to the visit. Outdoor seating and vineyard views make it an inviting place to combine tasting with lunch.</p>
+        <p>Altisima brings a contemporary interpretation of Spanish influence to the trail. Its modern architecture, open terraces, and expansive views create a dramatic setting, while the winery’s identity draws inspiration from Spanish traditions and the history associated with Gaspar de Portolá. Gaspar’s restaurant extends the theme through food and wine, and the outdoor spaces provide room for guests to enjoy the scenery. Live music and themed events add to the social atmosphere, making Altisima a destination for visitors who appreciate a combination of wine, dining, and modern design.</p>
+        <p>Gershon Bachus Vintners offers a more intimate, estate-centered experience, with vineyard views, landscaped grounds, and a tasting environment focused on small-production wines. Founded around a family’s dream of establishing a California vineyard, the winery emphasizes carefully crafted reds and extended oak aging. Its portfolio includes Cabernet Sauvignon, Cabernet Franc, Grenache, Merlot, and other varietals, with selections that evolve over time. The hilltop setting and guided tastings give visitors an opportunity to explore the wines at a thoughtful pace. Because the property also hosts private events, advance confirmation is recommended before visiting.</p>
+        <p>Oak Mountain Winery adds an underground dimension to the De Portola experience. Its distinctive mined wine cave extends beneath the property, creating a subterranean environment for wine-related experiences and special dining. Above ground, the winery offers vineyard scenery, outdoor seating, and views across the valley. The Cave restaurant and the winery’s additional hospitality offerings make it possible to turn a tasting into a more substantial outing. Oak Mountain is the trail’s notable architectural contrast: a destination where the landscape is appreciated both from the open hillside and from within the cool, sheltered space beneath it. Although its address is on Via Verde, it is an official member of the De Portola Wine Trail.</p>
+        <p>Leoness Cellars combines an elevated vineyard setting with an established wine portfolio and polished hospitality. Its hilltop location offers broad views of the valley, while landscaped grounds, terraces, and outdoor seating make the landscape central to the visit. The winery is particularly associated with estate-grown wines and a portfolio that includes Cabernet Sauvignon, Cabernet Franc, Syrah, and other varietals. The Restaurant at Leoness Cellars adds a full dining experience, making the estate well suited to visitors who want to combine wine tasting with a leisurely meal. Tours and special events provide additional ways to explore the property.</p>
+        <p>Danza del Sol takes its name from the Spanish phrase for “dance of the sun,” an apt expression for a winery shaped by vineyard views, warm weather, and a relaxed outdoor atmosphere. Its identity draws on European wine-country influences, with particular interest in Spanish and Mediterranean grape varieties, including Tempranillo. The tasting room and vineyard-surrounded patio create a comfortable setting for exploring the wines, while live music and casual events give the property a welcoming social character.</p>
+        <p>Frangipani Estate Winery is known for its family-owned character, panoramic views, and focus on handcrafted wines. The elevated setting looks across vineyards and surrounding hills, with outdoor seating that encourages visitors to linger over a tasting. The winery has developed a reputation for bold red wines, including varietals and blends that reflect its interest in concentrated fruit and structure. White wines and rosé provide additional options. On-site food service at Oakey Grape Grill makes Frangipani a practical choice for visitors who want to pair wine with a casual lunch.</p>
+        <p>Cougar Vineyard & Winery stands apart for its commitment to Italian grape varieties. The estate focuses on growing and making wines from Italian varietals, offering visitors an opportunity to explore grapes that are less familiar to many California wine drinkers. The portfolio has included Sangiovese, Montepulciano, Pinot Grigio, and other Italian varieties, with selections changing as new wines are released. The property’s outdoor spaces provide views across the vineyard, while Sangio’s Osteria adds an Italian-inspired food experience.</p>
+        <p>Masia de la Vinya sits toward the farther end of the trail, offering a Spanish-influenced interpretation of Temecula wine country. The winery’s name evokes the Catalan tradition of a rural farmhouse, and its identity emphasizes hospitality, vineyard scenery, and handcrafted wines. The portfolio has included varieties such as Tempranillo, Malbec, Syrah, and Chardonnay. A patio overlooking the countryside provides a scenic place to enjoy a tasting, while food offerings, live music, and special events can add to the experience. Masia de la Vinya provides a fitting final destination for a De Portola outing.</p>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-6 pb-16 space-y-5 text-lg leading-relaxed text-stone-700">
+      <h2 class="font-serif text-3xl text-stone-900">Planning your visit</h2>
+      <p>The trail is best approached as a relaxed exploration rather than a race to visit every winery in a single afternoon. With eleven official member wineries, there is enough variety to support several visits, each built around different interests.</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Choose a manageable number of stops. Two to four wineries can make a satisfying outing, leaving time to appreciate each tasting and enjoy a meal.</li>
+        <li>Check opening hours before leaving. Hours, reservation policies, food service, and event schedules vary by property and can change seasonally.</li>
+        <li>Plan transportation in advance. Use a designated driver or a wine-country transportation service, and avoid driving after drinking.</li>
+        <li>Allow time for food. Several wineries offer on-site dining or food options, but menus and availability differ. Check ahead if lunch is part of the plan.</li>
+        <li>Look at the event calendar. Live music, special tastings, and seasonal gatherings can influence the atmosphere and whether reservations are advisable.</li>
+        <li>Explore the wines thoughtfully. The trail includes Italian, Spanish, Rhône-inspired, and other varietals, making it an opportunity to taste beyond familiar favorites.</li>
+      </ul>
+      <p>The longer write-ups for each stop are on the individual winery pages. The older corridor notes remain at the <a class="text-[#4A5E4E] underline" href="/guides/de-portola-road-wine-tasting/">De Portola Road tasting guide</a>.</p>
+      <section class="mt-10 pt-8 border-t border-stone-200">
+        <h2 class="font-serif text-3xl mb-4 tracking-tight">The Bellie Acres Perspective</h2>
+        <p>The De Portola Wine Trail captures a side of Temecula Valley that rewards curiosity. Its wineries are connected by a country road, but each offers a different expression of wine, landscape, food, and hospitality. From cultural influences and traditional winemaking to a subterranean cave and panoramic vineyard patios, the trail invites visitors to discover the region one distinctive stop at a time.</p>
+        <p class="mt-5">For Bellie Acres Wine, De Portola represents the pleasure of exploring wine country beyond a single bottle or tasting room. It is a journey through the character of the valley itself—best enjoyed with time to spare, an open mind, and an appreciation for the stories each winery brings to the table.</p>
+      </section>
+    </section>
+  </main>
+  <script define:vars={{ stops }}>
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    script.onload = () => {
+      const map = L.map('trail-map', { scrollWheelZoom: false }).setView([33.527, -117.012], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap',
+        maxZoom: 18,
+      }).addTo(map);
+      const bounds = [];
+      stops.forEach((stop) => {
+        const icon = L.divIcon({
+          className: 'trail-num',
+          html: `<span style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:#4A5E4E;color:white;font-weight:700;font-size:13px;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,.25)">${stop.n}</span>`,
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        });
+        L.marker([stop.lat, stop.lng], { icon }).addTo(map).bindPopup(
+          `<strong>${stop.n}. ${stop.name}</strong><br/><span style="color:#5c665e">${stop.address}</span><br/><a href="/wineries/${stop.slug}/">View the page</a>`
+        );
+        bounds.push([stop.lat, stop.lng]);
+      });
+      if (bounds.length) map.fitBounds(bounds, { padding: [36, 36] });
+      setTimeout(() => map.invalidateSize(), 120);
+    };
+    document.head.appendChild(script);
+  </script>
+</Layout>
