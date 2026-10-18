@@ -161,24 +161,38 @@ const mobileLinks = [
     if (!desk && !mob) return;
     var url =
       'https://api.open-meteo.com/v1/forecast?latitude=33.4936&longitude=-117.1484&current=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles';
-    function paint(n) {
-      if (typeof n !== 'number' || isNaN(n)) return;
-      var deg = Math.round(n) + '\u00b0';
+    var degrees = '';
+    function temeculaTime() {
+      return new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Los_Angeles',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      }).format(new Date());
+    }
+    function paint() {
+      var time = temeculaTime();
+      var line = 'Temecula Time/Temp ' + time + (degrees ? ' · ' + degrees : '');
       if (desk) {
-        desk.textContent = 'Temecula ' + deg;
-        desk.setAttribute('title', 'Current temperature in Temecula');
+        desk.textContent = line;
+        desk.setAttribute('title', 'Current time and temperature in Temecula');
       }
       if (mob) {
-        mob.textContent = deg;
-        mob.setAttribute('title', 'Current temperature in Temecula');
+        mob.textContent = time + (degrees ? ' ' + degrees : '');
+        mob.setAttribute('title', 'Temecula Time/Temp');
       }
     }
+    paint();
+    setInterval(paint, 30000);
     fetch(url)
       .then(function (r) {
         return r.json();
       })
       .then(function (d) {
-        paint(d && d.current && d.current.temperature_2m);
+        var n = d && d.current && d.current.temperature_2m;
+        if (typeof n !== 'number' || isNaN(n)) return;
+        degrees = Math.round(n) + '\u00b0';
+        paint();
       })
       .catch(function () {});
   })();
