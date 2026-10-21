@@ -110,7 +110,7 @@
       paintPlay();
       return;
     }
-    stage = src.endsWith('.mp3') ? 'voice' : 'cue';
+    stage = src.includes('.mp3') ? 'voice' : 'cue';
     audio.src = src;
     audio.volume = stage === 'voice' ? Number(prefs.volume) : Number(prefs.volume) * 0.45;
     const cap = document.getElementById('caption');
@@ -143,7 +143,7 @@
       queue.push('/wine-oclock/audio/cork.wav');
       queue.push(cueFile(item));
     }
-    queue.push('/wine-oclock/audio/' + item.id + '.mp3');
+    queue.push('/wine-oclock/audio/' + item.id + '.mp3?v=belly');
     playNext();
   }
   function paintPlay() {
@@ -301,7 +301,7 @@
     }));
     root.querySelectorAll('[data-lesson]').forEach((el) => el.addEventListener('click', () => {
       const lesson = data.lessons.find((item) => item.id === el.getAttribute('data-lesson'));
-      queue = ['/wine-oclock/audio/lesson-' + lesson.id + '.mp3'];
+      queue = ['/wine-oclock/audio/lesson-' + lesson.id + '.mp3?v=belly'];
       stage = 'voice';
       playNext();
     }));
@@ -318,7 +318,7 @@
     const skip = document.getElementById('skip');
     if (skip) skip.addEventListener('click', () => {
       if (stage === 'cue') {
-        queue = queue.filter((src) => src.endsWith('.mp3'));
+        queue = queue.filter((src) => src.includes('.mp3'));
         audio.pause();
         playNext();
       } else if (stage === 'voice') {

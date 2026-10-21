@@ -21,6 +21,11 @@ VOICE = "en-US-AndrewMultilingualNeural"
 RATE = "-8%"
 
 
+def for_speech(text: str) -> str:
+    """Andrew reads Bellie as bell-lie. The screen keeps Bellie. The voice says belly."""
+    return text.replace("Bellie", "Belly").replace("bellie", "belly")
+
+
 async def speak(text: str, dest: Path) -> None:
     await edge_tts.Communicate(text, VOICE, rate=RATE).save(str(dest))
     print(dest.name, dest.stat().st_size)
@@ -34,9 +39,9 @@ async def main() -> None:
         parts = [day["narration"]]
         if day.get("wineNote"):
             parts.append(day["wineNote"])
-        await speak(" ".join(parts), AUDIO / f"{day['id']}.mp3")
+        await speak(for_speech(" ".join(parts)), AUDIO / f"{day['id']}.mp3")
     for lesson in json.loads(LESSONS.read_text()):
-        await speak(lesson["narration"], AUDIO / f"lesson-{lesson['id']}.mp3")
+        await speak(for_speech(lesson["narration"]), AUDIO / f"lesson-{lesson['id']}.mp3")
 
 
 if __name__ == "__main__":

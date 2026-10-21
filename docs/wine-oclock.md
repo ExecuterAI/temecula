@@ -18,7 +18,7 @@ Then rebuild the spoken files, if you want the voice to match the new words:
 uv run --with edge-tts==7.3.1 python scripts/build_wine_oclock_audio.py
 ```
 
-That uses Andrew, a free neural voice (`en-US-AndrewMultilingualNeural`). It does not call a paid service. Reed, the first Mac voice, sounded mechanical and has been replaced.
+That uses Andrew, a free neural voice (`en-US-AndrewMultilingualNeural`). It does not call a paid service. The screen keeps the spelling Bellie. The spoken files say “belly,” because Andrew otherwise reads the name as “bell-lie.”
 
 ## Deploy
 
