@@ -1,41 +1,43 @@
 #!/usr/bin/env python3
-"""Build Wine O'Clock narration from public/wine-oclock/content/days.json.
+"""Rebuild Wine O'Clock narration from the JSON library.
 
-Voice is local and replaceable. Edit the JSON, then run this script.
-No paid voice API.
+Uses Andrew, the free neural voice, through edge-tts 7.3.1.
+Run: uv run --with edge-tts==7.3.1 python scripts/build_wine_oclock_audio.py
+No paid voice API. Edit the JSON, then run this again.
 """
 from __future__ import annotations
 
+import asyncio
 import json
-import subprocess
 from pathlib import Path
+
+import edge_tts
 
 ROOT = Path("/Users/executer/bellieacreswine")
 DAYS = ROOT / "public/wine-oclock/content/days.json"
 LESSONS = ROOT / "public/wine-oclock/content/lessons.json"
 AUDIO = ROOT / "public/wine-oclock/audio"
-VOICE = "Reed (English (US))"
-RATE = "148"
+VOICE = "en-US-AndrewMultilingualNeural"
+RATE = "-8%"
 
 
-def speak(text: str, dest: Path) -> None:
-    aiff = dest.with_suffix(".aiff")
-    subprocess.run(["say", "-v", VOICE, "-r", RATE, "-o", str(aiff), text], check=True)
-    subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", str(aiff), str(dest)], check=True)
-    aiff.unlink()
+async def speak(text: str, dest: Path) -> None:
+    await edge_tts.Communicate(text, VOICE, rate=RATE).save(str(dest))
     print(dest.name, dest.stat().st_size)
 
 
-def main() -> None:
+async def main() -> None:
     AUDIO.mkdir(parents=True, exist_ok=True)
+    for old in AUDIO.glob("*.m4a"):
+        old.unlink()
     for day in json.loads(DAYS.read_text()):
         parts = [day["narration"]]
         if day.get("wineNote"):
             parts.append(day["wineNote"])
-        speak(" ".join(parts), AUDIO / f"{day['id']}.m4a")
+        await speak(" ".join(parts), AUDIO / f"{day['id']}.mp3")
     for lesson in json.loads(LESSONS.read_text()):
-        speak(lesson["narration"], AUDIO / f"lesson-{lesson['id']}.m4a")
+        await speak(lesson["narration"], AUDIO / f"lesson-{lesson['id']}.mp3")
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

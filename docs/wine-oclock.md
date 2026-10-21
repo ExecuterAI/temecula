@@ -15,10 +15,10 @@ Edit the JSON files in `public/wine-oclock/content/`.
 Then rebuild the spoken files, if you want the voice to match the new words:
 
 ```bash
-python3 scripts/build_wine_oclock_audio.py
+uv run --with edge-tts==7.3.1 python scripts/build_wine_oclock_audio.py
 ```
 
-That uses the Mac voice **Reed (English US)**. It does not call a paid voice service. Andrew (`en-US-AndrewMultilingualNeural`) is the preferred online voice, and it is not available: Microsoft currently refuses the connection. Replace the voice name in the script when a better licensed voice is approved.
+That uses Andrew, a free neural voice (`en-US-AndrewMultilingualNeural`). It does not call a paid service. Reed, the first Mac voice, sounded mechanical and has been replaced.
 
 ## Deploy
 

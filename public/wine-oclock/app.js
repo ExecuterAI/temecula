@@ -110,7 +110,7 @@
       paintPlay();
       return;
     }
-    stage = src.endsWith('.m4a') ? 'voice' : 'cue';
+    stage = src.endsWith('.mp3') ? 'voice' : 'cue';
     audio.src = src;
     audio.volume = stage === 'voice' ? Number(prefs.volume) : Number(prefs.volume) * 0.45;
     const cap = document.getElementById('caption');
@@ -143,7 +143,7 @@
       queue.push('/wine-oclock/audio/cork.wav');
       queue.push(cueFile(item));
     }
-    queue.push('/wine-oclock/audio/' + item.id + '.m4a');
+    queue.push('/wine-oclock/audio/' + item.id + '.mp3');
     playNext();
   }
   function paintPlay() {
@@ -268,7 +268,7 @@
       '<label class="check"><input id="education" type="checkbox"' + (prefs.education ? ' checked' : '') + '> Keep wine lessons easy to find</label>',
       '<fieldset><legend>Wine styles you like, if you want to say</legend>' + styles + '</fieldset>',
       '<button class="ghost" id="reset" type="button">Reset preferences and clear saved items</button>',
-      '<p class="note">Nothing here is sent to an account. It stays on this device. The spoken voice is a local prototype and can be replaced later without rewriting the app. Andrew, the preferred online voice, is not available right now.</p>'
+      '<p class="note">Nothing here is sent to an account. It stays on this device. The spoken voice is Andrew. If a line still sounds mechanical, refresh the page so the old voice is not stuck in the phone.</p>'
     ].join(''));
   }
 
@@ -301,7 +301,7 @@
     }));
     root.querySelectorAll('[data-lesson]').forEach((el) => el.addEventListener('click', () => {
       const lesson = data.lessons.find((item) => item.id === el.getAttribute('data-lesson'));
-      queue = ['/wine-oclock/audio/lesson-' + lesson.id + '.m4a'];
+      queue = ['/wine-oclock/audio/lesson-' + lesson.id + '.mp3'];
       stage = 'voice';
       playNext();
     }));
@@ -318,7 +318,7 @@
     const skip = document.getElementById('skip');
     if (skip) skip.addEventListener('click', () => {
       if (stage === 'cue') {
-        queue = queue.filter((src) => src.endsWith('.m4a'));
+        queue = queue.filter((src) => src.endsWith('.mp3'));
         audio.pause();
         playNext();
       } else if (stage === 'voice') {

@@ -1,4 +1,4 @@
-const CACHE = 'wine-oclock-v1';
+const CACHE = 'wine-oclock-v2';
 const SHELL = [
   '/wine-oclock/',
   '/wine-oclock/app.css',
