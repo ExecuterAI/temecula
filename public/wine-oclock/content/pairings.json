@@ -1,0 +1,82 @@
+[
+  {
+    "id": "steak",
+    "title": "Steak and grilled foods",
+    "why": "Protein and fat soften tannin. Char and a full red often enjoy each other.",
+    "try": "Cabernet Sauvignon, Syrah, or Malbec.",
+    "alt": "A cooler Pinot Noir if the grill is about mushrooms and vegetables more than a thick steak. Sparkling water with lime if you are not drinking.",
+    "avoid": "A delicate, sweet white will taste thin beside a charred steak. It is not wrong. It is just outvoiced."
+  },
+  {
+    "id": "seafood",
+    "title": "Seafood",
+    "why": "Acid and a clean finish let fish taste like fish. Cream and oak want a richer match.",
+    "try": "Sauvignon Blanc, a crisp Chardonnay, or dry sparkling wine with shellfish. A lighter Pinot Noir can work with salmon.",
+    "alt": "Unoaked white if the fish is simply grilled. A richer Chardonnay if there is butter sauce. Iced tea is not the move. Cold sparkling water is.",
+    "avoid": "A big tannic red with oysters. The metal note some people taste is real enough to skip."
+  },
+  {
+    "id": "pasta",
+    "title": "Pasta and tomato-based dishes",
+    "why": "Tomato is acidic. A wine with its own acidity meets it instead of tasting sour or flat.",
+    "try": "Sangiovese, a brighter Zinfandel, or a dry rosé.",
+    "alt": "If the sauce is creamy rather than tomato, look at the creamy-dish card instead. A chilled herbal soda or lemon water keeps the same brightness without wine.",
+    "avoid": "A very oaky, low-acid white. The tomato will make it taste tired."
+  },
+  {
+    "id": "creamy",
+    "title": "Creamy dishes",
+    "why": "Richness wants either bright acid to cut it, or a wine with enough body to stand beside it.",
+    "try": "A richer Chardonnay, Chenin Blanc, or Champagne. Acid is doing the work, not butter in the wine.",
+    "alt": "A light red with good acidity, such as Pinot Noir, if the dish has mushrooms. Sparkling water cuts cream too, without competing.",
+    "avoid": "A tannic Cabernet with a cream sauce. The tannin can taste bitter when fat and acid are not balanced."
+  },
+  {
+    "id": "cheese",
+    "title": "Cheese boards",
+    "why": "Fat softens tannin. Salt makes fruit taste sweeter. Strong cheese needs a wine that will not disappear.",
+    "try": "Firm sheep cheese with Tempranillo. Goat cheese with Sauvignon Blanc. Blue cheese with a sweet fortified wine, if you want that classic.",
+    "alt": "One wine for the mild cheeses and water between the strong ones. You do not need a different bottle for every wedge.",
+    "avoid": "Assuming a single red works with every cheese. A fresh mozzarella and an aged blue are not the same problem."
+  },
+  {
+    "id": "pizza",
+    "title": "Pizza",
+    "why": "Tomato, salt, char, and melted cheese are a crowd. A wine with acidity and not too much oak keeps up.",
+    "try": "Sangiovese, Zinfandel, or a dry rosé. Sparkling wine is a quietly excellent pizza wine.",
+    "alt": "A cold lager is outside this app’s job, but a citrus soda or sparkling water with the same salt and acid idea will not embarrass the slice.",
+    "avoid": "A delicate, expensive bottle you are saving for a quieter night. Pizza is joy. It is also loud."
+  },
+  {
+    "id": "vegetarian",
+    "title": "Vegetarian dishes",
+    "why": "Vegetables have bitterness, sweetness, and char of their own. Match the preparation, not a rule about meat.",
+    "try": "Sauvignon Blanc or dry Riesling with herbs and greens. Pinot Noir or Sangiovese with roasted mushrooms and tomato. Grilled vegetables can take a Syrah.",
+    "alt": "If the plate is spicy, look at the spicy-food card. A good nonalcoholic bitter soda can play the same refreshing role as a high-acid white.",
+    "avoid": "Choosing a huge red only because dinner feels important. Importance is not tannin."
+  },
+  {
+    "id": "mushrooms",
+    "title": "Mushrooms and earthy flavors",
+    "why": "Earthy food likes earthy or savory wine, and it also likes a little acidity so the dish does not taste muddy.",
+    "try": "Pinot Noir, Sangiovese, or an older, less oaky Tempranillo. A mushroom risotto can also like a richer Chardonnay.",
+    "alt": "If the mushrooms are grilled and smoky, Syrah joins the conversation. Black tea is a sober echo of tannin, if you want one.",
+    "avoid": "A very sweet wine. Earth and sugar rarely shake hands."
+  },
+  {
+    "id": "spicy",
+    "title": "Spicy food",
+    "why": "Heat makes alcohol taste hotter and tannin feel harsher. A little sweetness, or lively acidity and low alcohol, keeps the peace.",
+    "try": "Riesling with a touch of sweetness, Gewürztraminer, or a chilled dry rosé. Sparkling wine can work if the dish is salty more than fiery.",
+    "alt": "If you want no alcohol, a cold lassi, sweet iced tea, or sparkling water with citrus will calm heat better than a big red.",
+    "avoid": "High-alcohol Zinfandel or a tannic Cabernet with a very hot dish. The wine will shout back."
+  },
+  {
+    "id": "dessert",
+    "title": "Desserts",
+    "why": "The wine should be at least as sweet as the dessert. Otherwise the wine tastes sour and thin.",
+    "try": "A sweet Riesling or Chenin with fruit tarts. Port or another sweet fortified wine with chocolate or blue cheese. Not every dessert wants Port.",
+    "alt": "A ripe pear and a cup of tea is a complete ending. You can also stop before dessert. The meal does not require a last glass.",
+    "avoid": "A dry red with a sweet cake. The cake will make the wine taste bitter."
+  }
+]

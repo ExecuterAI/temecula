@@ -1,0 +1,23 @@
+{
+  "name": "Wine O’Clock by Bellie Acres Wine",
+  "short_name": "Wine O’Clock",
+  "description": "A little wisdom. A little wine. A little nonsense.",
+  "start_url": "/wine-oclock/",
+  "scope": "/wine-oclock/",
+  "display": "standalone",
+  "background_color": "#F4F0DF",
+  "theme_color": "#26392F",
+  "icons": [
+    {
+      "src": "/wine-oclock/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/wine-oclock/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

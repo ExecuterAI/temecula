@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tannins",
+    "title": "What tannins are",
+    "narration": "Tannins are compounds from grape skins, seeds, stems, and sometimes oak barrels. They grip the mouth a little. In a well-made red, that grip feels like structure. In an unbalanced one, it feels like sandpaper. Tannin is not sweetness, and it is not the same as a dry wine. Protein and fat in food soften the feeling. So does a few years in a bottle, for wines built to age. Not every red wants to wait."
+  },
+  {
+    "id": "acid-sweet",
+    "title": "Acidity and sweetness",
+    "narration": "Acidity is the fresh, mouth-watering part of a wine. Sweetness is sugar you can taste. A wine can be high in acid and still sweet, which is why a good Riesling does not taste like syrup. A wine can be dry, meaning low in sugar, and still taste fruity. Fruit and sugar are not the same. If a wine tastes flabby, acidity may be low. If it tastes sharp, acidity may be high, or the wine may simply be too cold to show anything else."
+  },
+  {
+    "id": "buttery",
+    "title": "Why some wines taste buttery",
+    "narration": "A buttery note in white wine, especially Chardonnay, usually comes from malolactic fermentation. Bacteria convert sharper malic acid, the acid of green apples, into softer lactic acid. Dairies are not involved. Lees stirring and new oak can add creaminess and toast beside it. A crisp, unoaked Chardonnay skipped some of those choices. Neither version is the real one. They are two decisions."
+  },
+  {
+    "id": "oak",
+    "title": "What oak aging does",
+    "narration": "Oak can add vanilla, spice, toast, and sometimes smoke. It can also soften texture and let a little air in through the barrel. New barrels speak louder than old ones. American oak often reads as coconut or dill. French oak is often subtler, though that is a tendency, not a law. Stainless steel and concrete do not add those flavors. Too much oak tastes like a lumberyard. Enough oak tastes like a choice that knew when to stop."
+  },
+  {
+    "id": "regions",
+    "title": "Why wine regions matter",
+    "narration": "A region is climate, soil, slope, custom, and law, all at once. The same grape ripens differently in a hot afternoon than in a cool maritime morning. Some places also have rules about which grapes may be used and how the wine may be made. Those rules do not guarantee pleasure. They do explain why a name on a label is more than a postcard. Temecula’s warm days and cooler nights are part of why so many grapes can grow here, and why one vineyard is not the whole valley."
+  },
+  {
+    "id": "sparkling-how",
+    "title": "How sparkling wines are made",
+    "narration": "Bubbles are trapped carbon dioxide from fermentation. In the traditional method, a still wine gets a little yeast and sugar and ferments again inside the sealed bottle. That second fermentation creates the bubbles, and time on the yeast can add a bready note. In the tank method, the second fermentation happens in a pressurized tank. Fruit often stays brighter. Champagne is a region with rules. Prosecco, Cava, and a California sparkling wine can be excellent without borrowing Champagne’s name."
+  },
+  {
+    "id": "how-to-taste",
+    "title": "How to taste wine",
+    "narration": "Look, smell, sip, and think. Color tells you a little. The smell tells you more. Take a small sip and let it move across your tongue. Notice fruit, acidity, bitterness or tannin, and whether the flavor stays after you swallow or spit. You do not need a vocabulary to have an opinion. Spitting is professional, not rude, when you are tasting several wines. Swallowing every pour is how a tasting becomes a commute you should not drive."
+  },
+  {
+    "id": "labels",
+    "title": "How to read a wine label",
+    "narration": "Start with the place and the producer. Then look for a grape, a vintage, and an alcohol number. Some European labels lead with the place and assume you know the grape. A vintage is the year the grapes were picked, not the year the wine was bottled. Alcohol is a clue to ripeness and weight. Words like reserve are not a universal promise. If a word is not defined by law, it may be marketing. When in doubt, ask what is in the glass. A good server would rather tell you than watch you guess."
+  },
+  {
+    "id": "glasses",
+    "title": "Why glasses have different shapes",
+    "narration": "A glass is a tool for smell. A larger bowl gives a red more air and more room for aroma. A smaller bowl keeps a delicate white from disappearing. A flute holds bubbles. A wider glass shows more of a sparkling wine’s scent. The right glass helps. The wrong glass does not ruin a good bottle if you are paying attention. Clean glassware matters more than expensive glassware. Detergent and lipstick are louder than most grapes."
+  },
+  {
+    "id": "myths",
+    "title": "Common wine myths",
+    "narration": "A screwcap is not an apology. Legs on the glass are not a score. A high price is not a guarantee you will like the wine. Red with meat and white with fish is a habit, not a law. Rosé is not a training wine. Dry does not mean the wine will dry your mouth. And a bottle with a famous name can still be the wrong bottle for your table. Taste is allowed to disagree with the story on the back label."
+  }
+]

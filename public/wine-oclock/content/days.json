@@ -1,0 +1,272 @@
+[
+  {
+    "day": 1,
+    "id": "day-01",
+    "title": "The Evening Has Arrived",
+    "cue": "jazz-lounge",
+    "cueLabel": "Original piano signature",
+    "narration": "Welcome to Wine O’Clock by Bellie Acres Wine. The day has made its demands, the inbox has had its say, and the world will doubtless continue being the world tomorrow. For now, take a breath. There is no prize for worrying about everything before dinner. A glass is welcome if you want one. Tea, water, or nothing at all will do the same job.",
+    "wineNote": "If you do open a bottle, one thoughtful pour teaches more than a second one taken in a hurry."
+  },
+  {
+    "day": 2,
+    "id": "day-02",
+    "title": "The Art of Doing Nothing",
+    "cue": "quiet",
+    "cueLabel": "Quiet contemplation",
+    "narration": "We have become remarkably efficient at filling every available moment. Today, we suggest a radical experiment: leave one unfilled. No productivity goals, no elaborate scheme for self-improvement. Just a little quiet. Civilization has survived worse. You do not need a drink to make the quiet official.",
+    "wineNote": null
+  },
+  {
+    "day": 3,
+    "id": "day-03",
+    "title": "Tannins and Other Mysteries",
+    "cue": "jazz-lounge",
+    "cueLabel": "Warm jazz signature",
+    "narration": "Ever wondered why some red wines leave your mouth feeling a little dry? Meet tannins. They come principally from grape skins, seeds, and stems, and sometimes oak. They provide structure and texture. In short, they’re rather like a well-tailored suit: noticeable when done properly, uncomfortable when overdone. That dry feeling is not the same thing as a dry wine. Dry, in wine, usually means the sweetness is low.",
+    "wineNote": "Tannin, body, and sweetness all vary by grape, place, vintage, and the choices in the cellar."
+  },
+  {
+    "day": 4,
+    "id": "day-04",
+    "title": "A Matter of Taste",
+    "cue": "golden-hour",
+    "cueLabel": "Golden hour",
+    "narration": "Your favorite wine needn’t be your neighbor’s favorite wine, your critic’s favorite wine, or your accountant’s favorite wine. Taste is personal. Explore widely, stay curious, and never apologize for enjoying what you enjoy. The same courtesy applies if what you enjoy is a glass of something with no alcohol in it.",
+    "wineNote": null
+  },
+  {
+    "day": 5,
+    "id": "day-05",
+    "title": "The Dinner Party Diplomat",
+    "cue": "dinner-party",
+    "cueLabel": "Dinner party",
+    "narration": "A good host knows many things. Where the glasses are kept. When the food is ready. Which guest must never be seated beside which other guest. Wine knowledge is useful, of course. But the true art is making everyone feel welcome. Offer a pour, and offer water with the same warmth. Nobody should have to explain why they are not drinking.",
+    "wineNote": "A pairing is a suggestion, not a rule. Acid often brightens rich food. Tannin often softens beside protein. There is usually more than one pleasant choice."
+  },
+  {
+    "day": 6,
+    "id": "day-06",
+    "title": "A Little Perspective",
+    "cue": "fireside",
+    "cueLabel": "Fireside",
+    "narration": "Some things improve with age. Certain wines, certain friendships, and perhaps the stories we tell about our younger selves. Other things merely get older. Knowing the difference is a useful skill. Not every bottle wants decades. Many are at their best while the story is still being told.",
+    "wineNote": "Age-worthiness depends on the wine. A fresh white can be lovely this week and tired next year."
+  },
+  {
+    "day": 7,
+    "id": "day-07",
+    "title": "The Sunday Pour",
+    "cue": "golden-hour",
+    "cueLabel": "Relaxed piano",
+    "narration": "Sunday is an excellent day for reflection. What went well? What might be improved? And why did we agree to that meeting on Monday? Whatever your answers, approach the coming week with curiosity rather than catastrophe. The pour, if there is one, can wait until you have decided you actually want it.",
+    "wineNote": null
+  },
+  {
+    "day": 8,
+    "id": "day-08",
+    "title": "Cabernet Has Entered the Room",
+    "cue": "jazz-lounge",
+    "cueLabel": "Subtle jazz signature",
+    "narration": "Cabernet Sauvignon tends to arrive with a certain confidence. Dark-fruit aromas, substantial structure, and tannins that can make their presence felt. It is no shrinking violet. Try it alongside grilled vegetables, mushrooms, or a suitable hearty dish. Good company helps, too. A cooler climate may show more herbs and freshness. A warmer one may show riper fruit. One glass does not speak for the grape.",
+    "wineNote": "Serve a full red a little cooler than a hot room, often around 60 to 65 degrees, and taste before you decide it is dull."
+  },
+  {
+    "day": 9,
+    "id": "day-09",
+    "title": "The Case for Curiosity",
+    "cue": "quiet",
+    "cueLabel": "Acoustic signature",
+    "narration": "Your next favorite wine may be a grape you’ve never heard of, from a place you cannot immediately locate on a map. Excellent. The world is full of such opportunities. Let your curiosity do the shopping. If the unfamiliar glass is not for you, that is also a result. No speech is required.",
+    "wineNote": null
+  },
+  {
+    "day": 10,
+    "id": "day-10",
+    "title": "The Trouble With Perfection",
+    "cue": "golden-hour",
+    "cueLabel": "Soft piano",
+    "narration": "Waiting for the perfect occasion is a curious habit. The perfect glass, the perfect menu, the perfect weather. Sometimes the only missing ingredient is permission to enjoy an ordinary day. Do check that the glasses are clean, though. Standards matter. An ordinary day does not require a bottle to count.",
+    "wineNote": null
+  },
+  {
+    "day": 11,
+    "id": "day-11",
+    "title": "Pinot Noir: The Quiet Charmer",
+    "cue": "quiet",
+    "cueLabel": "Gentle signature",
+    "narration": "Pinot Noir often favors finesse over sheer force. Depending on where it grows and how it is made, you may encounter cherry, raspberry, earthy notes, and elegant acidity. It can be subtle without being simple. A useful lesson for wine and for conversation. Cooler places often keep it lighter. Warmer ones can make it richer. Neither is the only Pinot.",
+    "wineNote": "A lighter red is often happier a little cooler than a big Cabernet. Taste it before you warm the glass in your hand for ten minutes."
+  },
+  {
+    "day": 12,
+    "id": "day-12",
+    "title": "What Does Dry Mean?",
+    "cue": "jazz-lounge",
+    "cueLabel": "Jazz piano signature",
+    "narration": "In wine, dry generally means that little or no sugar remains perceptible as sweetness. It doesn’t mean the wine will make your mouth feel dry. That is a different matter, often involving tannins. Wine terminology occasionally appears designed to test our patience. If a label says dry and the wine tastes ripe, fruit is not the same thing as sugar.",
+    "wineNote": "Residual sugar, acidity, and fruit can all read as sweetness to a new taster. The label is a clue, not the whole story."
+  },
+  {
+    "day": 13,
+    "id": "day-13",
+    "title": "The Soundtrack Matters",
+    "cue": "dinner-party",
+    "cueLabel": "Smooth signature",
+    "narration": "Music cannot rescue every dinner, but it can certainly improve the atmosphere. Try something soft enough to permit conversation and interesting enough to reward listening. If the saxophone begins competing with the guests, the saxophone must lose. The same rule applies to a lecture about the wine.",
+    "wineNote": null
+  },
+  {
+    "day": 14,
+    "id": "day-14",
+    "title": "Halfway Through the Month",
+    "cue": "quiet",
+    "cueLabel": "Acoustic signature",
+    "narration": "Fourteen days of small discoveries. Perhaps a grape, a flavor, or an idea has caught your attention. Knowledge is a fine thing, especially when it increases pleasure rather than the desire to correct everyone at dinner. If all you have done is pause, that counts. The app does not keep score.",
+    "wineNote": null
+  },
+  {
+    "day": 15,
+    "id": "day-15",
+    "title": "Chardonnay: The Shape-Shifter",
+    "cue": "golden-hour",
+    "cueLabel": "Light piano",
+    "narration": "Chardonnay can be crisp and citrusy, richly textured, or somewhere between the two. Climate, ripeness, fermentation, and oak all influence its character. Never let anyone convince you that a single tasting note tells the whole story. A cool, unoaked bottle and a warmer, oak-aged one can share a name and very little else.",
+    "wineNote": "Buttery notes often come from a winemaking choice called malolactic fermentation, not from butter in the tank."
+  },
+  {
+    "day": 16,
+    "id": "day-16",
+    "title": "A Toast to Friendship",
+    "cue": "golden-hour",
+    "cueLabel": "Warm acoustic signature",
+    "narration": "Friendship rarely requires grand gestures. A conversation, a shared meal, a thoughtful message. These are small things that become rather important when collected over time. Do remember to send the message before midnight. The toast can be wine, sparkling water, or the simple fact that you showed up.",
+    "wineNote": null
+  },
+  {
+    "day": 17,
+    "id": "day-17",
+    "title": "The Mystery of Oak",
+    "cue": "jazz-lounge",
+    "cueLabel": "Subtle jazz signature",
+    "narration": "Oak can contribute aromas and flavors such as vanilla, spice, toast, and sometimes smoke. It may also influence texture and the way a wine develops. Used thoughtfully, it can add complexity. Used carelessly, it can make a wine feel like it has spent too much time in a lumberyard. Steel tanks, concrete, and older neutral barrels leave a different fingerprint. Oak is a choice, not a requirement.",
+    "wineNote": "New barrels usually leave a stronger mark than old ones. The grape and the place are still in the glass."
+  },
+  {
+    "day": 18,
+    "id": "day-18",
+    "title": "The Joy of Being a Beginner",
+    "cue": "golden-hour",
+    "cueLabel": "Piano",
+    "narration": "Everyone who knows a great deal about wine once knew very little. Ask questions. Try unfamiliar things. Admit when you don’t know. These are not shortcomings. They are the habits of a curious mind. You can learn the vocabulary and still prefer the company to the lecture.",
+    "wineNote": null
+  },
+  {
+    "day": 19,
+    "id": "day-19",
+    "title": "Rosé Without the Fuss",
+    "cue": "dinner-party",
+    "cueLabel": "Bright signature",
+    "narration": "Rosé isn’t simply a lesser version of red wine, nor is it reserved for a particular season or occasion. Its styles vary widely, from delicate and crisp to more substantial and savory. Serve the style you enjoy, with the food you like, and let the calendar mind its own business. Most pink wine gets its color from a short stay on red-grape skins. A few, including many Champagne rosés, are made by blending.",
+    "wineNote": "Serve rosé cool, not icy. Frozen wine is mostly temperature."
+  },
+  {
+    "day": 20,
+    "id": "day-20",
+    "title": "The Myth of the Expensive Bottle",
+    "cue": "jazz-lounge",
+    "cueLabel": "Jazz piano signature",
+    "narration": "Price can reflect many things: production costs, rarity, reputation, and demand. It does not guarantee that you’ll enjoy a wine more. Your own palate is a better guide than the price tag, though the price tag is generally more confident about its opinions. A modest bottle you love has done its job.",
+    "wineNote": null
+  },
+  {
+    "day": 21,
+    "id": "day-21",
+    "title": "The Sunday Reset",
+    "cue": "fireside",
+    "cueLabel": "Fireside",
+    "narration": "Take a moment to consider what deserves your attention this week, and what can be allowed to wait. The distinction may be more valuable than another elaborate productivity system. You have quite enough passwords already. Nothing about this pause requires a cork.",
+    "wineNote": null
+  },
+  {
+    "day": 22,
+    "id": "day-22",
+    "title": "Sauvignon Blanc: Bright Ideas",
+    "cue": "dinner-party",
+    "cueLabel": "Light dinner signature",
+    "narration": "Sauvignon Blanc often offers lively acidity and aromas that may suggest citrus, herbs, or tropical fruit. Its expression varies with climate and winemaking. Pair it with foods that suit its style, perhaps fresh herbs, vegetables, or selected seafood dishes. Curiosity is encouraged. Certainty is optional. A cooler bottle may show more grass and citrus. A warmer climate may show riper fruit. Both can be honest Sauvignon Blanc.",
+    "wineNote": "High acidity is what makes many of these wines feel bright, not a squeeze of lemon added later."
+  },
+  {
+    "day": 23,
+    "id": "day-23",
+    "title": "The Fine Art of Conversation",
+    "cue": "dinner-party",
+    "cueLabel": "Smooth signature",
+    "narration": "The finest conversation rarely resembles a lecture. Ask a good question. Listen to the answer. Allow a little silence. And if someone begins explaining wine at considerable length, consider asking what they think of the weather. A good table has room for people who are drinking and people who are not.",
+    "wineNote": null
+  },
+  {
+    "day": 24,
+    "id": "day-24",
+    "title": "Sparkling Possibilities",
+    "cue": "signature",
+    "cueLabel": "A short chime, then piano",
+    "narration": "Sparkling wine needn’t wait for a wedding, a promotion, or the successful negotiation of a particularly difficult spreadsheet. Different styles suit different occasions, and some are wonderfully versatile with food. Celebration is lovely. Curiosity is reason enough. Champagne is a place, not a synonym for every bottle with bubbles. Other regions have their own names and their own styles. Brut means relatively dry, not a personality type.",
+    "wineNote": "Bubbles come from fermentation under pressure. A second fermentation in the bottle is one method. A tank is another. The method changes the texture more than the occasion does."
+  },
+  {
+    "day": 25,
+    "id": "day-25",
+    "title": "The Importance of Place",
+    "cue": "quiet",
+    "cueLabel": "Gentle acoustic signature",
+    "narration": "A wine reflects more than a grape. Climate, soil, topography, farming, and the choices made in the cellar all contribute to its character. The place matters. So do the people. A good story often has more than one author. Temecula is one of those stories: warm days, cooler nights, and more than one kind of afternoon.",
+    "wineNote": "The same grape can taste different a few miles away. That is not a mistake. It is the point of place."
+  },
+  {
+    "day": 26,
+    "id": "day-26",
+    "title": "The Glass Half Full",
+    "cue": "golden-hour",
+    "cueLabel": "Piano",
+    "narration": "Optimism is a useful quality, provided it leaves room for realism. A glass can be half full, half empty, or simply ready for a refill of water. Perspective is a wonderful thing. Hydration is a sensible one. If the evening includes wine, let water keep it company.",
+    "wineNote": null
+  },
+  {
+    "day": 27,
+    "id": "day-27",
+    "title": "The Unfamiliar Grape",
+    "cue": "jazz-lounge",
+    "cueLabel": "Jazz signature",
+    "narration": "Today, choose curiosity over habit. Explore a grape you’ve never tried, or a region you know little about. You may discover a new favorite. You may discover that it isn’t for you. Both outcomes are useful, and neither requires a dramatic speech. A sip is enough to learn. Finishing the glass is not the assignment.",
+    "wineNote": null
+  },
+  {
+    "day": 28,
+    "id": "day-28",
+    "title": "Hospitality Is an Art",
+    "cue": "golden-hour",
+    "cueLabel": "Warm acoustic signature",
+    "narration": "Hospitality isn’t about impressing people with what you know. It is about helping them feel comfortable enough to enjoy themselves. Offer something delicious, keep the conversation generous, and remember that nobody has ever left a dinner party wishing the host had explained acidity for another twenty minutes. Include a choice that is not wine, and do not announce it as a consolation.",
+    "wineNote": null
+  },
+  {
+    "day": 29,
+    "id": "day-29",
+    "title": "A Little Humor, Please",
+    "cue": "signature",
+    "cueLabel": "Light piano",
+    "narration": "Life is serious enough without requiring every pleasure to justify its existence. Read a good book, listen to a favorite song, laugh at a foolish joke. Take wine seriously if you wish, but never so seriously that you forget to laugh. The evening does not need to be productive. Some evenings simply need to be lived.",
+    "wineNote": null
+  },
+  {
+    "day": 30,
+    "id": "day-30",
+    "title": "The Next Chapter",
+    "cue": "signature",
+    "cueLabel": "Wine O’Clock signature",
+    "narration": "Thirty days of ideas, discoveries, and occasional nonsense. If you’ve learned something, excellent. If you’ve found a new favorite, even better. And if all you’ve done is take a few moments to slow down, that counts too. Here’s to remaining curious. The story is nowhere near finished. Wine O’Clock by Bellie Acres Wine will be here tomorrow, whether or not a cork is.",
+    "wineNote": "The archive keeps these moments. Nothing in the app rewards you for drinking more, or for opening it every day."
+  }
+]

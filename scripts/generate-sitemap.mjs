@@ -24,6 +24,7 @@ const hubs = [
   ['/events/', 'weekly', '0.7'],
   ['/collection/', 'weekly', '0.6'],
   ['/wine-day-planner/', 'monthly', '0.7'],
+  ['/wine-oclock/', 'weekly', '0.7'],
   ['/search/', 'weekly', '0.5'],
   ['/about/', 'monthly', '0.6'],
   ['/contact/', 'monthly', '0.6'],

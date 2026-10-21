@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Wine O’Clock by Bellie Acres Wine',
+  applicationCategory: 'LifestyleApplication',
+  operatingSystem: 'Web',
+  url: 'https://bellieacreswine.com/wine-oclock/',
+  description: 'A little wisdom. A little wine. A little nonsense. A daily moment from Bellie Acres Wine.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+};
+---
+
+<Layout
+  bare
+  fullTitle
+  title="Wine O’Clock by Bellie Acres Wine"
+  description="Wine O’Clock by Bellie Acres Wine. A little wisdom. A little wine. A little nonsense. A daily moment you can read or hear. Nothing requires a drink."
+  jsonLd={jsonLd}
+>
+  <link rel="stylesheet" href="/wine-oclock/app.css" slot="head" />
+  <style slot="head" is:inline>
+    body { background: #f4f0df !important; color: #282923; }
+  </style>
+  <main class="app" id="app">
+    <h1>Wine O’Clock</h1>
+    <p class="by">by Bellie Acres Wine</p>
+    <p class="tag">A little wisdom. A little wine. A little nonsense.</p>
+    <p class="fine">Loading today’s moment.</p>
+  </main>
+  <script is:inline src="/wine-oclock/app.js"></script>
+</Layout>

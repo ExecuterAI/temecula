@@ -1,0 +1,18 @@
+[
+  {"id": "q1", "category": "Philosophy", "text": "Not every evening needs to be productive. Some evenings simply need to be lived."},
+  {"id": "q2", "category": "Humor", "text": "One should never judge a book by its cover. Wine labels, however, are fair game."},
+  {"id": "q3", "category": "Patience", "text": "Patience is a virtue. Particularly when the wine needs a little time and the dinner guests need considerably more."},
+  {"id": "q4", "category": "Humor", "text": "Life is too short for bad conversation, but fortunately long enough to change the subject."},
+  {"id": "q5", "category": "Food and hospitality", "text": "The secret to a good dinner party is excellent company, a little preparation, and knowing when to stop explaining the wine."},
+  {"id": "q6", "category": "Wine wisdom", "text": "A screwcap is not an apology. It is a closure. Judge the glass, not the hat."},
+  {"id": "q7", "category": "Friendship", "text": "Friendship rarely requires a grand gesture. It does require that you send the message before midnight."},
+  {"id": "q8", "category": "Travel and discovery", "text": "Your next favorite may come from a place you cannot yet find on a map. Excellent. Let curiosity do the shopping."},
+  {"id": "q9", "category": "Everyday absurdities", "text": "The perfect occasion is a suspicious invention. Clean glasses, however, are not optional."},
+  {"id": "q10", "category": "Wine wisdom", "text": "Dry does not mean the wine will dry your mouth. Wine words enjoy a little mischief."},
+  {"id": "q11", "category": "Patience", "text": "Some questions are best considered slowly. Others can wait until after the music starts."},
+  {"id": "q12", "category": "Food and hospitality", "text": "Offer water with the same warmth as wine. Nobody should have to explain an empty glass."},
+  {"id": "q13", "category": "Philosophy", "text": "Taste is personal. It is not a loyalty oath, and it does not require an audience."},
+  {"id": "q14", "category": "Humor", "text": "If the saxophone begins competing with the guests, the saxophone must lose."},
+  {"id": "q15", "category": "Travel and discovery", "text": "A valley is more than its busiest road. The slower map is often the better story."},
+  {"id": "q16", "category": "Everyday absurdities", "text": "You have quite enough passwords already. The week can begin without a new system."}
+]
