@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Plan This Saturday in Temecula Wine Country',
+  datePublished: '2026-10-23',
+  dateModified: '2026-10-23',
+  author: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  publisher: { '@type': 'Organization', name: 'Bellie Acres Wine', url: 'https://bellieacreswine.com/' },
+  description:
+    'A practical plan for Saturday, October 24, 2026 in Temecula wine country: two stops, not five, with a quieter De Portola option and a busier Rancho California option.',
+  mainEntityOfPage: 'https://bellieacreswine.com/guides/plan-this-saturday/',
+};
+---
+
+<Layout
+  title="Plan This Saturday in Temecula Wine Country"
+  description="Saturday, October 24, 2026 in Temecula wine country: two realistic stops, a quieter De Portola option, a busier Rancho California option, and what to confirm before you drive."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="bg-[#faf7f2]">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+        <p class="text-sm uppercase tracking-[2px] text-[var(--accent)] font-medium mb-3">Guide · This Saturday · Oct 24, 2026</p>
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 leading-[1.1]">
+          Plan this Saturday in Temecula wine country
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+          Saturday is the crowded day. Two good stops, with food and a short drive between them, beat a list of five
+          names you will not actually reach.
+        </p>
+      </div>
+    </header>
+
+    <article class="max-w-3xl mx-auto px-6 py-12 space-y-8 text-lg text-stone-700 leading-relaxed">
+      <p>
+        This note is for <strong>Saturday, October 24, 2026</strong>. Late October is still inside the harvest window
+        the valley uses for later reds — Cabernet Sauvignon, Petite Sirah, Zinfandel, and blocks that ripen after the
+        early whites. It is not a promise that crush is happening at the estate you picked. Ask when you book.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900">The rule for this Saturday</h2>
+      <p>
+        Reserve before you leave. Designate a driver, or use a tour. Leave white space between pours. If the patio is
+        full at 1 p.m., that is normal for a Saturday on the main road. It is not a reason to add a third estate “since
+        we are already out.”
+      </p>
+      <p>
+        Two stops is the right number for most groups today. Three only works if they sit on the same road and the
+        middle one is a short walk or a few minutes in the car. Four is a different kind of day, and it is the one
+        people regret by the last glass.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900">Quieter option: De Portola Road</h2>
+      <p>
+        If the goal is conversation, start east of the main crush of Rancho California Road. A workable pair, south to
+        north, is
+        <a class="underline font-medium" href="/wineries/fazeli/">Fazeli Cellars</a>
+        at 37320 De Portola Road, then
+        <a class="underline font-medium" href="/wineries/frangipani/">Frangipani</a>
+        at 39750. They are the same corridor, not a cross-valley scavenger hunt.
+        <a class="underline font-medium" href="/wineries/danza-del-sol/">Danza del Sol</a>
+        at 39050 sits between those addresses if you already have a reservation and still want a third stop. Do not add
+        it just to fill the afternoon.
+      </p>
+      <p>
+        Frangipani’s published phone is (951) 699-8845. Groups of six or more should reserve. Fazeli’s published phone
+        is (951) 303-3366. Hours and Saturday events change. Confirm both on the estate site the morning you go. The
+        <a class="underline font-medium" href="/guides/de-portola-wine-trail/">De Portola Wine Trail map</a>
+        shows the eleven official stops if you want the wider picture after you have locked two.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900">Busier option: Rancho California Road</h2>
+      <p>
+        If you want the destination energy, stay on the main road and do not bounce to De Portola in the same afternoon.
+        <a class="underline font-medium" href="/wineries/thornton-winery/">Thornton</a>
+        at 32575 Rancho California Road and
+        <a class="underline font-medium" href="/wineries/ponte-winery/">Ponte</a>
+        at 35053 are a plausible pair: sparkling-house history at one, a larger vineyard day at the other. They are not
+        next door. Check the drive before you book both for the same hour.
+      </p>
+      <p>
+        <a class="underline font-medium" href="/wineries/wilson-creek-winery/">Wilson Creek</a>
+        and
+        <a class="underline font-medium" href="/wineries/miramonte/">Miramonte</a>
+        are also on this road. Pick one extra only if the first two reservations leave a real gap. A full Saturday patio
+        is not a failure of the plan. It is the reason the plan was two stops.
+      </p>
+
+      <h2 class="font-serif text-3xl text-stone-900">Before you drive</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>Book the seated tasting, not just the hope of a walk-in.</li>
+        <li>Eat. A Saturday flight on an empty stomach is how a good plan turns sloppy.</li>
+        <li>Check heat and parking. Late October can still be warm on a patio at 2 p.m.</li>
+        <li>Open the <a class="underline font-medium" href="/map/">Temecula wineries map</a> and reject any third pin that forces a backtrack.</li>
+        <li>Read <a class="underline font-medium" href="/guides/how-many-wineries-one-day/">how many wineries in one day</a> if someone in the car is lobbying for five.</li>
+        <li>Harvest timing, events, and what “crush” looks like this month: <a class="underline font-medium" href="/guides/temecula-harvest-season/">the harvest guide</a>.</li>
+      </ul>
+
+      <p>
+        Bellie Acres Wine does not sell the tasting and does not hold the reservation. Adults 21 and over. Drink
+        responsibly. If an estate is closed, booked out, or pouring a different list than the one you wanted, that is
+        a fact to confirm with them — not something this page can override.
+      </p>
+    </article>
+  </main>
+</Layout>
