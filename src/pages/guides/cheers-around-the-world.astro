@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import entries from '../../data/cheers-around-the-world.json';
+
+const groups = [];
+for (const row of entries) {
+  const last = groups[groups.length - 1];
+  if (!last || last.country !== row.country) {
+    groups.push({ country: row.country, items: [row] });
+  } else {
+    last.items.push(row);
+  }
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'How to say cheers around the world',
+  description:
+    'Living, country-aware list of toast expressions — native script first, with learner pronunciation. Not every line is a literal translation of cheers.',
+  url: 'https://bellieacreswine.com/guides/cheers-around-the-world/',
+  creator: { '@type': 'Organization', name: 'Bellie Acres Wine' },
+  license: 'https://bellieacreswine.com/terms/',
+};
+---
+
+<Layout
+  title='How to Say “Cheers” Around the World'
+  description="Living database of toast expressions around the world — native script first, pronunciation beside it, sorted by country then language. Not every line is a literal cheers."
+  jsonLd={jsonLd}
+>
+  <Navbar />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+    <p class="text-[11px] tracking-[0.28em] uppercase text-[#4A5E4E] font-medium mb-3">Bellie Acres Wine · Living database v1</p>
+    <h1 class="font-serif text-4xl sm:text-5xl text-[#2B322C] tracking-tight mb-4">
+      How to say “cheers” around the world
+    </h1>
+    <p class="text-stone-600 leading-relaxed mb-4">
+      Native script first. Learner pronunciation beside it. Sorted by country, then language.
+      Country is an association — not a claim that a language belongs to one nation.
+    </p>
+    <p class="text-sm text-stone-500 leading-relaxed mb-8">
+      {entries.length} records. “Cheers” has no exact one-word equivalent everywhere. Some lines mean
+      “to your health,” “long life,” “clink glasses,” or “success.” Those notes stay on the card.
+      This is a living first draft. Pronunciation cues still need review. We add. We do not overwrite.
+    </p>
+
+    <label for="lang-q" class="sr-only">Search countries, languages, or toast words</label>
+    <input
+      id="lang-q"
+      type="search"
+      enterkeyhint="search"
+      autocapitalize="none"
+      autocomplete="off"
+      placeholder="Search country, language, or toast (salud, skål, 乾杯…)"
+      class="w-full min-h-12 px-5 py-3.5 border border-stone-300 rounded-2xl text-base bg-white focus:outline-none focus:border-[#4A5E4E] mb-3"
+    />
+    <p id="lang-count" class="text-sm text-stone-500 mb-6">{entries.length} entries</p>
+
+    <div id="lang-list" class="space-y-8">
+      {groups.map((g) => (
+        <section class="country-group" data-country={g.country.toLowerCase()}>
+          <h2 class="font-serif text-2xl text-[#2B322C] mb-3 sticky top-0 bg-[#F6F7F2]/95 backdrop-blur-sm py-2">{g.country}</h2>
+          <ul class="space-y-2">
+            {g.items.map((row) => (
+              <li
+                class="lang-row rounded-2xl border border-stone-200 bg-white px-4 py-3 sm:px-5"
+                data-search={`${row.word} ${row.pronunciation} ${row.where} ${row.country} ${row.language} ${row.note}`.toLowerCase()}
+              >
+                <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <p class="font-serif text-2xl sm:text-3xl text-[#2B322C] leading-tight" dir="auto">{row.word}</p>
+                  {row.kind !== 'modern' && (
+                    <span class="text-[10px] uppercase tracking-[0.16em] text-[#4A5E4E] border border-[#9AAB97]/60 rounded-full px-2 py-0.5">
+                      {row.kind}
+                    </span>
+                  )}
+                </div>
+                <p class="text-sm text-stone-600 mt-1">
+                  <span class="italic">{row.pronunciation}</span>
+                  <span class="text-stone-400"> · </span>
+                  <span>{row.language}</span>
+                </p>
+                {row.note && (
+                  <p class="text-sm text-stone-500 mt-1">{row.note}</p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+
+    <p class="text-xs text-stone-500 mt-10 leading-relaxed">
+      Starting sources for this draft, not a line-by-line verification:
+      <a class="underline hover:text-stone-700" href="https://www.fluentu.com/blog/learn/cheers-in-different-languages/">FluentU</a>,
+      <a class="underline hover:text-stone-700" href="https://blog.rosettastone.com/cheers-in-different-languages/">Rosetta Stone</a>,
+      <a class="underline hover:text-stone-700" href="https://www.expatica.com/global/lifestyle/food-drink/how-to-say-cheers-in-different-languages-1117824/">Expatica</a>,
+      and <a class="underline hover:text-stone-700" href="https://www.webtender.com/handbook/toasting.html">The Webtender</a>.
+      Related: <a class="underline hover:text-stone-700" href="/guides/wine-in-world-languages">How to say wine</a>
+      · <a class="underline hover:text-stone-700" href="/guides/wine-words">Wine Word Archive</a>.
+    </p>
+  </main>
+
+  <script>
+    (function () {
+      var q = document.getElementById('lang-q');
+      var status = document.getElementById('lang-count');
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.lang-row'));
+      var groups = Array.prototype.slice.call(document.querySelectorAll('.country-group'));
+      var total = rows.length;
+
+      function filter() {
+        var needle = (q && q.value ? q.value : '').trim().toLowerCase();
+        var visible = 0;
+        rows.forEach(function (row) {
+          var hay = row.getAttribute('data-search') || '';
+          var show = !needle || hay.indexOf(needle) !== -1;
+          row.classList.toggle('hidden', !show);
+          if (show) visible += 1;
+        });
+        groups.forEach(function (g) {
+          var any = g.querySelector('.lang-row:not(.hidden)');
+          g.classList.toggle('hidden', !any);
+        });
+        if (status) {
+          status.textContent = needle
+            ? visible + (visible === 1 ? ' match' : ' matches')
+            : total + ' entries';
+        }
+      }
+      if (q) {
+        q.addEventListener('input', filter);
+        q.addEventListener('search', filter);
+      }
+    })();
+  </script>
+</Layout>
